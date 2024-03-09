@@ -29,16 +29,16 @@
 //    return 0;
 //}
 //指针是一个变量，存储的是地址
-//int main(){
-//    int a = 10;
-//    int* pa = &a;
-//    printf("%p\n",*pa);//*pa是取出pa指向的内存空间的值
-//    *pa = 20;//解引用操作符,单目操作符,*pa就是通过pa里的地址找到a
-//    printf("%d\n",a);
-//    return 0;
-//}
 int main(){
-     printf("%d",sizeof(int*));
-//     32位操作系统下是4个字节，64位操作系统下是8个字节,因为地址线的数量不同,32位一个地址是32个bit,64位一个地址是64个bit
+    int a = 10;
+    int* pa = &a;
+    printf("%p\n",*pa);//*pa是取出pa指向的内存空间的值
+    *pa = 20;//解引用操作符,单目操作符,*pa就是通过pa里的地址找到a
+    printf("%d\n",a);
     return 0;
 }
+//int main(){
+//     printf("%d",sizeof(int*));
+////     32位操作系统下是4个字节，64位操作系统下是8个字节,因为地址线的数量不同,32位一个地址是32个bit,64位一个地址是64个bit
+//    return 0;
+//}
