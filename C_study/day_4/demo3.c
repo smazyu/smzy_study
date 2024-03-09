@@ -85,3 +85,8 @@
 //static 静态的！
 //union 联合体 void 无-空
 //define  和 include 都不是关键字 预处理指令
+//int g_val = 2024;
+////int 是指函数返回的类型，如果函数不返回任何值，则使用void作为返回类型
+//int Add(int x,int y ){
+//    return x + y;
+//}
