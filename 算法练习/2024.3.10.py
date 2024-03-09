@@ -13,4 +13,5 @@ class Solution:
                 return [num_dict[target - num], i]  # 如果是，返回[target-num]的索引和当前索引
             else:
                 num_dict[num] = i  # 否则，将当前元素及其索引加入哈希表
+
         return [-1, -1]  # 如果没有找到符合条件的元素对，返回[-1, -1]
