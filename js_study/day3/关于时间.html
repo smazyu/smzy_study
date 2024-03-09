@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var d = new Date();//创建时间对象，默认是系统时间
+    var year = d.getFullYear();//获取年份
+    var month = d.getMonth();//获取月份
+    var day  = d.getDate();//获取日期
+    var hour = d.getHours();//获取小时
+    var minute = d.getMinutes();//获取分钟
+    var seconds = d.getSeconds();//获取秒
+    var s = year + '年' + month + '月' + day + '日' + hour + '时' + minute + '分' + seconds + '秒';
+    // 模板字符串 等同于 -> f-string
+    var ss = `${year}年${month}月${day}日${hour}时${minute}分${seconds}秒`;
+
+    //重点，时间戳（数字，表示时间点的一个数字）
+    console.log(d.getTime());//获取当前时间的时间戳
+    /**
+     * 在web前端获取的时间戳以毫秒做单位
+     * 在python以秒为单位
+     * python转前端乘以一千倍
+     * 时间戳 => 参与加密运算
+     */
+    //坑来了
+//     前端语法不规范 前端允许在new后面不加括号，效果一样‘
+    var d = new Date; //前端允许在new后面不加括号·
+//     data,gettime 百分之九十九是获取当前时间的时间戳
+</script>
+
+</body>
+</html>

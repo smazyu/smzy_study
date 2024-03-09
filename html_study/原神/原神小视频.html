@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>原神小视频</title>
+
+<!--    document.getElementById('playButton').addEventListener('click', function() {-->
+<!--    var myVideo = document.getElementById('myVideo');-->
+<!--    if (myVideo.paused) {-->
+<!--        myVideo.play();-->
+<!--        this.textContent = 'Pause';-->
+<!--    } else {-->
+<!--        myVideo.pause();-->
+<!--        this.textContent = 'Play';-->
+<!--    }-->
+<!--});-->
+    <style>
+        /* 让视频全屏，就像黑夜里的阴影，无所不在 */
+        body, html {
+            height: 100%;
+            margin: 0;
+        }
+        video {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: -100;
+            background-size: cover;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <video autoplay playsinline>
+        <source src="原神html/罪人舞步旋.mp4" type="video/mp4">
+        您的浏览器不支持视频标签。
+    </video>
+</body>
+</html>

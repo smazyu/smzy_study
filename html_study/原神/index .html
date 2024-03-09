@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+<head>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background-image: url("原神html/tt.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+        }
+        .header {
+            text-align: center;
+            padding: 20px 0;
+            background: transparent;
+        }
+        .header a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            display: inline-block;
+            margin: 10px;
+            border: 1px solid white;
+            border-radius: 5px;
+            background: transparent;
+        }
+        .header a:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+        }
+    </style>
+    <meta charset="utf-8"/>
+    <title>提瓦特大陆</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+        function playAudio() {
+            var audio = document.getElementById('background-music');
+            if (audio.paused) {
+                audio.play().catch(e => console.error("播放音乐失败:", e));
+            } else {
+                audio.currentTime = 0;
+                audio.play().catch(e => console.error("重新播放音乐失败:", e));
+            }
+        }
+    </script>
+</head>
+<body>
+
+    <div class="header">
+        <a href="关于原神.html">关于原神</a>
+        <a href="人物.html">人物</a>
+        <a href="原神小视频.html">视频</a>
+    </div>
+    <div class="home-about-img">
+        <!-- 这里可以放置一些内容，比如图片 -->
+    </div>
+
+<!--    <audio id="background-music" loop>-->
+<!--    <source src="原神小视频/1.mp3" type="audio/mpeg">-->
+<!--    您的浏览器不支持 audio 元素。-->
+<!--</audio>-->
+<!--    <button onclick="playAudio()">播放音乐</button>-->
+
+</body>
+</html>

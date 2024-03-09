@@ -1,0 +1,41 @@
+<!-- //jQuery是一个快速的，简洁的JavaScript框架 ’write less，do more‘ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>
+        title
+    </title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class='d1'>
+        i am a div
+    </div>
+<!-- click点击事件方法 -->
+    <script>
+        $(document).ready(function() {
+            $('.d1').click(function() {
+                window.alert('ok');
+            });
+        });
+    </script>
+<!-- ajax请求到的数据保存在p标签当中 -->
+$.ajax({
+    url = 'www.baidu.com'
+    type = 'get'
+    data = {'name' : 'yuai'}
+    success:function(data){
+        $('p').html(data);
+    },
+<!-- data通常情况下是json格式的数据 -->
+error:function(error){
+    console.log(error)
+}
+})
+
+<!-- post()方法data是请求参数 ，js中字典是对象-->
+
+</body>
+</html>
+<!-- Ajax请求 实现页面的局部刷新-->

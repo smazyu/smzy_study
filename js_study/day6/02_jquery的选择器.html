@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script src = 'jquery.min.js'></script>
+<script>
+$(function () {
+    $('#btn').click(function () {
+        alert('你点我了....')
+        console.log('你点我干啥')
+    });
+    //.表示class类选择器
+//     外层 内层 后代选择器
+//     外层 > 内层 子选择器
+//     val  ==  value
+//     trim() 去掉字符串两端的空格
+//     jquery val()中如果有参数，就是赋值，如果没参数，就是拿值
+//     html() 也是一样
+//     attr()给两个参数就是赋值，一个参数就是拿值
+//     html()操纵的是元素的内容
+//     text()处理的是元素的文本
+
+//     attr() 全称 attribute 属性
+//     window.onload
+//     elements中的元素可能跟源代码不同，因为js会改变元素
+//     css() 操纵元素的样式
+})
+</script>
+<input type = 'button' value="点我", id ='btn'>
+<!--<input tpye = 'text' value = '请输入内容' id = 'txt'>-->
+</body>
+
+</html>

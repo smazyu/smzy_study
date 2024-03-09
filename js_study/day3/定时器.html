@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function fn() {
+        var d = new Date();//创建时间对象，默认是系统时间
+        var year = d.getFullYear();//获取年份
+        var month = d.getMonth();//获取月份
+        var day  = d.getDate();//获取日期
+        var hour = d.getHours();//获取小时
+        var minute = d.getMinutes();//获取分钟
+        var seconds = d.getSeconds();//获取秒
+        var s = year + '年' + month + '月' + day + '日' + hour + '时' + minute + '分' + seconds + '秒';
+            console.log(s)
+        }
+    // console.log('开始倒计时')
+    // setTimeout(function () {//定时器，在后台运行，是异步的
+    //     console.log('倒计时结束')
+    // },1000)//
+    // var d = new Date();//创建时间对象，默认是系统时间
+    setInterval(fn,1000);
+//     可以做心跳检测 => 游戏，重交互网站
+
+//     反调试
+//     1.无限debugger
+//     2.炸你内存 死循环
+//        1.while(true){}
+//        2.递归
+//     无限写cookie
+//     while(true){
+//         document.cookie += 'a=1'
+//}
+//     无限写url
+//     window.location.href += 'a=1'
+
+    function n(x) {
+        n(++x)//
+
+    }
+
+//     打开devtool时自动运行
+//     debugger;//这个代码的意思是.程序执行到这。自动断住
+    setInterval(function () {
+        debugger;
+    },1000)
+    console.log('程序执行到这里')
+//     解决方案
+//     1.右键 never pause here
+//     2.给定时器置空
+
+</script>
+</body>
+</html>

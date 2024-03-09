@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--To reduce the number of holes, use the cdn directly-->
+    <script src="https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/jquery/1.9.1/jquery.min.js" type="application/javascript"></script>
+</head>
+<body>
+    <button id="btn">clickMe</button>
+    <script>
+        $(function () {
+            console.log(123);
+            $('#btn').click(function () {
+                console.log(123);
+                // $.ajax() is a feature that jQuery encapsulates for you
+                $.ajax({
+                    url: '/a',
+                    method: 'post',
+                    data: {
+                        'username': '123456',
+                        'pwd': '123'
+                    },
+                    success: function(data) {
+                        console.log(data);
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script src="jquery.min.js"></script>
+    <script>
+        //$暂时认为是jquery的一个标志
+        // $('xxxx') 选择器
+        $(function(){
+//和window.onload类似
+//             $('#btn').click(function(){
+//                 alert('你点我了....')
+//             });
+            $('#btn').click(function () {
+                alert('你点我了....')
+            });
+        });
+        // 等页面加载完毕之后再执行
+        // window.onload=function(){
+        //     var btn = document.getElementById('btn');
+        //     btn.addEventListener('click',function(){
+        //     alert('你点我了....')
+        //     });
+        // }
+    </script>
+<input type = 'button' value = '按钮' id = 'btn'>
+</body>
+</html>

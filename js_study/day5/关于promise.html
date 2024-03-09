@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+<!--  死亡回调 在回调函数中，继续回调-->
+// 1.加载验证码
+// 2.点击登录按钮
+// 3.如果用户登录成功。进入到用户的首页中
+// 4.加载一些用户相关的信息
+    function login() {
+    //需要加载到服务器。加载一张验证码回来
+        console.log('加载验证码')
+        setTimeout(function () {
+            console.log('验证码加载完成')
+            //用户点击登录按钮
+            console.log('用户点击登录按钮')
+            setTimeout(function () {
+                console.log('用户登录成功')
+                //用户登录成功，加载用户的信息
+                    setTimeout(function () {
+                    console.log('加载用户信息')
+                },1000)
+            },1000)
+        },1000)
+    }
+    // login.call(window)
+// 这个问题在es6中得到了解决
+// es6用promise来解决这个问题
+
+function send(){
+//     创建promise对象时，自动运行里面的函数
+//     send不是内置的，promise和then是内置的
+// 这里面的function相对应的就是一件事...这个事情最终会有两个结果（状态）
+    return new Promise(function (resolve,reject) {
+        console.log('发送请求出去');
+        let r = '成功';
+        if (r == '成功') {
+            resolve(r);
+        } else {
+            reject(r);
+        }
+    });//返回Promise对象
+}
+//
+let p = send('https://simazhangyu.com');
+
+p.then(function (data) {
+    console.log('第一个参数',data);
+    return send('https://simazhangyu.com');
+
+    //在then的函数中，如果返回的是一个promise对象，那么可以接着then
+    },function (data){
+    console.log('第二个参数',data);})
+// then(arg1,arg2);arg1对应的是resolve，arg2对应的是reject
+// 第二个参数可以省略
+// catch也可以接收到reject的信号 也就是说不给第二个参数，使用catch来处理resolve也是可以的
+
+new Promise(
+    function (r,j) {
+        r('123')
+        j('456')
+    }
+).then(function (r){console.log(1,r);},function (r){console.log(2,r);})
+</script>
+</body>
+</html>

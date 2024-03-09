@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang = 'en'>
+    <head>
+        <meta charset="utf-8">
+        <title>title</title>
+        <script>
+            // var page = 1;
+            // 前端允许声明变量不给值
+              
+            // var age;
+            // var a,b,c;//在前端中可以先声明，再给值
+            // a = 1;
+            // b = 2;
+            // c = 3;
+            // d = 50;//在js非严格情况下，可以不用var
+            // // console.log(a,b,c,d);
+            // var a = 1;
+            // console.log(typeof(a));
+            // var b ='hello';
+            // console.log(typeof(b));
+            // var c = true;
+            // var d = false;
+            // console.log(typeof c);
+            // console.log(typeof d);
+            // var date = new Date();
+            // console.log(typeof date);
+            // var a,b,c = 10,d;
+            // console.log(a)
+            // console.log(b)
+            // console.log(c)
+            // console.log(d)
+            // //let和const是es6之后产生的新的变量的声明方式
+            // //老版本的var是存在问题的。新版本使用let来解决var的问题
+            // var age = 10;//声明一个变量age，给age赋值10
+            // console.log(age)
+            // var age = 20;
+            // //上述代码中重复声明变量age
+            // // let age = 10;
+            // let age = 20;
+            // console.log((age))//本行报错，不允许同一个变量声明两次
+            // const money = 10086;//声明一个常量 不允许进行更换
+            // let a = 10,b = '10';
+            // console.log(a == b) // == 只判断数值是否相等（存在类型转换，将a转换为字符串）
+            //   == 判断是否相等 ===判断类型和值
+            //数据类型转换
+            var a = '1';
+            console.log(a + 1)
+//             parseint转化为整数
+            var b = parseInt(a)
+            console.log((b + 1))
+//             parsefloat转化为小数
+            var b = 1.1;
+            var c = parseFloat(b)
+            console.log(c)
+//             野路子转换为字符串
+            let e = 18;
+            var f = e + '';
+            console.log(f + 1);
+//             官方
+            var g = e.toString()
+            console.log(g+1);//181
+//             指定进制进行转换
+            var h = 15;//16进制转换 0123456789abcdef
+            var i = h.toString(16)
+            console.log((i));
+//             十六进制转十进制
+            var j = 'f';
+            console.log(parseInt(j,16));
+
+
+
+
+
+
+
+
+
+</script>
+        //let声明变量，const声明常量 因为认为js语法不够规范 所以es6更新 同一标识符不允许声明两次
+            </head>
+<body>
+</body>
+
+
+
+</html>

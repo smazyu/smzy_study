@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+// function fn() {}
+// //Function
+// console.log(fn.__proto__.constructor)
+setInterval(
+    (function(){}).constructor
+    ,1000
+)
+console.log(Function.prototype.constructor)
+console.log((function(){}).constructor)
+function f1 () {}
+// var a = {}原型对象是由构造器的 prototype 属性指向的。每个函数（包括构造器）都有一个 prototype 属性，用于定义创建对象时的原型。
+//
+// Function 是 JavaScript 中的一个内置构造器，用于创建函数对象。改变 Function 的值只会影响由该构造器创建的函数实例对象，而不会影响构造器本身。
+//
+// Function.prototype.constructor 属性指向 Function 构造器本身。因此，当调用 Function.prototype.constructor('debugger') 时，实际上是通过 Function 构造器创建了一个新的函数对象，该函数对象的函数体内容为 'debugger'。这并不会创建一个具有 debugger 方法的对象。
+//
+// 因此，使用 Function = function(arg) { ... } 的方式无法成功拦截 debugger，因为直接重新赋值 Function 变量会导致语法错误。
+//
+// 正确的方式是修改 Function.prototype.constructor 的值，以改变创建新函数时的行为。例如，可以使用 Function.prototype.constructor = function () { ... } 的方式成功拦截 debugger。
+console.log(a.__proto__.constructor)
+console.log(f1.__proto__.constructor)
+Function.prototype.constructor = function () {
+    console.log('我被调用了')
+}
+</script>
+
+</body>
+</html>

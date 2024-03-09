@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+<!--        在函数内部有变量的声明和创建-->
+        // 使用是在创建之前使用的
+        // js引擎会自动对变量的创建的时机进行提升
+        // 这个变量的声明会被提前
+        function fn() {
+        let n =1;
+        console.log(n)
+
+        }
+        // 所以从es6开始，纠正了这个问题，为了维护以前的代码，提出了一个新的词声明变量，let
+        // let声明的变量在同一作用域，只能声明一次
+        // identifier 标识符->变量名 declared->声明
+        fn()
+    </script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+/* style.css 文件内容 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif; /* 注意字体名称的拼写 */
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex; /* 使用Flexbox进行布局 */
+    justify-content: center; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
+    overflow: hidden; /* 防止内容溢出 */
+    position: relative; /* 相对定位，为了视频背景 */
+}
+
+.container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 保持视频的宽高比 */
+    z-index: -1; /* 确保视频在内容下方 */
+}
+
+.header {
+    display: flex; /* 启用Flexbox */
+    justify-content: center; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
+    height: 100px; /* 你之前设定的高度 */
+    background: transparent; /* 设置背景为透明 */
+}
+
+.header a {
+    text-decoration: none;
+    margin: 0 20px; /* 可以根据需要调整间距 */
+    color: aqua; /* 你之前设定的字体颜色 */
+    background: transparent; /* 确保链接背景透明 */
+}
+
+.header a:hover {
+    color: brown; /* 你之前设定的悬停效果颜色 */
+    background-color: rgba(255, 255, 255, 0.3); /* 悬停时半透明白色背景 */
+}
+
+/* 其他样式... */

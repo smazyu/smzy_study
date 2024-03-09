@@ -1,0 +1,43 @@
+@charset "utf-8";
+/* CSS Document */
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, a, img,  ol, ul, li, form{ margin:0; padding:0; border:0; list-style:none;}
+dl, dt, dd,table{margin:0; padding:0;list-style:none;}
+input { margin:0; padding:0; }
+h1,h2,h3,h4,h5,h6 {font-size:12px; font-weight:normal;}
+a,area{blr:expression(this.onFocus=this.blur())}
+a {text-decoration:none;}
+a:hover { text-decoration:underline;}
+.boxcenter { margin:0 auto;}
+body{font-family:'微软雅黑';font-size:14px;color:#666;}
+
+.clear{clear:both;height:0px;line-height:0px;font-size:0px;}
+.flBox{float:left;}
+.frBox{float:right;}
+
+
+
+a.gd{color:#666;margin-left:10px;}
+
+
+
+/*分页a 开始*/
+.pageBoxa{font-size:14px;margin:20px 0px;+margin:29px 0px;text-align:center;}
+.pageBoxa *{overflow:hidden;}
+.pageBoxa a{padding:8px 14px;color:#666;background:#e9e9e9;margin:0 1px;}
+.pageBoxa a.submit{color:#146dc9;background:none;margin-left:45px;}
+.pageBoxa span{margin:0 1px;}
+.pageBoxa span.curr{padding:8px 14px;color:#fff;background:#76bceb;}
+.pageBoxa span.disable{padding:8px 14px;color:#666;background:#e9e9e9;}
+.pageBoxa input.inpStyfya{display:inline-block;border:1px solid #e9e9e9;outline:none;margin:0 10px;width:38px;height:31px;position:absolute;margin-top:-8px;+margin-top:0px;line-height:30px;text-align:center;}
+.pageBoxa font{color:#76bceb;font-weight:bold;}
+/*分页a 结束*/
+
+
+
+/*当前位置样式开始*/
+.baseResour_21 a{color:#333;font-size:14px;}
+.baseResour_21{height:48px;line-height:48px;border-bottom:1px solid #eeeeee;padding-left:15px;}
+/*当前位置样式结束*/
+
+

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--    模板字符串`${}`-->
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function fn() {
+            alert('1111');
+        }
+        function gn() {
+            alert('hhh')
+        }
+        function en(dom,event) {
+            console.log(event.x,event.y);
+            // 把坐标怼到文本框中
+            // 1.拿到文本框
+            // document.getElementById('txt')通过css选择器拿到节点
+            // 2.把坐标怼到文本框中
+            // .类名 #id名  直接写是标签名 []是属性名
+            var txt = document.querySelector('#txt')
+            // alert('en')
+            txt.value = 'x:' + event.x + ',' + 'y:' + event.y;
+        }
+        // var btn = document.querySelector('#btn');
+        // btn.onclick = function () {
+        //     alert('111')
+        // }
+    </script>
+</head>
+<body>
+<!--<script>-->
+    <input type="button" value="点击" onclick = 'fn()' >
+<!--</script>-->
+<!--onblur 失去焦点-->
+<!--以on...进行事件绑定-->
+<input type="text" name="" id="txt" value = '我是文本框' onblur = 'gn()'>
+<div onmousemove="en(this,event  )" style="width: 100px;height: 100px;border: 1px solid red"></div>
+<!--<input type="text" name="" id="txt" value = '我是文本框' onblur = 'gn()'>-->
+<input type="button" onclick value="点1111击" id="btn">
+<input type = 'hidden' name = 'username' value = '1'> <!--隐藏域-->
+<script>
+  var btn = document.querySelector('#btn');
+  btn.onclick = function() {
+    alert('111');
+  };
+
+//   submit元素被点击后，自动收集表单元素的name和value进行组装，一起发送的action对应的服务器上
+</script>
+</body>
+</html>

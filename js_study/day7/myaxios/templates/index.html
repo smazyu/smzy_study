@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<button id="btn">点击我</button> <!-- 添加按钮元素 -->
+
+<script src="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/axios/0.26.0/axios.min.js" type="application/javascript"></script>
+<script>
+<!--    axios interceptor-->
+    // Before sending the request, add a piece of code to the program
+    // After the response comes back, add a piece of code to the program
+axios.interceptors.request.use(function(config){
+    console.log(config)
+    return config
+},function(error){
+    return Promise.reject(error)
+})
+
+    window.onload = function () {
+        let btn = document.getElementById('btn');
+        // 绑定点击事件
+        btn.onclick = function () {
+            // 发送POST请求
+            axios.post('/smzy', {username: '123'}, {
+                headers: {
+                    'Content-Type': 'application/json' // 确保发送的是JSON格式
+                }
+            }).then(function (response) {
+                // 默认情况下，response是一个响应对象
+                console.log(response);
+                console.log(response.data); // 打印响应数据
+                console.log(response.status); // 打印响应状态码
+                console.log(response.headers); // 打印响应头
+            }).catch(function (error) {
+                console.log(error); // 打印错误信息
+            });
+        }
+    }
+</script>
+
+</body>
+</html>

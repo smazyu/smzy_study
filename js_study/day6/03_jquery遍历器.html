@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src = 'jquery.min.js'></script>
+    <script>
+        // $(function () {
+        //   $("ul li").each(function () {
+        //       // console.log(index,element)
+        //       console.log(this);
+        //     // 此时的this是DOM对象而不是jquery对象
+        //     //   把xxx变成jquery对象
+        //     //   $(this)
+        //     //   console.log($(this).text());
+        //     })
+        // })
+        $(function () {
+        $("ul li").each(function () {
+        console.log(this);
+        // 这是一个dom对象
+        //     $(this)是一个jquery对象 $(this).text()是一个jquery对象的方法 $(this)[0]是一个dom对象
+        });
+    });
+    </script>
+</head>
+<body>
+<ul>
+    <li>足球</li>
+    <li>篮球</li>
+    <li>台球</li>
+</ul>
+</body>
+</html>

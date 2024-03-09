@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+// <!--    window 相当于浏览器的全局作用域-->
+    var abc = 123;
+<!--    所有声明的全局变量，都会自动的写入window当中-->
+console.log(abc);
+console.log(window.abc);
+console.log(abc === window.abc);
+var p = {};
+p['xxx'] = 'yyy';
+console.log(p.xxx);
+window.b = 18;
+console.log(b)
+
+// window向全局输出对象
+
+// 平时我们使用的setInterval，setTimeout，都是window的方法
+// 你使用的所有全局的对象，本质都来源于window对象
+// window对象是浏览器的顶级作用域
+// window location中存放在各种和url相关的东西
+setTimeout(function () {
+    window.location.href = 'https://simazhangyu.com'
+    },5000
+//页面跳转到simazhangyu.com
+);
+</script>
+
+</body>
+</html>

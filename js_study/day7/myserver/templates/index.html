@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--jsonp that the purpose of timestamps is to prevent resources from being cached-->
+<!--callback-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(function () {
+    $('#btn').click(function () {
+        $.ajax(
+            {
+                url:'/smzy',
+                data:{
+                    'username':'smzy',
+                    age:18
+                },
+                // If the browser asks the server for the same static resource multiple times,
+                // the server caches the resource
+                dataType:'jsonp',//Start a JSONP request and return the JS code with the data,
+                // But this type of js code doesn't work
+                // so success not run
+                success:function (data) {//success not run ,So you need js code that can be called
+                    // If the JS code is called, success will be
+                    // server return js code with the data
+                    // jQuery can automatically execute the JavaScript code returned from an AJAX call
+                    console.log(data)
+                }
+            }
+        )
+    })
+    
+})
+</script>
+<button id = 'btn'>clickMe</button>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+<!--    hook逻辑-->
+setInterval(function() {
+    (function(){}).constructor('debugger')()//function.prototype.constructor
+},1000)
+let xxx = Function.prototype.constructor
+Function.prototype.constructor = function() {
+    console.log('hook')
+    let arg = arguments[0]
+    arg = arg.replace('debugger','')
+    return xxx(arg);
+}
+Function.prototype.constructor.toString = function() {return 'function Function() [native code]' }
+// 防止网站检测hook
+console.log(Function.prototype.constructor.toString())
+Function.prototype.constructor.toString = function() {return 'function Function() [native code]' }
+console.log(Function.prototype.constructor.toString())
+
+</script>
+
+</body>
+</html>

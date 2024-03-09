@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // var a,b,c = 10;
+    //1.从左到右进行执行
+
+
+    //2.从左到右运行，最终结果是最后一项的结果
+    // var a = 10;
+    // var b = 20;
+    // var c = 30;
+    // var e = (a + b , b + c , a + c)//得到的是最后一个运算的结果 52
+
+    // console.log(e)
+
+
+    // function fn(n) {
+    //     if (n % 2 === 0){
+    //         return n + 1
+    //     } else{
+    //         return n - 1
+    //     }
+    // }
+    // var a = 81;
+    // var b = 32;
+    // var c = 17;
+    // // 括号中是按逗号执行，0，fn，最终执行fn
+    // var d = (a = (0,fn)(a),b = (0,fn)(b),c = (o=new Object,fn(c)),a = fn(b+c),a)
+    // return a,b,c,d  //最后返回d
+    // 在赋值语句中使用逗号运算符
+let a, b, c;
+a = 1, b = 2, c = 3;
+console.log(a);  // 输出 1
+console.log(b);  // 输出 2
+console.log(c);  // 输出 3
+
+// 在函数调用中使用逗号运算符
+function add(a, b) {
+  return a + b;
+}
+
+let result = add(3, 4);
+console.log(result);  // 输出 7
+
+// 在变量声明中使用逗号运算符
+let x = 1, y = 2, z = 3;
+console.log(x, y, z);  // 输出 1 2 3
+
+// 在循环语句中使用逗号运算符
+for (let i = 0, j = 5; i < 5; i++, j--) {
+  console.log(i, j);
+}
+// 输出:
+// 0 5
+// 1 4
+// 2 3
+// 3 2
+// 4 1
+</script>
+
+</body>
+</html>
+<!--在 JavaScript 中，逗号运算符（Comma Operator）也是一种运算符，具有与 Python 中类似的行为，但有一些细微差别。
+
+在 JavaScript 中，逗号运算符的行为如下：
+
+逗号运算符的结合性是从左到右，与 Python 相同。
+
+每个子表达式都会被计算，但只有最后一个子表达式的值会作为整个逗号表达式的结果返回。
+
+逗号运算符常用于以下情况：
+
+在赋值语句中，可以用逗号分隔多个变量，同时为它们赋予不同的值。
+在函数调用中，可以用逗号分隔多个参数，将它们传递给函数。
+在变量声明中，可以用逗号分隔多个变量，同时进行声明。
+在循环语句中，可以用逗号分隔多个表达式，将它们作为循环的一部分。-->

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // function fn() {
+    //     console.log(123);
+    //     console.log(this);//当前正在执行该函数的对象
+    // }
+    // fn();//调用函数
+    // // call 调用
+    // window.fn();//调用函数
+    // fn.call(window);//调用函数
+    //对象.函数名.call(对象,该函数所需的参数)
+    //对象.函数名(该函数所需的参数)
+    // function fn(abc) {
+    //     console.log('接受到的参数是',abc)
+    //     console.log(arguments)//arguments默认接收所有参数
+    //     for (let i = 0; i < arguments.length; i++) {
+    //         console.log(arguments[i])
+    //     }
+    // }
+    // fn(1,2,3)
+    // fn('yyy')
+    // fn.call(window,'yy')
+    // var x = String.prototype.split;
+// apply -> call 是一样的
+    function fn(a,b) {
+        console.log('hello',a,b);
+    }
+    // call和apply的基本语法
+    // fn.call(window,1,2); //功能上一样
+    // fn.apply(window,[1,2]); //apply 传递参数的方式不一样，传递需要一个整体的数组
+    function Person(name,age) {
+        this.name = name;
+        this.age = age;
+        this.fei = function () {
+            console.log(this.name+'飞')
+        }
+    }
+    let p1 = new Person('小明',18);
+    let p2 = new Person('小红',19);
+
+    // p1.fei();
+    // p2.fei();
+    // p1.fei.call(p2);
+    function goto_hell() {
+        console.log(this.name)
+    }
+    // window.name = 'smzy'
+    // Person.prototype.goto_hell = goto_hell;
+    // // 将goto_hell写在原型对象里面，p1的goto_hell方法借给p2使用
+    // p2.goto_hell();
+    // 可以让js中的任何对象借用其他对象的方法
+    goto_hell.call(p2);//相当于p1.goto_hell()
+</script>
+
+</body>
+</html>

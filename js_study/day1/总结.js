@@ -1,0 +1,41 @@
+// let 不允许变量声明多次
+//const 设置常量
+//== 只判断数值 ===判断数值和数据类型
+//spilt分割字符
+//&&与
+//||或
+//!非
+//length 字符长度
+// var s = 'alex_ma_zhang_yu'
+// console.log(s.split('_'));//切开的结果在前端叫数组array，在python中叫列表
+    var s = 'alex_ma_zhang_yu'
+    // console.log(s.split('_'));//切开的结果在前端叫数组array，在python中叫列表
+    // // 字符串截取
+    // console.log(s.substr(2,3));//3代表长度，意思为从第二个位置开始截取，截取三个字符
+    console.log(s.substring(1,3));//代表从第一个开始截取，截取到第三个位置，但是第三个位置截取不到，相当于python中切片
+    // console.log(s.length);//多少字符
+    // console.log(s.charAt(3));//截取第三个位置的字符,这种方案可以加重度混淆
+    // console.log(s[3]);
+    // s = 'abc'
+    // console.log(s.charCodeAt(0))//97 => ascii 中字母a的编码    将字符串转化为数字
+    // c_code_1 = s.charCodeAt(0);
+    // c_code_2 = s.charCodeAt(1);
+    // c_code_3 = s.charCodeAt(2);
+    // c_code_1 += 2;
+    // c_code_2 += 2;
+
+    // c_code_3 += 2;
+    // s1 = String.fromCharCode(c_code_1)
+    // s2 = String.fromCharCode(c_code_2)
+    // s3 = String.fromCharCode(c_code_3)
+    // ss = s1 + s2 + s3
+    // console.log((ss))
+    // console.log(s.indexOf('_'));//alex存在返回所在位置的索引，不存在返回-1，
+    // let b = s.lastIndexOf('_');//最后一次出现_的位置
+    // console.log(b)
+    // console.log(s)
+    // console.log(s.substring(1,s.indexOf('_')));
+    b = s.lastIndexOf('_');
+    console.log(s.substring(0,b));//字符串切片
+    console.log(s.toUpperCase());//转化为大写
+    console.log(s.startsWith('a'));//是否以a开头

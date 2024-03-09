@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+<!--    python通过缩进来控制代码块-->
+    // let a = 10;
+    // if (a > 5)
+    //     console.log(123);//如果if后面没有大括号，;就是边界
+    // if(a == 10) console.log(234),console.log(3456);
+// if(a > 20){
+//     console.log(123)
+// }else{
+//     console.log(456)
+// }
+// if(a>90) console.log('优秀'); else if(a > 80) console.log('良好'); else if(a > 9) console.log('及格');
+//在js中{}可以省去，以;作为分号的结尾
+// var a = 3;
+// switch(a){
+//     case 1:
+//         console.log(1);
+//     case 2:
+//         console.log(2);
+//     case 10:
+//         console.log(10);//case穿透现象 当你某一个case被匹配成功了，在case后面的其它case就不再匹配，而是直接执行里面的代码
+//     case 4:             //解决方案 加break
+//         console.log(4);
+// }
+// var month = 6;
+// switch (month){
+//     case 1:
+//     case 2:
+//     case 3:
+//         console.log('第一季度');
+//         break
+//     case 4:
+//     case 5:
+//     case 6:
+//         console.log('第二季度');
+//         break
+//     case 7:
+//     case 8:
+//     case 9:
+//         console.log('第三季度');
+//         break
+//
+// }
+
+    var arr = [2,5,6,3,8,9];
+    console.log(arr)
+    var a = 0;
+ //    用switch重新规划代码的运行流程，控制流
+ while(true){
+        switch (arr[a++]){
+            case 1:
+            // console.log(1);
+            x += 3;
+            x = 6
+            break
+            case 2:
+                var x = 1
+            // console.log(1);
+            break
+        }
+        //推出用的
+        if(a==6){
+            break
+        }
+    }
+    console.log(x)
+</script>
+</body>
+</html>
