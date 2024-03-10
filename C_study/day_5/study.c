@@ -164,11 +164,30 @@
 //    }
 //}
 //键盘和getchar之间有个缓存区,当键盘输入一个字符时,会先放到缓存区,当按下回车键时,getchar才会从缓存区取出一个字符
+//int main(){
+//    int ch = 0;
+//    while((ch = getchar()) != EOF){
+//        putchar(ch);
+//    }
+//}
 int main(){
-    int ch = 0;
-    while((ch = getchar()) != EOF){
-        putchar(ch);
+    printf("请输入密码");
+    char password[30] = {0};
+    scanf(" %s",password);
+    printf("请确认密码\n");
+    int ch = getchar();
+    int i = 1;
+    while(i) {
+        if (ch == 'Y') {
+            printf("密码正确\n");
+            i = 0;
+        } else {
+            printf("密码错误\n");
+            continue;
+        }
     }
+//    这里password没有取地址,因为password本身就是一个数组名,数组名就是数组的首地址
+//    scanf("%s",password);
 }
 
 
