@@ -50,3 +50,49 @@
 //    }
 //    return 0;
 //}
+//int main(){
+//    int i = 0;
+//    for(i=1;i<11;i++){
+//        printf("%d\n", i);
+//    }
+//}
+//在 for 循环中，continue 语句执行后，会先执行循环的增量表达式（即 for 循环中的第三部分），然后再检查循环条件（即 for 循环中的第二部分）以决定是否进行下一次迭代。
+//在 while 循环中，由于循环条件位于循环的顶部，continue 语句执行后会直接重新检查循环条件，以决定是否继续执行下一次迭代。
+//int main(){
+//    int i = 0;
+//    for(i=1;i<100;i++){
+//        if(i == 5){
+//            break;
+//        }
+//        printf("%d\n",i)
+//    }
+//}
+////不可在for循环体内修改循环变量，防止for循环失去控制
+//int main() {
+//    int arr[10] = {0};
+//    int i = 0;
+//    for(i = 0; i <= 10; i++){
+//        arr[i] = i;
+//        printf("%d\n",arr[i]);
+//
+//    }
+//    return 0;
+//}
+//int main(){
+////    判断部分省略 -判断恒为真 -死循环
+////    for (;;)
+//    int i = 0;
+//    int j = 0;
+//    for(;i<3;i++){
+//        for(;j<3;j++){
+//            printf("hehe\n");
+//        }
+//    }
+//    return 0;
+//}
+//int main{
+//        int x, y;
+//        for (x=0, y=0;x<2 && y<5;++x, y++){
+//            printf("hehe\n");
+//        }
+//};
