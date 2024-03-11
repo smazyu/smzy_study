@@ -16,10 +16,29 @@ void menu(){
 }
 void game(){
     //猜数字游戏的实现
-    int ret = rand();//rand返回0-32767
+    int guess;
+    int ret = rand() % 100 +1;//rand返回0-32767  %100+1范围就是1-100
+//    随机数有个起点
+    while(1){
+        printf("猜数字/n");
+        scanf("%d",&guess);
+        if(guess<ret){
+            printf("猜小了");
 
+        }
+        else if(guess>ret){
+            printf("猜大了");
+        }
+        else{
+            printf("猜对了");
+            break;
+        }
+    }
 }
 int main(){
+//    time返回整数类型 我们不使用time的参数
+//
+    srand((unsigned int)time(NULL));
         int input;
         do {
             menu();
