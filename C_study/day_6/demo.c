@@ -117,10 +117,13 @@
 //int main(){
 //    int i = 0;
 //    char password[20] = {0};
+//password本来就是一个地址的第一位元素
 //    for(i=0;i<3;i++){
 //        printf("请输入密码");
 //        scanf("%s",&password);
+//这是在比较两个首字母字符的地址
 //        //        if(password == "123456")err两个字符串不能直接比较，应该用strcmp
+//比较对应的ASCII码值
 //        if(strcmp(password,"123456") == 0){
 //            printf("登入成功\n");
 //            break;
