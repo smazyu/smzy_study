@@ -36,7 +36,7 @@ void game(){
     }
 }
 int main(){
-//    time返回整数类型 我们不使用time的参数
+//    time返回整数类型 我们不使用time的参数   
 //
     srand((unsigned int)time(NULL));
         int input;
