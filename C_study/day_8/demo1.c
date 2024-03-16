@@ -10,3 +10,4 @@ int main(){
     printf("%d\n",i);}
     return 0;
 }
+//传址调用让外部变量与函数体建立起联系
