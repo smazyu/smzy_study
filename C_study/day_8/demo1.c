@@ -39,3 +39,6 @@
 //        printf("找到了:%d",ret);
 //    }
 //}
+int Add(int a,int b){
+    return a + b;
+}
