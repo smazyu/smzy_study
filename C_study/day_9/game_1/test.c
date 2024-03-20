@@ -10,6 +10,9 @@ void game(){
     InitBoard(board,ROW,COL);
 //    打印棋盘
     DisplayBoard(board,ROW,COL);
+//    填入棋子
+//    与电脑判断胜负
+
 }
 void menu(){
     printf("**************************\n");

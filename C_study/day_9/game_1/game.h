@@ -2,8 +2,8 @@
 // Created by 20212 on 2024/3/21.
 //
 //符号的定义
-#define ROW 3
-#define COL 3
+#define ROW 5
+#define COL 5
 #include <stdio.h>
 //函数的声明
 //初始化棋盘
