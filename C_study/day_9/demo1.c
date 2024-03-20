@@ -31,14 +31,15 @@ long long int Fid(long long int n){
     long long int a = 1,b=1,c = 1;
     while(n>2){
         c = a + b;
-        
+        a = b;
+        b = c;
+        n--;
     }
-//    }
+    return c;
 }
 int main(){
     long long int n = 0;
     scanf("%lld",&n);
     long long int ret = Fid(n);
     printf("%lld\n",ret);
-    printf("%lld\n",count);
 }
