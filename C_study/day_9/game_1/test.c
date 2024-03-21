@@ -12,7 +12,10 @@ void game(){
     DisplayBoard(board,ROW,COL);
 //    填入棋子
 //    与电脑判断胜负
-
+    while(1){
+//        玩家下棋
+        PlayerMove(board,ROW,COL);
+    }
 }
 void menu(){
     printf("**************************\n");

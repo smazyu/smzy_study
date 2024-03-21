@@ -32,3 +32,16 @@ void DisplayBoard(char board[ROW][COL],int row,int col){
 
     }
 }
+void PlayerMove(char board[ROW][COL],int row,int col){
+    printf("玩家走>");
+    printf("请输入你要走的坐标:>")
+
+
+
+
+
+
+
+
+
+}
