@@ -33,15 +33,70 @@ void DisplayBoard(char board[ROW][COL],int row,int col){
     }
 }
 void PlayerMove(char board[ROW][COL],int row,int col){
-    printf("çŽ©å®¶èµ°>");
-    printf("è¯·è¾“å…¥ä½ è¦èµ°çš„åæ ‡:>")
+    int x = 0;
+    int y = 0;
+    printf("Íæ¼Ò×ß>\n");
+    while(1) {
+        printf("ÇëÊäÈëÄãÒª×ßµÄ×ø±ê:>");
+        scanf("%d %d",&x,&y);
+//    ÅÐ¶Ï×ø±êºÏ·¨ÐÔ
+        if (x >= 1 && x <= row && y >= 1 && y <= col) {
+//        ÏÂÆå
+//ÅÐ¶Ï×ø±êÊÇ·ñ±»Õ¼ÓÃ
+            if (board[x - 1][y - 1] == ' ') {
+                board[x - 1][y - 1] = '*';
+                break;
+            }else{
+                printf("×ø±ê±»Õ¼ÓÃ£¬\n");
+            }
+        } else {
+            printf("×ø±ê·Ç·¨£¬ÇëÖØÐÂÊäÈë\n");
+        }
+    }
+}
+void ComputerMove(char board[ROW][COL],int row,int col) {
+    printf("µçÄÔ×ß:>\n");
+    while (1) {
+        int x = rand() % row;
+        int y = rand() % col;
+        if (board[x][y] == ' ') {
+            board[x][y] = '#';
+            break;
+        }
+    }
+}
+int IsFull(char board[ROW][COL],int row,int col){
+    int i = 0;
+    int j = 0;
+    for(i = 0;i< row;i++){
+        for(j = 0;j<col;j++){
+            if(board[i][j] == ' '){
+                return 0;//ÆåÅÌÃ»Âú
+            }
+        }
+    }
+    return 1;//ÆåÅÌÂúÁË
+}
+char IsWin(char board[ROW][COL],int row,int col){
+    int i = 0;
+//    ÅÐ¶ÏÈýÐÐ
+    for(i = 0;i < row;i++){
+        if(board[i][0] == board[i][1] && board[i][1] == board[i][2] && board[i][1] != ' ')
+            return board[i][1];
+    }
+//    ÅÐ¶ÏÈýÁÐ
+    for(i = 0;i < col;i++){
+        if (board[0][i] == board[1][i] && board[1][i] == board[2][i] && board[1][i] != ' ')
+            return board[1][i];
+    }
+//    ÅÐ¶Ï¶Ô½ÇÏß
+    if(board[0][0] == board[1][1] && board[1][1] == board[2][2] && board[1][1] != ' ')
+        return board[1][1];
+    if(board[0][2] == board[1][1] && board[1][1] == board[2][0] && board[1][1] != ' ')
+        return board[1][1];
 
-
-
-
-
-
-
-
-
+    int ret = IsFull(board,row,col);
+    if(ret == 1)
+        return 'Q';
+    return 'C';
 }

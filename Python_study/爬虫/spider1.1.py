@@ -49,13 +49,10 @@ try:
         for index, url in enumerate(urls):
             response = requests.get(url, headers=headers)
             content = response.content.decode()
-
             if not os.path.exists(f'{index}.html'):
                 with open(f'{index}.html', 'w', encoding='utf-8') as file:
                     file.write(content)
-
             tree = etree.HTML(content)
-
             # if index == 0:
             title = str(tree.xpath('//h1[@class="entry-title"]/text()')[0])
             article1 = tree.xpath('//div[@class="entry-content"]//text()')
@@ -63,7 +60,6 @@ try:
             # print(article)
             #     # 插入第一个文章内容到数据库
             sql = "INSERT INTO articles (title,content) VALUES (%s,%s)"
-
             cursor.execute(sql, (title,article))
             connection.commit()
             # if index == 1:
@@ -72,7 +68,6 @@ try:
             #     sql = "INSERT INTO articles (content) VALUES (%s)"
             #     cursor.execute(sql, (article,))
             #     connection.commit()
-
 finally:
     connection.close()
 print(time.time() - current_time)
