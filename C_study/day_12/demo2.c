@@ -28,4 +28,39 @@
 //}
 //指针+-整数
 //
-int main()
+//int main(){
+//    int arr[10] = {1,2,3,4,5,6,7,8,9,10};
+//    int *p = arr;
+//    int *pend = arr+9;
+//    while(p<=pend){
+//        printf("%d\n",*p);
+//        p++;
+//    }
+//
+////}
+//int main(){
+//    int arr[10] = {1,2,3,4,5,6,7,8,9,10};
+//    printf("%d",&arr[9] - &arr[0]);
+////指针减指针得到两个指针之间的元素个数
+////两个指针相减的前提是指向同一个内存空间
+//    return 0;
+//}
+//int my_strlen(char * str){
+////    int count = 0;
+////    while(*str != '\0'){
+////        count++;
+////        str++;
+////    }
+////    return count;
+//    char *p = str;
+//    while(*p != '\0'){
+//        p++;
+//    }
+//    return p - str;
+//}
+//#include <string.h>
+//int main(){
+//    int len = my_strlen("abc");
+////    字符串传参时传过去的是首个字符的内存地址
+//    printf("%d",len);
+//}
