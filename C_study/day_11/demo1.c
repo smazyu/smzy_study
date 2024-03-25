@@ -20,6 +20,7 @@
 //    char id[20];
 //    int price;
 ////
+//编程时不应该书写一些歧义代码
 //};
 //int main(){
 //    int num = 10;
