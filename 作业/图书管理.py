@@ -125,28 +125,28 @@ if __name__ == '__main__':
 
 
 
-    print('你想要做什么?')
-    a = None
-    while not a:
-        a = input('1. 查找书籍\n2. 通过num查找书籍\n3. 插入书籍\n4. 删除书籍\n5. 打印书籍\n现在请输入你想要进行的操作:')
-        if a:
-            book = books(get_books_infor_list())
-            if a == '1':
-                book.get_book(input('请输入num name price: '))
-            elif a == '2':
-                book.find_book_by_num(eval(input('请输入num: ')))
-            elif a == '3':
-                book.insert_book(eval(input('请输入num name price: ')))
-            elif a == '4':
-                book.delete_book(eval(input('请输入num: ')))
-            elif a == '5':
-                book.print_books()
-        a = None
-        a = input('是否继续?')
-        if a == 'n':
-            break
-        else:
-            a = None
+    # print('你想要做什么?')
+    # a = None
+    # while not a:
+    #     a = input('1. 查找书籍\n2. 通过num查找书籍\n3. 插入书籍\n4. 删除书籍\n5. 打印书籍\n现在请输入你想要进行的操作:')
+    #     if a:
+    #         book = books(get_books_infor_list())
+    #         if a == '1':
+    #             book.get_book(input('请输入num name price: '))
+    #         elif a == '2':
+    #             book.find_book_by_num(eval(input('请输入num: ')))
+    #         elif a == '3':
+    #             book.insert_book(eval(input('请输入num name price: ')))
+    #         elif a == '4':
+    #             book.delete_book(eval(input('请输入num: ')))
+    #         elif a == '5':
+    #             book.print_books()
+    #     a = None
+    #     a = input('是否继续?')
+    #     if a == 'n':
+    #         break
+    #     else:
+    #         a = None
         # print(books_infor)
         # book = books(books_infor)
         # book.get_book("29")
