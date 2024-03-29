@@ -8,6 +8,7 @@ int my_strlen(const char * p){
     }
     return num;
 }
+// externÉùÃ÷Íâ½ç·ûºÅ
 int main(){
     char arr1[] = "";
     int num = my_strlen(arr1);
