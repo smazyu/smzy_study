@@ -61,7 +61,7 @@ import click
 def cli(ctx):
     """书籍管理系统。使用这个命令行工具来管理你的书籍集合。"""
     if ctx.invoked_subcommand is None:
-        click.echo('欢迎使用书籍管理系统 CLI！\n作者: 漳毓')
+        click.echo('欢迎使用书籍管理系统脚本！\n作者: 漳毓')
         click.echo(ctx.get_help())
 
 @cli.command()
