@@ -1,0 +1,16 @@
+{
+  "OutputFoldersPerTargetSystem": {
+    "\u672C\u5730\u8BA1\u7B97\u673A": [
+      "out\\build\\x64-Debug",
+      "out\\install\\x64-Debug"
+    ]
+  },
+  "ExpandedNodes": [
+    "",
+    "\\C_study",
+    "\\C_study\\day_12",
+    "\\C_study\\day_15"
+  ],
+  "SelectedNode": "\\C_study\\day_12\\demo2.c",
+  "PreviewInSolutionExplorer": false
+}
