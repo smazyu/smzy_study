@@ -13,5 +13,5 @@ int main(){
     char arr1[] = "";
     int num = my_strlen(arr1);
     // printf("%d\n",num);
-    printf("%s","hello");
+    printf("%s","ÄãºÃ");
 }
