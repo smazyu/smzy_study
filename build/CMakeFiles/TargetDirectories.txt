@@ -1,3 +1,0 @@
-E:/GitHub/smzy_study/build/CMakeFiles/smzy.dir
-E:/GitHub/smzy_study/build/CMakeFiles/ALL_BUILD.dir
-E:/GitHub/smzy_study/build/CMakeFiles/ZERO_CHECK.dir

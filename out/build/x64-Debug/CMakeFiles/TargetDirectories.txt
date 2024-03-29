@@ -1,3 +1,0 @@
-E:/GitHub/smzy_study/out/build/x64-Debug/CMakeFiles/smzy.dir
-E:/GitHub/smzy_study/out/build/x64-Debug/CMakeFiles/edit_cache.dir
-E:/GitHub/smzy_study/out/build/x64-Debug/CMakeFiles/rebuild_cache.dir

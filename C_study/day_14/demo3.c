@@ -26,9 +26,9 @@
 //    printf("%s\n",arr1);
 //    return 0;
 //}
-//int main(){
-//    const int num = 1;
-//    int * ps = &num;
-//    *ps = 2;//const如果放在*的左边，修饰的是*p，表示指针指向的内容，是不能通过指针改变的
-//    printf("%d",num);
-//}
+int main(){
+    const int num = 1;
+    int * ps = &num;
+    *ps = 2;//const如果放在*的左边，修饰的是*p，表示指针指向的内容，是不能通过指针改变的
+    printf("%d",num);
+}
