@@ -12,6 +12,6 @@ int my_strlen(const char * p){
 int main(){
     char arr1[] = "";
     int num = my_strlen(arr1);
-    // printf("%d\n",num);
+    printf("%d\n",num);
     printf("%s","ÄãºÃ");
 }
