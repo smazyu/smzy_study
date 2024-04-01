@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>集线器</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<div class="container">
+    <header class="header">
+        <h1>网络设备和协议简介</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">首页</a></li>
+                <li><a href="../about.html">关于</a></li>
+                <li><a href="../blog.html">博客</a></li>
+                <li><a href="../contact.html">联系</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main-content">
+        <article class="post">
+            <h2>网络设备</h2>
+            <p>集线器没有智商，同一个网段的数据包会被广播到所有端口。而交换机相当于有更多接口的网桥，比集线器更安全，不会被抓包。</p>
+        </article>
+        <article class="post">
+            <h2>交叉线和直通线</h2>
+            <p>相同设备使用交叉线，发送端的引脚与接收端的引脚相连，确保数据正确传输。而直通线连接两台计算机时，发送引脚与接收引脚相连，导致数据传输失败。</p>
+        </article>
+        <article class="post">
+            <h2>ARP和ICMP协议</h2>
+            <p>ARP先获取目标IP的MAC地址，ICMP则用于传输控制消息和提供网络状态信息。在网络通信中，它们发挥着重要的作用。</p>
+        </article>
+        <article class="post">
+            <h2>网桥和交换机</h2>
+            <p>网桥能够通过自学习得知每个接口的MAC地址，起到隔离冲突域的作用。交换机相当于有更多接口的网桥，提供更高的网络安全性。</p>
+        </article>
+    </main>
+    <footer class="footer">
+        <p>&copy; 2024 我的个人博客</p>
+    </footer>
+</div>
+</body>
+</html>

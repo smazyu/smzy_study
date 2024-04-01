@@ -36,17 +36,6 @@
     <meta charset="utf-8"/>
     <title>提瓦特大陆</title>
     <link rel="stylesheet" href="css/style.css">
-    <script>
-        function playAudio() {
-            var audio = document.getElementById('background-music');
-            if (audio.paused) {
-                audio.play().catch(e => console.error("播放音乐失败:", e));
-            } else {
-                audio.currentTime = 0;
-                audio.play().catch(e => console.error("重新播放音乐失败:", e));
-            }
-        }
-    </script>
 </head>
 <body>
 
