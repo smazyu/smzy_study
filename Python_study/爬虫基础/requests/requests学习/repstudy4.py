@@ -7,5 +7,5 @@ img_src = 'https://tse1-mm.cn.bing.net/th/id/OIP-C.Zte3ljd4g6kqrWWyg-8fhAHaEo?w=
 response = requests.get(url = img_src,headers=head)#对图片发起请求
 img_data = response.content#获取图片数据 采用二进制，因为多媒体资源一般采用二进制在网上传播
 #持久化存储
-with open('./1.jpg','wb') as fp:
+with open('./background.jpg','wb') as fp:
     fp.write(img_data)

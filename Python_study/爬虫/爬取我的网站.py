@@ -21,7 +21,7 @@ with open('1.html', 'r', encoding='utf-8') as op:
     print('成功读取到html信息')
     tree = etree.HTML(html)
     post_content_list = tree.xpath('.//div[@class="post-content-wrap"]')
-    # href = tree.xpath('//*[@id="main"]/article[1]/div[2]/div/a/text()')
+    # href = tree.xpath('//*[@id="main"]/articles[1]/div[2]/div/a/text()')
     # print(post_content)
     # 不规范html，lxml无法正常拿到url，使用bs4进行选取
     soup = BeautifulSoup(html, 'lxml')
@@ -74,7 +74,7 @@ for index, i in enumerate(urls):
         tree = etree.HTML(content)
         article2 = tree.xpath('//*[@id="post-28"]/div/p/text()')[0]
         # new_article2= [item for item in article2 if item.strip()]
-        # article = ','.join(new_article2)
+        # articles = ','.join(new_article2)
         print(article2)
 
 

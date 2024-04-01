@@ -9,7 +9,7 @@ class DzSpider(scrapy.Spider):
 
     def parse(self, response, **kwargs):
         # 获取每个段子的article标签
-        article_list = response.xpath('//article[@class="excerpt"]')
+        article_list = response.xpath('//articles[@class="excerpt"]')
         for article in article_list:
             item = DuanziItem()  # 实例化
             # dic_data = {}

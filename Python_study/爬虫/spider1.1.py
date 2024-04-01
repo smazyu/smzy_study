@@ -57,16 +57,16 @@ try:
             title = str(tree.xpath('//h1[@class="entry-title"]/text()')[0])
             article1 = tree.xpath('//div[@class="entry-content"]//text()')
             article = ','.join(item.strip() for item in article1 if item.strip())
-            # print(article)
+            # print(articles)
             #     # 插入第一个文章内容到数据库
             sql = "INSERT INTO articles (title,content) VALUES (%s,%s)"
             cursor.execute(sql, (title,article))
             connection.commit()
             # if index == 1:
-            #     article = tree.xpath('//*[@id="post-28"]/div/p/text()')[0]
+            #     articles = tree.xpath('//*[@id="post-28"]/div/p/text()')[0]
             #     # 插入第二个文章内容到数据库
             #     sql = "INSERT INTO articles (content) VALUES (%s)"
-            #     cursor.execute(sql, (article,))
+            #     cursor.execute(sql, (articles,))
             #     connection.commit()
 finally:
     connection.close()

@@ -21,7 +21,7 @@ class DzSpider(scrapy.Spider):
         解析页面详情提取数据的方法
         '''
         # print(response.text)
-        article_list = response.xpath('//article[@class="excerpt"]')
+        article_list = response.xpath('//articles[@class="excerpt"]')
         for article in article_list:
             item = DuoyeItem()
             title = article.xpath('./header/h2/a/text()').extract_first()
