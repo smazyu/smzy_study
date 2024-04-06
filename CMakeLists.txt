@@ -6,6 +6,5 @@ set(CMAKE_C_STANDARD 11)
 include_directories(.)
 
 add_executable(smzy
-        C_study/day_18/demo1.c
-        C_study/day_18/指针进阶1.c
-        C_study/day_19/指针进阶2.c)
+        C_study/day_20/指针进阶3.c
+)
