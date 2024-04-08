@@ -15,9 +15,16 @@ int Add(int x,int y){
 int Sub(int x,int y){
     return x - y;
 }
+//int main(){
+//    int(*pf1)(int,int) = Add;
+//    int(*pf2)(int,int) = Sub;
+//    int (*pfArr[2])(int,int) = {Add,Sub};
+//    return 0;
+//}
+void menu(){
+
+}
 int main(){
-    int(*pf1)(int,int) = Add;
-    int(*pf2)(int,int) = Sub;
-    int (*pfArr[2])(int,int) = {Add,Sub};
-    return 0;
+    //计算器-计算加减乘除
+    menu()
 }
