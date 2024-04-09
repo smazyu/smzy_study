@@ -22,7 +22,6 @@ int Sub(int x,int y){
 //    return 0;
 //}
 void menu(){
-
 }
 int main(){
     //计算器-计算加减乘除
