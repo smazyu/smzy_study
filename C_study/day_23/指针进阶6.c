@@ -17,8 +17,17 @@
 //        }
 //     }
 //}
-//int main(){
-//    int arr[10] = {9,2,3,6,1,0,6,3,12,34};
-//    int sz = sizeof(arr) / sizeof(arr[0]);
-//    bubble_sort(arr,sz);
-//}
+#include <stdio.h>
+int cmp_int(const void*e1,const void * e2){
+   return *(int*)e1 - *(int*)e2;
+}
+#include <stdlib.h>
+int main(){
+    int arr[10] = {9,2,3,6,1,0,6,3,12,34};
+    int sz = sizeof(arr) / sizeof(arr[0]);
+    qsort(arr,sz,sizeof(arr[0]), cmp_int);
+    for(int i = 0;i < sz;i ++){
+        printf("%d\n",arr[i]);
+    }
+}
+
