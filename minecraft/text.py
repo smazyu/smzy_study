@@ -1,8 +1,18 @@
-import re
-a = '§6default§r: §4.GooierWord16718§r§f, qs_Bu_Jue§f'
-match_names = re.findall(r'§r: §4(.*)', a)
-for name in match_names:
-    cleaned_names = re.sub(r'§.', '', name)
-     
-     
-    print(cleaned_names)
+import toml
+from mcrcon import MCRcon
+
+def load_settings(filename):
+    with open(filename, 'r') as file:
+        settings = toml.load(file)
+        print(settings)
+    return settings
+
+def connect_to_server(settings):
+    host = settings['server']['host']
+    port = settings['server']['port']
+    password = settings['server']['password']
+    return MCRcon(host, password, port)
+
+# 使用示例
+settings = load_settings('new_smzy_study\minecraft\setting.toml')
+rcon = connect_to_server(settings)
