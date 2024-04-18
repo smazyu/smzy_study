@@ -42,6 +42,7 @@ int main(){
     char arr1[20] = "abcdef";
     char arr2[] = "qwer";
 //    strncpy
+//    strncmp
     strncat(arr1,arr2,2);
     printf("%s\n",arr1);
 }
