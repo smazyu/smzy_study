@@ -36,14 +36,14 @@ int main() {
 //        printf("’“µΩ¡À£¨%s",ret);
 //    }
 //     return 0;
-    char arr[] = "simazhangyu@gmail.com";
-    char * p = "@.";
-    char temp[20] = {0};
-
-    char * ret = NULL;
-    ret = strcpy(temp,arr);
-    for(ret = strtok(temp,p);ret != NULL;ret = strtok(NULL,p)){
-        printf("%s\n",ret);
-    }
-
+//    char arr[] = "simazhangyu@gmail.com";
+//    char * p = "@.";
+//    char temp[30] = {0};
+//    char * ret = NULL;
+//    ret = strcpy(temp,arr);
+//    for(ret = strtok(temp,p);ret != NULL;ret = strtok(NULL,p)){
+//        printf("%s\n",ret);
+//    }
+//}
+printf("%s\n",strerror(1));
 }
