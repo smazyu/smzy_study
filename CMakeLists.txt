@@ -6,6 +6,5 @@ set(CMAKE_C_STANDARD 11)
 include_directories(.)
 
 add_executable(smzy
-        C_study/day_31/自定义类型1.c
         C_study/day_31/自定义类型2.c
 )
