@@ -28,7 +28,7 @@ struct A{
     //根据你的需求来设计所占字节的大小
 };
 int main(){
-    printf("%d\n",sizeof(struct A));
+    int _b:20;
 }
 //在vs中，从地位到高位使用
 
