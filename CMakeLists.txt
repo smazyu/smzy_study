@@ -6,6 +6,6 @@ set(CMAKE_C_STANDARD 11)
 include_directories(.)
 
 add_executable(smzy
-        C_study/day_33/contact.c
-        C_study/day_33/contact.h
+        C_study/day_34/contact.c
+        C_study/day_34/contact.h
 )
