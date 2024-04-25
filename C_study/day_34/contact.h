@@ -25,3 +25,5 @@ typedef struct Contact{
 void InitContact(Contact* pc);
 void AddContact(Contact* pc);
 void PrintContact(const Contact* pc);
+void DelContact(Contact *pc);
+void SearchContact(Contact *pc);

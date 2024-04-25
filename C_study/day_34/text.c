@@ -37,6 +37,7 @@ int main(){
                 AddContact(&con);
                 break;
             case DEL:
+                DelContact(&con);
                 break;
             case SEARCH:
                 break;
