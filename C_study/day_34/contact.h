@@ -2,6 +2,7 @@
 // Created by 20212 on 24-4-25.
 //
 #include <stdio.h>
+#include <string.h>
 #define MAX_NAME 20
 #define MAX_SEX 10
 #define MAX_TELE 12
@@ -9,15 +10,18 @@
 #define MAX 1000
 //
 //typedef [existing_data_type] [new_data_type_name];
-//typedef æ˜¯ C è¯­è¨€ä¸­ç”¨æ¥ä¸ºå·²æœ‰çš„æ•°æ®ç±»å‹å®šä¹‰æ–°çš„åç§°çš„å…³é”®å­—
+//typedef ÊÇ C ÓïÑÔÖĞÓÃÀ´ÎªÒÑÓĞµÄÊı¾İÀàĞÍ¶¨ÒåĞÂµÄÃû³ÆµÄ¹Ø¼ü×Ö
 typedef struct PeoInfo{
     char name[MAX_NAME];
     char sex[MAX_SEX];
     int age;
     char tele[MAX_TELE];
-    char addr[MAX_ADDR]
-}PeoInfo;//ç»™struct PeoInfoé‡å‘½åä¸ºPeoInfo
+    char addr[MAX_ADDR];
+}PeoInfo;//¸østruct PeoInfoÖØÃüÃûÎªPeoInfo
 typedef struct Contact{
-    PeoInfo data[MAX];//å­˜æ”¾æ·»åŠ è¿›æ¥äººçš„ä¿¡æ¯
-    int sz;//è®°å½•å½“å‰é€šè®¯å½•ä¸­æœ‰æ•ˆä¿¡æ¯çš„ä¸ªæ•°
+    PeoInfo data[MAX];//´æ·ÅÌí¼Ó½øÀ´ÈËµÄĞÅÏ¢ ´´½¨Ò»¸öPeoInfoÊı×é
+    int sz;//¼ÇÂ¼µ±Ç°Í¨Ñ¶Â¼ÖĞÓĞĞ§ĞÅÏ¢µÄ¸öÊı
 }Contact;
+void InitContact(Contact* pc);
+void AddContact(Contact* pc);
+void PrintContact(const Contact* pc);

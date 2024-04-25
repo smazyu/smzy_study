@@ -1,47 +1,40 @@
-//
-// Created by 20212 on 24-4-25.
-//
-
-#include "C_study/day_33/contact.h"
-void menu(){
-    printf("************************************");
-    printf("*******1.add ****** 2.del*********************");
-    printf("*******3.search*****4.modify*******************");
-    printf("*******5.sort ******6.print*********************");
-    printf("*******0.exit****************************");
-    printf("************************************");
+#include "contact.h"
+void InitContact(Contact *pc){
+    pc -> sz = 0;
+    //memset() ÄÚ´æÉèÖÃ
+    //dataÊÇÊı×éÃû£¬Ö¸ÏòÊ×ÔªËØ¿Õ¼äµÄµØÖ·
+    memset(pc -> data,0,sizeof(pc -> data));
 }
-enum Option{
-    EXIT,
-    ADD,
-    DEL,
-    SEARCH,
-    SORT,
-    PRINT
-};
-int main(){
-    int input = 0;
-    PeoInfo data[MAX];
-    int sz = 0;
-    do{
-        menu();
-        printf("è¯·é€‰æ‹© ï¼š->");
-        scanf("%d",&input);
-        switch(input){
-            case ADD:
-                //å¢åŠ äººçš„ä¿¡æ¯
-                AddContact();
-                break;
-            case DEL:
-                break;
-            case SEARCH:
-                break;
-            case SORT:
-                break;
-            case PRINT:
-                break;
-        }
-
-    }while(input != EXIT);
-    return 0;
+void AddContact(Contact *pc){
+    if(pc -> sz == MAX){
+        printf("Í¨Ñ¶Â¼ÒÑÂú£¬ÎŞ·¨Ìí¼Ó");
+        return;
+    }
+    //Ôö¼ÓÒ»¸öÈËµÄĞÅÏ¢
+    printf("ÇëÊäÈëÃû×Ö>");
+    scanf("%s",pc -> data[pc->sz].name);//nameÊÇÒ»¸öÊı×é£¬ËùÒÔ²»ĞèÒªÈ¡µØÖ·
+    printf("ÇëÊäÈëÄêÁä>");
+    scanf("%d",&(pc -> data[pc -> sz].age));
+    printf("ÇëÊäÈëĞÔ±ğ>");
+    scanf("%s",pc -> data[pc->sz].sex);
+    printf("ÇëÊäÈëµç»°>");
+    scanf("%s",pc -> data[pc->sz].tele);
+    printf("ÇëÊäÈëµØÖ·>");
+    scanf("%s",pc -> data[pc->sz].addr);
+    pc -> sz ++;
+    printf("Ìí¼Ó³É¹¦\n");
+}
+void PrintContact(const Contact *pc){
+    int i = 0;
+    //´òÓ¡±êÌâ
+    printf("%10s\t%10s\t%10s\t%12s\t%10s\t\n","Ãû×Ö","ÄêÁä","ĞÔ±ğ","µç»°","µØÖ·");
+    for(i = 0;i < pc -> sz;i++){
+        printf("%10s\t%10d\t%10s\t%12s\t%10s\t\n",
+               pc ->data[i].name,
+               pc ->data[i].age,
+               pc -> data[i].sex,
+               pc -> data[i].tele,
+               pc -> data[i].addr
+        );
+    }
 }

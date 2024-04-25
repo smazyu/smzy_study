@@ -8,4 +8,5 @@ include_directories(.)
 add_executable(smzy
         C_study/day_34/contact.c
         C_study/day_34/contact.h
+        C_study/day_34/text.c
 )

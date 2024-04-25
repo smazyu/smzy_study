@@ -2,7 +2,7 @@
 // Created by 20212 on 24-4-25.
 //
 
-#include "C_study/day_33/contact.h"
+#include "C_study/day_33/contact_old.h"
 void menu(){
     printf("************************************");
     printf("*******1.add ****** 2.del*********************");
