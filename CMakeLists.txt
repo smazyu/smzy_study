@@ -7,4 +7,5 @@ include_directories(.)
 
 add_executable(smzy
         C_study/day_35/DynamicMemoryClassicQuestion.c
+        C_study/day_36/FlexibleArray.c
 )
