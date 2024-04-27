@@ -6,6 +6,5 @@ set(CMAKE_C_STANDARD 11)
 include_directories(.)
 
 add_executable(smzy
-        C_study/day_35/DynamicMemoryClassicQuestion.c
-        C_study/day_36/FlexibleArray.c
+        C_study/day_37/file.c
 )
