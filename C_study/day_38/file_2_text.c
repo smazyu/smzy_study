@@ -49,3 +49,28 @@
 //fgets The function returns a null pointer when reading ends. During normal reading, it returns the starting address of the string space.
 //fread When the function reads, it returns the number of complete elements actually read. If it is found that the number of complete elements read is less than the specified number of elements,
 //This is the last read
+
+//feof determine the type of file reading end
+
+int main(){
+    FILE* pfread = fopen("../C_study/day_38/text.txt","r");
+    if(pfread == NULL){
+        return 1;
+    }
+    FILE *pfwrite = fopen("../C_study/day_38/text.txt_2","w");
+    if(pfwrite == NULL){
+        fclose(pfread);
+        pfread = NULL;
+        return 1;
+    }
+    int ch = 0;
+    while((ch = fgetc(pfread)) != EOF){
+        fputc(ch,pfwrite);
+    }
+    fclose(pfread);
+    pfread = NULL;
+    fclose(pfwrite);
+    pfwrite = NULL;
+    return 0;
+}
+
