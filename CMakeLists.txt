@@ -8,5 +8,6 @@ include_directories(.)
 add_executable(smzy
         C_study/day_38/file_2.c
         C_study/day_38/file_2_text.c
+        C_study/day_39/预处理.c
 
 )
