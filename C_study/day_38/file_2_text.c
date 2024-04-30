@@ -52,25 +52,25 @@
 
 //feof determine the type of file reading end
 
-int main(){
-    FILE* pfread = fopen("../C_study/day_38/text.txt","r");
-    if(pfread == NULL){
-        return 1;
-    }
-    FILE *pfwrite = fopen("../C_study/day_38/text.txt_2","w");
-    if(pfwrite == NULL){
-        fclose(pfread);
-        pfread = NULL;
-        return 1;
-    }
-    int ch = 0;
-    while((ch = fgetc(pfread)) != EOF){
-        fputc(ch,pfwrite);
-    }
-    fclose(pfread);
-    pfread = NULL;
-    fclose(pfwrite);
-    pfwrite = NULL;
-    return 0;
-}
+//int main(){
+//    FILE* pfread = fopen("../C_study/day_38/text.txt","r");
+//    if(pfread == NULL){
+//        return 1;
+//    }
+//    FILE *pfwrite = fopen("../C_study/day_38/text.txt_2","w");
+//    if(pfwrite == NULL){
+//        fclose(pfread);
+//        pfread = NULL;
+//        return 1;
+//    }
+//    int ch = 0;
+//    while((ch = fgetc(pfread)) != EOF){
+//        fputc(ch,pfwrite);
+//    }
+//    fclose(pfread);
+//    pfread = NULL;
+//    fclose(pfwrite);
+//    pfwrite = NULL;
+//    return 0;
+//}
 
