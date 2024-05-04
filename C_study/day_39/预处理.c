@@ -4,4 +4,4 @@
 //程序环境与预处理
 //翻译环境，使test.c -> test.exe
 //test.c contact.c common.c
-//test.c
+//test.c 编译器 -> test.obj

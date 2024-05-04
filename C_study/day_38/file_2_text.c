@@ -63,6 +63,7 @@
 //        pfread = NULL;
 //        return 1;
 //    }
+
 //    int ch = 0;
 //    while((ch = fgetc(pfread)) != EOF){
 //        fputc(ch,pfwrite);
