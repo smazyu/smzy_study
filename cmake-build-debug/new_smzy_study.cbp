@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="new_smzy_study"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="msvc8"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="E:/GitHub/new_smzy_study/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f E:\GitHub\new_smzy_study\cmake-build-debug\Makefile VERBOSE=1 all"/>
+					<CompileFile command="nmake /NOLOGO /f E:\GitHub\new_smzy_study\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f E:\GitHub\new_smzy_study\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f E:\GitHub\new_smzy_study\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="smzy">
+				<Option output="E:/GitHub/new_smzy_study/cmake-build-debug/smzy.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="E:/GitHub/new_smzy_study/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="E:/GitHub/new_smzy_study/."/>
+					<Add directory="C:\Program Files\Microsoft Visual Studio\2022\Professional\VC\Tools\MSVC\14.39.33519\include"/>
+					<Add directory="C:\Program Files\Microsoft Visual Studio\2022\Professional\VC\Tools\MSVC\14.39.33519\ATLMFC\include"/>
+					<Add directory="C:\Program Files\Microsoft Visual Studio\2022\Professional\VC\Auxiliary\VS\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.22621.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f E:\GitHub\new_smzy_study\cmake-build-debug\Makefile VERBOSE=1 smzy"/>
+					<CompileFile command="nmake /NOLOGO /f E:\GitHub\new_smzy_study\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f E:\GitHub\new_smzy_study\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f E:\GitHub\new_smzy_study\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="smzy/fast">
+				<Option output="E:/GitHub/new_smzy_study/cmake-build-debug/smzy.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="E:/GitHub/new_smzy_study/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="E:/GitHub/new_smzy_study/."/>
+					<Add directory="C:\Program Files\Microsoft Visual Studio\2022\Professional\VC\Tools\MSVC\14.39.33519\include"/>
+					<Add directory="C:\Program Files\Microsoft Visual Studio\2022\Professional\VC\Tools\MSVC\14.39.33519\ATLMFC\include"/>
+					<Add directory="C:\Program Files\Microsoft Visual Studio\2022\Professional\VC\Auxiliary\VS\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.22621.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\\include\10.0.22621.0\\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f E:\GitHub\new_smzy_study\cmake-build-debug\Makefile VERBOSE=1 smzy/fast"/>
+					<CompileFile command="nmake /NOLOGO /f E:\GitHub\new_smzy_study\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f E:\GitHub\new_smzy_study\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f E:\GitHub\new_smzy_study\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="E:/GitHub/new_smzy_study/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f E:\GitHub\new_smzy_study\cmake-build-debug\Makefile VERBOSE=1 edit_cache"/>
+					<CompileFile command="nmake /NOLOGO /f E:\GitHub\new_smzy_study\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f E:\GitHub\new_smzy_study\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f E:\GitHub\new_smzy_study\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="E:/GitHub/new_smzy_study/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f E:\GitHub\new_smzy_study\cmake-build-debug\Makefile VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="nmake /NOLOGO /f E:\GitHub\new_smzy_study\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f E:\GitHub\new_smzy_study\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f E:\GitHub\new_smzy_study\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="E:/GitHub/new_smzy_study/C_study/day_38/file_2.c">
+			<Option target="smzy"/>
+		</Unit>
+		<Unit filename="E:/GitHub/new_smzy_study/C_study/day_38/file_2_text.c">
+			<Option target="smzy"/>
+		</Unit>
+		<Unit filename="E:/GitHub/new_smzy_study/C_study/day_39/预处理2.c">
+			<Option target="smzy"/>
+		</Unit>
+		<Unit filename="E:/GitHub/new_smzy_study/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

@@ -39,9 +39,10 @@ int main(){
 }
 **/
 #include <stdio.h>
-#define PRINT(x) printf("the val of " #x /*#x代表x所对应的字符串*/" is %d",x)
+#define PRINT(x,format) printf("the val of " #x /*#x代表x所对应的字符串*/ " is " format,x)
 int main(){
     int a = 10;
     int b = 20;
-    PRINT(a);
+    PRINT(a,"%d");
 }
+//define 完全替换 #只能用于宏 将宏对应的变量的字符串名字

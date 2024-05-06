@@ -1,0 +1,10 @@
+^E:\GITHUB\NEW_SMZY_STUDY\CMAKELISTS.TXT
+setlocal
+"E:\Program Files\CMake\bin\cmake.exe" -SE:/GitHub/new_smzy_study -BE:/GitHub/new_smzy_study/build --check-stamp-file E:/GitHub/new_smzy_study/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
