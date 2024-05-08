@@ -29,7 +29,16 @@
     二分查找 O(log2 n)
 
     时间复杂度计算得想它的思想
+
+
+    #include <stdio.h>
+    long long Fibonacci(int N){
+        long long* fibArray = malloc(sizeof(long long )* N);
+        fibArray[0]
+    }
+    int main(){
+        
+    }
+    时间复杂度不计算时间，计算大概的运算次数
+    空间复杂度不计算空间，计算大概定义的变量个数
 #endif
-int main(){
-    
-}
