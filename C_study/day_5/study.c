@@ -11,7 +11,7 @@
 //sizeof也不是关键字，因为sizeof是一个运算符
 //指针类型一般是四个或者八个字节
 //static修饰的变量也可以修改
-
+#if 0 
 //#include <stdio.h>
 //int Max(int x,int y){
 //    return x > y ? x : y;
@@ -190,6 +190,7 @@ int main(){
 //    scanf("%s",password);
 }
 
+#endif
 
 
 

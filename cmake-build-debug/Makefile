@@ -118,77 +118,29 @@ smzy\fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\smzy.dir\build
 .PHONY : smzy\fast
 
-C_study\day_38\file_2.obj: C_study\day_38\file_2.c.obj
-.PHONY : C_study\day_38\file_2.obj
+C_study\day_5\study.obj: C_study\day_5\study.c.obj
+.PHONY : C_study\day_5\study.obj
 
 # target to build an object file
-C_study\day_38\file_2.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\smzy.dir\C_study\day_38\file_2.c.obj
-.PHONY : C_study\day_38\file_2.c.obj
+C_study\day_5\study.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\smzy.dir\C_study\day_5\study.c.obj
+.PHONY : C_study\day_5\study.c.obj
 
-C_study\day_38\file_2.i: C_study\day_38\file_2.c.i
-.PHONY : C_study\day_38\file_2.i
-
-# target to preprocess a source file
-C_study\day_38\file_2.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\smzy.dir\C_study\day_38\file_2.c.i
-.PHONY : C_study\day_38\file_2.c.i
-
-C_study\day_38\file_2.s: C_study\day_38\file_2.c.s
-.PHONY : C_study\day_38\file_2.s
-
-# target to generate assembly for a file
-C_study\day_38\file_2.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\smzy.dir\C_study\day_38\file_2.c.s
-.PHONY : C_study\day_38\file_2.c.s
-
-C_study\day_38\file_2_text.obj: C_study\day_38\file_2_text.c.obj
-.PHONY : C_study\day_38\file_2_text.obj
-
-# target to build an object file
-C_study\day_38\file_2_text.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\smzy.dir\C_study\day_38\file_2_text.c.obj
-.PHONY : C_study\day_38\file_2_text.c.obj
-
-C_study\day_38\file_2_text.i: C_study\day_38\file_2_text.c.i
-.PHONY : C_study\day_38\file_2_text.i
+C_study\day_5\study.i: C_study\day_5\study.c.i
+.PHONY : C_study\day_5\study.i
 
 # target to preprocess a source file
-C_study\day_38\file_2_text.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\smzy.dir\C_study\day_38\file_2_text.c.i
-.PHONY : C_study\day_38\file_2_text.c.i
+C_study\day_5\study.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\smzy.dir\C_study\day_5\study.c.i
+.PHONY : C_study\day_5\study.c.i
 
-C_study\day_38\file_2_text.s: C_study\day_38\file_2_text.c.s
-.PHONY : C_study\day_38\file_2_text.s
-
-# target to generate assembly for a file
-C_study\day_38\file_2_text.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\smzy.dir\C_study\day_38\file_2_text.c.s
-.PHONY : C_study\day_38\file_2_text.c.s
-
-C_study\day_39\预处理2.obj: C_study\day_39\预处理2.c.obj
-.PHONY : C_study\day_39\预处理2.obj
-
-# target to build an object file
-C_study\day_39\预处理2.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\smzy.dir\C_study\day_39\预处理2.c.obj
-.PHONY : C_study\day_39\预处理2.c.obj
-
-C_study\day_39\预处理2.i: C_study\day_39\预处理2.c.i
-.PHONY : C_study\day_39\预处理2.i
-
-# target to preprocess a source file
-C_study\day_39\预处理2.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\smzy.dir\C_study\day_39\预处理2.c.i
-.PHONY : C_study\day_39\预处理2.c.i
-
-C_study\day_39\预处理2.s: C_study\day_39\预处理2.c.s
-.PHONY : C_study\day_39\预处理2.s
+C_study\day_5\study.s: C_study\day_5\study.c.s
+.PHONY : C_study\day_5\study.s
 
 # target to generate assembly for a file
-C_study\day_39\预处理2.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\smzy.dir\C_study\day_39\预处理2.c.s
-.PHONY : C_study\day_39\预处理2.c.s
+C_study\day_5\study.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\smzy.dir\C_study\day_5\study.c.s
+.PHONY : C_study\day_5\study.c.s
 
 # Help Target
 help:
@@ -199,15 +151,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... smzy
-	@echo ... C_study/day_38/file_2.obj
-	@echo ... C_study/day_38/file_2.i
-	@echo ... C_study/day_38/file_2.s
-	@echo ... C_study/day_38/file_2_text.obj
-	@echo ... C_study/day_38/file_2_text.i
-	@echo ... C_study/day_38/file_2_text.s
-	@echo ... C_study/day_39/预处理2.obj
-	@echo ... C_study/day_39/预处理2.i
-	@echo ... C_study/day_39/预处理2.s
+	@echo ... C_study/day_5/study.obj
+	@echo ... C_study/day_5/study.i
+	@echo ... C_study/day_5/study.s
 .PHONY : help
 
 

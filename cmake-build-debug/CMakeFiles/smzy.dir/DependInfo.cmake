@@ -8,9 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "E:/GitHub/new_smzy_study/C_study/day_38/file_2.c" "CMakeFiles/smzy.dir/C_study/day_38/file_2.c.obj" "msvc" "CMakeFiles/smzy.dir/C_study/day_38/file_2.c.obj.d"
-  "E:/GitHub/new_smzy_study/C_study/day_38/file_2_text.c" "CMakeFiles/smzy.dir/C_study/day_38/file_2_text.c.obj" "msvc" "CMakeFiles/smzy.dir/C_study/day_38/file_2_text.c.obj.d"
-  "E:/GitHub/new_smzy_study/C_study/day_39/预处理2.c" "CMakeFiles/smzy.dir/C_study/day_39/预处理2.c.obj" "msvc" "CMakeFiles/smzy.dir/C_study/day_39/预处理2.c.obj.d"
+  "E:/GitHub/new_smzy_study/C_study/day_5/study.c" "CMakeFiles/smzy.dir/C_study/day_5/study.c.obj" "msvc" "CMakeFiles/smzy.dir/C_study/day_5/study.c.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

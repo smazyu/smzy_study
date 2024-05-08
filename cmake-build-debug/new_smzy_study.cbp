@@ -86,13 +86,7 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="E:/GitHub/new_smzy_study/C_study/day_38/file_2.c">
-			<Option target="smzy"/>
-		</Unit>
-		<Unit filename="E:/GitHub/new_smzy_study/C_study/day_38/file_2_text.c">
-			<Option target="smzy"/>
-		</Unit>
-		<Unit filename="E:/GitHub/new_smzy_study/C_study/day_39/预处理2.c">
+		<Unit filename="E:/GitHub/new_smzy_study/C_study/day_5/study.c">
 			<Option target="smzy"/>
 		</Unit>
 		<Unit filename="E:/GitHub/new_smzy_study/CMakeLists.txt">

@@ -317,7 +317,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="E:\GitHub\new_smzy_study\C_study\day_26\指针练习1.c" />
+    <ClCompile Include="E:\GitHub\new_smzy_study\C_study\day_5\study.c" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="E:\GitHub\new_smzy_study\build\ZERO_CHECK.vcxproj">
