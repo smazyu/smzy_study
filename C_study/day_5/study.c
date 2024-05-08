@@ -171,9 +171,9 @@
 //    }
 //}
 int main(){
-    printf("请输入密码");
-    char password[30] = {0};
-    scanf(" %s",password);
+    // printf("请输入密码");
+    // char password[30] = {0};
+    // scanf(" %s",password);
     printf("请确认密码\n");
     int ch = getchar();
     int i = 1;
