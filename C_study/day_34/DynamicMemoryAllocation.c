@@ -2,16 +2,15 @@
 // Created by 20212 on 24-4-26.
 //
 /**
-StackArea LocalVariables FunctionParameters
-
-HeapArea DynamicMemoryAllocation
- malloc calloc
- free realloc
-
-staticArea
-global variables
-static variables
+    StackArea LocalVariables FunctionParameters
+    HeapArea DynamicMemoryAllocation
+    malloc calloc
+    free realloc
+    staticArea
+    global variables
+    static variables
 **/
+#if 0 
 #include <malloc.h>
 #include <stdio.h>
 //DynamicMemoryAllocation
@@ -39,5 +38,5 @@ int main(){
     p = NULL;
     //malloc --> free appears in pairs
     return 0;//do it yourself,set p as a null pointer
-
 }
+#endif
