@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="smzy"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="E:/GitHub/smzy_study/cmake-build-debug-mingw"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="E:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/mingw32-make.exe -f &quot;E:/GitHub/smzy_study/cmake-build-debug-mingw/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="E:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/mingw32-make.exe -f &quot;E:/GitHub/smzy_study/cmake-build-debug-mingw/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="E:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/mingw32-make.exe -f &quot;E:/GitHub/smzy_study/cmake-build-debug-mingw/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="E:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/mingw32-make.exe -f &quot;E:/GitHub/smzy_study/cmake-build-debug-mingw/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="E:/GitHub/smzy_study/cmake-build-debug-mingw"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="E:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/mingw32-make.exe -f &quot;E:/GitHub/smzy_study/cmake-build-debug-mingw/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="E:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/mingw32-make.exe -f &quot;E:/GitHub/smzy_study/cmake-build-debug-mingw/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="E:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/mingw32-make.exe -f &quot;E:/GitHub/smzy_study/cmake-build-debug-mingw/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="E:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/mingw32-make.exe -f &quot;E:/GitHub/smzy_study/cmake-build-debug-mingw/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="E:/GitHub/smzy_study/cmake-build-debug-mingw"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="E:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/mingw32-make.exe -f &quot;E:/GitHub/smzy_study/cmake-build-debug-mingw/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="E:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/mingw32-make.exe -f &quot;E:/GitHub/smzy_study/cmake-build-debug-mingw/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="E:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/mingw32-make.exe -f &quot;E:/GitHub/smzy_study/cmake-build-debug-mingw/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="E:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/mingw32-make.exe -f &quot;E:/GitHub/smzy_study/cmake-build-debug-mingw/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="E:/GitHub/smzy_study/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
