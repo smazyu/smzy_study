@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.27)
-project(new_smzy_study C)
+project(smzy_study C)
 
 set(CMAKE_C_STANDARD 11)
 
