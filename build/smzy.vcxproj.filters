@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="E:\GitHub\new_smzy_study\C_study\day_5\study.c">
+    <ClCompile Include="E:\GitHub\new_smzy_study\算法练习\消失的数字.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
