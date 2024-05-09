@@ -8,7 +8,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "E:/GitHub/new_smzy_study/C_study/day_5/study.c" "CMakeFiles/smzy.dir/C_study/day_5/study.c.obj" "msvc" "CMakeFiles/smzy.dir/C_study/day_5/study.c.obj.d"
+  "E:/GitHub/new_smzy_study/数据结构/day_2/Seqlist.c" "CMakeFiles/smzy.dir/数据结构/day_2/Seqlist.c.obj" "msvc" "CMakeFiles/smzy.dir/数据结构/day_2/Seqlist.c.obj.d"
+  "E:/GitHub/new_smzy_study/数据结构/day_2/text.c" "CMakeFiles/smzy.dir/数据结构/day_2/text.c.obj" "msvc" "CMakeFiles/smzy.dir/数据结构/day_2/text.c.obj.d"
+  "E:/GitHub/new_smzy_study/算法练习/消失的数字.c" "CMakeFiles/smzy.dir/算法练习/消失的数字.c.obj" "msvc" "CMakeFiles/smzy.dir/算法练习/消失的数字.c.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

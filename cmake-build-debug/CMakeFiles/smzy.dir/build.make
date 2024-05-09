@@ -58,37 +58,81 @@ include CMakeFiles\smzy.dir\progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles\smzy.dir\flags.make
 
-CMakeFiles\smzy.dir\C_study\day_5\study.c.obj: CMakeFiles\smzy.dir\flags.make
-CMakeFiles\smzy.dir\C_study\day_5\study.c.obj: E:\GitHub\new_smzy_study\C_study\day_5\study.c
-CMakeFiles\smzy.dir\C_study\day_5\study.c.obj: CMakeFiles\smzy.dir\compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\GitHub\new_smzy_study\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/smzy.dir/C_study/day_5/study.c.obj"
-	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\smzy.dir\C_study\day_5\study.c.obj.d --working-dir=E:\GitHub\new_smzy_study\cmake-build-debug --filter-prefix="注意: 包含文件:  " -- C:\PROGRA~1\MICROS~3\2022\PROFES~1\VC\Tools\MSVC\1439~1.335\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\smzy.dir\C_study\day_5\study.c.obj /FdCMakeFiles\smzy.dir\ /FS -c E:\GitHub\new_smzy_study\C_study\day_5\study.c
+CMakeFiles\smzy.dir\算法练习\消失的数字.c.obj: CMakeFiles\smzy.dir\flags.make
+CMakeFiles\smzy.dir\算法练习\消失的数字.c.obj: E:\GitHub\new_smzy_study\算法练习\消失的数字.c
+CMakeFiles\smzy.dir\算法练习\消失的数字.c.obj: CMakeFiles\smzy.dir\compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\GitHub\new_smzy_study\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/smzy.dir/算法练习/消失的数字.c.obj"
+	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\smzy.dir\算法练习\消失的数字.c.obj.d --working-dir=E:\GitHub\new_smzy_study\cmake-build-debug --filter-prefix="注意: 包含文件:  " -- C:\PROGRA~1\MICROS~3\2022\PROFES~1\VC\Tools\MSVC\1439~1.335\bin\Hostx64\x64\cl.exe @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\smzy.dir\算法练习\消失的数字.c.obj /FdCMakeFiles\smzy.dir\ /FS -c E:\GitHub\new_smzy_study\算法练习\消失的数字.c
 <<
 
-CMakeFiles\smzy.dir\C_study\day_5\study.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/smzy.dir/C_study/day_5/study.c.i"
-	C:\PROGRA~1\MICROS~3\2022\PROFES~1\VC\Tools\MSVC\1439~1.335\bin\Hostx64\x64\cl.exe > CMakeFiles\smzy.dir\C_study\day_5\study.c.i @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\GitHub\new_smzy_study\C_study\day_5\study.c
+CMakeFiles\smzy.dir\算法练习\消失的数字.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/smzy.dir/算法练习/消失的数字.c.i"
+	C:\PROGRA~1\MICROS~3\2022\PROFES~1\VC\Tools\MSVC\1439~1.335\bin\Hostx64\x64\cl.exe > CMakeFiles\smzy.dir\算法练习\消失的数字.c.i @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\GitHub\new_smzy_study\算法练习\消失的数字.c
 <<
 
-CMakeFiles\smzy.dir\C_study\day_5\study.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/smzy.dir/C_study/day_5/study.c.s"
+CMakeFiles\smzy.dir\算法练习\消失的数字.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/smzy.dir/算法练习/消失的数字.c.s"
 	C:\PROGRA~1\MICROS~3\2022\PROFES~1\VC\Tools\MSVC\1439~1.335\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\smzy.dir\C_study\day_5\study.c.s /c E:\GitHub\new_smzy_study\C_study\day_5\study.c
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\smzy.dir\算法练习\消失的数字.c.s /c E:\GitHub\new_smzy_study\算法练习\消失的数字.c
+<<
+
+CMakeFiles\smzy.dir\数据结构\day_2\text.c.obj: CMakeFiles\smzy.dir\flags.make
+CMakeFiles\smzy.dir\数据结构\day_2\text.c.obj: E:\GitHub\new_smzy_study\数据结构\day_2\text.c
+CMakeFiles\smzy.dir\数据结构\day_2\text.c.obj: CMakeFiles\smzy.dir\compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\GitHub\new_smzy_study\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/smzy.dir/数据结构/day_2/text.c.obj"
+	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\smzy.dir\数据结构\day_2\text.c.obj.d --working-dir=E:\GitHub\new_smzy_study\cmake-build-debug --filter-prefix="注意: 包含文件:  " -- C:\PROGRA~1\MICROS~3\2022\PROFES~1\VC\Tools\MSVC\1439~1.335\bin\Hostx64\x64\cl.exe @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\smzy.dir\数据结构\day_2\text.c.obj /FdCMakeFiles\smzy.dir\ /FS -c E:\GitHub\new_smzy_study\数据结构\day_2\text.c
+<<
+
+CMakeFiles\smzy.dir\数据结构\day_2\text.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/smzy.dir/数据结构/day_2/text.c.i"
+	C:\PROGRA~1\MICROS~3\2022\PROFES~1\VC\Tools\MSVC\1439~1.335\bin\Hostx64\x64\cl.exe > CMakeFiles\smzy.dir\数据结构\day_2\text.c.i @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\GitHub\new_smzy_study\数据结构\day_2\text.c
+<<
+
+CMakeFiles\smzy.dir\数据结构\day_2\text.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/smzy.dir/数据结构/day_2/text.c.s"
+	C:\PROGRA~1\MICROS~3\2022\PROFES~1\VC\Tools\MSVC\1439~1.335\bin\Hostx64\x64\cl.exe @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\smzy.dir\数据结构\day_2\text.c.s /c E:\GitHub\new_smzy_study\数据结构\day_2\text.c
+<<
+
+CMakeFiles\smzy.dir\数据结构\day_2\Seqlist.c.obj: CMakeFiles\smzy.dir\flags.make
+CMakeFiles\smzy.dir\数据结构\day_2\Seqlist.c.obj: E:\GitHub\new_smzy_study\数据结构\day_2\Seqlist.c
+CMakeFiles\smzy.dir\数据结构\day_2\Seqlist.c.obj: CMakeFiles\smzy.dir\compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\GitHub\new_smzy_study\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/smzy.dir/数据结构/day_2/Seqlist.c.obj"
+	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\smzy.dir\数据结构\day_2\Seqlist.c.obj.d --working-dir=E:\GitHub\new_smzy_study\cmake-build-debug --filter-prefix="注意: 包含文件:  " -- C:\PROGRA~1\MICROS~3\2022\PROFES~1\VC\Tools\MSVC\1439~1.335\bin\Hostx64\x64\cl.exe @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\smzy.dir\数据结构\day_2\Seqlist.c.obj /FdCMakeFiles\smzy.dir\ /FS -c E:\GitHub\new_smzy_study\数据结构\day_2\Seqlist.c
+<<
+
+CMakeFiles\smzy.dir\数据结构\day_2\Seqlist.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/smzy.dir/数据结构/day_2/Seqlist.c.i"
+	C:\PROGRA~1\MICROS~3\2022\PROFES~1\VC\Tools\MSVC\1439~1.335\bin\Hostx64\x64\cl.exe > CMakeFiles\smzy.dir\数据结构\day_2\Seqlist.c.i @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\GitHub\new_smzy_study\数据结构\day_2\Seqlist.c
+<<
+
+CMakeFiles\smzy.dir\数据结构\day_2\Seqlist.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/smzy.dir/数据结构/day_2/Seqlist.c.s"
+	C:\PROGRA~1\MICROS~3\2022\PROFES~1\VC\Tools\MSVC\1439~1.335\bin\Hostx64\x64\cl.exe @<<
+ /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\smzy.dir\数据结构\day_2\Seqlist.c.s /c E:\GitHub\new_smzy_study\数据结构\day_2\Seqlist.c
 <<
 
 # Object files for target smzy
 smzy_OBJECTS = \
-"CMakeFiles\smzy.dir\C_study\day_5\study.c.obj"
+"CMakeFiles\smzy.dir\算法练习\消失的数字.c.obj" \
+"CMakeFiles\smzy.dir\数据结构\day_2\text.c.obj" \
+"CMakeFiles\smzy.dir\数据结构\day_2\Seqlist.c.obj"
 
 # External object files for target smzy
 smzy_EXTERNAL_OBJECTS =
 
-smzy.exe: CMakeFiles\smzy.dir\C_study\day_5\study.c.obj
+smzy.exe: CMakeFiles\smzy.dir\算法练习\消失的数字.c.obj
+smzy.exe: CMakeFiles\smzy.dir\数据结构\day_2\text.c.obj
+smzy.exe: CMakeFiles\smzy.dir\数据结构\day_2\Seqlist.c.obj
 smzy.exe: CMakeFiles\smzy.dir\build.make
 smzy.exe: CMakeFiles\smzy.dir\objects1.rsp
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=E:\GitHub\new_smzy_study\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable smzy.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=E:\GitHub\new_smzy_study\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable smzy.exe"
 	"C:\Program Files\JetBrains\CLion 2023.3.4\bin\cmake\win\x64\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\smzy.dir --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100226~1.0\x64\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100226~1.0\x64\mt.exe --manifests -- C:\PROGRA~1\MICROS~3\2022\PROFES~1\VC\Tools\MSVC\1439~1.335\bin\Hostx64\x64\link.exe /nologo @CMakeFiles\smzy.dir\objects1.rsp @<<
  /out:smzy.exe /implib:smzy.lib /pdb:E:\GitHub\new_smzy_study\cmake-build-debug\smzy.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib 
 <<

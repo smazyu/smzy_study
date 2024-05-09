@@ -118,29 +118,77 @@ smzy\fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\smzy.dir\build
 .PHONY : smzy\fast
 
-C_study\day_5\study.obj: C_study\day_5\study.c.obj
-.PHONY : C_study\day_5\study.obj
+数据结构\day_2\Seqlist.obj: 数据结构\day_2\Seqlist.c.obj
+.PHONY : 数据结构\day_2\Seqlist.obj
 
 # target to build an object file
-C_study\day_5\study.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\smzy.dir\C_study\day_5\study.c.obj
-.PHONY : C_study\day_5\study.c.obj
+数据结构\day_2\Seqlist.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\smzy.dir\数据结构\day_2\Seqlist.c.obj
+.PHONY : 数据结构\day_2\Seqlist.c.obj
 
-C_study\day_5\study.i: C_study\day_5\study.c.i
-.PHONY : C_study\day_5\study.i
+数据结构\day_2\Seqlist.i: 数据结构\day_2\Seqlist.c.i
+.PHONY : 数据结构\day_2\Seqlist.i
 
 # target to preprocess a source file
-C_study\day_5\study.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\smzy.dir\C_study\day_5\study.c.i
-.PHONY : C_study\day_5\study.c.i
+数据结构\day_2\Seqlist.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\smzy.dir\数据结构\day_2\Seqlist.c.i
+.PHONY : 数据结构\day_2\Seqlist.c.i
 
-C_study\day_5\study.s: C_study\day_5\study.c.s
-.PHONY : C_study\day_5\study.s
+数据结构\day_2\Seqlist.s: 数据结构\day_2\Seqlist.c.s
+.PHONY : 数据结构\day_2\Seqlist.s
 
 # target to generate assembly for a file
-C_study\day_5\study.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\smzy.dir\C_study\day_5\study.c.s
-.PHONY : C_study\day_5\study.c.s
+数据结构\day_2\Seqlist.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\smzy.dir\数据结构\day_2\Seqlist.c.s
+.PHONY : 数据结构\day_2\Seqlist.c.s
+
+数据结构\day_2\text.obj: 数据结构\day_2\text.c.obj
+.PHONY : 数据结构\day_2\text.obj
+
+# target to build an object file
+数据结构\day_2\text.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\smzy.dir\数据结构\day_2\text.c.obj
+.PHONY : 数据结构\day_2\text.c.obj
+
+数据结构\day_2\text.i: 数据结构\day_2\text.c.i
+.PHONY : 数据结构\day_2\text.i
+
+# target to preprocess a source file
+数据结构\day_2\text.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\smzy.dir\数据结构\day_2\text.c.i
+.PHONY : 数据结构\day_2\text.c.i
+
+数据结构\day_2\text.s: 数据结构\day_2\text.c.s
+.PHONY : 数据结构\day_2\text.s
+
+# target to generate assembly for a file
+数据结构\day_2\text.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\smzy.dir\数据结构\day_2\text.c.s
+.PHONY : 数据结构\day_2\text.c.s
+
+算法练习\消失的数字.obj: 算法练习\消失的数字.c.obj
+.PHONY : 算法练习\消失的数字.obj
+
+# target to build an object file
+算法练习\消失的数字.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\smzy.dir\算法练习\消失的数字.c.obj
+.PHONY : 算法练习\消失的数字.c.obj
+
+算法练习\消失的数字.i: 算法练习\消失的数字.c.i
+.PHONY : 算法练习\消失的数字.i
+
+# target to preprocess a source file
+算法练习\消失的数字.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\smzy.dir\算法练习\消失的数字.c.i
+.PHONY : 算法练习\消失的数字.c.i
+
+算法练习\消失的数字.s: 算法练习\消失的数字.c.s
+.PHONY : 算法练习\消失的数字.s
+
+# target to generate assembly for a file
+算法练习\消失的数字.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\smzy.dir\算法练习\消失的数字.c.s
+.PHONY : 算法练习\消失的数字.c.s
 
 # Help Target
 help:
@@ -151,9 +199,15 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... smzy
-	@echo ... C_study/day_5/study.obj
-	@echo ... C_study/day_5/study.i
-	@echo ... C_study/day_5/study.s
+	@echo ... 数据结构/day_2/Seqlist.obj
+	@echo ... 数据结构/day_2/Seqlist.i
+	@echo ... 数据结构/day_2/Seqlist.s
+	@echo ... 数据结构/day_2/text.obj
+	@echo ... 数据结构/day_2/text.i
+	@echo ... 数据结构/day_2/text.s
+	@echo ... 算法练习/消失的数字.obj
+	@echo ... 算法练习/消失的数字.i
+	@echo ... 算法练习/消失的数字.s
 .PHONY : help
 
 
