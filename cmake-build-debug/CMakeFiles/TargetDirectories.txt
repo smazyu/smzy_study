@@ -1,3 +1,0 @@
-E:/GitHub/new_smzy_study/cmake-build-debug/CMakeFiles/smzy.dir
-E:/GitHub/new_smzy_study/cmake-build-debug/CMakeFiles/edit_cache.dir
-E:/GitHub/new_smzy_study/cmake-build-debug/CMakeFiles/rebuild_cache.dir
