@@ -8,8 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "E:/GitHub/smzy_study/DataStruct/day_2/Seqlist.c" "CMakeFiles/smzy.dir/DataStruct/day_2/Seqlist.c.obj" "gcc" "CMakeFiles/smzy.dir/DataStruct/day_2/Seqlist.c.obj.d"
-  "E:/GitHub/smzy_study/DataStruct/day_2/text.c" "CMakeFiles/smzy.dir/DataStruct/day_2/text.c.obj" "gcc" "CMakeFiles/smzy.dir/DataStruct/day_2/text.c.obj.d"
+  "E:/GitHub/smzy_study/算法练习/有序数组的单一元素.c" "CMakeFiles/smzy.dir/算法练习/有序数组的单一元素.c.obj" "gcc" "CMakeFiles/smzy.dir/算法练习/有序数组的单一元素.c.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

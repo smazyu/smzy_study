@@ -3,6 +3,5 @@
  set(CMAKE_C_STANDARD 11)
  include_directories(.)
  add_executable(smzy
-         DataStruct/day_2/Seqlist.c
-         DataStruct/day_2/Seqlist.h
-         DataStruct/day_2/text.c)
+         算法练习/有序数组的单一元素.c
+ )

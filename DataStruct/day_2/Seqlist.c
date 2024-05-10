@@ -80,3 +80,5 @@ void SeqListPopFront(SL* ps ){
 //
 //void SeqListInsert(SL* ps,int pos,SLDataType x);//任意地方插入
 //void SeqListErase(SL* ps,int pos);//任意位置删除
+
+//删除元素

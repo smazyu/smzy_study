@@ -1,14 +1,8 @@
 [
 {
   "directory": "E:/GitHub/smzy_study/build",
-  "command": "\"E:\\Program Files\\mingw\\bin\\gcc.exe\"  @CMakeFiles/smzy.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles\\smzy.dir\\DataStruct\\day_2\\Seqlist.c.obj -c E:\\GitHub\\smzy_study\\DataStruct\\day_2\\Seqlist.c",
-  "file": "E:/GitHub/smzy_study/DataStruct/day_2/Seqlist.c",
-  "output": "CMakeFiles/smzy.dir/DataStruct/day_2/Seqlist.c.obj"
-},
-{
-  "directory": "E:/GitHub/smzy_study/build",
-  "command": "\"E:\\Program Files\\mingw\\bin\\gcc.exe\"  @CMakeFiles/smzy.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles\\smzy.dir\\DataStruct\\day_2\\text.c.obj -c E:\\GitHub\\smzy_study\\DataStruct\\day_2\\text.c",
-  "file": "E:/GitHub/smzy_study/DataStruct/day_2/text.c",
-  "output": "CMakeFiles/smzy.dir/DataStruct/day_2/text.c.obj"
+  "command": "\"E:\\Program Files\\mingw\\bin\\gcc.exe\"  @CMakeFiles/smzy.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles\\smzy.dir\\算法练习\\有序数组的单一元素.c.obj -c E:\\GitHub\\smzy_study\\算法练习\\有序数组的单一元素.c",
+  "file": "E:/GitHub/smzy_study/算法练习/有序数组的单一元素.c",
+  "output": "CMakeFiles/smzy.dir/算法练习/有序数组的单一元素.c.obj"
 }
 ]

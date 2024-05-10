@@ -84,13 +84,7 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="E:/GitHub/smzy_study/DataStruct/day_2/Seqlist.c">
-			<Option target="smzy"/>
-		</Unit>
-		<Unit filename="E:/GitHub/smzy_study/DataStruct/day_2/Seqlist.h">
-			<Option target="smzy"/>
-		</Unit>
-		<Unit filename="E:/GitHub/smzy_study/DataStruct/day_2/text.c">
+		<Unit filename="E:/GitHub/smzy_study/算法练习/有序数组的单一元素.c">
 			<Option target="smzy"/>
 		</Unit>
 		<Unit filename="E:/GitHub/smzy_study/CMakeLists.txt">

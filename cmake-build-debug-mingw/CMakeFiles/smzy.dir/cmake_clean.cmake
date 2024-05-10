@@ -1,8 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/smzy.dir/DataStruct/day_2/Seqlist.c.obj"
-  "CMakeFiles/smzy.dir/DataStruct/day_2/Seqlist.c.obj.d"
-  "CMakeFiles/smzy.dir/DataStruct/day_2/text.c.obj"
-  "CMakeFiles/smzy.dir/DataStruct/day_2/text.c.obj.d"
+  "CMakeFiles/smzy.dir/算法练习/有序数组的单一元素.c.obj"
+  "CMakeFiles/smzy.dir/算法练习/有序数组的单一元素.c.obj.d"
   "libsmzy.dll.a"
   "smzy.exe"
   "smzy.exe.manifest"

@@ -128,53 +128,29 @@ smzy/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/build
 .PHONY : smzy/fast
 
-DataStruct/day_2/Seqlist.obj: DataStruct/day_2/Seqlist.c.obj
-.PHONY : DataStruct/day_2/Seqlist.obj
+算法练习/有序数组的单一元素.obj: 算法练习/有序数组的单一元素.c.obj
+.PHONY : 算法练习/有序数组的单一元素.obj
 
 # target to build an object file
-DataStruct/day_2/Seqlist.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DataStruct/day_2/Seqlist.c.obj
-.PHONY : DataStruct/day_2/Seqlist.c.obj
+算法练习/有序数组的单一元素.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/算法练习/有序数组的单一元素.c.obj
+.PHONY : 算法练习/有序数组的单一元素.c.obj
 
-DataStruct/day_2/Seqlist.i: DataStruct/day_2/Seqlist.c.i
-.PHONY : DataStruct/day_2/Seqlist.i
-
-# target to preprocess a source file
-DataStruct/day_2/Seqlist.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DataStruct/day_2/Seqlist.c.i
-.PHONY : DataStruct/day_2/Seqlist.c.i
-
-DataStruct/day_2/Seqlist.s: DataStruct/day_2/Seqlist.c.s
-.PHONY : DataStruct/day_2/Seqlist.s
-
-# target to generate assembly for a file
-DataStruct/day_2/Seqlist.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DataStruct/day_2/Seqlist.c.s
-.PHONY : DataStruct/day_2/Seqlist.c.s
-
-DataStruct/day_2/text.obj: DataStruct/day_2/text.c.obj
-.PHONY : DataStruct/day_2/text.obj
-
-# target to build an object file
-DataStruct/day_2/text.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DataStruct/day_2/text.c.obj
-.PHONY : DataStruct/day_2/text.c.obj
-
-DataStruct/day_2/text.i: DataStruct/day_2/text.c.i
-.PHONY : DataStruct/day_2/text.i
+算法练习/有序数组的单一元素.i: 算法练习/有序数组的单一元素.c.i
+.PHONY : 算法练习/有序数组的单一元素.i
 
 # target to preprocess a source file
-DataStruct/day_2/text.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DataStruct/day_2/text.c.i
-.PHONY : DataStruct/day_2/text.c.i
+算法练习/有序数组的单一元素.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/算法练习/有序数组的单一元素.c.i
+.PHONY : 算法练习/有序数组的单一元素.c.i
 
-DataStruct/day_2/text.s: DataStruct/day_2/text.c.s
-.PHONY : DataStruct/day_2/text.s
+算法练习/有序数组的单一元素.s: 算法练习/有序数组的单一元素.c.s
+.PHONY : 算法练习/有序数组的单一元素.s
 
 # target to generate assembly for a file
-DataStruct/day_2/text.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DataStruct/day_2/text.c.s
-.PHONY : DataStruct/day_2/text.c.s
+算法练习/有序数组的单一元素.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/算法练习/有序数组的单一元素.c.s
+.PHONY : 算法练习/有序数组的单一元素.c.s
 
 # Help Target
 help:
@@ -185,12 +161,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... smzy
-	@echo ... DataStruct/day_2/Seqlist.obj
-	@echo ... DataStruct/day_2/Seqlist.i
-	@echo ... DataStruct/day_2/Seqlist.s
-	@echo ... DataStruct/day_2/text.obj
-	@echo ... DataStruct/day_2/text.i
-	@echo ... DataStruct/day_2/text.s
+	@echo ... 算法练习/有序数组的单一元素.obj
+	@echo ... 算法练习/有序数组的单一元素.i
+	@echo ... 算法练习/有序数组的单一元素.s
 .PHONY : help
 
 
