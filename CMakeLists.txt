@@ -6,5 +6,6 @@ add_executable(smzy
         AlgorithmExercises/RemoveElement.c
         DataStruct/day_3/text.c
         AlgorithmExercises/RemoveDuplicatsInOrderedArray.c
+        AlgorithmExercises/MergeTwoSortedArrays.c
 )
 #cmake_minimum_required(VERSION 3.20)
