@@ -9,8 +9,27 @@ void TestSeqList1(){
     SeqListPushBack(&s,1);
     SeqListPushBack(&s,2);
     SeqListPushBack(&s,3);
+    SeqListPushBack(&s,4);
+    SeqListPushBack(&s,1);
+    SeqListPushBack(&s,2);
+    SeqListPushBack(&s,3);
+    SeqListPushBack(&s,4);
+    SeqListPushBack(&s,1);
+    SeqListPushBack(&s,2);
+    SeqListPushBack(&s,3);
+    SeqListPushBack(&s,4);
+//    SeqListPrint(&s);
+    SeqListPopBack(&s);
+    SeqListPopBack(&s);
+    SeqListPrint(&s);
+    SeqListPushFront(&s,-1);
+    SeqListPrint(&s);
+    SeqListPopFront(&s);
+    SeqListPopFront(&s);
+    SeqListPrint(&s);
 }
 int main(){
     TestSeqList1();
+
     return 0;
 }

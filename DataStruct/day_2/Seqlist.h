@@ -15,18 +15,19 @@ struct SeqList{
 #endif
 #include <stdio.h>
 #include <malloc.h>
-#
+#include <assert.h>
 typedef struct SeqList{
     SLDataType* a;
     int size;
     int capacity;
 }SL,SeqList;
+void SeqListCheckCapacity(SL* ps);
 void SeqListInit(SL* ps);
 void SeqListPushBack(SL* ps ,SLDataType x);//尾插
+void SeqListPrint(SL* ps );//打印
 void SeqListPopBack(SL* ps );//尾删
-
 void SeqListPushFront(SL* ps ,SLDataType x);//头插
 void SeqListPopFront(SL* ps );//头删
-
-void SeqListInsert(SL* ps,int pos,SLDataType x);//任意地方插入
-void SeqListErase(SL* ps,int pos);//任意位置删除
+//
+//void SeqListInsert(SL* ps,int pos,SLDataType x);//任意地方插入
+//void SeqListErase(SL* ps,int pos);//任意位置删除

@@ -14,12 +14,69 @@ void SeqListInit(SL*s){
     s -> size = 0;
     s -> capacity = 4;
 }
-void SeqListInit(SL* ps);
-void SeqListPushBack(SL* ps ,SLDataType x);//尾插
-void SeqListPopBack(SL* ps );//尾删
+void SeqListPushBack(SL* ps ,SLDataType x)//尾插
+{
+    assert(ps);
+    //如果满了，需要增容
+    SeqListCheckCapacity(ps);
 
-void SeqListPushFront(SL* ps ,SLDataType x);//头插
-void SeqListPopFront(SL* ps );//头删
+    //越界是设点检查
+    //size的位置其实是最后一个元素下一个元素位置的下标
+    ps -> a[ps -> size] = x;
+    ps -> size++;
+}
+void SeqListPrint(SL* ps ){
+    assert(ps);
+    for(int i = 0;i < ps -> size;i++){
+        printf("%d ",ps -> a[i]);
+    }
+    printf("\n");
+}
+void SeqListPopBack(SL* ps ){
+    assert(ps);
+    ps -> a[ps -> size - 1] = 0;
+    ps -> size--;
+}
+//
+void SeqListPushFront(SL* ps ,SLDataType x){
+    int end = ps -> size - 1;
+    //循环想的是结束的条件，写的是继续的条件
+    SeqListCheckCapacity(ps);
+    while(end >= 0){
+        ps -> a[end + 1] = ps -> a[end];
+        --end;
+    }
+    ps -> a[0] = x;
+    ps ->size++;
+}
+void SeqListCheckCapacity(SL* ps){
+    assert(ps);
+    //如果满了，需要增容
 
-void SeqListInsert(SL* ps,int pos,SLDataType x);//任意地方插入
-void SeqListErase(SL* ps,int pos);//任意位置删除
+    if(ps->size >= ps -> capacity){
+        //如果后面有足够的空间，原地扩容
+        //如果没有，在新的空间扩容，把原本空间的内容拷贝过去然后释放原来的空间
+        //一般增2倍 因为增大的频率越高，代价越大
+        //增二倍是内存越大越减少增容的频次
+        //但也带来了浪费
+        //这是一个折中的选择
+        ps -> capacity *= 2;
+        ps -> a = (SLDataType*)realloc(ps -> a,sizeof(SLDataType)*ps->capacity);
+        if(ps -> a == NULL){
+            printf("扩容失败");
+            exit(-1);
+        }
+    }
+}
+void SeqListPopFront(SL* ps ){
+    assert(ps);
+    int start = 0;
+    while(start <ps -> size-1){
+        ps -> a[start] = ps -> a[start + 1];
+        ++start;
+    }
+    ps -> size--;
+}
+//
+//void SeqListInsert(SL* ps,int pos,SLDataType x);//任意地方插入
+//void SeqListErase(SL* ps,int pos);//任意位置删除
