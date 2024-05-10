@@ -2,9 +2,9 @@
 // Created by 20212 on 2024/3/27.
 //#include <stdio.h>
 ////每一个函数的调用都会在内存的栈区开辟空间
-//int Add(int x,int y){
+//int Add(int x,int AlgorithmExercises){
 //    int z = 0;
-//    z = x + y;
+//    z = x + AlgorithmExercises;
 //    return z;
 //}
 //int main(){

@@ -128,29 +128,29 @@ smzy/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/build
 .PHONY : smzy/fast
 
-算法练习/有序数组的单一元素.obj: 算法练习/有序数组的单一元素.c.obj
-.PHONY : 算法练习/有序数组的单一元素.obj
+算法练习/移除元素.obj: 算法练习/移除元素.c.obj
+.PHONY : 算法练习/移除元素.obj
 
 # target to build an object file
-算法练习/有序数组的单一元素.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/算法练习/有序数组的单一元素.c.obj
-.PHONY : 算法练习/有序数组的单一元素.c.obj
+算法练习/移除元素.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/算法练习/移除元素.c.obj
+.PHONY : 算法练习/移除元素.c.obj
 
-算法练习/有序数组的单一元素.i: 算法练习/有序数组的单一元素.c.i
-.PHONY : 算法练习/有序数组的单一元素.i
+算法练习/移除元素.i: 算法练习/移除元素.c.i
+.PHONY : 算法练习/移除元素.i
 
 # target to preprocess a source file
-算法练习/有序数组的单一元素.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/算法练习/有序数组的单一元素.c.i
-.PHONY : 算法练习/有序数组的单一元素.c.i
+算法练习/移除元素.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/算法练习/移除元素.c.i
+.PHONY : 算法练习/移除元素.c.i
 
-算法练习/有序数组的单一元素.s: 算法练习/有序数组的单一元素.c.s
-.PHONY : 算法练习/有序数组的单一元素.s
+算法练习/移除元素.s: 算法练习/移除元素.c.s
+.PHONY : 算法练习/移除元素.s
 
 # target to generate assembly for a file
-算法练习/有序数组的单一元素.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/算法练习/有序数组的单一元素.c.s
-.PHONY : 算法练习/有序数组的单一元素.c.s
+算法练习/移除元素.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/算法练习/移除元素.c.s
+.PHONY : 算法练习/移除元素.c.s
 
 # Help Target
 help:
@@ -161,9 +161,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... smzy
-	@echo ... 算法练习/有序数组的单一元素.obj
-	@echo ... 算法练习/有序数组的单一元素.i
-	@echo ... 算法练习/有序数组的单一元素.s
+	@echo ... 算法练习/移除元素.obj
+	@echo ... 算法练习/移除元素.i
+	@echo ... 算法练习/移除元素.s
 .PHONY : help
 
 

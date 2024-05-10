@@ -1,6 +1,6 @@
-// var y = '我的手机号是13349983066'
-// var a = y.match(/\d{11}/g)
-// var b = y.replace(/(\d{3})\d{4}(\d{4})/g,'$1****$2')
+// var AlgorithmExercises = '我的手机号是13349983066'
+// var a = AlgorithmExercises.match(/\d{11}/g)
+// var b = AlgorithmExercises.replace(/(\d{3})\d{4}(\d{4})/g,'$1****$2')
 // console.log(b)
 // var c = 'hello'
 // var d = c.search(/l/)

@@ -68,29 +68,29 @@ include CMakeFiles/smzy.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/smzy.dir/flags.make
 
-CMakeFiles/smzy.dir/算法练习/有序数组的单一元素.c.obj: CMakeFiles/smzy.dir/flags.make
-CMakeFiles/smzy.dir/算法练习/有序数组的单一元素.c.obj: CMakeFiles/smzy.dir/includes_C.rsp
-CMakeFiles/smzy.dir/算法练习/有序数组的单一元素.c.obj: E:/GitHub/smzy_study/算法练习/有序数组的单一元素.c
-CMakeFiles/smzy.dir/算法练习/有序数组的单一元素.c.obj: CMakeFiles/smzy.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\GitHub\smzy_study\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/smzy.dir/算法练习/有序数组的单一元素.c.obj"
-	"E:\Program Files\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/smzy.dir/算法练习/有序数组的单一元素.c.obj -MF CMakeFiles\smzy.dir\算法练习\有序数组的单一元素.c.obj.d -o CMakeFiles\smzy.dir\算法练习\有序数组的单一元素.c.obj -c E:\GitHub\smzy_study\算法练习\有序数组的单一元素.c
+CMakeFiles/smzy.dir/算法练习/移除元素.c.obj: CMakeFiles/smzy.dir/flags.make
+CMakeFiles/smzy.dir/算法练习/移除元素.c.obj: CMakeFiles/smzy.dir/includes_C.rsp
+CMakeFiles/smzy.dir/算法练习/移除元素.c.obj: E:/GitHub/smzy_study/算法练习/移除元素.c
+CMakeFiles/smzy.dir/算法练习/移除元素.c.obj: CMakeFiles/smzy.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\GitHub\smzy_study\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/smzy.dir/算法练习/移除元素.c.obj"
+	"E:\Program Files\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/smzy.dir/算法练习/移除元素.c.obj -MF CMakeFiles\smzy.dir\算法练习\移除元素.c.obj.d -o CMakeFiles\smzy.dir\算法练习\移除元素.c.obj -c E:\GitHub\smzy_study\算法练习\移除元素.c
 
-CMakeFiles/smzy.dir/算法练习/有序数组的单一元素.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/smzy.dir/算法练习/有序数组的单一元素.c.i"
-	"E:\Program Files\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\GitHub\smzy_study\算法练习\有序数组的单一元素.c > CMakeFiles\smzy.dir\算法练习\有序数组的单一元素.c.i
+CMakeFiles/smzy.dir/算法练习/移除元素.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/smzy.dir/算法练习/移除元素.c.i"
+	"E:\Program Files\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\GitHub\smzy_study\算法练习\移除元素.c > CMakeFiles\smzy.dir\算法练习\移除元素.c.i
 
-CMakeFiles/smzy.dir/算法练习/有序数组的单一元素.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/smzy.dir/算法练习/有序数组的单一元素.c.s"
-	"E:\Program Files\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\GitHub\smzy_study\算法练习\有序数组的单一元素.c -o CMakeFiles\smzy.dir\算法练习\有序数组的单一元素.c.s
+CMakeFiles/smzy.dir/算法练习/移除元素.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/smzy.dir/算法练习/移除元素.c.s"
+	"E:\Program Files\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\GitHub\smzy_study\算法练习\移除元素.c -o CMakeFiles\smzy.dir\算法练习\移除元素.c.s
 
 # Object files for target smzy
 smzy_OBJECTS = \
-"CMakeFiles/smzy.dir/算法练习/有序数组的单一元素.c.obj"
+"CMakeFiles/smzy.dir/算法练习/移除元素.c.obj"
 
 # External object files for target smzy
 smzy_EXTERNAL_OBJECTS =
 
-smzy.exe: CMakeFiles/smzy.dir/算法练习/有序数组的单一元素.c.obj
+smzy.exe: CMakeFiles/smzy.dir/算法练习/移除元素.c.obj
 smzy.exe: CMakeFiles/smzy.dir/build.make
 smzy.exe: CMakeFiles/smzy.dir/linkLibs.rsp
 smzy.exe: CMakeFiles/smzy.dir/objects1.rsp

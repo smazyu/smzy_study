@@ -16,11 +16,11 @@
 //};
 //int main(){
 //    //s是局部变量
-//    struct B y = {'c',{"smzy",11,"a"}};
-//    struct B* ps = &y;
+//    struct B AlgorithmExercises = {'c',{"smzy",11,"a"}};
+//    struct B* ps = &AlgorithmExercises;
 //    printf("%s\n",(*ps).a.id);
 //    printf("%s\n",ps -> a.id);
-//    printf("%s",y.a.name);
+//    printf("%s",AlgorithmExercises.a.name);
 //    return 0;
 //}
 //. //->

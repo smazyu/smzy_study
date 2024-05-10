@@ -50,7 +50,7 @@
 //}
 //宏是一种通过预处理器进行定义的指令，它们在编译程序之前被处理。宏可以被用来定义文本替换的规则，这些规则告诉预处理器在实际编译之前将程序中的某些文本替换为不同的文本
 
-//#define Add(x,y) (x+y)
+//#define Add(x,AlgorithmExercises) (x+AlgorithmExercises)
 //int main(){
 //    int a = 3;
 //    int b = 4;

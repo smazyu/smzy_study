@@ -13,8 +13,8 @@
 //static修饰的变量也可以修改
 #if 0 
 //#include <stdio.h>
-//int Max(int x,int y){
-//    return x > y ? x : y;
+//int Max(int x,int AlgorithmExercises){
+//    return x > AlgorithmExercises ? x : AlgorithmExercises;
 //}
 //int main(){
 //    int a = 10;

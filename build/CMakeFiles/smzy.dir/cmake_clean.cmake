@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/smzy.dir/算法练习/有序数组的单一元素.c.obj"
-  "CMakeFiles/smzy.dir/算法练习/有序数组的单一元素.c.obj.d"
+  "CMakeFiles/smzy.dir/算法练习/移除元素.c.obj"
+  "CMakeFiles/smzy.dir/算法练习/移除元素.c.obj.d"
   "libsmzy.dll.a"
   "smzy.exe"
   "smzy.exe.manifest"

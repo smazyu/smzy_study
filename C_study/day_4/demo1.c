@@ -3,11 +3,11 @@
 //函数
 //f(x) = 2x + 1;
 //c语言中的函数也是一样
-//f(x,x) = x + y;
+//f(x,x) = x + AlgorithmExercises;
 //#include <stdio.h>
 ////函数的定义
-//int Add(int x,int y){
-//    int z = x + y;
+//int Add(int x,int AlgorithmExercises){
+//    int z = x + AlgorithmExercises;
 //    return z;
 //}
 ////函数为代码的一个模块化，可以重复使用,提高代码的复用性

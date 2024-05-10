@@ -3,9 +3,11 @@
 //
 #include "Seqlist.h"
 void SeqListInit(SL*s){
+#if 0
     /* s.size = 0;
     s.a = NULL;
     s.capacity = 0; */
+#endif
     s -> a =(SLDataType*)malloc(sizeof(SLDataType)*4);
     if(s -> a == NULL){
         printf("false\n");
@@ -52,7 +54,6 @@ void SeqListPushFront(SL* ps ,SLDataType x){
 void SeqListCheckCapacity(SL* ps){
     assert(ps);
     //如果满了，需要增容
-
     if(ps->size >= ps -> capacity){
         //如果后面有足够的空间，原地扩容
         //如果没有，在新的空间扩容，把原本空间的内容拷贝过去然后释放原来的空间
@@ -78,7 +79,25 @@ void SeqListPopFront(SL* ps ){
     ps -> size--;
 }
 //
-//void SeqListInsert(SL* ps,int pos,SLDataType x);//任意地方插入
-//void SeqListErase(SL* ps,int pos);//任意位置删除
+void SeqListInsert(SL* ps,int pos,SLDataType x){
+    assert(ps);
+    SeqListCheckCapacity(ps);
+    int end = ps -> size - 1;
+    while(end >= pos){
+        ps -> a[end + 1] = ps -> a[end];
+        --end;
+    }
+    ps -> a[pos] = x;
+    ps ->size++;
+    SeqListCheckCapacity(ps);
+}
+void SeqListErase(SL* ps,int pos){
+    assert(ps);
+    while(pos<ps -> size){
+        ps -> a[pos] = ps -> a[pos+1];
+        pos ++;
+    }
+    ps -> size --;
+}
 
 //删除元素

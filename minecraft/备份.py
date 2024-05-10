@@ -61,7 +61,7 @@ player_listbox = tk.Listbox(root, selectmode=tk.SINGLE, exportselection=0)
 for player in joined_players:
     player_listbox.insert(tk.END, player)
 
-destination_label = tk.Label(root, text="目标位置(x y z):")
+destination_label = tk.Label(root, text="目标位置(x AlgorithmExercises z):")
 destination_entry = tk.Entry(root)
 
 # 使用选择的玩家更改游戏模式

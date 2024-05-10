@@ -3,12 +3,12 @@
 //
 #include <string.h>
 //#include <stdio.h>
-//int get_max(int x,int y){
+//int get_max(int x,int AlgorithmExercises){
 //    int z = 0;
-//    if(x>y){
+//    if(x>AlgorithmExercises){
 //        z = x;
 //    }else{
-//        z = y;
+//        z = AlgorithmExercises;
 //    }
 //    return z;
 //}
@@ -22,18 +22,18 @@
 //#include <stdio.h>
 //void Swap(int* pa,int* pb){
 //    int z = 0;
-////    这里和主函数内存空间不同
+////    锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷诖锟秸间不同
 //    z = *pa;
 //    *pa = *pb;
 //    *pb = z;
-//}形参只在函数内部有效 在调用的一瞬间开辟空间
+//}锟轿诧拷只锟节猴拷锟斤拷锟节诧拷锟斤拷效 锟节碉拷锟矫碉拷一瞬锟戒开锟劫空硷拷
 //int main(){
-//    int a = 10;//4个字节的空间
+//    int a = 10;//4锟斤拷锟街节的空硷拷
 //    int b = 20;
-////    写一个函数，交换两个变量的值
-//    printf("交换前：a=%d,b=%d",a,b);
+////    写一锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷值
+//    printf("锟斤拷锟斤拷前锟斤拷a=%d,b=%d",a,b);
 //    Swap(&a,&b);
-//    printf("交换后：a=%d,b=%d",a,b);
+//    printf("锟斤拷锟斤拷锟斤拷a=%d,b=%d",a,b);
 //    return 0;
 //}
-//真实传进去的参数 实参
+//锟斤拷实锟斤拷锟斤拷去锟侥诧拷锟斤拷 实锟斤拷

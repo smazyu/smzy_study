@@ -15,7 +15,7 @@ ex = '1[1-9]\d{5}'
 result = re.findall(ex,key)
 print(result)
 # str.match 正则匹配
-# y.match(/\d{11}/g) g为全局匹配 /replace正则替换 正则括号表示反锁
+# AlgorithmExercises.match(/\d{11}/g) g为全局匹配 /replace正则替换 正则括号表示反锁
 # .search查找
 
 

@@ -19,13 +19,16 @@ void TestSeqList1(){
     SeqListPushBack(&s,3);
     SeqListPushBack(&s,4);
 //    SeqListPrint(&s);
-    SeqListPopBack(&s);
-    SeqListPopBack(&s);
+//    SeqListPopBack(&s);
+//    SeqListPopBack(&s);
+//    SeqListPrint(&s);
+//    SeqListPushFront(&s,-1);
+//    SeqListPrint(&s);
+//    SeqListPopFront(&s);
+//    SeqListPopFront(&s);
+    SeqListInsert(&s,0,-5);
     SeqListPrint(&s);
-    SeqListPushFront(&s,-1);
-    SeqListPrint(&s);
-    SeqListPopFront(&s);
-    SeqListPopFront(&s);
+    SeqListErase(&s,0);
     SeqListPrint(&s);
 }
 int main(){
