@@ -69,6 +69,12 @@ void SeqListCheckCapacity(SL* ps){
         }
     }
 }
+void SeqListDestroy(SL* ps){
+    free(ps -> a);
+    ps -> a = NULL;
+    ps -> size = 0;
+    ps -> capacity = 0;
+}
 void SeqListPopFront(SL* ps ){
     assert(ps);
     int start = 0;
@@ -81,9 +87,12 @@ void SeqListPopFront(SL* ps ){
 //
 void SeqListInsert(SL* ps,int pos,SLDataType x){
     assert(ps);
+    assert(pos < ps ->size && pos >= 0);
+    //插入之前判断有没有满
     SeqListCheckCapacity(ps);
     int end = ps -> size - 1;
     while(end >= pos){
+        //循环写继续的条件，我们想的是结束之后
         ps -> a[end + 1] = ps -> a[end];
         --end;
     }
@@ -91,13 +100,14 @@ void SeqListInsert(SL* ps,int pos,SLDataType x){
     ps ->size++;
     SeqListCheckCapacity(ps);
 }
+//size_t = unsigned int
 void SeqListErase(SL* ps,int pos){
     assert(ps);
-    while(pos<ps -> size){
+    assert(pos < ps ->size && pos >= 0);
+    while(pos<ps -> size-1){
         ps -> a[pos] = ps -> a[pos+1];
         pos ++;
     }
     ps -> size --;
 }
-
 //删除元素

@@ -7,5 +7,8 @@ add_executable(smzy
         DataStruct/day_3/text.c
         AlgorithmExercises/RemoveDuplicatsInOrderedArray.c
         AlgorithmExercises/MergeTwoSortedArrays.c
+        DataStruct/day_3/LinkedList.c
+        DataStruct/day_3/Slist.c
+        DataStruct/day_3/Slist.h
 )
 #cmake_minimum_required(VERSION 3.20)

@@ -23,6 +23,7 @@ typedef struct SeqList{
 }SL,SeqList;
 void SeqListCheckCapacity(SL* ps);
 void SeqListInit(SL* ps);
+void SeqListDestroy(SL* ps);
 void SeqListPushBack(SL* ps ,SLDataType x);//尾插
 void SeqListPrint(SL* ps );//打印
 void SeqListPopBack(SL* ps );//尾删
