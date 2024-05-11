@@ -71,3 +71,17 @@ void SListPushFront(SListNode **pphead,SListDataType x){
         *pphead = newNode;
     }
 }
+void SListPopFront(SListNode **pphead){
+    //1.为空节点
+    //2.只有一个节点
+    //3.有多个节点
+    if(*pphead == NULL){
+        return;
+    }else if((*pphead)->next == NULL){
+        free(*pphead);
+        //需要将pphead置为空指针 因为free掉了之后，它指向的值就会成为随机数，直接访问会出现野指针
+        *pphead = NULL;
+    }else{
+        *pphead = (*pphead) -> next;
+    }
+}

@@ -14,6 +14,6 @@ typedef struct SListNode{
 void SListPushBack(SListNode**phead,SListDataType x);
 void SListPopBack(SListNode **phead);
 void SListPushFront(SListNode **pphead,SListDataType x);
-//void SListPopFront(SListNode*phead);
+void SListPopFront(SListNode **pphead);
 //
 void SListPrint(SListNode*phead);
