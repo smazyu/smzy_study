@@ -62,7 +62,12 @@ void SListPopBack(SListNode **pphead){
 }
 void SListPushFront(SListNode **pphead,SListDataType x){
     SListNode* newNode = BuySListNode(x);
+    //1.为空节点时
+    //2.不为空节点时
     if(*pphead == NULL){
-
+        *pphead = newNode;
+    }else{
+        newNode -> next =  *pphead;
+        *pphead = newNode;
     }
 }
