@@ -9,3 +9,10 @@ void SListPrint(SListNode* phead){
         cur = cur -> next;
     }
 }
+void SlistPushBack(SListNode*phead,SListDataType x){
+    SListNode * cur = phead;
+    while(cur != NULL){
+        cur = cur -> next;
+    }
+
+}
