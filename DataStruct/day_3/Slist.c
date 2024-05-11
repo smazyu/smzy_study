@@ -2,17 +2,67 @@
 // Created by 20212 on 11/05/2024.
 //
 #include "Slist.h"
+SListNode * BuySListNode(SListDataType x){
+    SListNode *newNode = (SListNode *) malloc(sizeof(sizeof(SListNode)));
+    if (newNode == NULL) {
+        printf("申请失败");
+        exit(-1);
+    }
+    newNode->data = x;
+    newNode->next = NULL;
+    return newNode;
+}
 void SListPrint(SListNode* phead){
     SListNode* cur = phead;
     while(cur != NULL){
-        printf("%d",cur -> data);
+        printf("%d->",cur -> data);
         cur = cur -> next;
+    }
+    printf("NULL\n");
+}
+//这里phead接收的是一级指针的值
+//所以应该使用二级指针接收
+
+//类比 想要改变int,应该传int的地址 所以想要改变地址，应该传指针的地址
+void SListPushBack(SListNode** pphead,SListDataType x){
+//在这里向后重新申请一个变量 无论是否为空，这里都需要开辟一个新的节点-
+    SListNode* newNode = BuySListNode(x);
+    if (*pphead == NULL){
+        *pphead = newNode;
+    }else {
+        //找尾巴
+        SListNode * tail = *pphead;
+        while (tail->next != NULL) {
+            tail = tail->next;
+        }
+
+        tail->next = newNode;
     }
 }
-void SlistPushBack(SListNode*phead,SListDataType x){
-    SListNode * cur = phead;
-    while(cur != NULL){
-        cur = cur -> next;
+void SListPopBack(SListNode **pphead){
+    //1.空
+    //2.一个
+    //3.一个以上
+    if(*pphead == NULL){
+        return;
+    }else if((*pphead) -> next == NULL){
+        free(*pphead);
+        *pphead = NULL;
     }
+    else{
+        SListNode*prev = NULL;
+        SListNode*tail = *pphead;
+        while(tail -> next != NULL){
+            prev = tail;
+            tail = tail -> next;
+        }
+        free(tail);
+        prev -> next = NULL;
+    }
+}
+void SListPushFront(SListNode **pphead,SListDataType x){
+    SListNode* newNode = BuySListNode(x);
+    if(*pphead == NULL){
 
+    }
 }

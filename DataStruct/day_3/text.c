@@ -7,6 +7,13 @@
 int main(){
     SListNode* pList = NULL;
     //链表只有一个头指针
+    SListPushBack(&pList,1);
+    SListPushBack(&pList,2);
+    SListPushBack(&pList,34);
     SListPrint(pList);
-    return 0;
+    SListPopBack(&pList);
+    SListPopBack(&pList);
+//    SListPopBack(&pList);
+    SListPrint(pList);
+
 }
