@@ -77,12 +77,31 @@ void SListPopFront(SListNode **pphead){
     //3.有多个节点
     if(*pphead == NULL){
         return;
-    }else if((*pphead)->next == NULL){
-        free(*pphead);
-
-        //需要将pphead置为空指针 因为free掉了之后，它指向的值就会成为随机数，直接访问会出现野指针
-        *pphead = NULL;
+//    }else if((*pphead)->next == NULL){
+//        free(*pphead);
+//        //需要将pphead置为空指针 因为free掉了之后，它指向的值就会成为随机数，直接访问会出现野指针
+//        *pphead = NULL;
+//    }else{
+//        *pphead = (*pphead) -> next;
+//        //内存泄露是指针丢了
     }else{
+//        SListNode * next = (*pphead) -> next; 保存后一个
+//        free(*pphead);
+//        *pphead = next;
+        SListNode * cur = *pphead;
+        //保存前一个
         *pphead = (*pphead) -> next;
+        free(cur);
+        //free把内存的操作权交还给系统,即指针的地址不变,但指向的内存丢失了,成为了随机值
     }
+}
+SListNode * SListFind(SListNode* phead,SListDataType x){
+    SListNode *cur = phead;
+    while(cur){
+        if(cur -> data == x){
+            return cur;
+        }
+        cur = cur -> next;
+    }
+    return NULL;
 }

@@ -17,3 +17,4 @@ void SListPushFront(SListNode **pphead,SListDataType x);
 void SListPopFront(SListNode **pphead);
 //
 void SListPrint(SListNode*phead);
+SListNode * SListFind(SListNode* phead,SListDataType x);
