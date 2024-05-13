@@ -6,5 +6,6 @@ add_executable(smzy
         DataStruct/day_3/text.c
         DataStruct/day_3/Slist.c
         DataStruct/day_3/Slist.h
+        AlgorithmExercises/反转链表.c
 )
 #cmake_minimum_required(VERSION 3.20)
