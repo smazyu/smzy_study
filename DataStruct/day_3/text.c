@@ -18,8 +18,9 @@ int main(){
     SListPopFront(&pList);
 //    SListPrint(pList);
     SListNode * pos = SListFind(pList,34);
-    if(pos){
-        pos -> data = 30;
-    }
+//    if(pos){
+//        pos -> data = 30;
+//    }
+    SListInsertAfter(pos,100);
     SListPrint(pList);
 }

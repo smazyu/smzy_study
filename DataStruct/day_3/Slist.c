@@ -105,3 +105,9 @@ SListNode * SListFind(SListNode* phead,SListDataType x){
     }
     return NULL;
 }
+void SListInsertAfter(SListNode* pos,SListDataType x){
+    SListNode* newNode = BuySListNode(x);
+    SListNode *next = pos -> next;
+    pos -> next = newNode;
+    newNode -> next = next;
+}

@@ -18,3 +18,4 @@ void SListPopFront(SListNode **pphead);
 //
 void SListPrint(SListNode*phead);
 SListNode * SListFind(SListNode* phead,SListDataType x);
+void SListInsertAfter(SListNode* pos,SListDataType x);
