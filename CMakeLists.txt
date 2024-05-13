@@ -7,5 +7,6 @@ add_executable(smzy
         DataStruct/day_3/Slist.c
         DataStruct/day_3/Slist.h
         DataStruct/day_4/question1.c
+        AlgorithmExercises/IntegerAdditionInArrayForm.c
 )
 #cmake_minimum_required(VERSION 3.20)
