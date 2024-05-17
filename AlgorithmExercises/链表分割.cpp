@@ -21,10 +21,8 @@ class Partition {
             }
             cur = cur->next;
         }
-
         lesstail->next = greatHead->next;  //链接less链表和geart链表
         greattail->next = NULL;   //注意处理最后一个节点的原链接关系
-
         return lessHead->next;
     }
 };
