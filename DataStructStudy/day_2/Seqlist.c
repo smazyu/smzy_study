@@ -3,11 +3,6 @@
 //
 #include "Seqlist.h"
 void SeqListInit(SL*s){
-#if 0
-    /* s.size = 0;
-    s.a = NULL;
-    s.capacity = 0; */
-#endif
     s -> a =(SLDataType*)malloc(sizeof(SLDataType)*4);
     if(s -> a == NULL){
         printf("false\n");

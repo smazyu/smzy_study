@@ -33,7 +33,7 @@ void SListPushBack(SListNode** pphead,SListDataType x){
         //找尾巴
         SListNode * tail = *pphead;
         while (tail->next != NULL) {
-            tail = tail->next;
+            tail = tail->next;0
         }
 
         tail->next = newNode;
