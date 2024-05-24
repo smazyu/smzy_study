@@ -84,6 +84,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="E:/GitHub/smzy_study/AlgorithmExercises/删除链表的重复元素.cpp">
+			<Option target="smzy"/>
+		</Unit>
 		<Unit filename="E:/GitHub/smzy_study/homework/5/5.c">
 			<Option target="smzy"/>
 		</Unit>

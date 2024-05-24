@@ -45,7 +45,6 @@ TreeNode* buildExpressionTree(char* expression) {
     TreeNode* operatorStack[100];
     int numberTop = -1;
     int operatorTop = -1;
-
     for (int i = 0; expression[i] != '\0'; i++) {
         char value = expression[i];
         if (isdigit(value)) {
