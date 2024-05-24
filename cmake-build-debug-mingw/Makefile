@@ -128,53 +128,29 @@ smzy/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/build
 .PHONY : smzy/fast
 
-DataStructStudy/day_8/List.obj: DataStructStudy/day_8/List.c.obj
-.PHONY : DataStructStudy/day_8/List.obj
+homework/5/5.obj: homework/5/5.c.obj
+.PHONY : homework/5/5.obj
 
 # target to build an object file
-DataStructStudy/day_8/List.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DataStructStudy/day_8/List.c.obj
-.PHONY : DataStructStudy/day_8/List.c.obj
+homework/5/5.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/homework/5/5.c.obj
+.PHONY : homework/5/5.c.obj
 
-DataStructStudy/day_8/List.i: DataStructStudy/day_8/List.c.i
-.PHONY : DataStructStudy/day_8/List.i
-
-# target to preprocess a source file
-DataStructStudy/day_8/List.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DataStructStudy/day_8/List.c.i
-.PHONY : DataStructStudy/day_8/List.c.i
-
-DataStructStudy/day_8/List.s: DataStructStudy/day_8/List.c.s
-.PHONY : DataStructStudy/day_8/List.s
-
-# target to generate assembly for a file
-DataStructStudy/day_8/List.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DataStructStudy/day_8/List.c.s
-.PHONY : DataStructStudy/day_8/List.c.s
-
-DataStructStudy/day_8/text.obj: DataStructStudy/day_8/text.c.obj
-.PHONY : DataStructStudy/day_8/text.obj
-
-# target to build an object file
-DataStructStudy/day_8/text.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DataStructStudy/day_8/text.c.obj
-.PHONY : DataStructStudy/day_8/text.c.obj
-
-DataStructStudy/day_8/text.i: DataStructStudy/day_8/text.c.i
-.PHONY : DataStructStudy/day_8/text.i
+homework/5/5.i: homework/5/5.c.i
+.PHONY : homework/5/5.i
 
 # target to preprocess a source file
-DataStructStudy/day_8/text.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DataStructStudy/day_8/text.c.i
-.PHONY : DataStructStudy/day_8/text.c.i
+homework/5/5.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/homework/5/5.c.i
+.PHONY : homework/5/5.c.i
 
-DataStructStudy/day_8/text.s: DataStructStudy/day_8/text.c.s
-.PHONY : DataStructStudy/day_8/text.s
+homework/5/5.s: homework/5/5.c.s
+.PHONY : homework/5/5.s
 
 # target to generate assembly for a file
-DataStructStudy/day_8/text.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DataStructStudy/day_8/text.c.s
-.PHONY : DataStructStudy/day_8/text.c.s
+homework/5/5.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/homework/5/5.c.s
+.PHONY : homework/5/5.c.s
 
 # Help Target
 help:
@@ -185,12 +161,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... smzy
-	@echo ... DataStructStudy/day_8/List.obj
-	@echo ... DataStructStudy/day_8/List.i
-	@echo ... DataStructStudy/day_8/List.s
-	@echo ... DataStructStudy/day_8/text.obj
-	@echo ... DataStructStudy/day_8/text.i
-	@echo ... DataStructStudy/day_8/text.s
+	@echo ... homework/5/5.obj
+	@echo ... homework/5/5.i
+	@echo ... homework/5/5.s
 .PHONY : help
 
 

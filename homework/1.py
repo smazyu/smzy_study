@@ -25,7 +25,7 @@ class DancePartner:
         if dance_man_queue.empty():
             print('男生队列为空')
 dance_list = []
-with open('E:\\GitHub\\smzy_study\\作业\\1.txt', 'r', encoding='utf-8') as f:
+with open('/homework\\1.txt', 'r', encoding='utf-8') as f:
     for line in f:
         parts = line.strip().split()
         dance_list.append(parts)

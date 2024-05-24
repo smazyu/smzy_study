@@ -84,13 +84,7 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="E:/GitHub/smzy_study/DataStructStudy/day_8/List.c">
-			<Option target="smzy"/>
-		</Unit>
-		<Unit filename="E:/GitHub/smzy_study/DataStructStudy/day_8/List.h">
-			<Option target="smzy"/>
-		</Unit>
-		<Unit filename="E:/GitHub/smzy_study/DataStructStudy/day_8/text.c">
+		<Unit filename="E:/GitHub/smzy_study/homework/5/5.c">
 			<Option target="smzy"/>
 		</Unit>
 		<Unit filename="E:/GitHub/smzy_study/CMakeLists.txt">
