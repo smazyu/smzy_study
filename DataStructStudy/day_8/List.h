@@ -14,4 +14,6 @@ void ListInit(ListNode ** pphead);
 void ListPushBack(ListNode* phead,LTDataType x);
 ListNode* BuyListNode(LTDataType x);
 void ListPrint(ListNode* phead);
-void ListPopBack()
+void ListPopBack(ListNode* phead);
+void ListPushFront(ListNode* phead,LTDataType x);
+void ListPopFront(ListNode* phead);
