@@ -104,7 +104,7 @@ void ListDestory(ListNode **phead){
 }
 void ListClear(ListNode **phead){
     assert(*phead);
-    ListNode * cur = (*phead);
+    ListNode * cur = (*phead) -> next;
     while(cur != *phead){
         ListNode * next = cur -> next;
         free(cur);

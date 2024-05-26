@@ -6,11 +6,11 @@ headers = {
 
 # resp = requests.get("https://music.163.com/discover", headers=headers)
 # print(resp.text)
-# with open('D:\\smzy\\逆向\\day2\\网易.html', 'w', encoding='utf-8') as f:
+# with open('D:\\smzy\\reverse\\day2\\网易.html', 'w', encoding='utf-8') as f:
 #     f.write(resp.text)
 
 # print('ok')
-tree = etree.HTML(open('/逆向/day2/网易云/网易.html', 'r', encoding='utf-8').read())
+tree = etree.HTML(open('/reverse/day2/网易云/网易.html', 'r', encoding='utf-8').read())
 li_list_ele = tree.xpath('//*[@id="top-flag"]/dl/dd/ol')
 print(li_list_ele)
 # a = 0
