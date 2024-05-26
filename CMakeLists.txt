@@ -5,6 +5,7 @@ include_directories(.)
 
 #cmake_minimum_required(VERSION 3.20)
 add_executable(smzy
-        homework/5/5.c
-        AlgorithmExercises/删除链表的重复元素.cpp
+        DataStructStudy/day_8/List.c
+        DataStructStudy/day_8/List.h
+        DataStructStudy/day_8/text.c
 )

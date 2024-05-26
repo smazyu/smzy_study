@@ -11,9 +11,15 @@ typedef struct ListNode
     LTDataType data;
 }ListNode;
 void ListInit(ListNode ** pphead);
+void ListDestory(ListNode **phead);
+void ListClear(ListNode **phead);
 void ListPushBack(ListNode* phead,LTDataType x);
 ListNode* BuyListNode(LTDataType x);
 void ListPrint(ListNode* phead);
 void ListPopBack(ListNode* phead);
 void ListPushFront(ListNode* phead,LTDataType x);
 void ListPopFront(ListNode* phead);
+ListNode * ListFind(ListNode* phead,LTDataType x);
+//在pos之前插入x
+void ListInsert(ListNode* pos,LTDataType x);
+void ListErase(ListNode* pos);

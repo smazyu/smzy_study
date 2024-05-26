@@ -19,7 +19,7 @@
 //}
 ////allocated
 //int main(){
-//    FILE* pf = fopen("../C_study/day_37/txt.data","r");
+//    FILE* pf = fopen("../c_study/day_37/txt.data","r");
 //    if(pf == NULL){
 //        perror(fopen);
 //        return 1;
@@ -41,7 +41,7 @@
 //}
 //int main(){
 //    int a = 10000;
-//    FILE* pf = fopen("../C_study/day_37/txt.data","wb");
+//    FILE* pf = fopen("../c_study/day_37/txt.data","wb");
 //}
 //feof Used for the end of file reading to determine whether the reading fails or ends when the end of the file is encountered.
 
@@ -53,11 +53,11 @@
 //feof determine the type of file reading end
 
 //int main(){
-//    FILE* pfread = fopen("../C_study/day_38/text.txt","r");
+//    FILE* pfread = fopen("../c_study/day_38/text.txt","r");
 //    if(pfread == NULL){
 //        return 1;
 //    }
-//    FILE *pfwrite = fopen("../C_study/day_38/text.txt_2","w");
+//    FILE *pfwrite = fopen("../c_study/day_38/text.txt_2","w");
 //    if(pfwrite == NULL){
 //        fclose(pfread);
 //        pfread = NULL;

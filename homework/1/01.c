@@ -77,9 +77,7 @@ void getBook(BookList* list, const char* input_str) {
     char num[14], name[NAME_LEN];
     float price;
     int num_provided = 0, name_provided = 0, price_provided = 0;
-
     int result = sscanf(input_str, "%s %s %f", num, name, &price);
-
     if (result >= 1) num_provided = 1;
     if (result >= 2) name_provided = 1;
     if (result == 3) price_provided = 1;
@@ -88,7 +86,6 @@ void getBook(BookList* list, const char* input_str) {
         int num_match = num_provided ? (strcmp(list->books[i].num, num) == 0) : 0;
         int name_match = name_provided ? (strcmp(list->books[i].name, name) == 0) : 0;
         int price_match = price_provided ? (list->books[i].price == price) : 0;
-
         if ((num_provided && num_match) || (name_provided && name_match) || (price_provided && price_match)) {
             printf("ÕÒµ½ book: num: %s, name: %s, price: %.2f\n",
                    list->books[i].num, list->books[i].name, list->books[i].price);

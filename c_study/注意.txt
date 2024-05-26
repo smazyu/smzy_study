@@ -15,3 +15,6 @@ C语言标准本身并不直接支持二进制表示法，但在一些编译器�
 int binaryValue = 0b1101; // 二进制数 1101，表示十进制数 13
 
 scanf 函数接收的参数确实是内存空间的地址 *d = &c 指的是d的内存空间存放的是c的地址，所以scanf(d)就相当于scanf(&c)
+
+
+函数命名风格 变量小写字母开头 pos_prev posPrev 函数 list_node ListNode

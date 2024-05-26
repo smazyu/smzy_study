@@ -10,8 +10,8 @@
 //};
 //int main(){
 //    struct S s= {"abcdef",10,5.5f};
-////"../C_study/day_37/txt.data"
-//    FILE*pf = fopen("../C_study/day_37/txt.data","r");
+////"../c_study/day_37/txt.data"
+//    FILE*pf = fopen("../c_study/day_37/txt.data","r");
 //    if(pf == NULL){
 //        perror("fopen");
 //        return 1;
@@ -34,7 +34,7 @@ int main(){
 //    struct S s= {"abcdef",10,5.5f};
     struct S s= {0};
 
-    FILE*pf = fopen("../C_study/day_37/txt.data","r");
+    FILE*pf = fopen("../c_study/day_37/txt.data","r");
     if(pf == NULL){
         perror("fopen");
         return 1;

@@ -6,7 +6,7 @@
 //Whenever a file is opened, the system automatically generates a variable of the FILE structure based on the file's condition.
 #include <stdio.h>
 //int main(){
-//    FILE * pf = fopen("../C_study/day_37/txt.data","w");
+//    FILE * pf = fopen("../c_study/day_37/txt.data","w");
 //    if(pf == NULL){
 //            perror("fopen");
 //            return 1;
@@ -15,7 +15,7 @@
 //    fclose(pf);
 //}
 int main(){
-    FILE*pf = fopen("../C_study/day_37/txt.data","w");
+    FILE*pf = fopen("../c_study/day_37/txt.data","w");
 //    fputc('b',stdout);
 //    fputc('i',stdout);
     fputs("abcd1ef",pf);
