@@ -128,53 +128,53 @@ smzy/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/build
 .PHONY : smzy/fast
 
-DataStructStudy/day_8/List.obj: DataStructStudy/day_8/List.c.obj
-.PHONY : DataStructStudy/day_8/List.obj
+DSStudy/day_9/stack/stack.obj: DSStudy/day_9/stack/stack.c.obj
+.PHONY : DSStudy/day_9/stack/stack.obj
 
 # target to build an object file
-DataStructStudy/day_8/List.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DataStructStudy/day_8/List.c.obj
-.PHONY : DataStructStudy/day_8/List.c.obj
+DSStudy/day_9/stack/stack.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DSStudy/day_9/stack/stack.c.obj
+.PHONY : DSStudy/day_9/stack/stack.c.obj
 
-DataStructStudy/day_8/List.i: DataStructStudy/day_8/List.c.i
-.PHONY : DataStructStudy/day_8/List.i
+DSStudy/day_9/stack/stack.i: DSStudy/day_9/stack/stack.c.i
+.PHONY : DSStudy/day_9/stack/stack.i
 
 # target to preprocess a source file
-DataStructStudy/day_8/List.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DataStructStudy/day_8/List.c.i
-.PHONY : DataStructStudy/day_8/List.c.i
+DSStudy/day_9/stack/stack.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DSStudy/day_9/stack/stack.c.i
+.PHONY : DSStudy/day_9/stack/stack.c.i
 
-DataStructStudy/day_8/List.s: DataStructStudy/day_8/List.c.s
-.PHONY : DataStructStudy/day_8/List.s
+DSStudy/day_9/stack/stack.s: DSStudy/day_9/stack/stack.c.s
+.PHONY : DSStudy/day_9/stack/stack.s
 
 # target to generate assembly for a file
-DataStructStudy/day_8/List.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DataStructStudy/day_8/List.c.s
-.PHONY : DataStructStudy/day_8/List.c.s
+DSStudy/day_9/stack/stack.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DSStudy/day_9/stack/stack.c.s
+.PHONY : DSStudy/day_9/stack/stack.c.s
 
-DataStructStudy/day_8/text.obj: DataStructStudy/day_8/text.c.obj
-.PHONY : DataStructStudy/day_8/text.obj
+DSStudy/day_9/stack/text.obj: DSStudy/day_9/stack/text.c.obj
+.PHONY : DSStudy/day_9/stack/text.obj
 
 # target to build an object file
-DataStructStudy/day_8/text.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DataStructStudy/day_8/text.c.obj
-.PHONY : DataStructStudy/day_8/text.c.obj
+DSStudy/day_9/stack/text.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DSStudy/day_9/stack/text.c.obj
+.PHONY : DSStudy/day_9/stack/text.c.obj
 
-DataStructStudy/day_8/text.i: DataStructStudy/day_8/text.c.i
-.PHONY : DataStructStudy/day_8/text.i
+DSStudy/day_9/stack/text.i: DSStudy/day_9/stack/text.c.i
+.PHONY : DSStudy/day_9/stack/text.i
 
 # target to preprocess a source file
-DataStructStudy/day_8/text.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DataStructStudy/day_8/text.c.i
-.PHONY : DataStructStudy/day_8/text.c.i
+DSStudy/day_9/stack/text.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DSStudy/day_9/stack/text.c.i
+.PHONY : DSStudy/day_9/stack/text.c.i
 
-DataStructStudy/day_8/text.s: DataStructStudy/day_8/text.c.s
-.PHONY : DataStructStudy/day_8/text.s
+DSStudy/day_9/stack/text.s: DSStudy/day_9/stack/text.c.s
+.PHONY : DSStudy/day_9/stack/text.s
 
 # target to generate assembly for a file
-DataStructStudy/day_8/text.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DataStructStudy/day_8/text.c.s
-.PHONY : DataStructStudy/day_8/text.c.s
+DSStudy/day_9/stack/text.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DSStudy/day_9/stack/text.c.s
+.PHONY : DSStudy/day_9/stack/text.c.s
 
 # Help Target
 help:
@@ -185,12 +185,12 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... smzy
-	@echo ... DataStructStudy/day_8/List.obj
-	@echo ... DataStructStudy/day_8/List.i
-	@echo ... DataStructStudy/day_8/List.s
-	@echo ... DataStructStudy/day_8/text.obj
-	@echo ... DataStructStudy/day_8/text.i
-	@echo ... DataStructStudy/day_8/text.s
+	@echo ... DSStudy/day_9/stack/stack.obj
+	@echo ... DSStudy/day_9/stack/stack.i
+	@echo ... DSStudy/day_9/stack/stack.s
+	@echo ... DSStudy/day_9/stack/text.obj
+	@echo ... DSStudy/day_9/stack/text.i
+	@echo ... DSStudy/day_9/stack/text.s
 .PHONY : help
 
 

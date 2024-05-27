@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/smzy.dir/DataStructStudy/day_8/List.c.obj"
-  "CMakeFiles/smzy.dir/DataStructStudy/day_8/List.c.obj.d"
-  "CMakeFiles/smzy.dir/DataStructStudy/day_8/text.c.obj"
-  "CMakeFiles/smzy.dir/DataStructStudy/day_8/text.c.obj.d"
+  "CMakeFiles/smzy.dir/DSStudy/day_9/stack/stack.c.obj"
+  "CMakeFiles/smzy.dir/DSStudy/day_9/stack/stack.c.obj.d"
+  "CMakeFiles/smzy.dir/DSStudy/day_9/stack/text.c.obj"
+  "CMakeFiles/smzy.dir/DSStudy/day_9/stack/text.c.obj.d"
   "libsmzy.dll.a"
   "smzy.exe"
   "smzy.exe.manifest"

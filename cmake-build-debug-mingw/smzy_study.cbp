@@ -84,13 +84,13 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="E:/GitHub/smzy_study/DataStructStudy/day_8/List.c">
+		<Unit filename="E:/GitHub/smzy_study/DSStudy/day_9/stack/stack.c">
 			<Option target="smzy"/>
 		</Unit>
-		<Unit filename="E:/GitHub/smzy_study/DataStructStudy/day_8/List.h">
+		<Unit filename="E:/GitHub/smzy_study/DSStudy/day_9/stack/stack.h">
 			<Option target="smzy"/>
 		</Unit>
-		<Unit filename="E:/GitHub/smzy_study/DataStructStudy/day_8/text.c">
+		<Unit filename="E:/GitHub/smzy_study/DSStudy/day_9/stack/text.c">
 			<Option target="smzy"/>
 		</Unit>
 		<Unit filename="E:/GitHub/smzy_study/CMakeLists.txt">

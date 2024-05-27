@@ -5,7 +5,7 @@ include_directories(.)
 
 #cmake_minimum_required(VERSION 3.20)
 add_executable(smzy
-        DataStructStudy/day_8/List.c
-        DataStructStudy/day_8/List.h
-        DataStructStudy/day_8/text.c
+        DSStudy/day_9/stack/stack.c
+        DSStudy/day_9/stack/stack.h
+        DSStudy/day_9/stack/text.c
 )
