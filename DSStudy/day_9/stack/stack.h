@@ -1,6 +1,9 @@
 #pragma once
 //栈也可以写成静态的
 #include <assert.h>
+#include <string.h>
+#include <stdio.h>
+#include <malloc.h>
 typedef int STDataType;
 typedef struct Stack{
     STDataType * _a;
