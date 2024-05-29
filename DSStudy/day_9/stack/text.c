@@ -5,6 +5,7 @@
 //栈的作用
 //1.如果有后进先出需求的地方
 //比如迷宫问题
+//2.递归改成非递归
 void TestStack(){
     Stack st;
     StackInit(&st);

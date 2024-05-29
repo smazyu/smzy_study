@@ -5,7 +5,7 @@ include_directories(.)
 
 #cmake_minimum_required(VERSION 3.20)
 add_executable(smzy
-        DSStudy/day_9/stack/stack.c
-        DSStudy/day_9/stack/stack.h
-        DSStudy/day_9/stack/text.c
+        DSStudy/day_10/queue.c
+        DSStudy/day_10/queue.h
+        DSStudy/day_10/test.c
 )

@@ -128,53 +128,53 @@ smzy/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/build
 .PHONY : smzy/fast
 
-DSStudy/day_9/stack/stack.obj: DSStudy/day_9/stack/stack.c.obj
-.PHONY : DSStudy/day_9/stack/stack.obj
+DSStudy/day_10/queue.obj: DSStudy/day_10/queue.c.obj
+.PHONY : DSStudy/day_10/queue.obj
 
 # target to build an object file
-DSStudy/day_9/stack/stack.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DSStudy/day_9/stack/stack.c.obj
-.PHONY : DSStudy/day_9/stack/stack.c.obj
+DSStudy/day_10/queue.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DSStudy/day_10/queue.c.obj
+.PHONY : DSStudy/day_10/queue.c.obj
 
-DSStudy/day_9/stack/stack.i: DSStudy/day_9/stack/stack.c.i
-.PHONY : DSStudy/day_9/stack/stack.i
+DSStudy/day_10/queue.i: DSStudy/day_10/queue.c.i
+.PHONY : DSStudy/day_10/queue.i
 
 # target to preprocess a source file
-DSStudy/day_9/stack/stack.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DSStudy/day_9/stack/stack.c.i
-.PHONY : DSStudy/day_9/stack/stack.c.i
+DSStudy/day_10/queue.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DSStudy/day_10/queue.c.i
+.PHONY : DSStudy/day_10/queue.c.i
 
-DSStudy/day_9/stack/stack.s: DSStudy/day_9/stack/stack.c.s
-.PHONY : DSStudy/day_9/stack/stack.s
+DSStudy/day_10/queue.s: DSStudy/day_10/queue.c.s
+.PHONY : DSStudy/day_10/queue.s
 
 # target to generate assembly for a file
-DSStudy/day_9/stack/stack.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DSStudy/day_9/stack/stack.c.s
-.PHONY : DSStudy/day_9/stack/stack.c.s
+DSStudy/day_10/queue.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DSStudy/day_10/queue.c.s
+.PHONY : DSStudy/day_10/queue.c.s
 
-DSStudy/day_9/stack/text.obj: DSStudy/day_9/stack/text.c.obj
-.PHONY : DSStudy/day_9/stack/text.obj
+DSStudy/day_10/test.obj: DSStudy/day_10/test.c.obj
+.PHONY : DSStudy/day_10/test.obj
 
 # target to build an object file
-DSStudy/day_9/stack/text.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DSStudy/day_9/stack/text.c.obj
-.PHONY : DSStudy/day_9/stack/text.c.obj
+DSStudy/day_10/test.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DSStudy/day_10/test.c.obj
+.PHONY : DSStudy/day_10/test.c.obj
 
-DSStudy/day_9/stack/text.i: DSStudy/day_9/stack/text.c.i
-.PHONY : DSStudy/day_9/stack/text.i
+DSStudy/day_10/test.i: DSStudy/day_10/test.c.i
+.PHONY : DSStudy/day_10/test.i
 
 # target to preprocess a source file
-DSStudy/day_9/stack/text.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DSStudy/day_9/stack/text.c.i
-.PHONY : DSStudy/day_9/stack/text.c.i
+DSStudy/day_10/test.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DSStudy/day_10/test.c.i
+.PHONY : DSStudy/day_10/test.c.i
 
-DSStudy/day_9/stack/text.s: DSStudy/day_9/stack/text.c.s
-.PHONY : DSStudy/day_9/stack/text.s
+DSStudy/day_10/test.s: DSStudy/day_10/test.c.s
+.PHONY : DSStudy/day_10/test.s
 
 # target to generate assembly for a file
-DSStudy/day_9/stack/text.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DSStudy/day_9/stack/text.c.s
-.PHONY : DSStudy/day_9/stack/text.c.s
+DSStudy/day_10/test.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DSStudy/day_10/test.c.s
+.PHONY : DSStudy/day_10/test.c.s
 
 # Help Target
 help:
@@ -185,12 +185,12 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... smzy
-	@echo ... DSStudy/day_9/stack/stack.obj
-	@echo ... DSStudy/day_9/stack/stack.i
-	@echo ... DSStudy/day_9/stack/stack.s
-	@echo ... DSStudy/day_9/stack/text.obj
-	@echo ... DSStudy/day_9/stack/text.i
-	@echo ... DSStudy/day_9/stack/text.s
+	@echo ... DSStudy/day_10/queue.obj
+	@echo ... DSStudy/day_10/queue.i
+	@echo ... DSStudy/day_10/queue.s
+	@echo ... DSStudy/day_10/test.obj
+	@echo ... DSStudy/day_10/test.i
+	@echo ... DSStudy/day_10/test.s
 .PHONY : help
 
 
