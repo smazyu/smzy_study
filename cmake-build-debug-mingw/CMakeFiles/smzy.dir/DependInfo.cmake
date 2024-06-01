@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "E:/GitHub/smzy_study/AlgorithmExercises/DesigningACircularQueue.c" "CMakeFiles/smzy.dir/AlgorithmExercises/DesigningACircularQueue.c.obj" "gcc" "CMakeFiles/smzy.dir/AlgorithmExercises/DesigningACircularQueue.c.obj.d"
   "E:/GitHub/smzy_study/DSStudy/day_10/queue.c" "CMakeFiles/smzy.dir/DSStudy/day_10/queue.c.obj" "gcc" "CMakeFiles/smzy.dir/DSStudy/day_10/queue.c.obj.d"
   "E:/GitHub/smzy_study/DSStudy/day_10/test.c" "CMakeFiles/smzy.dir/DSStudy/day_10/test.c.obj" "gcc" "CMakeFiles/smzy.dir/DSStudy/day_10/test.c.obj.d"
   )

@@ -67,7 +67,8 @@
 			"sourceIndexes" : 
 			[
 				0,
-				2
+				2,
+				3
 			]
 		}
 	],
@@ -105,7 +106,8 @@
 			"sourceIndexes" : 
 			[
 				0,
-				2
+				2,
+				3
 			]
 		},
 		{
@@ -133,6 +135,12 @@
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"path" : "DSStudy/day_10/test.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "AlgorithmExercises/DesigningACircularQueue.c",
 			"sourceGroupIndex" : 0
 		}
 	],
