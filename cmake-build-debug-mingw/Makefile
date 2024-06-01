@@ -128,29 +128,29 @@ smzy/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/build
 .PHONY : smzy/fast
 
-AlgorithmExercises/DesigningACircularQueue.obj: AlgorithmExercises/DesigningACircularQueue.c.obj
-.PHONY : AlgorithmExercises/DesigningACircularQueue.obj
+AlgorithmExercises/DesignCircularQueue.obj: AlgorithmExercises/DesignCircularQueue.c.obj
+.PHONY : AlgorithmExercises/DesignCircularQueue.obj
 
 # target to build an object file
-AlgorithmExercises/DesigningACircularQueue.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/AlgorithmExercises/DesigningACircularQueue.c.obj
-.PHONY : AlgorithmExercises/DesigningACircularQueue.c.obj
+AlgorithmExercises/DesignCircularQueue.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/AlgorithmExercises/DesignCircularQueue.c.obj
+.PHONY : AlgorithmExercises/DesignCircularQueue.c.obj
 
-AlgorithmExercises/DesigningACircularQueue.i: AlgorithmExercises/DesigningACircularQueue.c.i
-.PHONY : AlgorithmExercises/DesigningACircularQueue.i
+AlgorithmExercises/DesignCircularQueue.i: AlgorithmExercises/DesignCircularQueue.c.i
+.PHONY : AlgorithmExercises/DesignCircularQueue.i
 
 # target to preprocess a source file
-AlgorithmExercises/DesigningACircularQueue.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/AlgorithmExercises/DesigningACircularQueue.c.i
-.PHONY : AlgorithmExercises/DesigningACircularQueue.c.i
+AlgorithmExercises/DesignCircularQueue.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/AlgorithmExercises/DesignCircularQueue.c.i
+.PHONY : AlgorithmExercises/DesignCircularQueue.c.i
 
-AlgorithmExercises/DesigningACircularQueue.s: AlgorithmExercises/DesigningACircularQueue.c.s
-.PHONY : AlgorithmExercises/DesigningACircularQueue.s
+AlgorithmExercises/DesignCircularQueue.s: AlgorithmExercises/DesignCircularQueue.c.s
+.PHONY : AlgorithmExercises/DesignCircularQueue.s
 
 # target to generate assembly for a file
-AlgorithmExercises/DesigningACircularQueue.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/AlgorithmExercises/DesigningACircularQueue.c.s
-.PHONY : AlgorithmExercises/DesigningACircularQueue.c.s
+AlgorithmExercises/DesignCircularQueue.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/AlgorithmExercises/DesignCircularQueue.c.s
+.PHONY : AlgorithmExercises/DesignCircularQueue.c.s
 
 DSStudy/day_10/queue.obj: DSStudy/day_10/queue.c.obj
 .PHONY : DSStudy/day_10/queue.obj
@@ -209,9 +209,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... smzy
-	@echo ... AlgorithmExercises/DesigningACircularQueue.obj
-	@echo ... AlgorithmExercises/DesigningACircularQueue.i
-	@echo ... AlgorithmExercises/DesigningACircularQueue.s
+	@echo ... AlgorithmExercises/DesignCircularQueue.obj
+	@echo ... AlgorithmExercises/DesignCircularQueue.i
+	@echo ... AlgorithmExercises/DesignCircularQueue.s
 	@echo ... DSStudy/day_10/queue.obj
 	@echo ... DSStudy/day_10/queue.i
 	@echo ... DSStudy/day_10/queue.s

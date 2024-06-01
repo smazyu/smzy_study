@@ -8,5 +8,5 @@ add_executable(smzy
         DSStudy/day_10/queue.c
         DSStudy/day_10/queue.h
         DSStudy/day_10/test.c
-        AlgorithmExercises/DesigningACircularQueue.c
+        AlgorithmExercises/DesignCircularQueue.c
 )
