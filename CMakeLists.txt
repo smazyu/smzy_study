@@ -5,8 +5,5 @@ include_directories(.)
 
 #cmake_minimum_required(VERSION 3.20)
 add_executable(smzy
-        DSStudy/day_10/queue.c
-        DSStudy/day_10/queue.h
-        DSStudy/day_10/test.c
-        AlgorithmExercises/DesignCircularQueue.c
+        DSStudy/day_11/Heap.c
 )

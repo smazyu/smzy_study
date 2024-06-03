@@ -1,10 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/smzy.dir/AlgorithmExercises/DesignCircularQueue.c.obj"
-  "CMakeFiles/smzy.dir/AlgorithmExercises/DesignCircularQueue.c.obj.d"
-  "CMakeFiles/smzy.dir/DSStudy/day_10/queue.c.obj"
-  "CMakeFiles/smzy.dir/DSStudy/day_10/queue.c.obj.d"
-  "CMakeFiles/smzy.dir/DSStudy/day_10/test.c.obj"
-  "CMakeFiles/smzy.dir/DSStudy/day_10/test.c.obj.d"
+  "CMakeFiles/smzy.dir/DSStudy/day_11/Heap.c.obj"
+  "CMakeFiles/smzy.dir/DSStudy/day_11/Heap.c.obj.d"
   "libsmzy.dll.a"
   "smzy.exe"
   "smzy.exe.manifest"

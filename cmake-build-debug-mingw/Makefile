@@ -128,77 +128,29 @@ smzy/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/build
 .PHONY : smzy/fast
 
-AlgorithmExercises/DesignCircularQueue.obj: AlgorithmExercises/DesignCircularQueue.c.obj
-.PHONY : AlgorithmExercises/DesignCircularQueue.obj
+DSStudy/day_11/Heap.obj: DSStudy/day_11/Heap.c.obj
+.PHONY : DSStudy/day_11/Heap.obj
 
 # target to build an object file
-AlgorithmExercises/DesignCircularQueue.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/AlgorithmExercises/DesignCircularQueue.c.obj
-.PHONY : AlgorithmExercises/DesignCircularQueue.c.obj
+DSStudy/day_11/Heap.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DSStudy/day_11/Heap.c.obj
+.PHONY : DSStudy/day_11/Heap.c.obj
 
-AlgorithmExercises/DesignCircularQueue.i: AlgorithmExercises/DesignCircularQueue.c.i
-.PHONY : AlgorithmExercises/DesignCircularQueue.i
-
-# target to preprocess a source file
-AlgorithmExercises/DesignCircularQueue.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/AlgorithmExercises/DesignCircularQueue.c.i
-.PHONY : AlgorithmExercises/DesignCircularQueue.c.i
-
-AlgorithmExercises/DesignCircularQueue.s: AlgorithmExercises/DesignCircularQueue.c.s
-.PHONY : AlgorithmExercises/DesignCircularQueue.s
-
-# target to generate assembly for a file
-AlgorithmExercises/DesignCircularQueue.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/AlgorithmExercises/DesignCircularQueue.c.s
-.PHONY : AlgorithmExercises/DesignCircularQueue.c.s
-
-DSStudy/day_10/queue.obj: DSStudy/day_10/queue.c.obj
-.PHONY : DSStudy/day_10/queue.obj
-
-# target to build an object file
-DSStudy/day_10/queue.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DSStudy/day_10/queue.c.obj
-.PHONY : DSStudy/day_10/queue.c.obj
-
-DSStudy/day_10/queue.i: DSStudy/day_10/queue.c.i
-.PHONY : DSStudy/day_10/queue.i
+DSStudy/day_11/Heap.i: DSStudy/day_11/Heap.c.i
+.PHONY : DSStudy/day_11/Heap.i
 
 # target to preprocess a source file
-DSStudy/day_10/queue.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DSStudy/day_10/queue.c.i
-.PHONY : DSStudy/day_10/queue.c.i
+DSStudy/day_11/Heap.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DSStudy/day_11/Heap.c.i
+.PHONY : DSStudy/day_11/Heap.c.i
 
-DSStudy/day_10/queue.s: DSStudy/day_10/queue.c.s
-.PHONY : DSStudy/day_10/queue.s
-
-# target to generate assembly for a file
-DSStudy/day_10/queue.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DSStudy/day_10/queue.c.s
-.PHONY : DSStudy/day_10/queue.c.s
-
-DSStudy/day_10/test.obj: DSStudy/day_10/test.c.obj
-.PHONY : DSStudy/day_10/test.obj
-
-# target to build an object file
-DSStudy/day_10/test.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DSStudy/day_10/test.c.obj
-.PHONY : DSStudy/day_10/test.c.obj
-
-DSStudy/day_10/test.i: DSStudy/day_10/test.c.i
-.PHONY : DSStudy/day_10/test.i
-
-# target to preprocess a source file
-DSStudy/day_10/test.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DSStudy/day_10/test.c.i
-.PHONY : DSStudy/day_10/test.c.i
-
-DSStudy/day_10/test.s: DSStudy/day_10/test.c.s
-.PHONY : DSStudy/day_10/test.s
+DSStudy/day_11/Heap.s: DSStudy/day_11/Heap.c.s
+.PHONY : DSStudy/day_11/Heap.s
 
 # target to generate assembly for a file
-DSStudy/day_10/test.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DSStudy/day_10/test.c.s
-.PHONY : DSStudy/day_10/test.c.s
+DSStudy/day_11/Heap.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DSStudy/day_11/Heap.c.s
+.PHONY : DSStudy/day_11/Heap.c.s
 
 # Help Target
 help:
@@ -209,15 +161,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... smzy
-	@echo ... AlgorithmExercises/DesignCircularQueue.obj
-	@echo ... AlgorithmExercises/DesignCircularQueue.i
-	@echo ... AlgorithmExercises/DesignCircularQueue.s
-	@echo ... DSStudy/day_10/queue.obj
-	@echo ... DSStudy/day_10/queue.i
-	@echo ... DSStudy/day_10/queue.s
-	@echo ... DSStudy/day_10/test.obj
-	@echo ... DSStudy/day_10/test.i
-	@echo ... DSStudy/day_10/test.s
+	@echo ... DSStudy/day_11/Heap.obj
+	@echo ... DSStudy/day_11/Heap.i
+	@echo ... DSStudy/day_11/Heap.s
 .PHONY : help
 
 

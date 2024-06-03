@@ -84,16 +84,7 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="E:/GitHub/smzy_study/AlgorithmExercises/DesignCircularQueue.c">
-			<Option target="smzy"/>
-		</Unit>
-		<Unit filename="E:/GitHub/smzy_study/DSStudy/day_10/queue.c">
-			<Option target="smzy"/>
-		</Unit>
-		<Unit filename="E:/GitHub/smzy_study/DSStudy/day_10/queue.h">
-			<Option target="smzy"/>
-		</Unit>
-		<Unit filename="E:/GitHub/smzy_study/DSStudy/day_10/test.c">
+		<Unit filename="E:/GitHub/smzy_study/DSStudy/day_11/Heap.c">
 			<Option target="smzy"/>
 		</Unit>
 		<Unit filename="E:/GitHub/smzy_study/CMakeLists.txt">
