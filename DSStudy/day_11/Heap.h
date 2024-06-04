@@ -15,6 +15,7 @@ struct Heap{
 }Heap;
 void HeapInit(struct Heap* php,HPDataType* a,int n);
 void HeapDestory(struct Heap *php);
+void AdustDown(HPDataType *a,int n,int root);
 void HeadPush(struct Heap* php,HPDataType x);
 void HeadPop(struct Heap* php);
 HPDataType HeapTop(struct Heap* php);
