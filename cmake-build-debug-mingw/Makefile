@@ -152,6 +152,30 @@ DSStudy/day_11/Heap.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DSStudy/day_11/Heap.c.s
 .PHONY : DSStudy/day_11/Heap.c.s
 
+DSStudy/day_11/test.obj: DSStudy/day_11/test.c.obj
+.PHONY : DSStudy/day_11/test.obj
+
+# target to build an object file
+DSStudy/day_11/test.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DSStudy/day_11/test.c.obj
+.PHONY : DSStudy/day_11/test.c.obj
+
+DSStudy/day_11/test.i: DSStudy/day_11/test.c.i
+.PHONY : DSStudy/day_11/test.i
+
+# target to preprocess a source file
+DSStudy/day_11/test.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DSStudy/day_11/test.c.i
+.PHONY : DSStudy/day_11/test.c.i
+
+DSStudy/day_11/test.s: DSStudy/day_11/test.c.s
+.PHONY : DSStudy/day_11/test.s
+
+# target to generate assembly for a file
+DSStudy/day_11/test.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DSStudy/day_11/test.c.s
+.PHONY : DSStudy/day_11/test.c.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -164,6 +188,9 @@ help:
 	@echo ... DSStudy/day_11/Heap.obj
 	@echo ... DSStudy/day_11/Heap.i
 	@echo ... DSStudy/day_11/Heap.s
+	@echo ... DSStudy/day_11/test.obj
+	@echo ... DSStudy/day_11/test.i
+	@echo ... DSStudy/day_11/test.s
 .PHONY : help
 
 
