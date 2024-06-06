@@ -1,6 +1,3 @@
-//
-// Created by 20212 on 2024/5/24.
-//
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
@@ -37,7 +34,7 @@ void insertBook(BookList* list, const char* num, const char* name, float price) 
     newBook->next = list->head;
     list->head = newBook;
     list->size++;
-    printf("Book插入成功。\n");
+    printf("图书插入成功。\n");
 }
 
 void deleteBook(BookList* list, const char* num) {
@@ -53,32 +50,31 @@ void deleteBook(BookList* list, const char* num) {
             }
             free(current);
             list->size--;
-            printf("Book 通过num %s 删除成功。\n", num);
+            printf("图书删除成功。\n");
             return;
         }
         prev = current;
         current = current->next;
     }
-    printf("没有书本被找到。\n");
+    printf("未找到图书。\n");
 }
 
 void findBookByNum(BookList* list, const char* num) {
     Book* current = list->head;
     while (current != NULL) {
         if (strcmp(current->num, num) == 0) {
-            printf("通过num找到book: num: %s, name: %s, price: %.2f\n",
-                   current->num, current->name, current->price);
+            printf("找到图书: 编号: %s, 名称: %s, 价格: %.2f\n", current->num, current->name, current->price);
             return;
         }
         current = current->next;
     }
-    printf("没有通过num找到.\n");
+    printf("未找到图书。\n");
 }
 
 void printBooks(BookList* list) {
     Book* current = list->head;
     while (current != NULL) {
-        printf("num: %s, name: %s, price: %.2f\n", current->num, current->name, current->price);
+        printf("编号: %s, 名称: %s, 价格: %.2f\n", current->num, current->name, current->price);
         current = current->next;
     }
 }
@@ -109,29 +105,6 @@ void inputBookInfo(BookList* list) {
     insertBook(list, num, name, price);
 }
 
-void getValue(BookList* list) {
-    char num[14];
-    printf("请输入要查询的图书编号: ");
-    scanf("%s", num);
-    findBookByNum(list, num);
-}
-
-void insert(BookList* list) {
-    inputBookInfo(list);
-}
-
-void delete(BookList* list) {
-    char num[14];
-    printf("请输入要删除的图书编号: ");
-    scanf("%s", num);
-    deleteBook(list, num);
-}
-
-void output(BookList* list) {
-    printf("打印图书信息：\n");
-    printBooks(list);
-}
-
 void menu() {
     printf("************************************\n");
     printf("*******  1.插入图书          *********\n");
@@ -143,33 +116,34 @@ void menu() {
     printf("************************************\n");
 }
 
-void function(BookList* list) {
-    int input = 0;
+void handleUserInput(BookList* list) {
+    int input;
     do {
         menu();
         printf("请选择:>");
         scanf("%d", &input);
-        switch(input) {
+        getchar();  // consume the newline character
+        char filepath[256];
+        switch (input) {
             case 1:
-                printf("插入图书\n");
-                insert(list);
+                inputBookInfo(list);
                 break;
             case 2:
-                printf("删除图书\n");
-                delete(list);
+                printf("请输入要删除的图书编号: ");
+                char num[14];
+                scanf("%s", num);
+                deleteBook(list, num);
                 break;
             case 3:
-                printf("查找图书\n");
-                getValue(list);
+                printf("请输入要查询的图书编号: ");
+                scanf("%s", num);
+                findBookByNum(list, num);
                 break;
             case 4:
-                printf("输出图书信息\n");
-                output(list);
+                printBooks(list);
                 break;
             case 5:
-                printf("从文件读出图书信息\n");
-                char filepath[256];
-                printf("请输入文件路径:>");
+                printf("请输入文件路径: ");
                 scanf("%s", filepath);
                 readBooksFromFile(list, filepath);
                 break;
@@ -180,12 +154,12 @@ void function(BookList* list) {
                 printf("输入错误，请重试\n");
                 break;
         }
-    } while(input != 0);
+    } while (input != 0);
 }
 
 int main() {
     BookList list;
     initBookList(&list);
-    function(&list);
+    handleUserInput(&list);
     return 0;
 }

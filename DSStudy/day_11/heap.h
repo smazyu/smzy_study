@@ -8,14 +8,14 @@ typedef int HPDataType;
 #include <malloc.h>
 #include <stdio.h>
 #include <string.h>
-struct Heap{
+struct heap{
     HPDataType *_a;
     int _size;
     int _capacity;
-}Heap;
-void HeapInit(struct Heap* php,HPDataType* a,int n);
-void HeapDestory(struct Heap *php);
+};
+void HeapInit(struct heap* php,HPDataType* a,int n);
+void HeapDestory(struct heap *php);
 void AdustDown(HPDataType *a,int n,int root);
-void HeadPush(struct Heap* php,HPDataType x);
-void HeadPop(struct Heap* php);
-HPDataType HeapTop(struct Heap* php);
+void HeadPush(struct heap* php,HPDataType x);
+void HeadPop(struct heap* php);
+HPDataType HeapTop(struct heap* php);

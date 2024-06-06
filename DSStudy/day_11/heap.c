@@ -1,8 +1,8 @@
 //
 // Created by 20212 on 2024/6/4.
 //
-#include "Heap.h"
-void HeapInit(struct Heap* php,HPDataType* a,int n){
+#include "heap.h"
+void HeapInit(struct heap* php,HPDataType* a,int n){
     php -> _a = (HPDataType*)malloc(sizeof(HPDataType)* n);
     memcpy(php -> _a,a,sizeof(HPDataType)*n);
     php -> _size = n;
@@ -38,7 +38,7 @@ void AdustDown(HPDataType *a,int n,int root){
     }
 
 }
-void HeapDestory(struct Heap *php);
-void HeadPush(struct Heap* php,HPDataType x);
-void HeadPop(struct Heap* php);
-HPDataType HeapTop(struct Heap* php);
+void HeapDestory(struct heap *php);
+void HeadPush(struct heap* php,HPDataType x);
+void HeadPop(struct heap* php);
+HPDataType HeapTop(struct heap* php);
