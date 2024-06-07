@@ -30,6 +30,8 @@ void freeTree(TreeNode* root) {
     }
 }
 
+
+
 // 返回操作符的优先级
 int precedence(char op) {
     if (op == '+' || op == '-') {
