@@ -16,7 +16,8 @@ typedef struct TreeNode {
 TreeNode* createNode(char value) {
     TreeNode* newNode = (TreeNode*)malloc(sizeof(TreeNode));
     newNode->data = value;
-    newNode->left = NULL;
+    newNode->left = NULL
+            ;
     newNode->right = NULL;
     return newNode;
 }
