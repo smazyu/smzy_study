@@ -5,7 +5,6 @@ include_directories(.)
 
 #cmake_minimum_required(VERSION 3.20)
 add_executable(smzy
-        homework/5/5_5.c
-        DSStudy/day_13/Heap.c
+        DSStudy/day_12/heapTest.c
 
 )

@@ -128,53 +128,29 @@ smzy/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/build
 .PHONY : smzy/fast
 
-DSStudy/day_13/Heap.obj: DSStudy/day_13/Heap.c.obj
-.PHONY : DSStudy/day_13/Heap.obj
+DSStudy/day_12/heapTest.obj: DSStudy/day_12/heapTest.c.obj
+.PHONY : DSStudy/day_12/heapTest.obj
 
 # target to build an object file
-DSStudy/day_13/Heap.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DSStudy/day_13/Heap.c.obj
-.PHONY : DSStudy/day_13/Heap.c.obj
+DSStudy/day_12/heapTest.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DSStudy/day_12/heapTest.c.obj
+.PHONY : DSStudy/day_12/heapTest.c.obj
 
-DSStudy/day_13/Heap.i: DSStudy/day_13/Heap.c.i
-.PHONY : DSStudy/day_13/Heap.i
-
-# target to preprocess a source file
-DSStudy/day_13/Heap.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DSStudy/day_13/Heap.c.i
-.PHONY : DSStudy/day_13/Heap.c.i
-
-DSStudy/day_13/Heap.s: DSStudy/day_13/Heap.c.s
-.PHONY : DSStudy/day_13/Heap.s
-
-# target to generate assembly for a file
-DSStudy/day_13/Heap.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DSStudy/day_13/Heap.c.s
-.PHONY : DSStudy/day_13/Heap.c.s
-
-homework/5/5_5.obj: homework/5/5_5.c.obj
-.PHONY : homework/5/5_5.obj
-
-# target to build an object file
-homework/5/5_5.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/homework/5/5_5.c.obj
-.PHONY : homework/5/5_5.c.obj
-
-homework/5/5_5.i: homework/5/5_5.c.i
-.PHONY : homework/5/5_5.i
+DSStudy/day_12/heapTest.i: DSStudy/day_12/heapTest.c.i
+.PHONY : DSStudy/day_12/heapTest.i
 
 # target to preprocess a source file
-homework/5/5_5.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/homework/5/5_5.c.i
-.PHONY : homework/5/5_5.c.i
+DSStudy/day_12/heapTest.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DSStudy/day_12/heapTest.c.i
+.PHONY : DSStudy/day_12/heapTest.c.i
 
-homework/5/5_5.s: homework/5/5_5.c.s
-.PHONY : homework/5/5_5.s
+DSStudy/day_12/heapTest.s: DSStudy/day_12/heapTest.c.s
+.PHONY : DSStudy/day_12/heapTest.s
 
 # target to generate assembly for a file
-homework/5/5_5.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/homework/5/5_5.c.s
-.PHONY : homework/5/5_5.c.s
+DSStudy/day_12/heapTest.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DSStudy/day_12/heapTest.c.s
+.PHONY : DSStudy/day_12/heapTest.c.s
 
 # Help Target
 help:
@@ -185,12 +161,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... smzy
-	@echo ... DSStudy/day_13/Heap.obj
-	@echo ... DSStudy/day_13/Heap.i
-	@echo ... DSStudy/day_13/Heap.s
-	@echo ... homework/5/5_5.obj
-	@echo ... homework/5/5_5.i
-	@echo ... homework/5/5_5.s
+	@echo ... DSStudy/day_12/heapTest.obj
+	@echo ... DSStudy/day_12/heapTest.i
+	@echo ... DSStudy/day_12/heapTest.s
 .PHONY : help
 
 
