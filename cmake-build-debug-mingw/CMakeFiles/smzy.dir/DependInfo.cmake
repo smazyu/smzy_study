@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "E:/GitHub/smzy_study/DSStudy/day_13/Heap.c" "CMakeFiles/smzy.dir/DSStudy/day_13/Heap.c.obj" "gcc" "CMakeFiles/smzy.dir/DSStudy/day_13/Heap.c.obj.d"
   "E:/GitHub/smzy_study/homework/5/5_5.c" "CMakeFiles/smzy.dir/homework/5/5_5.c.obj" "gcc" "CMakeFiles/smzy.dir/homework/5/5_5.c.obj.d"
   )
 

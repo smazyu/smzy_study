@@ -84,6 +84,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="E:/GitHub/smzy_study/DSStudy/day_13/Heap.c">
+			<Option target="smzy"/>
+		</Unit>
 		<Unit filename="E:/GitHub/smzy_study/homework/5/5_5.c">
 			<Option target="smzy"/>
 		</Unit>
