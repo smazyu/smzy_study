@@ -29,10 +29,12 @@ void AdjustDown(int *a,int n,int root){
             Swap(&a[child],&a[parent]);
             parent = child;
             child = parent *2 +1;
+            
         }else{
             break;
         }
     }
+
 }
 void HeapSort(int *a,int n){
     //1.建堆
