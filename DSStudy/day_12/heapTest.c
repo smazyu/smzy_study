@@ -18,6 +18,7 @@ void Swap(HPDataType*p1,HPDataType*p2){
     *p1 = *p2;
     *p2 = temp;
 }
+
 void AdjustDown(int *a,int n,int root){
     int parent = root;
     int child = parent*2 +1;
