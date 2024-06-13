@@ -5,6 +5,5 @@ include_directories(.)
 
 #cmake_minimum_required(VERSION 3.20)
 add_executable(smzy
-        DSStudy/day_12/heapTest.c
-
+        DSStudy/sort/StraightInsertionSort.c
 )

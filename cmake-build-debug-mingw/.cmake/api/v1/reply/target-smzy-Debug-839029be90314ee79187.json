@@ -112,7 +112,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "DSStudy/day_12/heapTest.c",
+			"path" : "DSStudy/sort/StraightInsertionSort.c",
 			"sourceGroupIndex" : 0
 		}
 	],

@@ -128,29 +128,29 @@ smzy/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/build
 .PHONY : smzy/fast
 
-DSStudy/day_12/heapTest.obj: DSStudy/day_12/heapTest.c.obj
-.PHONY : DSStudy/day_12/heapTest.obj
+DSStudy/sort/StraightInsertionSort.obj: DSStudy/sort/StraightInsertionSort.c.obj
+.PHONY : DSStudy/sort/StraightInsertionSort.obj
 
 # target to build an object file
-DSStudy/day_12/heapTest.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DSStudy/day_12/heapTest.c.obj
-.PHONY : DSStudy/day_12/heapTest.c.obj
+DSStudy/sort/StraightInsertionSort.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DSStudy/sort/StraightInsertionSort.c.obj
+.PHONY : DSStudy/sort/StraightInsertionSort.c.obj
 
-DSStudy/day_12/heapTest.i: DSStudy/day_12/heapTest.c.i
-.PHONY : DSStudy/day_12/heapTest.i
+DSStudy/sort/StraightInsertionSort.i: DSStudy/sort/StraightInsertionSort.c.i
+.PHONY : DSStudy/sort/StraightInsertionSort.i
 
 # target to preprocess a source file
-DSStudy/day_12/heapTest.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DSStudy/day_12/heapTest.c.i
-.PHONY : DSStudy/day_12/heapTest.c.i
+DSStudy/sort/StraightInsertionSort.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DSStudy/sort/StraightInsertionSort.c.i
+.PHONY : DSStudy/sort/StraightInsertionSort.c.i
 
-DSStudy/day_12/heapTest.s: DSStudy/day_12/heapTest.c.s
-.PHONY : DSStudy/day_12/heapTest.s
+DSStudy/sort/StraightInsertionSort.s: DSStudy/sort/StraightInsertionSort.c.s
+.PHONY : DSStudy/sort/StraightInsertionSort.s
 
 # target to generate assembly for a file
-DSStudy/day_12/heapTest.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DSStudy/day_12/heapTest.c.s
-.PHONY : DSStudy/day_12/heapTest.c.s
+DSStudy/sort/StraightInsertionSort.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DSStudy/sort/StraightInsertionSort.c.s
+.PHONY : DSStudy/sort/StraightInsertionSort.c.s
 
 # Help Target
 help:
@@ -161,9 +161,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... smzy
-	@echo ... DSStudy/day_12/heapTest.obj
-	@echo ... DSStudy/day_12/heapTest.i
-	@echo ... DSStudy/day_12/heapTest.s
+	@echo ... DSStudy/sort/StraightInsertionSort.obj
+	@echo ... DSStudy/sort/StraightInsertionSort.i
+	@echo ... DSStudy/sort/StraightInsertionSort.s
 .PHONY : help
 
 

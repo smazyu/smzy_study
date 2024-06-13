@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "E:/GitHub/smzy_study/DSStudy/day_12/heapTest.c" "CMakeFiles/smzy.dir/DSStudy/day_12/heapTest.c.obj" "gcc" "CMakeFiles/smzy.dir/DSStudy/day_12/heapTest.c.obj.d"
+  "E:/GitHub/smzy_study/DSStudy/sort/StraightInsertionSort.c" "CMakeFiles/smzy.dir/DSStudy/sort/StraightInsertionSort.c.obj" "gcc" "CMakeFiles/smzy.dir/DSStudy/sort/StraightInsertionSort.c.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.
