@@ -95,6 +95,7 @@ void SListPopFront(SListNode **pphead){
         //free把内存的操作权交还给系统,即指针的地址不变,但指向的内存丢失了,成为了随机值
     }
 }
+
 SListNode * SListFind(SListNode* phead,SListDataType x){
     SListNode *cur = phead;
     while(cur){

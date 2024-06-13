@@ -21,6 +21,7 @@ typedef struct SeqList{
     int size;
     int capacity;
 }SL,SeqList;
+
 void SeqListCheckCapacity(SL* ps);
 void SeqListInit(SL* ps);
 void SeqListDestroy(SL* ps);
