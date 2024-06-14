@@ -128,29 +128,29 @@ smzy/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/build
 .PHONY : smzy/fast
 
-DSStudy/sort/StraightInsertionSort.obj: DSStudy/sort/StraightInsertionSort.c.obj
-.PHONY : DSStudy/sort/StraightInsertionSort.obj
+DSStudy/sort/BinaryInsertionSort.obj: DSStudy/sort/BinaryInsertionSort.c.obj
+.PHONY : DSStudy/sort/BinaryInsertionSort.obj
 
 # target to build an object file
-DSStudy/sort/StraightInsertionSort.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DSStudy/sort/StraightInsertionSort.c.obj
-.PHONY : DSStudy/sort/StraightInsertionSort.c.obj
+DSStudy/sort/BinaryInsertionSort.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DSStudy/sort/BinaryInsertionSort.c.obj
+.PHONY : DSStudy/sort/BinaryInsertionSort.c.obj
 
-DSStudy/sort/StraightInsertionSort.i: DSStudy/sort/StraightInsertionSort.c.i
-.PHONY : DSStudy/sort/StraightInsertionSort.i
+DSStudy/sort/BinaryInsertionSort.i: DSStudy/sort/BinaryInsertionSort.c.i
+.PHONY : DSStudy/sort/BinaryInsertionSort.i
 
 # target to preprocess a source file
-DSStudy/sort/StraightInsertionSort.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DSStudy/sort/StraightInsertionSort.c.i
-.PHONY : DSStudy/sort/StraightInsertionSort.c.i
+DSStudy/sort/BinaryInsertionSort.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DSStudy/sort/BinaryInsertionSort.c.i
+.PHONY : DSStudy/sort/BinaryInsertionSort.c.i
 
-DSStudy/sort/StraightInsertionSort.s: DSStudy/sort/StraightInsertionSort.c.s
-.PHONY : DSStudy/sort/StraightInsertionSort.s
+DSStudy/sort/BinaryInsertionSort.s: DSStudy/sort/BinaryInsertionSort.c.s
+.PHONY : DSStudy/sort/BinaryInsertionSort.s
 
 # target to generate assembly for a file
-DSStudy/sort/StraightInsertionSort.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DSStudy/sort/StraightInsertionSort.c.s
-.PHONY : DSStudy/sort/StraightInsertionSort.c.s
+DSStudy/sort/BinaryInsertionSort.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DSStudy/sort/BinaryInsertionSort.c.s
+.PHONY : DSStudy/sort/BinaryInsertionSort.c.s
 
 # Help Target
 help:
@@ -161,9 +161,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... smzy
-	@echo ... DSStudy/sort/StraightInsertionSort.obj
-	@echo ... DSStudy/sort/StraightInsertionSort.i
-	@echo ... DSStudy/sort/StraightInsertionSort.s
+	@echo ... DSStudy/sort/BinaryInsertionSort.obj
+	@echo ... DSStudy/sort/BinaryInsertionSort.i
+	@echo ... DSStudy/sort/BinaryInsertionSort.s
 .PHONY : help
 
 
