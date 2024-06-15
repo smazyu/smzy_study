@@ -112,7 +112,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "DSStudy/sort/StraightInsertionSort.c",
+			"path" : "DSStudy/sort/QuickSort.c",
 			"sourceGroupIndex" : 0
 		}
 	],

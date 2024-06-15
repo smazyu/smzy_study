@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/smzy.dir/DSStudy/sort/StraightInsertionSort.c.obj"
-  "CMakeFiles/smzy.dir/DSStudy/sort/StraightInsertionSort.c.obj.d"
+  "CMakeFiles/smzy.dir/DSStudy/sort/QuickSort.c.obj"
+  "CMakeFiles/smzy.dir/DSStudy/sort/QuickSort.c.obj.d"
   "libsmzy.dll.a"
   "smzy.exe"
   "smzy.exe.manifest"
