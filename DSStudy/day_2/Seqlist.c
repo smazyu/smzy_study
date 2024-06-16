@@ -7,6 +7,7 @@ void SeqListInit(SL*s){
     if(s -> a == NULL){
         printf("false\n");
         exit(-1);
+
     }
     s -> size = 0;
     s -> capacity = 4;
