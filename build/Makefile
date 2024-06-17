@@ -128,53 +128,29 @@ smzy/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/build
 .PHONY : smzy/fast
 
-DataStructStudy/day_8/List.obj: DataStructStudy/day_8/List.c.obj
-.PHONY : DataStructStudy/day_8/List.obj
+DSStudy/sort/QuickSort.obj: DSStudy/sort/QuickSort.c.obj
+.PHONY : DSStudy/sort/QuickSort.obj
 
 # target to build an object file
-DataStructStudy/day_8/List.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DataStructStudy/day_8/List.c.obj
-.PHONY : DataStructStudy/day_8/List.c.obj
+DSStudy/sort/QuickSort.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DSStudy/sort/QuickSort.c.obj
+.PHONY : DSStudy/sort/QuickSort.c.obj
 
-DataStructStudy/day_8/List.i: DataStructStudy/day_8/List.c.i
-.PHONY : DataStructStudy/day_8/List.i
-
-# target to preprocess a source file
-DataStructStudy/day_8/List.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DataStructStudy/day_8/List.c.i
-.PHONY : DataStructStudy/day_8/List.c.i
-
-DataStructStudy/day_8/List.s: DataStructStudy/day_8/List.c.s
-.PHONY : DataStructStudy/day_8/List.s
-
-# target to generate assembly for a file
-DataStructStudy/day_8/List.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DataStructStudy/day_8/List.c.s
-.PHONY : DataStructStudy/day_8/List.c.s
-
-DataStructStudy/day_8/text.obj: DataStructStudy/day_8/text.c.obj
-.PHONY : DataStructStudy/day_8/text.obj
-
-# target to build an object file
-DataStructStudy/day_8/text.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DataStructStudy/day_8/text.c.obj
-.PHONY : DataStructStudy/day_8/text.c.obj
-
-DataStructStudy/day_8/text.i: DataStructStudy/day_8/text.c.i
-.PHONY : DataStructStudy/day_8/text.i
+DSStudy/sort/QuickSort.i: DSStudy/sort/QuickSort.c.i
+.PHONY : DSStudy/sort/QuickSort.i
 
 # target to preprocess a source file
-DataStructStudy/day_8/text.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DataStructStudy/day_8/text.c.i
-.PHONY : DataStructStudy/day_8/text.c.i
+DSStudy/sort/QuickSort.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DSStudy/sort/QuickSort.c.i
+.PHONY : DSStudy/sort/QuickSort.c.i
 
-DataStructStudy/day_8/text.s: DataStructStudy/day_8/text.c.s
-.PHONY : DataStructStudy/day_8/text.s
+DSStudy/sort/QuickSort.s: DSStudy/sort/QuickSort.c.s
+.PHONY : DSStudy/sort/QuickSort.s
 
 # target to generate assembly for a file
-DataStructStudy/day_8/text.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DataStructStudy/day_8/text.c.s
-.PHONY : DataStructStudy/day_8/text.c.s
+DSStudy/sort/QuickSort.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DSStudy/sort/QuickSort.c.s
+.PHONY : DSStudy/sort/QuickSort.c.s
 
 # Help Target
 help:
@@ -185,12 +161,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... smzy
-	@echo ... DataStructStudy/day_8/List.obj
-	@echo ... DataStructStudy/day_8/List.i
-	@echo ... DataStructStudy/day_8/List.s
-	@echo ... DataStructStudy/day_8/text.obj
-	@echo ... DataStructStudy/day_8/text.i
-	@echo ... DataStructStudy/day_8/text.s
+	@echo ... DSStudy/sort/QuickSort.obj
+	@echo ... DSStudy/sort/QuickSort.i
+	@echo ... DSStudy/sort/QuickSort.s
 .PHONY : help
 
 
