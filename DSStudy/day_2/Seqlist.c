@@ -7,7 +7,6 @@ void SeqListInit(SL*s){
     if(s -> a == NULL){
         printf("false\n");
         exit(-1);
-
     }
     s -> size = 0;
     s -> capacity = 4;
@@ -17,7 +16,6 @@ void SeqListPushBack(SL* ps ,SLDataType x)//尾插
     assert(ps);
     //如果满了，需要增容
     SeqListCheckCapacity(ps);
-
     //越界是设点检查
     //size的位置其实是最后一个元素下一个元素位置的下标
     ps -> a[ps -> size] = x;
@@ -35,7 +33,6 @@ void SeqListPopBack(SL* ps ){
     ps -> a[ps -> size - 1] = 0;
     ps -> size--;
 }
-//
 void SeqListPushFront(SL* ps ,SLDataType x){
     int end = ps -> size - 1;
     //循环想的是结束的条件，写的是继续的条件
@@ -80,7 +77,6 @@ void SeqListPopFront(SL* ps ){
     }
     ps -> size--;
 }
-//
 void SeqListInsert(SL* ps,int pos,SLDataType x){
     assert(ps);
     assert(pos < ps ->size && pos >= 0);
