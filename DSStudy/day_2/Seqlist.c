@@ -88,6 +88,7 @@ void SeqListInsert(SL* ps,int pos,SLDataType x){
         ps -> a[end + 1] = ps -> a[end];
         --end;
     }
+    
     ps -> a[pos] = x;
     ps ->size++;
     SeqListCheckCapacity(ps);
