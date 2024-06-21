@@ -128,29 +128,29 @@ smzy/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/build
 .PHONY : smzy/fast
 
-DSStudy/sort/QuickSort.obj: DSStudy/sort/QuickSort.c.obj
-.PHONY : DSStudy/sort/QuickSort.obj
+DSStudy/day_14/heap.obj: DSStudy/day_14/heap.c.obj
+.PHONY : DSStudy/day_14/heap.obj
 
 # target to build an object file
-DSStudy/sort/QuickSort.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DSStudy/sort/QuickSort.c.obj
-.PHONY : DSStudy/sort/QuickSort.c.obj
+DSStudy/day_14/heap.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DSStudy/day_14/heap.c.obj
+.PHONY : DSStudy/day_14/heap.c.obj
 
-DSStudy/sort/QuickSort.i: DSStudy/sort/QuickSort.c.i
-.PHONY : DSStudy/sort/QuickSort.i
+DSStudy/day_14/heap.i: DSStudy/day_14/heap.c.i
+.PHONY : DSStudy/day_14/heap.i
 
 # target to preprocess a source file
-DSStudy/sort/QuickSort.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DSStudy/sort/QuickSort.c.i
-.PHONY : DSStudy/sort/QuickSort.c.i
+DSStudy/day_14/heap.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DSStudy/day_14/heap.c.i
+.PHONY : DSStudy/day_14/heap.c.i
 
-DSStudy/sort/QuickSort.s: DSStudy/sort/QuickSort.c.s
-.PHONY : DSStudy/sort/QuickSort.s
+DSStudy/day_14/heap.s: DSStudy/day_14/heap.c.s
+.PHONY : DSStudy/day_14/heap.s
 
 # target to generate assembly for a file
-DSStudy/sort/QuickSort.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DSStudy/sort/QuickSort.c.s
-.PHONY : DSStudy/sort/QuickSort.c.s
+DSStudy/day_14/heap.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DSStudy/day_14/heap.c.s
+.PHONY : DSStudy/day_14/heap.c.s
 
 # Help Target
 help:
@@ -161,9 +161,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... smzy
-	@echo ... DSStudy/sort/QuickSort.obj
-	@echo ... DSStudy/sort/QuickSort.i
-	@echo ... DSStudy/sort/QuickSort.s
+	@echo ... DSStudy/day_14/heap.obj
+	@echo ... DSStudy/day_14/heap.i
+	@echo ... DSStudy/day_14/heap.s
 .PHONY : help
 
 

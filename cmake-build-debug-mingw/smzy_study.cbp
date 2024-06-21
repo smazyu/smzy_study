@@ -84,7 +84,10 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="E:/GitHub/smzy_study/DSStudy/sort/QuickSort.c">
+		<Unit filename="E:/GitHub/smzy_study/DSStudy/day_14/heap.c">
+			<Option target="smzy"/>
+		</Unit>
+		<Unit filename="E:/GitHub/smzy_study/DSStudy/day_14/heap.h">
 			<Option target="smzy"/>
 		</Unit>
 		<Unit filename="E:/GitHub/smzy_study/CMakeLists.txt">
