@@ -1,6 +1,7 @@
 from typing import List
 from queue import Queue
 class DancePartner:
+    
     def __init__(self, dance_male_list: List[str], dance_female_list: List[str], dance_num: int):
         self.dance_male_list = dance_male_list
         self.dance_female_list = dance_female_list
