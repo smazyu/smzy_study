@@ -7,4 +7,5 @@ include_directories(.)
 add_executable(smzy
         DSStudy/day_14/heap.c
         DSStudy/day_14/heap.h
+        DSStudy/day_14/test.c
 )
