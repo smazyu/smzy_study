@@ -20,6 +20,19 @@ void Swap(HPDataType*p1,HPDataType*p2){
     *p2 = temp;
 }
 //前提是左右子树都是小堆
+void AdustUp (HPDataType *a,int n,int child){
+    int parent = (child-1)/2;
+    while(child > 0){
+        if(a[child] < a[parent]){
+            Swap(&a[child],&a[parent]);
+            child = parent;
+            parent = (child -1)/2;
+        }
+        else{
+            break;
+        }
+    }
+}
 void AdustDown(HPDataType *a,int n,int root){
     int parent = root;
     int child = parent *2 + 1;//左孩子
@@ -52,7 +65,7 @@ void HeadPush(struct heap* php,HPDataType x){
         php -> _a = tmp;
      }
      php -> _a[php ->_size ++] = x;
-     AdustUp(php -> _a,)
+     AdustUp(php -> _a,php -> _size,php -> _size -1);
 }
 void HeadPop(struct heap* php);
 HPDataType HeapTop(struct heap* php);
