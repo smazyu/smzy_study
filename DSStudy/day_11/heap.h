@@ -8,6 +8,7 @@ typedef int HPDataType;
 #include <malloc.h>
 #include <stdio.h>
 #include <string.h>
+#include <assert.h>
 struct heap{
     HPDataType *_a;
     int _size;

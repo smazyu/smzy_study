@@ -38,7 +38,14 @@ void AdustDown(HPDataType *a,int n,int root){
     }
 
 }
-void HeapDestory(struct heap *php);
-void HeadPush(struct heap* php,HPDataType x);
+void HeapDestory(struct heap* php){
+    assert(php);
+    free(php -> _a);
+    php -> _a = NULL;
+    php -> _capacity = php -> _size = 0;
+}
+void HeadPush(struct heap* php,HPDataType x){
+     
+}
 void HeadPop(struct heap* php);
 HPDataType HeapTop(struct heap* php);

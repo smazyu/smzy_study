@@ -26,9 +26,11 @@ void AdjustDown(int *a,int n,int root){
     int parent = root;
     int child = parent*2 +1;
     while(child < n){
+        //大堆if(child + 1 < n && a[child +1] > a[child]){
         if(child + 1 < n && a[child +1] < a[child]){
             ++child;
         }
+        //if(a[child] > a[parent]){
         if(a[child] < a[parent]){
             Swap(&a[child],&a[parent]);
             parent = child;
@@ -42,7 +44,7 @@ void AdjustDown(int *a,int n,int root){
 void HeapSort(int *a,int n){
     //1.建堆
     for(int i = (n-1-1)/2;i >= 0;--i){
-        
+
         AdjustDown(a,n,i);
     }
     int end = n -1;
@@ -53,3 +55,4 @@ void HeapSort(int *a,int n){
         --end;
     }
 }
+//排升序建大堆，排降序建小堆
