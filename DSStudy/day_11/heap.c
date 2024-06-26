@@ -67,5 +67,12 @@ void HeadPush(struct heap* php,HPDataType x){
      php -> _a[php ->_size ++] = x;
      AdustUp(php -> _a,php -> _size,php -> _size -1);
 }
-void HeadPop(struct heap* php);
+void HeadPop(struct heap* php){
+    assert(php);
+    assert(php -> _size >0);
+    Swap(&php -> _a[0],&php -> _a[php -> _size -1]);
+    php -> _size --;
+    AdustDown(php -> _a,php -> _size,0);
+}
+
 HPDataType HeapTop(struct heap* php);
