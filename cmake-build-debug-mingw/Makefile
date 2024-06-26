@@ -128,53 +128,29 @@ smzy/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/build
 .PHONY : smzy/fast
 
-DSStudy/day_14/heap.obj: DSStudy/day_14/heap.c.obj
-.PHONY : DSStudy/day_14/heap.obj
+DSStudy/day_15/BinaryTree.obj: DSStudy/day_15/BinaryTree.c.obj
+.PHONY : DSStudy/day_15/BinaryTree.obj
 
 # target to build an object file
-DSStudy/day_14/heap.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DSStudy/day_14/heap.c.obj
-.PHONY : DSStudy/day_14/heap.c.obj
+DSStudy/day_15/BinaryTree.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DSStudy/day_15/BinaryTree.c.obj
+.PHONY : DSStudy/day_15/BinaryTree.c.obj
 
-DSStudy/day_14/heap.i: DSStudy/day_14/heap.c.i
-.PHONY : DSStudy/day_14/heap.i
-
-# target to preprocess a source file
-DSStudy/day_14/heap.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DSStudy/day_14/heap.c.i
-.PHONY : DSStudy/day_14/heap.c.i
-
-DSStudy/day_14/heap.s: DSStudy/day_14/heap.c.s
-.PHONY : DSStudy/day_14/heap.s
-
-# target to generate assembly for a file
-DSStudy/day_14/heap.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DSStudy/day_14/heap.c.s
-.PHONY : DSStudy/day_14/heap.c.s
-
-DSStudy/day_14/test.obj: DSStudy/day_14/test.c.obj
-.PHONY : DSStudy/day_14/test.obj
-
-# target to build an object file
-DSStudy/day_14/test.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DSStudy/day_14/test.c.obj
-.PHONY : DSStudy/day_14/test.c.obj
-
-DSStudy/day_14/test.i: DSStudy/day_14/test.c.i
-.PHONY : DSStudy/day_14/test.i
+DSStudy/day_15/BinaryTree.i: DSStudy/day_15/BinaryTree.c.i
+.PHONY : DSStudy/day_15/BinaryTree.i
 
 # target to preprocess a source file
-DSStudy/day_14/test.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DSStudy/day_14/test.c.i
-.PHONY : DSStudy/day_14/test.c.i
+DSStudy/day_15/BinaryTree.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DSStudy/day_15/BinaryTree.c.i
+.PHONY : DSStudy/day_15/BinaryTree.c.i
 
-DSStudy/day_14/test.s: DSStudy/day_14/test.c.s
-.PHONY : DSStudy/day_14/test.s
+DSStudy/day_15/BinaryTree.s: DSStudy/day_15/BinaryTree.c.s
+.PHONY : DSStudy/day_15/BinaryTree.s
 
 # target to generate assembly for a file
-DSStudy/day_14/test.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DSStudy/day_14/test.c.s
-.PHONY : DSStudy/day_14/test.c.s
+DSStudy/day_15/BinaryTree.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DSStudy/day_15/BinaryTree.c.s
+.PHONY : DSStudy/day_15/BinaryTree.c.s
 
 # Help Target
 help:
@@ -185,12 +161,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... smzy
-	@echo ... DSStudy/day_14/heap.obj
-	@echo ... DSStudy/day_14/heap.i
-	@echo ... DSStudy/day_14/heap.s
-	@echo ... DSStudy/day_14/test.obj
-	@echo ... DSStudy/day_14/test.i
-	@echo ... DSStudy/day_14/test.s
+	@echo ... DSStudy/day_15/BinaryTree.obj
+	@echo ... DSStudy/day_15/BinaryTree.i
+	@echo ... DSStudy/day_15/BinaryTree.s
 .PHONY : help
 
 
