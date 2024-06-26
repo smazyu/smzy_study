@@ -45,7 +45,14 @@ void HeapDestory(struct heap* php){
     php -> _capacity = php -> _size = 0;
 }
 void HeadPush(struct heap* php,HPDataType x){
-     
+     assert(php);
+     if(php -> _size == php -> _capacity){
+         php -> _capacity *= 2;
+         HPDataType *tmp = (HPDataType *)(php-> _a,sizeof(HPDataType)* php -> _capacity);
+        php -> _a = tmp;
+     }
+     php -> _a[php ->_size ++] = x;
+     AdustUp(php -> _a,)
 }
 void HeadPop(struct heap* php);
 HPDataType HeapTop(struct heap* php);
