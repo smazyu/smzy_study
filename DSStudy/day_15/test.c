@@ -17,6 +17,15 @@ void PrevOrder(BTNode* root){
 int TreeSize(BTNode* root){
     return 0;
 }
+BTNode *CreateNode(int x){
+    BTNode *node = (BTNode*)malloc(sizeof(BTnode));
+    node -> _data = x;
+    node -> _left = NULL;
+    node -> _right = NULL;
+    return node;
+}
 int main(){
+    
+    BTNode *A = 
     return 0;
 }
