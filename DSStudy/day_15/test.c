@@ -24,6 +24,7 @@ void PrevOrder(BTNode* root) {
 int TreeSize(BTNode* root) {
     if (root == NULL)
         return 0;
+    
     else
         return 1 + TreeSize(root->_left) + TreeSize(root->_right);
 }
