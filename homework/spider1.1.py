@@ -14,6 +14,9 @@ headers = {
 response = requests.get(url, headers=headers)
 html = response.content.decode()
 
+
+
+
 # 保存网页内容到文件
 if not os.path.exists('1.html'):
     with open('1.html', 'w', encoding='utf-8') as file:
