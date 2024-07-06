@@ -9,7 +9,7 @@ typedef char BTDataType;
 typedef struct BinaryTreeNode {
     BTDataType _data;
     struct BinaryTreeNode* _left;
-    struct BinaryTreeNode* _right;t
+    struct BinaryTreeNode* _right;
 } BTNode;
 
 void PrevOrder(BTNode* root) {
@@ -21,11 +21,29 @@ void PrevOrder(BTNode* root) {
     PrevOrder(root->_right);
 }
 
+void InOrder(BTNode* root) {
+    if (root == NULL){
+        printf("NULL ");
+        return;}
+     // Changed %d to %c for char data
+    InOrder(root->_left);
+    printf("%c ", root->_data);
+    InOrder(root->_right);
+}
+void PostOrder(BTNode* root) {
+    if (root == NULL){
+        printf("NULL ");
+        return;}
+     // Changed %d to %c for char data
+    PostOrder(root->_left);
+    PostOrder(root->_right);
+    printf("%c ", root->_data);
+}
+
 int TreeSize(BTNode* root) {
     if (root == NULL)
         return 0;
-    
-    else
+    else 
         return 1 + TreeSize(root->_left) + TreeSize(root->_right);
 }
 BTNode* CreateNode(BTDataType x) {
@@ -52,8 +70,12 @@ int main() {
     B->_left = D;
     B->_right = E;
 
-    printf("Preorder traversal: ");
+    printf("Preorder traversal: \n");
     PrevOrder(A);
+    printf("\n");
+    InOrder(A);
+    printf("\n");
+    PostOrder(A);
     printf("\n");
 
     printf("Tree size: %d\n", TreeSize(A));
