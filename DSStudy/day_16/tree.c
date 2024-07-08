@@ -38,6 +38,7 @@ void PostOrder(BTNode* root) {
     PostOrder(root->_left);
     PostOrder(root->_right);
     printf("%c ", root->_data);
+    
 }
 
 int TreeSize(BTNode* root) {
