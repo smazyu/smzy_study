@@ -14,6 +14,7 @@
 //    //write file
 //    fclose(pf);
 //}
+
 int main(){
     FILE*pf = fopen("../c_study/day_37/txt.data","w");
 //    fputc('b',stdout);
