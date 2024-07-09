@@ -7,6 +7,11 @@
 //前中后 深度优先遍历
 //通过递归定义
 //深度 就是访问方式先往深走
+
+
+//层遍历 广度优先遍历
+//层序就是一层一层的走 一层一层的往下遍历
+
 #define DataType int
 typedef struct Node{
     DataType
