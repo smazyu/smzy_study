@@ -15,4 +15,5 @@
 #define DataType int
 typedef struct Node{
     DataType
+
 };
