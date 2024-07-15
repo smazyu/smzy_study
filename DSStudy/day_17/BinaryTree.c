@@ -20,6 +20,7 @@
 //1.子问题 左子树 右子树
 //2.返回条件 空树
 //先序 根 左子树 右子树
+//通过递归调用
 #define DataType int
 typedef struct Node{
     DataType
