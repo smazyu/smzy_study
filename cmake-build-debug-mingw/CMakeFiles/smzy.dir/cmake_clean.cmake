@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/smzy.dir/DSStudy/day_17/ASubtreeAfAnotherTree.c.obj"
+  "CMakeFiles/smzy.dir/DSStudy/day_17/ASubtreeAfAnotherTree.c.obj.d"
   "CMakeFiles/smzy.dir/DSStudy/day_17/FlipBinaryTree.c.obj"
   "CMakeFiles/smzy.dir/DSStudy/day_17/FlipBinaryTree.c.obj.d"
   "CMakeFiles/smzy.dir/DSStudy/day_17/IsSameTree.c.obj"

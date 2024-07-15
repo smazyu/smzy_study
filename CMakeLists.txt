@@ -7,4 +7,5 @@ include_directories(.)
 add_executable(smzy
         DSStudy/day_17/FlipBinaryTree.c
         DSStudy/day_17/IsSameTree.c
+        DSStudy/day_17/ASubtreeAfAnotherTree.c
 )
