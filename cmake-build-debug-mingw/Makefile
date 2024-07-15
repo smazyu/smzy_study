@@ -152,6 +152,30 @@ DSStudy/day_17/FlipBinaryTree.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DSStudy/day_17/FlipBinaryTree.c.s
 .PHONY : DSStudy/day_17/FlipBinaryTree.c.s
 
+DSStudy/day_17/IsSameTree.obj: DSStudy/day_17/IsSameTree.c.obj
+.PHONY : DSStudy/day_17/IsSameTree.obj
+
+# target to build an object file
+DSStudy/day_17/IsSameTree.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DSStudy/day_17/IsSameTree.c.obj
+.PHONY : DSStudy/day_17/IsSameTree.c.obj
+
+DSStudy/day_17/IsSameTree.i: DSStudy/day_17/IsSameTree.c.i
+.PHONY : DSStudy/day_17/IsSameTree.i
+
+# target to preprocess a source file
+DSStudy/day_17/IsSameTree.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DSStudy/day_17/IsSameTree.c.i
+.PHONY : DSStudy/day_17/IsSameTree.c.i
+
+DSStudy/day_17/IsSameTree.s: DSStudy/day_17/IsSameTree.c.s
+.PHONY : DSStudy/day_17/IsSameTree.s
+
+# target to generate assembly for a file
+DSStudy/day_17/IsSameTree.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DSStudy/day_17/IsSameTree.c.s
+.PHONY : DSStudy/day_17/IsSameTree.c.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -164,6 +188,9 @@ help:
 	@echo ... DSStudy/day_17/FlipBinaryTree.obj
 	@echo ... DSStudy/day_17/FlipBinaryTree.i
 	@echo ... DSStudy/day_17/FlipBinaryTree.s
+	@echo ... DSStudy/day_17/IsSameTree.obj
+	@echo ... DSStudy/day_17/IsSameTree.i
+	@echo ... DSStudy/day_17/IsSameTree.s
 .PHONY : help
 
 

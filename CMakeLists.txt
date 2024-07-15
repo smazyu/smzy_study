@@ -6,4 +6,5 @@ include_directories(.)
 #cmake_minimum_required(VERSION 3.20)
 add_executable(smzy
         DSStudy/day_17/FlipBinaryTree.c
+        DSStudy/day_17/IsSameTree.c
 )
