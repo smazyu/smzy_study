@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/smzy.dir/DSStudy/day_17/Pre-order_traversal_of_a_binary_tree.c.obj"
-  "CMakeFiles/smzy.dir/DSStudy/day_17/Pre-order_traversal_of_a_binary_tree.c.obj.d"
+  "CMakeFiles/smzy.dir/DSStudy/day_17/SingleValuedBinaryTree.c.obj"
+  "CMakeFiles/smzy.dir/DSStudy/day_17/SingleValuedBinaryTree.c.obj.d"
   "libsmzy.dll.a"
   "smzy.exe"
   "smzy.exe.manifest"

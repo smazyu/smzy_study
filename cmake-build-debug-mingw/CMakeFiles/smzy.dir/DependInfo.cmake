@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "E:/GitHub/smzy_study/DSStudy/day_17/Pre-order traversal of a binary tree.c" "CMakeFiles/smzy.dir/DSStudy/day_17/Pre-order_traversal_of_a_binary_tree.c.obj" "gcc" "CMakeFiles/smzy.dir/DSStudy/day_17/Pre-order_traversal_of_a_binary_tree.c.obj.d"
+  "E:/GitHub/smzy_study/DSStudy/day_17/SingleValuedBinaryTree.c" "CMakeFiles/smzy.dir/DSStudy/day_17/SingleValuedBinaryTree.c.obj" "gcc" "CMakeFiles/smzy.dir/DSStudy/day_17/SingleValuedBinaryTree.c.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.
