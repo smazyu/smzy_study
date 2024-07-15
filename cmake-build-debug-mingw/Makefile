@@ -128,29 +128,29 @@ smzy/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/build
 .PHONY : smzy/fast
 
-DSStudy/day_17/SingleValuedBinaryTree.obj: DSStudy/day_17/SingleValuedBinaryTree.c.obj
-.PHONY : DSStudy/day_17/SingleValuedBinaryTree.obj
+DSStudy/day_17/FlipBinaryTree.obj: DSStudy/day_17/FlipBinaryTree.c.obj
+.PHONY : DSStudy/day_17/FlipBinaryTree.obj
 
 # target to build an object file
-DSStudy/day_17/SingleValuedBinaryTree.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DSStudy/day_17/SingleValuedBinaryTree.c.obj
-.PHONY : DSStudy/day_17/SingleValuedBinaryTree.c.obj
+DSStudy/day_17/FlipBinaryTree.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DSStudy/day_17/FlipBinaryTree.c.obj
+.PHONY : DSStudy/day_17/FlipBinaryTree.c.obj
 
-DSStudy/day_17/SingleValuedBinaryTree.i: DSStudy/day_17/SingleValuedBinaryTree.c.i
-.PHONY : DSStudy/day_17/SingleValuedBinaryTree.i
+DSStudy/day_17/FlipBinaryTree.i: DSStudy/day_17/FlipBinaryTree.c.i
+.PHONY : DSStudy/day_17/FlipBinaryTree.i
 
 # target to preprocess a source file
-DSStudy/day_17/SingleValuedBinaryTree.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DSStudy/day_17/SingleValuedBinaryTree.c.i
-.PHONY : DSStudy/day_17/SingleValuedBinaryTree.c.i
+DSStudy/day_17/FlipBinaryTree.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DSStudy/day_17/FlipBinaryTree.c.i
+.PHONY : DSStudy/day_17/FlipBinaryTree.c.i
 
-DSStudy/day_17/SingleValuedBinaryTree.s: DSStudy/day_17/SingleValuedBinaryTree.c.s
-.PHONY : DSStudy/day_17/SingleValuedBinaryTree.s
+DSStudy/day_17/FlipBinaryTree.s: DSStudy/day_17/FlipBinaryTree.c.s
+.PHONY : DSStudy/day_17/FlipBinaryTree.s
 
 # target to generate assembly for a file
-DSStudy/day_17/SingleValuedBinaryTree.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DSStudy/day_17/SingleValuedBinaryTree.c.s
-.PHONY : DSStudy/day_17/SingleValuedBinaryTree.c.s
+DSStudy/day_17/FlipBinaryTree.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DSStudy/day_17/FlipBinaryTree.c.s
+.PHONY : DSStudy/day_17/FlipBinaryTree.c.s
 
 # Help Target
 help:
@@ -161,9 +161,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... smzy
-	@echo ... DSStudy/day_17/SingleValuedBinaryTree.obj
-	@echo ... DSStudy/day_17/SingleValuedBinaryTree.i
-	@echo ... DSStudy/day_17/SingleValuedBinaryTree.s
+	@echo ... DSStudy/day_17/FlipBinaryTree.obj
+	@echo ... DSStudy/day_17/FlipBinaryTree.i
+	@echo ... DSStudy/day_17/FlipBinaryTree.s
 .PHONY : help
 
 
