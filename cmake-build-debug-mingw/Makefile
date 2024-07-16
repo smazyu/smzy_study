@@ -128,77 +128,29 @@ smzy/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/build
 .PHONY : smzy/fast
 
-DSStudy/day_17/ASubtreeAfAnotherTree.obj: DSStudy/day_17/ASubtreeAfAnotherTree.c.obj
-.PHONY : DSStudy/day_17/ASubtreeAfAnotherTree.obj
+DSStudy/day_18/BalancedBinaryTree.obj: DSStudy/day_18/BalancedBinaryTree.c.obj
+.PHONY : DSStudy/day_18/BalancedBinaryTree.obj
 
 # target to build an object file
-DSStudy/day_17/ASubtreeAfAnotherTree.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DSStudy/day_17/ASubtreeAfAnotherTree.c.obj
-.PHONY : DSStudy/day_17/ASubtreeAfAnotherTree.c.obj
+DSStudy/day_18/BalancedBinaryTree.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DSStudy/day_18/BalancedBinaryTree.c.obj
+.PHONY : DSStudy/day_18/BalancedBinaryTree.c.obj
 
-DSStudy/day_17/ASubtreeAfAnotherTree.i: DSStudy/day_17/ASubtreeAfAnotherTree.c.i
-.PHONY : DSStudy/day_17/ASubtreeAfAnotherTree.i
-
-# target to preprocess a source file
-DSStudy/day_17/ASubtreeAfAnotherTree.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DSStudy/day_17/ASubtreeAfAnotherTree.c.i
-.PHONY : DSStudy/day_17/ASubtreeAfAnotherTree.c.i
-
-DSStudy/day_17/ASubtreeAfAnotherTree.s: DSStudy/day_17/ASubtreeAfAnotherTree.c.s
-.PHONY : DSStudy/day_17/ASubtreeAfAnotherTree.s
-
-# target to generate assembly for a file
-DSStudy/day_17/ASubtreeAfAnotherTree.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DSStudy/day_17/ASubtreeAfAnotherTree.c.s
-.PHONY : DSStudy/day_17/ASubtreeAfAnotherTree.c.s
-
-DSStudy/day_17/FlipBinaryTree.obj: DSStudy/day_17/FlipBinaryTree.c.obj
-.PHONY : DSStudy/day_17/FlipBinaryTree.obj
-
-# target to build an object file
-DSStudy/day_17/FlipBinaryTree.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DSStudy/day_17/FlipBinaryTree.c.obj
-.PHONY : DSStudy/day_17/FlipBinaryTree.c.obj
-
-DSStudy/day_17/FlipBinaryTree.i: DSStudy/day_17/FlipBinaryTree.c.i
-.PHONY : DSStudy/day_17/FlipBinaryTree.i
+DSStudy/day_18/BalancedBinaryTree.i: DSStudy/day_18/BalancedBinaryTree.c.i
+.PHONY : DSStudy/day_18/BalancedBinaryTree.i
 
 # target to preprocess a source file
-DSStudy/day_17/FlipBinaryTree.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DSStudy/day_17/FlipBinaryTree.c.i
-.PHONY : DSStudy/day_17/FlipBinaryTree.c.i
+DSStudy/day_18/BalancedBinaryTree.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DSStudy/day_18/BalancedBinaryTree.c.i
+.PHONY : DSStudy/day_18/BalancedBinaryTree.c.i
 
-DSStudy/day_17/FlipBinaryTree.s: DSStudy/day_17/FlipBinaryTree.c.s
-.PHONY : DSStudy/day_17/FlipBinaryTree.s
-
-# target to generate assembly for a file
-DSStudy/day_17/FlipBinaryTree.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DSStudy/day_17/FlipBinaryTree.c.s
-.PHONY : DSStudy/day_17/FlipBinaryTree.c.s
-
-DSStudy/day_17/IsSameTree.obj: DSStudy/day_17/IsSameTree.c.obj
-.PHONY : DSStudy/day_17/IsSameTree.obj
-
-# target to build an object file
-DSStudy/day_17/IsSameTree.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DSStudy/day_17/IsSameTree.c.obj
-.PHONY : DSStudy/day_17/IsSameTree.c.obj
-
-DSStudy/day_17/IsSameTree.i: DSStudy/day_17/IsSameTree.c.i
-.PHONY : DSStudy/day_17/IsSameTree.i
-
-# target to preprocess a source file
-DSStudy/day_17/IsSameTree.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DSStudy/day_17/IsSameTree.c.i
-.PHONY : DSStudy/day_17/IsSameTree.c.i
-
-DSStudy/day_17/IsSameTree.s: DSStudy/day_17/IsSameTree.c.s
-.PHONY : DSStudy/day_17/IsSameTree.s
+DSStudy/day_18/BalancedBinaryTree.s: DSStudy/day_18/BalancedBinaryTree.c.s
+.PHONY : DSStudy/day_18/BalancedBinaryTree.s
 
 # target to generate assembly for a file
-DSStudy/day_17/IsSameTree.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DSStudy/day_17/IsSameTree.c.s
-.PHONY : DSStudy/day_17/IsSameTree.c.s
+DSStudy/day_18/BalancedBinaryTree.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DSStudy/day_18/BalancedBinaryTree.c.s
+.PHONY : DSStudy/day_18/BalancedBinaryTree.c.s
 
 # Help Target
 help:
@@ -209,15 +161,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... smzy
-	@echo ... DSStudy/day_17/ASubtreeAfAnotherTree.obj
-	@echo ... DSStudy/day_17/ASubtreeAfAnotherTree.i
-	@echo ... DSStudy/day_17/ASubtreeAfAnotherTree.s
-	@echo ... DSStudy/day_17/FlipBinaryTree.obj
-	@echo ... DSStudy/day_17/FlipBinaryTree.i
-	@echo ... DSStudy/day_17/FlipBinaryTree.s
-	@echo ... DSStudy/day_17/IsSameTree.obj
-	@echo ... DSStudy/day_17/IsSameTree.i
-	@echo ... DSStudy/day_17/IsSameTree.s
+	@echo ... DSStudy/day_18/BalancedBinaryTree.obj
+	@echo ... DSStudy/day_18/BalancedBinaryTree.i
+	@echo ... DSStudy/day_18/BalancedBinaryTree.s
 .PHONY : help
 
 
