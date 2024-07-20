@@ -28,6 +28,7 @@ int TreeDepth(struct TreeNode* root) {
 //如果我们使用后序判读 就可以解决这个问题
 bool isBalanced(struct TreeNode* root) {
     if (root == NULL)
+        
         return true;
     int treeRight = TreeDepth(root->right);
     int treeLeft = TreeDepth(root->left);
