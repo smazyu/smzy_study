@@ -24,6 +24,7 @@ int TreeDepth(struct TreeNode* root) {
 
 //我们现在采用的是一种前序判断
 //导致计算高度存在大量的重复
+
 //如果我们使用后序判读 就可以解决这个问题
 bool isBalanced(struct TreeNode* root) {
     if (root == NULL)
