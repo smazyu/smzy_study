@@ -152,6 +152,54 @@ DSStudy/day_18/BalancedBinaryTree.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DSStudy/day_18/BalancedBinaryTree.c.s
 .PHONY : DSStudy/day_18/BalancedBinaryTree.c.s
 
+DSStudy/day_19/question1.obj: DSStudy/day_19/question1.c.obj
+.PHONY : DSStudy/day_19/question1.obj
+
+# target to build an object file
+DSStudy/day_19/question1.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DSStudy/day_19/question1.c.obj
+.PHONY : DSStudy/day_19/question1.c.obj
+
+DSStudy/day_19/question1.i: DSStudy/day_19/question1.c.i
+.PHONY : DSStudy/day_19/question1.i
+
+# target to preprocess a source file
+DSStudy/day_19/question1.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DSStudy/day_19/question1.c.i
+.PHONY : DSStudy/day_19/question1.c.i
+
+DSStudy/day_19/question1.s: DSStudy/day_19/question1.c.s
+.PHONY : DSStudy/day_19/question1.s
+
+# target to generate assembly for a file
+DSStudy/day_19/question1.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DSStudy/day_19/question1.c.s
+.PHONY : DSStudy/day_19/question1.c.s
+
+DSStudy/day_19/question2.obj: DSStudy/day_19/question2.c.obj
+.PHONY : DSStudy/day_19/question2.obj
+
+# target to build an object file
+DSStudy/day_19/question2.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DSStudy/day_19/question2.c.obj
+.PHONY : DSStudy/day_19/question2.c.obj
+
+DSStudy/day_19/question2.i: DSStudy/day_19/question2.c.i
+.PHONY : DSStudy/day_19/question2.i
+
+# target to preprocess a source file
+DSStudy/day_19/question2.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DSStudy/day_19/question2.c.i
+.PHONY : DSStudy/day_19/question2.c.i
+
+DSStudy/day_19/question2.s: DSStudy/day_19/question2.c.s
+.PHONY : DSStudy/day_19/question2.s
+
+# target to generate assembly for a file
+DSStudy/day_19/question2.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DSStudy/day_19/question2.c.s
+.PHONY : DSStudy/day_19/question2.c.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -164,6 +212,12 @@ help:
 	@echo ... DSStudy/day_18/BalancedBinaryTree.obj
 	@echo ... DSStudy/day_18/BalancedBinaryTree.i
 	@echo ... DSStudy/day_18/BalancedBinaryTree.s
+	@echo ... DSStudy/day_19/question1.obj
+	@echo ... DSStudy/day_19/question1.i
+	@echo ... DSStudy/day_19/question1.s
+	@echo ... DSStudy/day_19/question2.obj
+	@echo ... DSStudy/day_19/question2.i
+	@echo ... DSStudy/day_19/question2.s
 .PHONY : help
 
 

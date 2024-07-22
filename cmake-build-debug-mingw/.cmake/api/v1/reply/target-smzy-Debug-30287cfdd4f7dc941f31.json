@@ -66,7 +66,9 @@
 			},
 			"sourceIndexes" : 
 			[
-				0
+				0,
+				1,
+				2
 			]
 		}
 	],
@@ -103,7 +105,9 @@
 			"name" : "Source Files",
 			"sourceIndexes" : 
 			[
-				0
+				0,
+				1,
+				2
 			]
 		}
 	],
@@ -113,6 +117,18 @@
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"path" : "DSStudy/day_18/BalancedBinaryTree.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "DSStudy/day_19/question1.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "DSStudy/day_19/question2.c",
 			"sourceGroupIndex" : 0
 		}
 	],
