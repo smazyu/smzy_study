@@ -68,68 +68,34 @@ include CMakeFiles/smzy.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/smzy.dir/flags.make
 
-CMakeFiles/smzy.dir/DSStudy/day_18/BalancedBinaryTree.c.obj: CMakeFiles/smzy.dir/flags.make
-CMakeFiles/smzy.dir/DSStudy/day_18/BalancedBinaryTree.c.obj: CMakeFiles/smzy.dir/includes_C.rsp
-CMakeFiles/smzy.dir/DSStudy/day_18/BalancedBinaryTree.c.obj: E:/GitHub/smzy_study/DSStudy/day_18/BalancedBinaryTree.c
-CMakeFiles/smzy.dir/DSStudy/day_18/BalancedBinaryTree.c.obj: CMakeFiles/smzy.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\GitHub\smzy_study\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/smzy.dir/DSStudy/day_18/BalancedBinaryTree.c.obj"
-	"E:\Program Files\JetBrains\CLion 2024.1.1\bin\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/smzy.dir/DSStudy/day_18/BalancedBinaryTree.c.obj -MF CMakeFiles\smzy.dir\DSStudy\day_18\BalancedBinaryTree.c.obj.d -o CMakeFiles\smzy.dir\DSStudy\day_18\BalancedBinaryTree.c.obj -c E:\GitHub\smzy_study\DSStudy\day_18\BalancedBinaryTree.c
+CMakeFiles/smzy.dir/DSStudy/day_20/question.c.obj: CMakeFiles/smzy.dir/flags.make
+CMakeFiles/smzy.dir/DSStudy/day_20/question.c.obj: CMakeFiles/smzy.dir/includes_C.rsp
+CMakeFiles/smzy.dir/DSStudy/day_20/question.c.obj: E:/GitHub/smzy_study/DSStudy/day_20/question.c
+CMakeFiles/smzy.dir/DSStudy/day_20/question.c.obj: CMakeFiles/smzy.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\GitHub\smzy_study\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/smzy.dir/DSStudy/day_20/question.c.obj"
+	"E:\Program Files\JetBrains\CLion 2024.1.1\bin\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/smzy.dir/DSStudy/day_20/question.c.obj -MF CMakeFiles\smzy.dir\DSStudy\day_20\question.c.obj.d -o CMakeFiles\smzy.dir\DSStudy\day_20\question.c.obj -c E:\GitHub\smzy_study\DSStudy\day_20\question.c
 
-CMakeFiles/smzy.dir/DSStudy/day_18/BalancedBinaryTree.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/smzy.dir/DSStudy/day_18/BalancedBinaryTree.c.i"
-	"E:\Program Files\JetBrains\CLion 2024.1.1\bin\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\GitHub\smzy_study\DSStudy\day_18\BalancedBinaryTree.c > CMakeFiles\smzy.dir\DSStudy\day_18\BalancedBinaryTree.c.i
+CMakeFiles/smzy.dir/DSStudy/day_20/question.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/smzy.dir/DSStudy/day_20/question.c.i"
+	"E:\Program Files\JetBrains\CLion 2024.1.1\bin\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\GitHub\smzy_study\DSStudy\day_20\question.c > CMakeFiles\smzy.dir\DSStudy\day_20\question.c.i
 
-CMakeFiles/smzy.dir/DSStudy/day_18/BalancedBinaryTree.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/smzy.dir/DSStudy/day_18/BalancedBinaryTree.c.s"
-	"E:\Program Files\JetBrains\CLion 2024.1.1\bin\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\GitHub\smzy_study\DSStudy\day_18\BalancedBinaryTree.c -o CMakeFiles\smzy.dir\DSStudy\day_18\BalancedBinaryTree.c.s
-
-CMakeFiles/smzy.dir/DSStudy/day_19/question1.c.obj: CMakeFiles/smzy.dir/flags.make
-CMakeFiles/smzy.dir/DSStudy/day_19/question1.c.obj: CMakeFiles/smzy.dir/includes_C.rsp
-CMakeFiles/smzy.dir/DSStudy/day_19/question1.c.obj: E:/GitHub/smzy_study/DSStudy/day_19/question1.c
-CMakeFiles/smzy.dir/DSStudy/day_19/question1.c.obj: CMakeFiles/smzy.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\GitHub\smzy_study\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/smzy.dir/DSStudy/day_19/question1.c.obj"
-	"E:\Program Files\JetBrains\CLion 2024.1.1\bin\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/smzy.dir/DSStudy/day_19/question1.c.obj -MF CMakeFiles\smzy.dir\DSStudy\day_19\question1.c.obj.d -o CMakeFiles\smzy.dir\DSStudy\day_19\question1.c.obj -c E:\GitHub\smzy_study\DSStudy\day_19\question1.c
-
-CMakeFiles/smzy.dir/DSStudy/day_19/question1.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/smzy.dir/DSStudy/day_19/question1.c.i"
-	"E:\Program Files\JetBrains\CLion 2024.1.1\bin\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\GitHub\smzy_study\DSStudy\day_19\question1.c > CMakeFiles\smzy.dir\DSStudy\day_19\question1.c.i
-
-CMakeFiles/smzy.dir/DSStudy/day_19/question1.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/smzy.dir/DSStudy/day_19/question1.c.s"
-	"E:\Program Files\JetBrains\CLion 2024.1.1\bin\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\GitHub\smzy_study\DSStudy\day_19\question1.c -o CMakeFiles\smzy.dir\DSStudy\day_19\question1.c.s
-
-CMakeFiles/smzy.dir/DSStudy/day_19/question2.c.obj: CMakeFiles/smzy.dir/flags.make
-CMakeFiles/smzy.dir/DSStudy/day_19/question2.c.obj: CMakeFiles/smzy.dir/includes_C.rsp
-CMakeFiles/smzy.dir/DSStudy/day_19/question2.c.obj: E:/GitHub/smzy_study/DSStudy/day_19/question2.c
-CMakeFiles/smzy.dir/DSStudy/day_19/question2.c.obj: CMakeFiles/smzy.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\GitHub\smzy_study\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/smzy.dir/DSStudy/day_19/question2.c.obj"
-	"E:\Program Files\JetBrains\CLion 2024.1.1\bin\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/smzy.dir/DSStudy/day_19/question2.c.obj -MF CMakeFiles\smzy.dir\DSStudy\day_19\question2.c.obj.d -o CMakeFiles\smzy.dir\DSStudy\day_19\question2.c.obj -c E:\GitHub\smzy_study\DSStudy\day_19\question2.c
-
-CMakeFiles/smzy.dir/DSStudy/day_19/question2.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/smzy.dir/DSStudy/day_19/question2.c.i"
-	"E:\Program Files\JetBrains\CLion 2024.1.1\bin\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\GitHub\smzy_study\DSStudy\day_19\question2.c > CMakeFiles\smzy.dir\DSStudy\day_19\question2.c.i
-
-CMakeFiles/smzy.dir/DSStudy/day_19/question2.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/smzy.dir/DSStudy/day_19/question2.c.s"
-	"E:\Program Files\JetBrains\CLion 2024.1.1\bin\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\GitHub\smzy_study\DSStudy\day_19\question2.c -o CMakeFiles\smzy.dir\DSStudy\day_19\question2.c.s
+CMakeFiles/smzy.dir/DSStudy/day_20/question.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/smzy.dir/DSStudy/day_20/question.c.s"
+	"E:\Program Files\JetBrains\CLion 2024.1.1\bin\mingw\bin\gcc.exe" $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\GitHub\smzy_study\DSStudy\day_20\question.c -o CMakeFiles\smzy.dir\DSStudy\day_20\question.c.s
 
 # Object files for target smzy
 smzy_OBJECTS = \
-"CMakeFiles/smzy.dir/DSStudy/day_18/BalancedBinaryTree.c.obj" \
-"CMakeFiles/smzy.dir/DSStudy/day_19/question1.c.obj" \
-"CMakeFiles/smzy.dir/DSStudy/day_19/question2.c.obj"
+"CMakeFiles/smzy.dir/DSStudy/day_20/question.c.obj"
 
 # External object files for target smzy
 smzy_EXTERNAL_OBJECTS =
 
-smzy.exe: CMakeFiles/smzy.dir/DSStudy/day_18/BalancedBinaryTree.c.obj
-smzy.exe: CMakeFiles/smzy.dir/DSStudy/day_19/question1.c.obj
-smzy.exe: CMakeFiles/smzy.dir/DSStudy/day_19/question2.c.obj
+smzy.exe: CMakeFiles/smzy.dir/DSStudy/day_20/question.c.obj
 smzy.exe: CMakeFiles/smzy.dir/build.make
 smzy.exe: CMakeFiles/smzy.dir/linkLibs.rsp
 smzy.exe: CMakeFiles/smzy.dir/objects1.rsp
 smzy.exe: CMakeFiles/smzy.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=E:\GitHub\smzy_study\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable smzy.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=E:\GitHub\smzy_study\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable smzy.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\smzy.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

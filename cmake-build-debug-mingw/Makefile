@@ -128,77 +128,29 @@ smzy/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/build
 .PHONY : smzy/fast
 
-DSStudy/day_18/BalancedBinaryTree.obj: DSStudy/day_18/BalancedBinaryTree.c.obj
-.PHONY : DSStudy/day_18/BalancedBinaryTree.obj
+DSStudy/day_20/question.obj: DSStudy/day_20/question.c.obj
+.PHONY : DSStudy/day_20/question.obj
 
 # target to build an object file
-DSStudy/day_18/BalancedBinaryTree.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DSStudy/day_18/BalancedBinaryTree.c.obj
-.PHONY : DSStudy/day_18/BalancedBinaryTree.c.obj
+DSStudy/day_20/question.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DSStudy/day_20/question.c.obj
+.PHONY : DSStudy/day_20/question.c.obj
 
-DSStudy/day_18/BalancedBinaryTree.i: DSStudy/day_18/BalancedBinaryTree.c.i
-.PHONY : DSStudy/day_18/BalancedBinaryTree.i
-
-# target to preprocess a source file
-DSStudy/day_18/BalancedBinaryTree.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DSStudy/day_18/BalancedBinaryTree.c.i
-.PHONY : DSStudy/day_18/BalancedBinaryTree.c.i
-
-DSStudy/day_18/BalancedBinaryTree.s: DSStudy/day_18/BalancedBinaryTree.c.s
-.PHONY : DSStudy/day_18/BalancedBinaryTree.s
-
-# target to generate assembly for a file
-DSStudy/day_18/BalancedBinaryTree.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DSStudy/day_18/BalancedBinaryTree.c.s
-.PHONY : DSStudy/day_18/BalancedBinaryTree.c.s
-
-DSStudy/day_19/question1.obj: DSStudy/day_19/question1.c.obj
-.PHONY : DSStudy/day_19/question1.obj
-
-# target to build an object file
-DSStudy/day_19/question1.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DSStudy/day_19/question1.c.obj
-.PHONY : DSStudy/day_19/question1.c.obj
-
-DSStudy/day_19/question1.i: DSStudy/day_19/question1.c.i
-.PHONY : DSStudy/day_19/question1.i
+DSStudy/day_20/question.i: DSStudy/day_20/question.c.i
+.PHONY : DSStudy/day_20/question.i
 
 # target to preprocess a source file
-DSStudy/day_19/question1.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DSStudy/day_19/question1.c.i
-.PHONY : DSStudy/day_19/question1.c.i
+DSStudy/day_20/question.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DSStudy/day_20/question.c.i
+.PHONY : DSStudy/day_20/question.c.i
 
-DSStudy/day_19/question1.s: DSStudy/day_19/question1.c.s
-.PHONY : DSStudy/day_19/question1.s
-
-# target to generate assembly for a file
-DSStudy/day_19/question1.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DSStudy/day_19/question1.c.s
-.PHONY : DSStudy/day_19/question1.c.s
-
-DSStudy/day_19/question2.obj: DSStudy/day_19/question2.c.obj
-.PHONY : DSStudy/day_19/question2.obj
-
-# target to build an object file
-DSStudy/day_19/question2.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DSStudy/day_19/question2.c.obj
-.PHONY : DSStudy/day_19/question2.c.obj
-
-DSStudy/day_19/question2.i: DSStudy/day_19/question2.c.i
-.PHONY : DSStudy/day_19/question2.i
-
-# target to preprocess a source file
-DSStudy/day_19/question2.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DSStudy/day_19/question2.c.i
-.PHONY : DSStudy/day_19/question2.c.i
-
-DSStudy/day_19/question2.s: DSStudy/day_19/question2.c.s
-.PHONY : DSStudy/day_19/question2.s
+DSStudy/day_20/question.s: DSStudy/day_20/question.c.s
+.PHONY : DSStudy/day_20/question.s
 
 # target to generate assembly for a file
-DSStudy/day_19/question2.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DSStudy/day_19/question2.c.s
-.PHONY : DSStudy/day_19/question2.c.s
+DSStudy/day_20/question.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DSStudy/day_20/question.c.s
+.PHONY : DSStudy/day_20/question.c.s
 
 # Help Target
 help:
@@ -209,15 +161,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... smzy
-	@echo ... DSStudy/day_18/BalancedBinaryTree.obj
-	@echo ... DSStudy/day_18/BalancedBinaryTree.i
-	@echo ... DSStudy/day_18/BalancedBinaryTree.s
-	@echo ... DSStudy/day_19/question1.obj
-	@echo ... DSStudy/day_19/question1.i
-	@echo ... DSStudy/day_19/question1.s
-	@echo ... DSStudy/day_19/question2.obj
-	@echo ... DSStudy/day_19/question2.i
-	@echo ... DSStudy/day_19/question2.s
+	@echo ... DSStudy/day_20/question.obj
+	@echo ... DSStudy/day_20/question.i
+	@echo ... DSStudy/day_20/question.s
 .PHONY : help
 
 
