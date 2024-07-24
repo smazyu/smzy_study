@@ -20,3 +20,5 @@ void InsertSort(int* a,int n){
         a[end + 1] = tmp;
     }
 }
+
+//希尔排序是对直接插入排序的优化
