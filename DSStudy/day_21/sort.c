@@ -20,10 +20,29 @@ void InsertSort(int* a,int n){
         a[end + 1] = tmp;
     }
 }
-
+void ShellSort(int * a,int n){
+    int gap;
+    int end;
+    int tmp = end + gap;
+    while(end >= 0){
+        if(a[end] > tmp){
+            a[end + gap] = a[end];
+        end - gap;}
+        else{
+            break;
+        }
+        a[end + gap] = tmp;
+    }
+}
 //希尔排序是对直接插入排序的优化
 //直接插入排序，时间复杂度是 O(n^2) 单趟插入是 O(n)
 //空间复杂度O(1)
 //什么情况下最好?什么情况下最坏?
 //顺序有序最好
 //逆序最坏
+
+//希尔排序，又叫缩小量排序
+
+//插入排序 1.预排序(让数组接近有序) 2.直接插入排序
+//1.预排序 把间距为gap的值分为一组，进行插入排序
+//
