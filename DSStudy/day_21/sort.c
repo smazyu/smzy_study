@@ -22,14 +22,17 @@ void InsertSort(int* a,int n){
 }
 void ShellSort(int * a,int n){
     int gap;
-    int end;
-    int tmp = end + gap;
-    while(end >= 0){
-        if(a[end] > tmp){
-            a[end + gap] = a[end];
-        end - gap;}
-        else{
-            break;
+    for (int i = 0; i < n - gap; ++i) {
+        int end = i;
+        int tmp = a[end + gap];
+        while(end >= 0){
+            if(a[end] > tmp){
+                a[end + gap] = a[end];
+                end -= gap;}
+            else{
+                break;
+            }
+
         }
         a[end + gap] = tmp;
     }
@@ -45,4 +48,4 @@ void ShellSort(int * a,int n){
 
 //插入排序 1.预排序(让数组接近有序) 2.直接插入排序
 //1.预排序 把间距为gap的值分为一组，进行插入排序
-//
+//gap越大，前面大的数可以越快到后面，后面小的数可以越快到前面，但是gap越大，越不接近有序，gap越小越接近有序，如果gap=1，其实就相当于直接插入排序，就有序了
