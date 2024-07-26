@@ -44,9 +44,31 @@ void ShellSort(int *a, int n) {
         }
     }
 }
-
+void Swap(int *p1,int *p2){
+    int tmp = *p1;
+    *p1 = *p2;
+    *p2 = tmp;
+}
 void SelectSort(int *a,int n){
-    
+    assert(a);
+    int begin = 0,end = n -1;
+    while(begin < end){
+        //在begin和end之间找出最小和最大的数的下标
+        int mini,maxi;
+        mini = maxi = begin;
+        for(int i = begin+1;i <= end;++i){
+            if(a[i] > maxi){
+                maxi = i;
+            }
+            if(a[i] < mini){
+                mini = i;
+            }
+        }
+        Swap(&a[begin],&a[mini]);
+        Swap(&a[end],&a[maxi]);
+        ++begin;
+        --end;
+    }
 }
 //希尔排序是对直接插入排序的优化
 //直接插入排序，时间复杂度是 O(n^2) 单趟插入是 O(n)
