@@ -25,9 +25,16 @@ void TestShellSort() {
     PrintArray(a, sizeof(a) / sizeof(int));
 }
 
+void TestSelectSort() {
+    int a[] = {3, 1, 4, 1, 7, 3, 8, 23, 2, 1111, 0};
+    PrintArray(a, sizeof(a) / sizeof(int));
+    SelectSort(a, sizeof(a) / sizeof(int));
+    PrintArray(a, sizeof(a) / sizeof(int));
+}
 int main() {
-    TestInsertSort();
-    TestShellSort();
+//    TestInsertSort();
+//    TestShellSort();
+    TestSelectSort();
 }
 //#include <stdio.h>
 //#include <stdlib.h>

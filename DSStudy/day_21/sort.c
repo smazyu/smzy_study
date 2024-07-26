@@ -44,28 +44,34 @@ void ShellSort(int *a, int n) {
         }
     }
 }
-void Swap(int *p1,int *p2){
+
+void Swap(int *p1, int *p2) {
     int tmp = *p1;
     *p1 = *p2;
     *p2 = tmp;
 }
-void SelectSort(int *a,int n){
+
+void SelectSort(int *a, int n) {
     assert(a);
-    int begin = 0,end = n -1;
-    while(begin < end){
+    int begin = 0, end = n - 1;
+    while (begin < end) {
         //在begin和end之间找出最小和最大的数的下标
-        int mini,maxi;
+        int mini, maxi;
         mini = maxi = begin;
-        for(int i = begin+1;i <= end;++i){
-            if(a[i] > maxi){
+        for (int i = begin + 1; i <= end; ++i) {
+            if (a[i] > a[maxi]) {
                 maxi = i;
             }
-            if(a[i] < mini){
+            if (a[i] < a[mini]) {
                 mini = i;
             }
         }
-        Swap(&a[begin],&a[mini]);
-        Swap(&a[end],&a[maxi]);
+        Swap(&a[begin], &a[mini]);
+        //如果maxi和begin位置重叠，则maxi的位置需要修正
+        if (begin == maxi) {
+            maxi = mini;
+        }
+        Swap(&a[end], &a[maxi]);
         ++begin;
         --end;
     }
