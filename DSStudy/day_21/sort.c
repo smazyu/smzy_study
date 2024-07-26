@@ -75,6 +75,11 @@ void SelectSort(int *a, int n) {
         ++begin;
         --end;
     }
+}//时间复杂度 o(n^2)
+//堆排序
+void AdjustDown(int* a,int n,int root);
+void HeapSort(int *a,int n){
+    
 }
 //希尔排序是对直接插入排序的优化
 //直接插入排序，时间复杂度是 O(n^2) 单趟插入是 O(n)
