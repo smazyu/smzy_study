@@ -31,10 +31,26 @@ void TestSelectSort() {
     SelectSort(a, sizeof(a) / sizeof(int));
     PrintArray(a, sizeof(a) / sizeof(int));
 }
+
+void TestBubbleSort() {
+    int a[] = {3, 1, 4, 1, 7, 3, 8, 23, 2, 1111, 0};
+    PrintArray(a, sizeof(a) / sizeof(int));
+    BubbleSort(a, sizeof(a) / sizeof(int));
+    PrintArray(a, sizeof(a) / sizeof(int));
+}
+
+void TestHeapSort() {
+    int a[] = {3, 1, 4, 1, 7, 3, 8, 23, 2, 1111, 0};
+    PrintArray(a, sizeof(a) / sizeof(int));
+    HeapSort(a, sizeof(a) / sizeof(int));
+    PrintArray(a, sizeof(a) / sizeof(int));
+}
+
 int main() {
 //    TestInsertSort();
 //    TestShellSort();
-    TestSelectSort();
+//    TestBubbleSort();
+    TestHeapSort();
 }
 //#include <stdio.h>
 //#include <stdlib.h>

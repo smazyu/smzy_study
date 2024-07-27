@@ -77,34 +77,51 @@ void SelectSort(int *a, int n) {
     }
 }//时间复杂度 o(n^2)
 //堆排序
-void AdjustDown(int* a,int n,int root){
+void AdjustDown(int *a, int n, int root) {
     int parent = root;
     //左孩子
-    int child = parent*2 + 1;
-    while(child < n  ){
-        if(child + 1 < n && a[child + 1] > a[child]){
+    int child = parent * 2 + 1;
+    while (child < n) {
+        if (child + 1 < n && a[child + 1] > a[child]) {
             ++child;
         }
-        if(a[child] > a[parent]){
-            Swap(&a[child],&a[parent]);
+        if (a[child] > a[parent]) {
+            Swap(&a[child], &a[parent]);
             parent = child;
             child = parent * 2 + 1;
-        }
-        else{
+        } else {
             break;
         }
     }
 }
-void HeapSort(int *a,int n){
-    for(int i = (n - 1- 1)/2;i >= 0;--i){
-        AdjustDown(a,n,i);
+
+void HeapSort(int *a, int n) {
+    for (int i = (n - 1 - 1) / 2; i >= 0; --i) {
+        AdjustDown(a, n, i);
     }
     int end = n - 1;
-    while(end > 0){
-        Swap(&a[0],&a[end]);
-        AdjustDown(a,end,0);
+    while (end > 0) {
+        Swap(&a[0], &a[end]);
+        AdjustDown(a, end, 0);
         --end;
     }
+}
+
+void BubbleSort(int *a, int n) {
+    int end = n;
+    while (end > 0) {
+        int exchange = 0;
+        for (int i = 1; i < end; ++i) {
+            if (a[i - 1] > a[i]) {
+                Swap(&a[i - 1], &a[i]);
+                exchange = 1;
+            }
+        }
+        if (exchange == 0) {
+            break;
+        }
+    }
+
 }
 //希尔排序是对直接插入排序的优化
 //直接插入排序，时间复杂度是 O(n^2) 单趟插入是 O(n)
