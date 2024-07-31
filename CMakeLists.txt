@@ -5,7 +5,7 @@ include_directories(.)
 
 #cmake_minimum_required(VERSION 3.20)
 add_executable(smzy
-        DSStudy/day_21/sort.c
-        DSStudy/day_21/sort.h
-        DSStudy/day_21/test.c
+        DSStudy/day_22/sort.h
+        DSStudy/day_22/sort.c
+        DSStudy/day_22/test.c
 )
