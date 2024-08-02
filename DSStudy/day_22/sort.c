@@ -128,6 +128,8 @@ int PartSort(int *a,int begin,int end){
 //如果在key在左边则右边先走，如果key在右边则左边先走
     while(begin < end){
         //begin找大
+
+        //这样保证begin和end在比key大的位置相遇
         while(begin <end && a[begin] <= key){
             ++begin;
         }
@@ -138,6 +140,7 @@ int PartSort(int *a,int begin,int end){
         Swap(&a[begin],&a[end]);
     }
 }
+
 void QuickSort(int* a,int left,int right){
     assert(a);
 }
