@@ -125,24 +125,33 @@ void BubbleSort(int *a, int n) {
 //[begin,end]
 int PartSort(int *a,int begin,int end){
     int key = a[end];
+    int keyIndex = end;
 //如果在key在左边则右边先走，如果key在右边则左边先走
     while(begin < end){
         //begin找大
 
         //这样保证begin和end在比key大的位置相遇
-        while(begin <end && a[begin] <= key){
+        while(begin <end && a[keyIndex] <= key){
             ++begin;
         }
         //end找小
-        while(a[end] >= key){
+        while(begin < end && a[keyIndex] >= key){
             --end;
         }
         Swap(&a[begin],&a[end]);
     }
+    Swap(&a[begin],&a[keyIndex]);
+    return begin;
 }
-
 void QuickSort(int* a,int left,int right){
     assert(a);
+    if(left>=right){
+        return;
+    }
+    int div = PartSort(a,left,right);
+    //[left,div - 1] div [div+1,right]
+    QuickSort(a,left,div - 1);
+    QuickSort(a,div + 1,right);
 }
 //希尔排序是对直接插入排序的优化
 //直接插入排序，时间复杂度是 O(n^2) 单趟插入是 O(n)
@@ -163,3 +172,5 @@ void QuickSort(int* a,int left,int right){
 //1.左边的比key小，右边的比key大
 //2.5 key放到他正确的位置
 //3.采用递归分治 分为多个小问题
+
+//右边做key左边先走
