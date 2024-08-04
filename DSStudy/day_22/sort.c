@@ -146,8 +146,11 @@ int GetMidIndex(int a[], int begin, int end) {
     }
 }
 
+//1.左右指针法
 int PartSort(int *a, int begin, int end) {
     int key = a[end];
+//    int midIndex = GetMidIndex(a,begin,end);
+//    Swap(&a[midIndex],&a[end]);
     int keyIndex = end;
 //如果在key在左边则右边先走，如果key在右边则左边先走
     while (begin < end) {
@@ -167,6 +170,34 @@ int PartSort(int *a, int begin, int end) {
     return begin;
 }
 
+//挖坑法
+//开始先挖一个坑
+//然后左右填
+void PartSort1(int *a, int begin, int end) {
+    int midIndex = GetMidIndex(a, begin, end);
+    Swap(&a[midIndex], &a[end]);
+    int key = a[end];
+
+    while (begin < end) {
+        while (begin < end && a[begin] <= key) {
+            ++begin;
+        }
+        // 左边找到比key大的填到右边的坑, 左边begin位置就形成新的坑
+        if (begin < end) {
+            a[end] = a[begin];
+        }
+
+        while (begin < end && a[end] >= key) {
+            --end;
+        }
+        // 右边找到比key小的填到左边的坑，end位置就形成新的坑
+        if (begin < end) {
+            a[begin] = a[end];
+        }
+    }
+    // 最后将key填到中间的坑中
+    a[begin] = key;
+}
 //extern void PrintArray(int *a, int n);
 
 void QuickSort(int *a, int left, int right) {
@@ -211,3 +242,10 @@ void QuickSort(int *a, int left, int right) {
 //那么我们是不是可以考虑至少不要选到最大的或者最小的左key
 
 //三数取中法 保证不要选到最小或者最大，让有序时变成最优
+
+//存在三数取优之后。综合而言快排O(N*logN)
+
+//快速排序
+//1.左右指针法
+//2.挖坑法
+//3.前后指针法
