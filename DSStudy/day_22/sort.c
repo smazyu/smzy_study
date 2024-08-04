@@ -124,6 +124,28 @@ void BubbleSort(int *a, int n) {
 }
 
 //[begin,end]
+int GetMidIndex(int a[], int begin, int end) {
+    int mid = (begin + end) / 2;
+
+    if (a[begin] < a[mid]) {
+        if (a[mid] < a[end]) {
+            return mid;
+        } else if (a[begin] < a[end]) {
+            return end;
+        } else {
+            return begin;
+        }
+    } else {
+        if (a[mid] > a[end]) {
+            return mid;
+        } else if (a[begin] < a[end]) {
+            return begin;
+        } else {
+            return end;
+        }
+    }
+}
+
 int PartSort(int *a, int begin, int end) {
     int key = a[end];
     int keyIndex = end;
@@ -184,3 +206,8 @@ void QuickSort(int *a, int left, int right) {
 //3.采用递归分治 分为多个小问题
 
 //右边做key左边先走
+
+//实际当中我们无法保证选key是中位数
+//那么我们是不是可以考虑至少不要选到最大的或者最小的左key
+
+//三数取中法 保证不要选到最小或者最大，让有序时变成最优
