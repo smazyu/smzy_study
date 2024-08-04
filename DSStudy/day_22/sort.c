@@ -122,37 +122,40 @@ void BubbleSort(int *a, int n) {
         }
     }
 }
+
 //[begin,end]
-int PartSort(int *a,int begin,int end){
+int PartSort(int *a, int begin, int end) {
     int key = a[end];
     int keyIndex = end;
 //如果在key在左边则右边先走，如果key在右边则左边先走
-    while(begin < end){
+    while (begin < end) {
         //begin找大
 
         //这样保证begin和end在比key大的位置相遇
-        while(begin <end && a[keyIndex] <= key){
+        while (begin < end && a[begin] <= key) {
             ++begin;
         }
         //end找小
-        while(begin < end && a[keyIndex] >= key){
+        while (begin < end && a[end] >= key) {
             --end;
         }
-        Swap(&a[begin],&a[end]);
+        Swap(&a[begin], &a[end]);
     }
-    Swap(&a[begin],&a[keyIndex]);
+    Swap(&a[begin], &a[keyIndex]);
     return begin;
 }
-void QuickSort(int* a,int left,int right){
+
+void QuickSort(int *a, int left, int right) {
     assert(a);
-    if(left>=right){
+    if (left >= right) {
         return;
     }
-    int div = PartSort(a,left,right);
-    //[left,div - 1] div [div+1,right]
-    QuickSort(a,left,div - 1);
-    QuickSort(a,div + 1,right);
+    int div = PartSort(a, left, right);
+    QuickSort(a, left, div - 1);
+    QuickSort(a, div + 1, right);
 }
+
+//快排 最好的情况 时间复杂度O(N * logN) 到 O(N*2)
 //希尔排序是对直接插入排序的优化
 //直接插入排序，时间复杂度是 O(n^2) 单趟插入是 O(n)
 //空间复杂度O(1)

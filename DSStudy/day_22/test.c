@@ -45,12 +45,18 @@ void TestHeapSort() {
     HeapSort(a, sizeof(a) / sizeof(int));
     PrintArray(a, sizeof(a) / sizeof(int));
 }
+void TestQucikSort() {
+    int a[] = {3, 1, 4, 1, 7, 3, 8, 23, 2, 1111, 0};
+    PrintArray(a, sizeof(a) / sizeof(int));
+    QuickSort(a,0 ,sizeof(a) / sizeof(int)-1);
+    PrintArray(a, sizeof(a) / sizeof(int));
+}
 
 int main() {
 //    TestInsertSort();
 //    TestShellSort();
 //    TestBubbleSort();
-    TestHeapSort();
+    TestQucikSort();
 }
 //#include <stdio.h>
 //#include <stdlib.h>
