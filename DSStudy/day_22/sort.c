@@ -205,7 +205,7 @@ void PartSort3(int* a, int begin, int end) {
     int midIndex = GetMidIndex(a, begin, end);
     Swap(&a[midIndex], &a[end]);
     int key = a[end];
-    int cur = begin; 
+    int cur = begin;
     int prev = begin - 1;
 
     while (cur < end) {
