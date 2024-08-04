@@ -199,7 +199,24 @@ void PartSort1(int *a, int begin, int end) {
     a[begin] = key;
 }
 //extern void PrintArray(int *a, int n);
+//3.前后指针法
+//cur找小跟++prev的交换，把小的翻到左边，把大的往后推
+void PartSort3(int* a, int begin, int end) {
+    int midIndex = GetMidIndex(a, begin, end);
+    Swap(&a[midIndex], &a[end]);
+    int key = a[end];
+    int cur = begin; 
+    int prev = begin - 1;
 
+    while (cur < end) {
+        if (a[cur] < key) {
+            prev++;
+            Swap(&a[prev], &a[cur]);
+        }
+        cur++;
+    }
+    Swap(&a[prev + 1], &a[end]);
+}
 void QuickSort(int *a, int left, int right) {
     assert(a);
     if (left >= right) {
