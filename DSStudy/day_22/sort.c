@@ -145,12 +145,19 @@ int PartSort(int *a, int begin, int end) {
     return begin;
 }
 
+//extern void PrintArray(int *a, int n);
+
 void QuickSort(int *a, int left, int right) {
     assert(a);
     if (left >= right) {
         return;
     }
+//    PrintArray(a, sizeof(a) / sizeof(int));
+//    PrintArray(a, right);
+
     int div = PartSort(a, left, right);
+//    PrintArray(a, right);
+
     QuickSort(a, left, div - 1);
     QuickSort(a, div + 1, right);
 }
