@@ -1,8 +1,37 @@
-//
-// Created by 20212 on 5/8/2024.
-//
+#include <stdio.h>
 #include "stack.h"
 
+// 已有的函数
+void Swap(int *p1, int *p2);
+
+int GetMidIndex(int a[], int begin, int end);
+
+int PartSort3(int *a, int begin, int end);
+
+void QuickSortNonR(int *a, int left, int right);
+
+int main() {
+    int array[] = {34, 7, 23, 32, 5, 62, 32, 2, 1, 74};
+    int size = sizeof(array) / sizeof(array[0]);
+
+    printf("Original array: \n");
+    for (int i = 0; i < size; i++) {
+        printf("%d ", array[i]);
+    }
+    printf("\n");
+
+    QuickSortNonR(array, 0, size - 1);
+
+    printf("Sorted array: \n");
+    for (int i = 0; i < size; i++) {
+        printf("%d ", array[i]);
+    }
+    printf("\n");
+
+    return 0;
+}
+
+// 这里是已有的函数实现
 void Swap(int *p1, int *p2) {
     int tmp = *p1;
     *p1 = *p2;
@@ -31,7 +60,7 @@ int GetMidIndex(int a[], int begin, int end) {
     }
 }
 
-void PartSort3(int *a, int begin, int end) {
+int PartSort3(int *a, int begin, int end) {
     int midIndex = GetMidIndex(a, begin, end);
     Swap(&a[midIndex], &a[end]);
     int key = a[end];
@@ -46,16 +75,10 @@ void PartSort3(int *a, int begin, int end) {
         cur++;
     }
     Swap(&a[prev + 1], &a[end]);
+    return prev + 1;  // Return the partition index
 }
 
 void QuickSortNonR(int *a, int left, int right) {
-    //栈模拟实现
-    //递归存在栈溢出风险
-    //采用非递归
-
-    //非递归 :1.提高效率(递归建立栈帧还是有消耗的，但是对于现代的计算机，这个优化微乎其微)
-    //      2.递归的最大缺陷是，如果栈帧的深度太深，可能会导致栈溢出。因为系统的栈，一般空间不大，在M级别
-    //    栈模拟非递归，数据是存储在堆上的，堆是G级别的空间
     Stack st;
     StackInit(&st);
 
@@ -67,19 +90,18 @@ void QuickSortNonR(int *a, int left, int right) {
         int end = StackTop(&st);
         StackPop(&st);
 
-        //[begin,end]
-        int div = PartSort3(a, begin, right);
-        //[begin,div-1] div [div + 1,end]
-        if (div + 1 < end) {
-            StackPush(&st, end);
-            StackPush(&st, div + 1);
+        if (begin < end) {
+            int div = PartSort3(a, begin, end);
+            if (div + 1 < end) {
+                StackPush(&st, end);
+                StackPush(&st, div + 1);
+            }
+            if (begin < div - 1) {
+                StackPush(&st, div - 1);
+                StackPush(&st, begin);
+            }
         }
-        if (begin < div - 1) {
-            StackPush(&st, div - 1);
-            StackPush(&st, begin);
-        }
-        //只是将递归操作换成栈模拟
-        //递归改非递归 --1.改循环(斐波那契额数列求解) 一些简单的处理递归才能改循环 2.栈模拟存储数据非递归
     }
     StackDestory(&st);
-};
+}
+//时间复杂度O（N*logN)

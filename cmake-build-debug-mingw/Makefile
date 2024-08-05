@@ -152,6 +152,30 @@ DSStudy/day_23/quciksort_nonr.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DSStudy/day_23/quciksort_nonr.c.s
 .PHONY : DSStudy/day_23/quciksort_nonr.c.s
 
+DSStudy/day_23/stack.obj: DSStudy/day_23/stack.c.obj
+.PHONY : DSStudy/day_23/stack.obj
+
+# target to build an object file
+DSStudy/day_23/stack.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DSStudy/day_23/stack.c.obj
+.PHONY : DSStudy/day_23/stack.c.obj
+
+DSStudy/day_23/stack.i: DSStudy/day_23/stack.c.i
+.PHONY : DSStudy/day_23/stack.i
+
+# target to preprocess a source file
+DSStudy/day_23/stack.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DSStudy/day_23/stack.c.i
+.PHONY : DSStudy/day_23/stack.c.i
+
+DSStudy/day_23/stack.s: DSStudy/day_23/stack.c.s
+.PHONY : DSStudy/day_23/stack.s
+
+# target to generate assembly for a file
+DSStudy/day_23/stack.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DSStudy/day_23/stack.c.s
+.PHONY : DSStudy/day_23/stack.c.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -164,6 +188,9 @@ help:
 	@echo ... DSStudy/day_23/quciksort_nonr.obj
 	@echo ... DSStudy/day_23/quciksort_nonr.i
 	@echo ... DSStudy/day_23/quciksort_nonr.s
+	@echo ... DSStudy/day_23/stack.obj
+	@echo ... DSStudy/day_23/stack.i
+	@echo ... DSStudy/day_23/stack.s
 .PHONY : help
 
 
