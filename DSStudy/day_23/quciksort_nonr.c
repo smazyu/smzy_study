@@ -105,3 +105,9 @@ void QuickSortNonR(int *a, int left, int right) {
     StackDestory(&st);
 }
 //时间复杂度O（N*logN)
+void MergeSort(int*a,int n){
+    //使数组 1 3 5 6 2 5 7 8 9
+    //归并排序的单趟排序
+    //复杂度 O(N*logN)
+
+}
