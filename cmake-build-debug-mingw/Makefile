@@ -128,53 +128,29 @@ smzy/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/build
 .PHONY : smzy/fast
 
-DSStudy/day_22/sort.obj: DSStudy/day_22/sort.c.obj
-.PHONY : DSStudy/day_22/sort.obj
+DSStudy/day_23/quciksort_nonr.obj: DSStudy/day_23/quciksort_nonr.c.obj
+.PHONY : DSStudy/day_23/quciksort_nonr.obj
 
 # target to build an object file
-DSStudy/day_22/sort.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DSStudy/day_22/sort.c.obj
-.PHONY : DSStudy/day_22/sort.c.obj
+DSStudy/day_23/quciksort_nonr.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DSStudy/day_23/quciksort_nonr.c.obj
+.PHONY : DSStudy/day_23/quciksort_nonr.c.obj
 
-DSStudy/day_22/sort.i: DSStudy/day_22/sort.c.i
-.PHONY : DSStudy/day_22/sort.i
-
-# target to preprocess a source file
-DSStudy/day_22/sort.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DSStudy/day_22/sort.c.i
-.PHONY : DSStudy/day_22/sort.c.i
-
-DSStudy/day_22/sort.s: DSStudy/day_22/sort.c.s
-.PHONY : DSStudy/day_22/sort.s
-
-# target to generate assembly for a file
-DSStudy/day_22/sort.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DSStudy/day_22/sort.c.s
-.PHONY : DSStudy/day_22/sort.c.s
-
-DSStudy/day_22/test.obj: DSStudy/day_22/test.c.obj
-.PHONY : DSStudy/day_22/test.obj
-
-# target to build an object file
-DSStudy/day_22/test.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DSStudy/day_22/test.c.obj
-.PHONY : DSStudy/day_22/test.c.obj
-
-DSStudy/day_22/test.i: DSStudy/day_22/test.c.i
-.PHONY : DSStudy/day_22/test.i
+DSStudy/day_23/quciksort_nonr.i: DSStudy/day_23/quciksort_nonr.c.i
+.PHONY : DSStudy/day_23/quciksort_nonr.i
 
 # target to preprocess a source file
-DSStudy/day_22/test.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DSStudy/day_22/test.c.i
-.PHONY : DSStudy/day_22/test.c.i
+DSStudy/day_23/quciksort_nonr.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DSStudy/day_23/quciksort_nonr.c.i
+.PHONY : DSStudy/day_23/quciksort_nonr.c.i
 
-DSStudy/day_22/test.s: DSStudy/day_22/test.c.s
-.PHONY : DSStudy/day_22/test.s
+DSStudy/day_23/quciksort_nonr.s: DSStudy/day_23/quciksort_nonr.c.s
+.PHONY : DSStudy/day_23/quciksort_nonr.s
 
 # target to generate assembly for a file
-DSStudy/day_22/test.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DSStudy/day_22/test.c.s
-.PHONY : DSStudy/day_22/test.c.s
+DSStudy/day_23/quciksort_nonr.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DSStudy/day_23/quciksort_nonr.c.s
+.PHONY : DSStudy/day_23/quciksort_nonr.c.s
 
 # Help Target
 help:
@@ -185,12 +161,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... smzy
-	@echo ... DSStudy/day_22/sort.obj
-	@echo ... DSStudy/day_22/sort.i
-	@echo ... DSStudy/day_22/sort.s
-	@echo ... DSStudy/day_22/test.obj
-	@echo ... DSStudy/day_22/test.i
-	@echo ... DSStudy/day_22/test.s
+	@echo ... DSStudy/day_23/quciksort_nonr.obj
+	@echo ... DSStudy/day_23/quciksort_nonr.i
+	@echo ... DSStudy/day_23/quciksort_nonr.s
 .PHONY : help
 
 
