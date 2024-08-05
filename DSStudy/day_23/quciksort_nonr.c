@@ -52,6 +52,10 @@ void QuickSortNonR(int *a, int left, int right) {
     //栈模拟实现
     //递归存在栈溢出风险
     //采用非递归
+
+    //非递归 :1.提高效率(递归建立栈帧还是有消耗的，但是对于现代的计算机，这个优化微乎其微)
+    //      2.递归的最大缺陷是，如果栈帧的深度太深，可能会导致栈溢出。因为系统的栈，一般空间不大，在M级别
+    //    栈模拟非递归，数据是存储在堆上的，堆是G级别的空间
     Stack st;
     StackInit(&st);
 
@@ -75,5 +79,7 @@ void QuickSortNonR(int *a, int left, int right) {
             StackPush(&st, begin);
         }
         //只是将递归操作换成栈模拟
+        //递归改非递归 --1.改循环(斐波那契额数列求解) 一些简单的处理递归才能改循环 2.栈模拟存储数据非递归
     }
+    StackDestory(&st);
 };
