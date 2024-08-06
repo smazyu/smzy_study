@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <assert.h>
 #include "stack.h"
 
 // 已有的函数
@@ -10,6 +12,10 @@ int PartSort3(int *a, int begin, int end);
 
 void QuickSortNonR(int *a, int left, int right);
 
+void _MergeSort(int *a, int left, int right, int *tmp);
+
+void MergeSort(int *a, int n);
+
 int main() {
     int array[] = {34, 7, 23, 32, 5, 62, 32, 2, 1, 74};
     int size = sizeof(array) / sizeof(array[0]);
@@ -20,8 +26,8 @@ int main() {
     }
     printf("\n");
 
-    QuickSortNonR(array, 0, size - 1);
-
+//    QuickSortNonR(array, 0, size - 1);
+    MergeSort(array, size);
     printf("Sorted array: \n");
     for (int i = 0; i < size; i++) {
         printf("%d ", array[i]);
@@ -104,10 +110,42 @@ void QuickSortNonR(int *a, int left, int right) {
     }
     StackDestory(&st);
 }
-//时间复杂度O（N*logN)
-void MergeSort(int*a,int n){
-    //使数组 1 3 5 6 2 5 7 8 9
-    //归并排序的单趟排序
-    //复杂度 O(N*logN)
 
+void _MergeSort(int *a, int left, int right, int *tmp) {
+    if (left >= right) {
+        return;
+    }
+
+    int mid = (left + right) / 2;
+    _MergeSort(a, left, mid, tmp);
+    _MergeSort(a, mid + 1, right, tmp);
+
+    int begin1 = left, end1 = mid;
+    int begin2 = mid + 1, end2 = right;
+    int index = begin1;
+
+    while (begin1 <= end1 && begin2 <= end2) {
+        if (a[begin1] < a[begin2]) {
+            tmp[index++] = a[begin1++];
+        } else {
+            tmp[index++] = a[begin2++];
+        }
+    }
+    while (begin1 <= end1) {
+        tmp[index++] = a[begin1++];
+    }
+    while (begin2 <= end2) {
+        tmp[index++] = a[begin2++];
+    }
+
+    for (int i = left; i <= right; ++i) {
+        a[i] = tmp[i];
+    }
+}
+
+void MergeSort(int *a, int n) {
+    assert(a);
+    int *tmp = (int *) malloc(sizeof(int) * n);
+    _MergeSort(a, 0, n - 1, tmp);
+    free(tmp);
 }
