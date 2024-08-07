@@ -144,11 +144,50 @@ void _MergeSort(int *a, int left, int right, int *tmp) {
         a[i] = tmp[i];
     }
 }
-void _MergeSortNonR(int* a,int n){
-    assert(a);
-    int* tmp = malloc(sizeof(int)* n);
-    
+
+void MergeArr(int *a, int begin1, int end1, int begin2, int end2, int *tmp) {
+    int left = begin1, right = end2;
+    int index = begin1;
+
+    while (begin1 <= end1 && begin2 <= end2) {
+        if (a[begin1] < a[begin2]) {
+            tmp[index++] = a[begin1++];
+        } else {
+            tmp[index++] = a[begin2++];
+        }
+    }
+    while (begin1 <= end1) {
+        tmp[index++] = a[begin1++];
+    }
+    while (begin2 <= end2) {
+        tmp[index++] = a[begin2++];
+    }
+
+    for (int i = left; i <= right; ++i) {
+        a[i] = tmp[i];
+    }
 }
+
+void _MergeSortNonR(int *a, int n) {
+    assert(a);
+    int *tmp = (int *) malloc(sizeof(int) * n);
+    int gap = 1;
+
+    while (gap < n) {
+        for (int i = 0; i + gap < n; i += 2 * gap) {
+            int begin1 = i;
+            int end1 = i + gap - 1;
+            int begin2 = i + gap;
+            int end2 = (i + 2 * gap - 1 < n) ? i + 2 * gap - 1 : n - 1;
+
+            MergeArr(a, begin1, end1, begin2, end2, tmp);
+        }
+        gap *= 2;
+    }
+
+    free(tmp);
+}
+
 void MergeSort(int *a, int n) {
     assert(a);
     int *tmp = (int *) malloc(sizeof(int) * n);
