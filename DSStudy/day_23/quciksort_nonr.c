@@ -111,6 +111,8 @@ void QuickSortNonR(int *a, int left, int right) {
     StackDestory(&st);
 }
 
+//时间复杂度O(N*logN)
+//空间复杂度O(N)
 void _MergeSort(int *a, int left, int right, int *tmp) {
     if (left >= right) {
         return;
@@ -142,7 +144,11 @@ void _MergeSort(int *a, int left, int right, int *tmp) {
         a[i] = tmp[i];
     }
 }
-
+void _MergeSortNonR(int* a,int n){
+    assert(a);
+    int* tmp = malloc(sizeof(int)* n);
+    
+}
 void MergeSort(int *a, int n) {
     assert(a);
     int *tmp = (int *) malloc(sizeof(int) * n);
