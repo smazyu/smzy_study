@@ -174,13 +174,18 @@ void _MergeSortNonR(int *a, int n) {
     int gap = 1;
 
     while (gap < n) {
-        for (int i = 0; i + gap < n; i += 2 * gap) {
+        for (int i = 0; i < n; i += 2 * gap) {
             int begin1 = i;
             int end1 = i + gap - 1;
             int begin2 = i + gap;
-            int end2 = (i + 2 * gap - 1 < n) ? i + 2 * gap - 1 : n - 1;
+            int end2 = i + 2 * gap - 1;
 
-            MergeArr(a, begin1, end1, begin2, end2, tmp);
+            if (begin2 < n) {
+                if (end2 >= n) {
+                    end2 = n - 1;
+                }
+                MergeArr(a, begin1, end1, begin2, end2, tmp);
+            }
         }
         gap *= 2;
     }
