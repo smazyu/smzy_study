@@ -93,6 +93,9 @@
 		<Unit filename="E:/GitHub/smzy_study/DSStudy/day_23/stack.h">
 			<Option target="smzy"/>
 		</Unit>
+		<Unit filename="E:/GitHub/smzy_study/DSStudy/day_24_end/countsort.c">
+			<Option target="smzy"/>
+		</Unit>
 		<Unit filename="E:/GitHub/smzy_study/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

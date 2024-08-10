@@ -176,6 +176,30 @@ DSStudy/day_23/stack.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DSStudy/day_23/stack.c.s
 .PHONY : DSStudy/day_23/stack.c.s
 
+DSStudy/day_24_end/countsort.obj: DSStudy/day_24_end/countsort.c.obj
+.PHONY : DSStudy/day_24_end/countsort.obj
+
+# target to build an object file
+DSStudy/day_24_end/countsort.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DSStudy/day_24_end/countsort.c.obj
+.PHONY : DSStudy/day_24_end/countsort.c.obj
+
+DSStudy/day_24_end/countsort.i: DSStudy/day_24_end/countsort.c.i
+.PHONY : DSStudy/day_24_end/countsort.i
+
+# target to preprocess a source file
+DSStudy/day_24_end/countsort.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DSStudy/day_24_end/countsort.c.i
+.PHONY : DSStudy/day_24_end/countsort.c.i
+
+DSStudy/day_24_end/countsort.s: DSStudy/day_24_end/countsort.c.s
+.PHONY : DSStudy/day_24_end/countsort.s
+
+# target to generate assembly for a file
+DSStudy/day_24_end/countsort.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DSStudy/day_24_end/countsort.c.s
+.PHONY : DSStudy/day_24_end/countsort.c.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -191,6 +215,9 @@ help:
 	@echo ... DSStudy/day_23/stack.obj
 	@echo ... DSStudy/day_23/stack.i
 	@echo ... DSStudy/day_23/stack.s
+	@echo ... DSStudy/day_24_end/countsort.obj
+	@echo ... DSStudy/day_24_end/countsort.i
+	@echo ... DSStudy/day_24_end/countsort.s
 .PHONY : help
 
 

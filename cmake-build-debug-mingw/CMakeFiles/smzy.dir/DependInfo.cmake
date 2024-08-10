@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "E:/GitHub/smzy_study/DSStudy/day_23/quciksort_nonr.c" "CMakeFiles/smzy.dir/DSStudy/day_23/quciksort_nonr.c.obj" "gcc" "CMakeFiles/smzy.dir/DSStudy/day_23/quciksort_nonr.c.obj.d"
   "E:/GitHub/smzy_study/DSStudy/day_23/stack.c" "CMakeFiles/smzy.dir/DSStudy/day_23/stack.c.obj" "gcc" "CMakeFiles/smzy.dir/DSStudy/day_23/stack.c.obj.d"
+  "E:/GitHub/smzy_study/DSStudy/day_24_end/countsort.c" "CMakeFiles/smzy.dir/DSStudy/day_24_end/countsort.c.obj" "gcc" "CMakeFiles/smzy.dir/DSStudy/day_24_end/countsort.c.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.
