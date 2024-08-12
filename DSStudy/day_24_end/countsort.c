@@ -7,7 +7,7 @@ void CountSort(int* a, int n) {
 
     int min = a[0];
     int max = a[0];
-
+    //空间复杂度 O（n + range);
     // Find the minimum and maximum elements in the array
     for (int i = 1; i < n; ++i) {
         if (a[i] > max) {
