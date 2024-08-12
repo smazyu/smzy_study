@@ -27,3 +27,5 @@ int main(){
     InsertionSort(a,sizeof(a)/sizeof(int));
     PrintArr(a,sizeof(a)/sizeof(int));
 }
+
+//是一个稳定的排序算法，时间复杂度 最坏情况下O(n^2)，最好情况下O(n)，平均O(n^2)
