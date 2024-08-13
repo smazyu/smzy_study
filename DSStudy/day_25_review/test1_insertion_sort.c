@@ -7,10 +7,10 @@
 //设数组为 5 2 9 1 5 6
 void InsertionSort(int *a,int n){
     int key,i,j;
-    for (i = 1;i < n;i++){
-        j = i - 1;
+    for(i = 1;i < n;i ++){
         key = a[i];
-        while(j >= 0 && a[j] >= key){
+        j = i - 1;
+        while(j >= 0 && a[j] > key){
             a[j + 1] = a[j];
             j = j - 1;
         }
