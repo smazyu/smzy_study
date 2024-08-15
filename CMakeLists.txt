@@ -7,4 +7,5 @@ include_directories(.)
 add_executable(smzy
         DSStudy/day_25_review/test1_insertion_sort.c
 #        DSStudy/day_25_review/test2_shellsort.c
+        
 )
