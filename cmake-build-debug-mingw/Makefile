@@ -128,29 +128,29 @@ smzy/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/build
 .PHONY : smzy/fast
 
-DSStudy/day_25_review/test2_shellsort.obj: DSStudy/day_25_review/test2_shellsort.c.obj
-.PHONY : DSStudy/day_25_review/test2_shellsort.obj
+cpp_study/day_1/test.obj: cpp_study/day_1/test.cpp.obj
+.PHONY : cpp_study/day_1/test.obj
 
 # target to build an object file
-DSStudy/day_25_review/test2_shellsort.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DSStudy/day_25_review/test2_shellsort.c.obj
-.PHONY : DSStudy/day_25_review/test2_shellsort.c.obj
+cpp_study/day_1/test.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/cpp_study/day_1/test.cpp.obj
+.PHONY : cpp_study/day_1/test.cpp.obj
 
-DSStudy/day_25_review/test2_shellsort.i: DSStudy/day_25_review/test2_shellsort.c.i
-.PHONY : DSStudy/day_25_review/test2_shellsort.i
+cpp_study/day_1/test.i: cpp_study/day_1/test.cpp.i
+.PHONY : cpp_study/day_1/test.i
 
 # target to preprocess a source file
-DSStudy/day_25_review/test2_shellsort.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DSStudy/day_25_review/test2_shellsort.c.i
-.PHONY : DSStudy/day_25_review/test2_shellsort.c.i
+cpp_study/day_1/test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/cpp_study/day_1/test.cpp.i
+.PHONY : cpp_study/day_1/test.cpp.i
 
-DSStudy/day_25_review/test2_shellsort.s: DSStudy/day_25_review/test2_shellsort.c.s
-.PHONY : DSStudy/day_25_review/test2_shellsort.s
+cpp_study/day_1/test.s: cpp_study/day_1/test.cpp.s
+.PHONY : cpp_study/day_1/test.s
 
 # target to generate assembly for a file
-DSStudy/day_25_review/test2_shellsort.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DSStudy/day_25_review/test2_shellsort.c.s
-.PHONY : DSStudy/day_25_review/test2_shellsort.c.s
+cpp_study/day_1/test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/cpp_study/day_1/test.cpp.s
+.PHONY : cpp_study/day_1/test.cpp.s
 
 # Help Target
 help:
@@ -161,9 +161,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... smzy
-	@echo ... DSStudy/day_25_review/test2_shellsort.obj
-	@echo ... DSStudy/day_25_review/test2_shellsort.i
-	@echo ... DSStudy/day_25_review/test2_shellsort.s
+	@echo ... cpp_study/day_1/test.obj
+	@echo ... cpp_study/day_1/test.i
+	@echo ... cpp_study/day_1/test.s
 .PHONY : help
 
 
