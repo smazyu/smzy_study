@@ -1,0 +1,3 @@
+"E:\Program Files\JetBrains\CLion 2024.1.1\bin\cmake\win\x64\bin\cmake.exe" -E rm -f CMakeFiles\smz.dir/objects.a
+"E:\Program Files\JetBrains\CLion 2024.1.1\bin\mingw\bin\ar.exe" qc CMakeFiles\smz.dir/objects.a @CMakeFiles\smz.dir\objects1.rsp
+"E:\Program Files\JetBrains\CLion 2024.1.1\bin\mingw\bin\g++.exe" -g -Wl,--whole-archive CMakeFiles\smz.dir/objects.a -Wl,--no-whole-archive -o smz.exe -Wl,--out-implib,libsmz.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\smz.dir\linkLibs.rsp
