@@ -84,7 +84,7 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="E:/GitHub/smzy_study/DSStudy/day_25_review/test1_insertion_sort.c">
+		<Unit filename="E:/GitHub/smzy_study/DSStudy/day_25_review/test2_shellsort.c">
 			<Option target="smzy"/>
 		</Unit>
 		<Unit filename="E:/GitHub/smzy_study/CMakeLists.txt">

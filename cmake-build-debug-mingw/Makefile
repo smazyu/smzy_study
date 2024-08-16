@@ -128,29 +128,29 @@ smzy/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/build
 .PHONY : smzy/fast
 
-DSStudy/day_25_review/test1_insertion_sort.obj: DSStudy/day_25_review/test1_insertion_sort.c.obj
-.PHONY : DSStudy/day_25_review/test1_insertion_sort.obj
+DSStudy/day_25_review/test2_shellsort.obj: DSStudy/day_25_review/test2_shellsort.c.obj
+.PHONY : DSStudy/day_25_review/test2_shellsort.obj
 
 # target to build an object file
-DSStudy/day_25_review/test1_insertion_sort.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DSStudy/day_25_review/test1_insertion_sort.c.obj
-.PHONY : DSStudy/day_25_review/test1_insertion_sort.c.obj
+DSStudy/day_25_review/test2_shellsort.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DSStudy/day_25_review/test2_shellsort.c.obj
+.PHONY : DSStudy/day_25_review/test2_shellsort.c.obj
 
-DSStudy/day_25_review/test1_insertion_sort.i: DSStudy/day_25_review/test1_insertion_sort.c.i
-.PHONY : DSStudy/day_25_review/test1_insertion_sort.i
+DSStudy/day_25_review/test2_shellsort.i: DSStudy/day_25_review/test2_shellsort.c.i
+.PHONY : DSStudy/day_25_review/test2_shellsort.i
 
 # target to preprocess a source file
-DSStudy/day_25_review/test1_insertion_sort.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DSStudy/day_25_review/test1_insertion_sort.c.i
-.PHONY : DSStudy/day_25_review/test1_insertion_sort.c.i
+DSStudy/day_25_review/test2_shellsort.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DSStudy/day_25_review/test2_shellsort.c.i
+.PHONY : DSStudy/day_25_review/test2_shellsort.c.i
 
-DSStudy/day_25_review/test1_insertion_sort.s: DSStudy/day_25_review/test1_insertion_sort.c.s
-.PHONY : DSStudy/day_25_review/test1_insertion_sort.s
+DSStudy/day_25_review/test2_shellsort.s: DSStudy/day_25_review/test2_shellsort.c.s
+.PHONY : DSStudy/day_25_review/test2_shellsort.s
 
 # target to generate assembly for a file
-DSStudy/day_25_review/test1_insertion_sort.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DSStudy/day_25_review/test1_insertion_sort.c.s
-.PHONY : DSStudy/day_25_review/test1_insertion_sort.c.s
+DSStudy/day_25_review/test2_shellsort.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DSStudy/day_25_review/test2_shellsort.c.s
+.PHONY : DSStudy/day_25_review/test2_shellsort.c.s
 
 # Help Target
 help:
@@ -161,9 +161,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... smzy
-	@echo ... DSStudy/day_25_review/test1_insertion_sort.obj
-	@echo ... DSStudy/day_25_review/test1_insertion_sort.i
-	@echo ... DSStudy/day_25_review/test1_insertion_sort.s
+	@echo ... DSStudy/day_25_review/test2_shellsort.obj
+	@echo ... DSStudy/day_25_review/test2_shellsort.i
+	@echo ... DSStudy/day_25_review/test2_shellsort.s
 .PHONY : help
 
 
