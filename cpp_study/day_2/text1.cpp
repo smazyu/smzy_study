@@ -25,4 +25,10 @@ int main(){
     int& d = c;
     const int& e = c;//可以实现 c是可读可写，e变成别名只读
     //总结：引用取别名时，变量访问的权限可以缩小不可以放大
+
+    int i = 0;
+    double db = i;//隐式类型转换 转换时会产生一个临时变量，临时变量具有常性
+    const double&rb = i;//所以引用时需要加上const
+    const float&rf = i;
+
 }
