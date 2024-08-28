@@ -1,4 +1,4 @@
-"E:\Program Files\JetBrains\CLion 2024.1.1\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" -DPython_EXECUTABLE=C:/Users/20212/AppData/Local/Microsoft/WindowsApps/python3.10.exe -DPython3_EXECUTABLE=C:/Users/20212/AppData/Local/Microsoft/WindowsApps/python3.10.exe -S E:\GitHub\smzy_study -B E:\GitHub\smzy_study\cmake-build-debug-mingw
+"E:\Program Files\JetBrains\CLion 2024.1.1\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" -S E:\GitHub\smzy_study -B E:\GitHub\smzy_study\cmake-build-debug-mingw
 CMake Deprecation Warning:
   Support for "Extra Generators" like
 
@@ -8,6 +8,6 @@ CMake Deprecation Warning:
   use the cmake-file-api(7) to view CMake-generated project build trees.
 
 
--- Configuring done (0.1s)
+-- Configuring done (0.2s)
 -- Generating done (0.0s)
 -- Build files have been written to: E:/GitHub/smzy_study/cmake-build-debug-mingw

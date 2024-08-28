@@ -1,0 +1,5 @@
+ToolSet: 17.0 (local)@C:\Program Files\Microsoft Visual Studio\2022\Professional
+Ninja: 1.11.1@E:\Program Files\JetBrains\CLion 2024.1.1\bin\ninja\win\x64\ninja.exe
+Options: 
+
+Options:
