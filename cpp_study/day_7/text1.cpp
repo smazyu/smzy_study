@@ -15,4 +15,8 @@ int main(){
     cout << typeid(c).name() << endl;
     cout << typeid(d).name() << endl;
     cout << typeid(e).name() << endl;
+//    std::map<std::string,std::string> dict;
+//    std::map<std::string,std::string> :: iterator dict;
+    //使用auto来优化，可以简化代码的写法
+    return 0;
 }
