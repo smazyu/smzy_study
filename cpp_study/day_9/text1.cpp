@@ -16,12 +16,18 @@ class Stack {
 
     //2.成员变量
 public:
-//    void Push(int x);
+    void Push(int x);//{
+    //
+//    };//1.在类里面声明定义
+
+    //2.在类里面声明,类外面定义
 private:
     int *_a;
     int _size;
     int _capacity;//这里是声明
 };
+
+void Stack::Push(int x) {}
 
 //c语言中struct是用来定义结构体的，在c++中兼容struct定义结构体的用法，但是同时可以用来定义类
 struct ListNode {
