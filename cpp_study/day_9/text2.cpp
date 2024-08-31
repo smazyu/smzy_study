@@ -17,11 +17,17 @@ public:
     //this是谁调用这个成员函数就指向谁
 
     //构造函数 ->在对象构造时调用的函数,这个函数完成初始化工作
-
+    //构造函数 函数名与类名相同
+    //构造函数可以重载
     Data(int year,int month,int day){
         _year = year;
         _month = month;
         _day = day;
+    }
+    Data(){
+        _year = 0;
+        _month = 1;
+        _day = 1;
     }
     void Print() {
         cout << _year << "-" << _month << "-" << _day << endl;
@@ -43,7 +49,9 @@ private:
 int main() {
 //    int i1;
 //    int ii1;
-    Data d1(2024,9,1);
+//对象实列化时自动调用
+    Data d1(2024,9,1);\
+//    Data d2()不可以这样写,编译器不认识
     //实参
 //    d1.Init(2024, 1, 9);//d1.Init(&d1);
 //    Data d2;
