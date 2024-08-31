@@ -23,10 +23,6 @@ private:
     int _capacity;
 };
 
-int main() {
-    return 0;
-}
-
 //c语言中struct是用来定义结构体的，在c++中兼容struct定义结构体的用法，但是同时可以用来定义类
 struct ListNode {
     int _val;
@@ -40,3 +36,8 @@ struct ListNode_CPP {
     ListNode_CPP *_prev;
     //还可以定义函数 -> 成员函数
 };
+
+int main() {
+    return 0;
+}
+
