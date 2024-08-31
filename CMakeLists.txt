@@ -14,4 +14,5 @@ include_directories(.)
 add_executable(smzy
         cpp_study/day_8/text2.cpp
         DSStudy/day_25_review/test2_shellsort.c
+        cpp_study/day_9/text1.cpp
 )

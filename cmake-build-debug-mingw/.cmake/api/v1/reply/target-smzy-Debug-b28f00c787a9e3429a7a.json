@@ -66,7 +66,8 @@
 			},
 			"sourceIndexes" : 
 			[
-				0
+				0,
+				2
 			]
 		},
 		{
@@ -132,7 +133,8 @@
 			"sourceIndexes" : 
 			[
 				0,
-				1
+				1,
+				2
 			]
 		}
 	],
@@ -148,6 +150,12 @@
 			"backtrace" : 1,
 			"compileGroupIndex" : 1,
 			"path" : "DSStudy/day_25_review/test2_shellsort.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "cpp_study/day_9/text1.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],
