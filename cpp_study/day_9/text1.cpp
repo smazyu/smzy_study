@@ -20,7 +20,7 @@ public:
 private:
     int *_a;
     int _size;
-    int _capacity;
+    int _capacity;//这里是声明
 };
 
 //c语言中struct是用来定义结构体的，在c++中兼容struct定义结构体的用法，但是同时可以用来定义类
@@ -37,7 +37,14 @@ struct ListNode_CPP {
     //还可以定义函数 -> 成员函数
 };
 
+//声明和定义的区别是什么?声明可以认为是一种承诺,承诺要干嘛,但是还没有做,定义就是把这个事情落地了
 int main() {
+    //类实例化出对象,相当于定义出了类的成员变量
+    //类实例出对象相当于拿着设计图去建房子
+    Stack s1;
+    Stack s2;
+    Stack s3;
+//    s1._a = nullptr;//报错,无法访问私有
     return 0;
 }
 
