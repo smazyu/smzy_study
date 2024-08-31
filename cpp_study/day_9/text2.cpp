@@ -15,6 +15,14 @@ public:
     //void Print(Data* this)
 
     //this是谁调用这个成员函数就指向谁
+
+    //构造函数 ->在对象构造时调用的函数,这个函数完成初始化工作
+
+    Data(int year,int month,int day){
+        _year = year;
+        _month = month;
+        _day = day;
+    }
     void Print() {
         cout << _year << "-" << _month << "-" << _day << endl;
     }
@@ -35,10 +43,13 @@ private:
 int main() {
 //    int i1;
 //    int ii1;
-    Data d1;
+    Data d1(2024,9,1);
     //实参
-    d1.Init(2024, 1, 9);//d1.Init(&d1);
+//    d1.Init(2024, 1, 9);//d1.Init(&d1);
+//    Data d2;
+//    d2.Init(2024,1,9);
     d1.Print();
+//    d2.Print();
     return 0;
 }
 //算类型的大小,实际上是算这个类型定义出对象的大小
