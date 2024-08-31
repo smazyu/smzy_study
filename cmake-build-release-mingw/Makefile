@@ -128,54 +128,6 @@ smzy/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/build
 .PHONY : smzy/fast
 
-DSStudy/day_25_review/test2_shellsort.obj: DSStudy/day_25_review/test2_shellsort.c.obj
-.PHONY : DSStudy/day_25_review/test2_shellsort.obj
-
-# target to build an object file
-DSStudy/day_25_review/test2_shellsort.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DSStudy/day_25_review/test2_shellsort.c.obj
-.PHONY : DSStudy/day_25_review/test2_shellsort.c.obj
-
-DSStudy/day_25_review/test2_shellsort.i: DSStudy/day_25_review/test2_shellsort.c.i
-.PHONY : DSStudy/day_25_review/test2_shellsort.i
-
-# target to preprocess a source file
-DSStudy/day_25_review/test2_shellsort.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DSStudy/day_25_review/test2_shellsort.c.i
-.PHONY : DSStudy/day_25_review/test2_shellsort.c.i
-
-DSStudy/day_25_review/test2_shellsort.s: DSStudy/day_25_review/test2_shellsort.c.s
-.PHONY : DSStudy/day_25_review/test2_shellsort.s
-
-# target to generate assembly for a file
-DSStudy/day_25_review/test2_shellsort.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DSStudy/day_25_review/test2_shellsort.c.s
-.PHONY : DSStudy/day_25_review/test2_shellsort.c.s
-
-cpp_study/day_8/text2.obj: cpp_study/day_8/text2.cpp.obj
-.PHONY : cpp_study/day_8/text2.obj
-
-# target to build an object file
-cpp_study/day_8/text2.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/cpp_study/day_8/text2.cpp.obj
-.PHONY : cpp_study/day_8/text2.cpp.obj
-
-cpp_study/day_8/text2.i: cpp_study/day_8/text2.cpp.i
-.PHONY : cpp_study/day_8/text2.i
-
-# target to preprocess a source file
-cpp_study/day_8/text2.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/cpp_study/day_8/text2.cpp.i
-.PHONY : cpp_study/day_8/text2.cpp.i
-
-cpp_study/day_8/text2.s: cpp_study/day_8/text2.cpp.s
-.PHONY : cpp_study/day_8/text2.s
-
-# target to generate assembly for a file
-cpp_study/day_8/text2.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/cpp_study/day_8/text2.cpp.s
-.PHONY : cpp_study/day_8/text2.cpp.s
-
 cpp_study/day_9/text1.obj: cpp_study/day_9/text1.cpp.obj
 .PHONY : cpp_study/day_9/text1.obj
 
@@ -209,12 +161,6 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... smzy
-	@echo ... DSStudy/day_25_review/test2_shellsort.obj
-	@echo ... DSStudy/day_25_review/test2_shellsort.i
-	@echo ... DSStudy/day_25_review/test2_shellsort.s
-	@echo ... cpp_study/day_8/text2.obj
-	@echo ... cpp_study/day_8/text2.i
-	@echo ... cpp_study/day_8/text2.s
 	@echo ... cpp_study/day_9/text1.obj
 	@echo ... cpp_study/day_9/text1.i
 	@echo ... cpp_study/day_9/text1.s
