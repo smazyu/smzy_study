@@ -13,4 +13,5 @@ include_directories(.)
 # 添加可执行文件并指定 C 和 C++ 源文件
 add_executable(smzy
         cpp_study/day_9/text2.cpp
+        DSStudy/day_25_review/test3_selection_sort.cpp
 )

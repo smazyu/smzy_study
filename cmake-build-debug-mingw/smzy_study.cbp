@@ -84,6 +84,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="E:/GitHub/smzy_study/DSStudy/day_25_review/test3_selection_sort.cpp">
+			<Option target="smzy"/>
+		</Unit>
 		<Unit filename="E:/GitHub/smzy_study/cpp_study/day_9/text2.cpp">
 			<Option target="smzy"/>
 		</Unit>

@@ -128,6 +128,30 @@ smzy/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/build
 .PHONY : smzy/fast
 
+DSStudy/day_25_review/test3_selection_sort.obj: DSStudy/day_25_review/test3_selection_sort.cpp.obj
+.PHONY : DSStudy/day_25_review/test3_selection_sort.obj
+
+# target to build an object file
+DSStudy/day_25_review/test3_selection_sort.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DSStudy/day_25_review/test3_selection_sort.cpp.obj
+.PHONY : DSStudy/day_25_review/test3_selection_sort.cpp.obj
+
+DSStudy/day_25_review/test3_selection_sort.i: DSStudy/day_25_review/test3_selection_sort.cpp.i
+.PHONY : DSStudy/day_25_review/test3_selection_sort.i
+
+# target to preprocess a source file
+DSStudy/day_25_review/test3_selection_sort.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DSStudy/day_25_review/test3_selection_sort.cpp.i
+.PHONY : DSStudy/day_25_review/test3_selection_sort.cpp.i
+
+DSStudy/day_25_review/test3_selection_sort.s: DSStudy/day_25_review/test3_selection_sort.cpp.s
+.PHONY : DSStudy/day_25_review/test3_selection_sort.s
+
+# target to generate assembly for a file
+DSStudy/day_25_review/test3_selection_sort.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DSStudy/day_25_review/test3_selection_sort.cpp.s
+.PHONY : DSStudy/day_25_review/test3_selection_sort.cpp.s
+
 cpp_study/day_9/text2.obj: cpp_study/day_9/text2.cpp.obj
 .PHONY : cpp_study/day_9/text2.obj
 
@@ -161,6 +185,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... smzy
+	@echo ... DSStudy/day_25_review/test3_selection_sort.obj
+	@echo ... DSStudy/day_25_review/test3_selection_sort.i
+	@echo ... DSStudy/day_25_review/test3_selection_sort.s
 	@echo ... cpp_study/day_9/text2.obj
 	@echo ... cpp_study/day_9/text2.i
 	@echo ... cpp_study/day_9/text2.s

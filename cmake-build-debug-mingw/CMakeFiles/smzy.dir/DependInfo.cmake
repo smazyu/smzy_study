@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "E:/GitHub/smzy_study/DSStudy/day_25_review/test3_selection_sort.cpp" "CMakeFiles/smzy.dir/DSStudy/day_25_review/test3_selection_sort.cpp.obj" "gcc" "CMakeFiles/smzy.dir/DSStudy/day_25_review/test3_selection_sort.cpp.obj.d"
   "E:/GitHub/smzy_study/cpp_study/day_9/text2.cpp" "CMakeFiles/smzy.dir/cpp_study/day_9/text2.cpp.obj" "gcc" "CMakeFiles/smzy.dir/cpp_study/day_9/text2.cpp.obj.d"
   )
 
