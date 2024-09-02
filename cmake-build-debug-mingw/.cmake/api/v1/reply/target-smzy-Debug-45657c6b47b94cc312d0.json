@@ -66,8 +66,7 @@
 			},
 			"sourceIndexes" : 
 			[
-				0,
-				1
+				0
 			]
 		}
 	],
@@ -104,8 +103,7 @@
 			"name" : "Source Files",
 			"sourceIndexes" : 
 			[
-				0,
-				1
+				0
 			]
 		}
 	],
@@ -114,13 +112,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "cpp_study/day_9/text2.cpp",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "DSStudy/day_25_review/test3_selection_sort.cpp",
+			"path" : "cpp_study/day_10/text2.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],
