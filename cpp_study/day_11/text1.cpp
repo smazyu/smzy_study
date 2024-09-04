@@ -61,5 +61,6 @@ int main() {
     Data d2(d1);
     d1 == d2;
     cout << (d1 == d2) << endl;
+    cout << (d1 > d2) << endl;
 }
 //运算符重载
