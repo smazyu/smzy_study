@@ -56,6 +56,15 @@ public:
     bool operator<=(const Data &d) const {
         return *this < d || *this == d;
     }
+    //运算符的重载是为了让自定义类型可以像内置类型一样去使用
+  Data& operator=(const Data &d){
+        if(this != &d){//针对自己给自己赋值的判断检查
+            _year = d._year;
+            _month = d._month;
+            _day = d._day;
+        }
+        return *this;
+    }
 
     Data operator+(int day){
         Data ret(*this);
@@ -105,3 +114,8 @@ int main() {
     Data d3 = d2 + 10;
     d3.Print();
 }
+//void f1(Data d1) 传值会调用一次拷贝构造，会调用Data拷贝构造
+//传值返回 会调用拷贝构造 传引用返回没有
+//自定义类型传参数和返回值，在可以的情况下，尽量使用引用，减少拷贝
+
+//自定义类型传参数和返回值 不使用引用会调用拷贝构造
