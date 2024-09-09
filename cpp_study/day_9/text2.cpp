@@ -29,10 +29,10 @@ public:
     //构造函数 ->在对象构造时调用的函数,这个函数完成初始化工作
     //构造函数 函数名与类名相同
     //构造函数可以重载
-   /* Data(int year,int month,int day){
+   /* Data(int year,int month,int day_14){
         _year = year;
         _month = month;
-        _day = day;
+        _day = day_14;
     }
     Data(){
         _year = 0;

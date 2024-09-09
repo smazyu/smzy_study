@@ -17,7 +17,7 @@ public:
         if (year >= 0 && month >= 1 && month <= 12 && day >= 1 && day <= GetMonthDay(year, month)) {
             _year = year;
             _month = month;
-            _day = day; // 修正：将 day 赋值给 _day
+            _day = day; // 修正：将 day_14 赋值给 _day
         } else {
             std::cout << "非法日期" << std::endl;
             _year = 0;

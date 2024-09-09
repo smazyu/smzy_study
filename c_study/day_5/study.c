@@ -54,15 +54,15 @@
 //
 //swtich用于多分支环境
 //int main(){
-//    int day = 0;
-//    &取地址符,当你使用 scanf("%d", &day); 时，你实际上是告诉 scanf 函数将输入的整数存储在 day 变量的内存地址中
+//    int day_14 = 0;
+//    &取地址符,当你使用 scanf("%d", &day_14); 时，你实际上是告诉 scanf 函数将输入的整数存储在 day_14 变量的内存地址中
 //当你int 初始化一个变量时，会给这个变量分配一个内存地址
 //scanf是将输入的值赋值给变量,本质是把这个值放到变量的内存地址中
 //swich语句中的case后面的值必须是常量
 //swich必须使用整型或者字符型,因为字符型底层是ASCII码,也是整型
 //default是可选的,默认选项,当所有的case都不满足时,执行default
-//    scanf("%d",&day);
-//    switch(day){
+//    scanf("%d",&day_14);
+//    switch(day_14){
 //        case 1:
 //            printf("星期一\n");
 //            break;

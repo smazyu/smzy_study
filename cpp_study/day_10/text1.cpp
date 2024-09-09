@@ -16,10 +16,10 @@ public:
 //        _month = 1;
 //        _day = 1;
 //    }
-//    Data(int year,int month,int day){
+//    Data(int year,int month,int day_14){
 //        _year = year;
 //        _month = month;
-//        _day = day;
+//        _day = day_14;
 //    }
     Data(int year = 0, int month = 1, int day = 1) {
         _year = year;
