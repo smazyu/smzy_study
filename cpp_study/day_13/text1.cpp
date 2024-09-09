@@ -72,15 +72,16 @@ public:
 
     Data operator+(int day) {
         Data ret(*this);
-        ret._day += day;
-        while (ret._day > GetMonthDay(ret._year, ret._month)) {
-            ret._day -= GetMonthDay(ret._year, ret._month);
-            ret._month++;
-            if (ret._month == 13) {
-                ret._year++;
-                ret._month = 1;
-            }
-        }
+//        ret._day += day;
+//        while (ret._day > GetMonthDay(ret._year, ret._month)) {
+//            ret._day -= GetMonthDay(ret._year, ret._month);
+//            ret._month++;
+//            if (ret._month == 13) {
+//                ret._year++;
+//                ret._month = 1;
+//            }
+//        }
+        ret += day;
         return ret;
     }
 
@@ -117,18 +118,20 @@ public:
     //d1 - 10;
     Data &operator-(int day){
         Data ret = *this;
-        ret._day -= day;
-        while(ret._day <= 0){
-            --ret._month;
-            if(ret._month == 0){
-                --ret._month;
-                if(ret._month == 0){
-                    --ret._year;
-                    ret._month = 12;
-                }
-                ret._day += GetMonthDay(ret._year,ret._month);
-            }
-        }
+//        ret._day -= day;
+//        while(ret._day <= 0){
+//            --ret._month;
+//            if(ret._month == 0){
+//                --ret._month;
+//                if(ret._month == 0){
+//                    --ret._year;
+//                    ret._month = 12;
+//                }
+//                ret._day += GetMonthDay(ret._year,ret._month);
+//            }
+//        }
+        ret -= day;
+        return ret;
     }
     Data &operator ++();
 
