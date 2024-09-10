@@ -133,7 +133,10 @@ public:
         ret -= day;
         return ret;
     }
-    Data &operator ++();
+    Data &operator ++(){
+        *this += 1;
+        return *this;
+    };
 
     Data &operator --();
 
