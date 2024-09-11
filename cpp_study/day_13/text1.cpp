@@ -134,11 +134,15 @@ public:
         return ret;
     }
     Data &operator ++(){
-        *this += 1;
-        return *this;
+        *this += 1;//前置
+        return *this;//返回加之后
     };
 
-    Data &operator --();
+    Data &operator --(int){
+        Data tmp(*this);
+        *this += 1;
+        return tmp;//返回之前的值
+    };
 
     int operator-(const Data& d){
 
