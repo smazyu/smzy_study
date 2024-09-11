@@ -90,6 +90,8 @@ public:
     }
 
     Data &operator+=(int day) {
+        if(day < 0)
+            return *this -= -day;
         _day += day;
         while (_day > GetMonthDay(_year, _month)) {
             _day -= GetMonthDay(_year, _month);
@@ -104,6 +106,8 @@ public:
     //d1 -= 10 d1.operator -= (&d1,10) this
     //-= 代表 减之后自己的值也跟着改变
     Data &operator-=(int day){
+        if(day < 0)
+            return *this -= -day;
         this -> _day -= day;
         while(_day <= 0){//day不合法需要继续处理的条件
             --_month;
@@ -138,7 +142,7 @@ public:
         return *this;//返回加之后
     };
 
-    Data &operator --(int){
+    Data &operator --(int){//为了构成函数重载
         Data tmp(*this);
         *this += 1;
         return tmp;//返回之前的值
