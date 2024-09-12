@@ -39,8 +39,18 @@ public:
         ++n;
     }
 
+    static int GetN() {//没有this指针，函数中不能访问非静态的成员
+
+        return n;
+    }
+
+    void Print() {
+        cout << n << endl;
+    }
+
 private:
     static int n;//声明 不是属于某个对象，是属于类的所有对象，属于这个类
+    //不在对象中，n在静态区
 };
 
 int A::n = 0;//定义
@@ -54,6 +64,7 @@ int main() {
     f1(a1);
     f1(a2);
 //    cout << A::n <<endl;
+    a1.Print();
     return 0;
 
     //问题是谁都可以对n进行修改
