@@ -15,11 +15,11 @@ public:
         _month = month;
         _day = day;
     }
-    void Print() {
+    void Print () const {
         std::cout << _year << "-" << _month << "-" << _day<<std::endl;
     }
     void f(const Data& d){
-        d.Print();
+        d.Print();//实际上是传 d.Print(&d),隐含this指针,实际上这里的指针是 const Data*
     }
 private:
     int _year;
