@@ -18,7 +18,7 @@ public:
     void Print() {
         std::cout << _year << "-" << _month << "-" << _day<<std::endl;
     }
-    void f(Data d){
+    void f(const Data& d){
         d.Print();
     }
 private:
