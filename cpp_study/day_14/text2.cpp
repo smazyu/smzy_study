@@ -45,6 +45,14 @@ public:
 //不行 属于权限放大
 //    };
 //只要调用成员函数，都涉及this指针
+    Data* operator &(){
+        std::cout << "opeartor &()" << ":";
+        return this;
+    }
+    const Data* operator &()const{
+        std::cout << "const opeartor &()";
+        return this;
+    }
 private:
     int _year;
     int _month;
@@ -52,9 +60,18 @@ private:
 }
 ;
 int main() {
-    Data d1(2020,4,18);
-    d1.f(d1);
-    d1.Print();
+//    Data d1(2020,4,18);
+//    d1.f(d1);
+//    d1.Print();
     //权限可以缩小但是权限不可以放大
+    Data d1;
+    Data d2;
+    const Data d3;
+
+    std::cout << &d1 << std::endl;
+    std::cout << &d2 << std::endl;
+    std::cout << &d3 << std::endl;
+//const对象不可以调用非const
+
     return 0;
 }
