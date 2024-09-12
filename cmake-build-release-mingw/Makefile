@@ -128,30 +128,6 @@ smzy/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/build
 .PHONY : smzy/fast
 
-cpp_study/day_14/text2.obj: cpp_study/day_14/text2.cpp.obj
-.PHONY : cpp_study/day_14/text2.obj
-
-# target to build an object file
-cpp_study/day_14/text2.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/cpp_study/day_14/text2.cpp.obj
-.PHONY : cpp_study/day_14/text2.cpp.obj
-
-cpp_study/day_14/text2.i: cpp_study/day_14/text2.cpp.i
-.PHONY : cpp_study/day_14/text2.i
-
-# target to preprocess a source file
-cpp_study/day_14/text2.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/cpp_study/day_14/text2.cpp.i
-.PHONY : cpp_study/day_14/text2.cpp.i
-
-cpp_study/day_14/text2.s: cpp_study/day_14/text2.cpp.s
-.PHONY : cpp_study/day_14/text2.s
-
-# target to generate assembly for a file
-cpp_study/day_14/text2.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/cpp_study/day_14/text2.cpp.s
-.PHONY : cpp_study/day_14/text2.cpp.s
-
 cpp_study/day_14/text4.obj: cpp_study/day_14/text4.cpp.obj
 .PHONY : cpp_study/day_14/text4.obj
 
@@ -185,9 +161,6 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... smzy
-	@echo ... cpp_study/day_14/text2.obj
-	@echo ... cpp_study/day_14/text2.i
-	@echo ... cpp_study/day_14/text2.s
 	@echo ... cpp_study/day_14/text4.obj
 	@echo ... cpp_study/day_14/text4.i
 	@echo ... cpp_study/day_14/text4.s
