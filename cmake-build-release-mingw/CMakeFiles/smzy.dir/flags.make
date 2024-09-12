@@ -6,5 +6,5 @@ CXX_DEFINES =
 
 CXX_INCLUDES = @CMakeFiles/smzy.dir/includes_CXX.rsp
 
-CXX_FLAGS = -O3 -DNDEBUG -std=gnu++17 -fdiagnostics-color=always
+CXX_FLAGS = -O3 -DNDEBUG -std=c++17 -fdiagnostics-color=always
 

@@ -1,16 +1,25 @@
 cmake_minimum_required(VERSION 3.20)
 
-# 项目名和支持的语言
-project(smzy_study C CXX)
+# Set the project name and specify the languages
+project(smzy_study LANGUAGES C CXX)
 
-# 设置 C 和 C++ 标准
+# Set C and C++ standards
 set(CMAKE_C_STANDARD 11)
 set(CMAKE_CXX_STANDARD 17)
 
-# 包含头文件目录
-include_directories(.)
+# Optionally enforce standards (disable compiler extensions)
+set(CMAKE_C_STANDARD_REQUIRED ON)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_C_EXTENSIONS OFF)
+set(CMAKE_CXX_EXTENSIONS OFF)
 
-# 添加可执行文件并指定 C 和 C++ 源文件
-add_executable(smzy
-        cpp_study/day_14/text1.cpp
+# Include directories for header files
+include_directories(${PROJECT_SOURCE_DIR}/include)
+
+# Collect all source files automatically
+file(GLOB_RECURSE SOURCES
+        ${PROJECT_SOURCE_DIR}/cpp_study/day_14/*.cpp
 )
+
+# Add the executable target and link the source files
+add_executable(smzy ${SOURCES})
