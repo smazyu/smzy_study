@@ -18,7 +18,7 @@ include_directories(${PROJECT_SOURCE_DIR}/include)
 
 # Collect all source files automatically
 file(GLOB_RECURSE SOURCES
-        ${PROJECT_SOURCE_DIR}/cpp_study/day_14/*.cpp
+        ${PROJECT_SOURCE_DIR}/cpp_study/day_14/text2.cpp
 )
 
 # Add the executable target and link the source files

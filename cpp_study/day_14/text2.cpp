@@ -7,23 +7,28 @@
  *
  *
  * */
-
-class Data{
+#include <iostream>
+class Data {
 public:
-    Data(int year = 0, int month = 1,int day = 1){
+    Data(int year = 0, int month = 1,int day = 1) {
         _year = year;
         _month = month;
         _day = day;
     }
-    void print(){
-
+    void Print() {
+        std::cout << _year << "-" << _month << "-" << _day<<std::endl;
+    }
+    void f(Data d){
+        d.Print();
     }
 private:
     int _year;
     int _month;
     int _day;
-};
-int main(){
+}
+;
+int main() {
     Data d1(2020,4,18);
+    d1.f(d1);
     return 0;
 }
