@@ -28,24 +28,33 @@ using namespace std;
 //}
 //static成员
 //设计一个类，可以计算这个类总计产生了多少个对象
-int n = 0;
-class A{
+//int n = 0;
+class A {
 public:
-    A(){
+    A() {
         ++n;
     }
-    A(const A&a){
+
+    A(const A &a) {
         ++n;
     }
+
+private:
+    static int n;//声明 不是属于某个对象，是属于类的所有对象，属于这个类
 };
-A f1(A a){
+
+int A::n = 0;//定义
+A &f1(A &a) {
     return a;
 }
-int main(){
+
+int main() {
     A a1;
     A a2;
     f1(a1);
     f1(a2);
-    cout << n <<endl;
+//    cout << A::n <<endl;
     return 0;
+
+    //问题是谁都可以对n进行修改
 }
