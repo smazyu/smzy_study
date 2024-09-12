@@ -72,6 +72,10 @@ int main() {
     std::cout << &d2 << std::endl;
     std::cout << &d3 << std::endl;
 //const对象不可以调用非const
+//结论 什么时候会给成员函数加const 只要成员函数钟不需要修改成员变量 最好都加上const
 
+//const对象 const可调 非const也可调
+//只要成员函数中。只要成员函数中不直接或者间接改变成员变量建议都加上const
+//只有这样const和非const才都可以调用
     return 0;
 }
