@@ -15,9 +15,16 @@ public:
         _month = month;
         _day = day;
     }
+    //void Print() -> void Print(Data* this)
+    //void Print(const Data* this)
     void Print () const {
         std::cout << _year << "-" << _month << "-" << _day<<std::endl;
     }
+    // const Data* p1 -> 指向的对象
+    // Data const *p2 -> 指向的对象
+    // Data* const p3 -> 指针本身
+
+    //*之后是指针本身 *之前是指向的对象
     void f(const Data& d){
         d.Print();//实际上是传 d.Print(&d),隐含this指针,实际上这里的指针是 const Data*
     }
