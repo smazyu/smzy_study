@@ -1,18 +1,24 @@
 #include <iostream>
+
 using namespace std;
 
 class Data {
 public:
-    Data(const Data& d) : _year(d._year), _month(d._month), _day(d._day) {}
+    Data(int year, int month, int day) : _year(year), _month(month), _day(day) {} // Added constructor for initialization
 
-    bool operator<(const Data& d) const {
+    // Copy constructor
+    Data(const Data &d) : _year(d._year), _month(d._month), _day(d._day) {}
+
+    // Less-than operator
+    bool operator<(const Data &d) const {
         return _year < d._year || (_year == d._year && _month < d._month) ||
                (_year == d._year && _month == d._month && _day < d._day);
     }
 
-    Data operator++() {
+    // Prefix increment operator
+    Data& operator++() {
         ++_day;
-        if (_day > daysInMonth(_year,_month)) {
+        if (_day > daysInMonth(_month, _year)) {
             _day = 1;
             ++_month;
             if (_month > 12) {
@@ -22,24 +28,31 @@ public:
         }
         return *this;
     }
-    bool operator != (const Data &d){
-        if(_year == d._year && _month == d._month && _day == d._day){
-            return false;
-        }
-        return true;
+
+    // Not-equal-to operator
+    bool operator!=(const Data &d) const {
+        return _year != d._year || _month != d._month || _day != d._day;
     }
-    int operator-(const Data& d) const {
-        Data max = *this;
+
+    // Subtraction operator
+    int operator-(const Data &d) const {
+        Data max = *this;  // Copy constructor
         Data min = d;
-        if(*this < d){
+        int flag = 1;
+
+        if (*this < d) {
             max = d;
             min = *this;
+            flag = -1; // Corrected scope of flag
         }
-        int n = 0;
-        while(min != max){
+
+        int daysDifference = 0;
+        while (min != max) {
             ++min;
-            ++n;
+            ++daysDifference;
         }
+
+        return flag * daysDifference;
     }
 
 private:
@@ -47,13 +60,13 @@ private:
     int _month;
     int _day;
 
-    // 判断是否是闰年
-    bool isLeapYear(int year) {
-        return (year % 4 == 0 && year % 100 != 0) || year % 400 == 0;
+    // Determine if a year is a leap year
+    bool isLeapYear(int year) const {
+        return (year % 4 == 0 && year % 100 != 0) || (year % 400 == 0);
     }
 
-    // 获取某个月的天数
-    int daysInMonth(int month, int year) {
+    // Get the number of days in a month
+    int daysInMonth(int month, int year) const {
         switch (month) {
             case 1: case 3: case 5: case 7: case 8: case 10: case 12:
                 return 31;
