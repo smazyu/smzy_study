@@ -8,28 +8,31 @@
  *
  * */
 #include <iostream>
+
 class Data {
 public:
-    Data(int year = 0, int month = 1,int day = 1) {
+    Data(int year = 0, int month = 1, int day = 1) {
         _year = year;
         _month = month;
         _day = day;
     }
+
     //void Print() -> void Print(Data* this)
     //void Print(const Data* this)
-    void Print () const {
+    void Print() const {
         //const修饰*this 代表指向的对象的内容不能被更改
         //就不能修改成员变量了，因为const修饰保护了*this
-        std::cout << _year << "-" << _month << "-" << _day<<std::endl;
+        std::cout << _year << "-" << _month << "-" << _day << std::endl;
     }
     // const Data* p1 -> 指向的对象
     // Data const *p2 -> 指向的对象
     // Data* const p3 -> 指针本身
 
     //*之后是指针本身 *之前是指向的对象
-    void f(const Data& d){
+    void f(const Data &d) {
         d.Print();//实际上是传 d.Print(&d),隐含this指针,实际上这里的指针是 const Data*
     }
+
 //    void f1(){ //void f1(Data* this)
 //        f2();//this -> f2(this)
 //可读可写传过去可读 所以是可以的
@@ -45,20 +48,22 @@ public:
 //不行 属于权限放大
 //    };
 //只要调用成员函数，都涉及this指针
-    Data* operator &(){
+    Data *operator&() {
         std::cout << "opeartor &()" << ":";
         return this;
     }
-    const Data* operator &()const{
+
+    const Data *operator&() const {
         std::cout << "const opeartor &()";
         return this;
     }
+
 private:
     int _year;
     int _month;
     int _day;
-}
-;
+};
+
 int main() {
 //    Data d1(2020,4,18);
 //    d1.f(d1);
