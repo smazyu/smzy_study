@@ -18,6 +18,8 @@ public:
     //void Print() -> void Print(Data* this)
     //void Print(const Data* this)
     void Print () const {
+        //const修饰*this 代表指向的对象的内容不能被更改
+        //就不能修改成员变量了，因为const修饰保护了*this
         std::cout << _year << "-" << _month << "-" << _day<<std::endl;
     }
     // const Data* p1 -> 指向的对象
@@ -28,6 +30,21 @@ public:
     void f(const Data& d){
         d.Print();//实际上是传 d.Print(&d),隐含this指针,实际上这里的指针是 const Data*
     }
+//    void f1(){ //void f1(Data* this)
+//        f2();//this -> f2(this)
+//可读可写传过去可读 所以是可以的
+//    }
+//    void f2() const{
+//
+//    };
+//    void f3(){
+//
+//    };
+//    void f4() const{
+//        f3()
+//不行 属于权限放大
+//    };
+//只要调用成员函数，都涉及this指针
 private:
     int _year;
     int _month;
@@ -37,5 +54,7 @@ private:
 int main() {
     Data d1(2020,4,18);
     d1.f(d1);
+    d1.Print();
+    //权限可以缩小但是权限不可以放大
     return 0;
 }
