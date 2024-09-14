@@ -15,12 +15,12 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 
 # 自动收集所有源文件
 file(GLOB_RECURSE SOURCES
-        ${PROJECT_SOURCE_DIR}/cpp_study/day_15/text1.cpp
+        ${PROJECT_SOURCE_DIR}/cpp_study/day_16/text1.cpp
 )
 
 # 定义可执行目标
 add_executable(smzy ${SOURCES}
-        cpp_study/day_15/text1.cpp)
+        cpp_study/day_16/text1.cpp)
 
 # 为目标设置包含目录
 target_include_directories(smzy PRIVATE ${PROJECT_SOURCE_DIR}/include)
