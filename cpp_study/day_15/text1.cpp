@@ -12,6 +12,12 @@ public:
     {
 //成员变量的定义
     }
+    void f1(){
+        
+    }
+    static void f2(){
+
+    }
 private:
     int _year;
     int _month;
@@ -38,3 +44,4 @@ int main(){
 //static成员
 //1.static成员变量不存在对象中，存在静态区，属于这个类的所有对象，也是属于这个类
 //2.static成员函数没有this指针，可以不使用对象就调用 -> 类名 ::func（）
+
