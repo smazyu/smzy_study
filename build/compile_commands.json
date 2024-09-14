@@ -1,8 +1,8 @@
 [
 {
   "directory": "E:/GitHub/smzy_study/build",
-  "command": "\"E:\\Program Files\\mingw\\bin\\gcc.exe\"  @CMakeFiles/smzy.dir/includes_C.rsp -g -std=gnu11 -o CMakeFiles\\smzy.dir\\DSStudy\\sort\\QuickSort.c.obj -c E:\\GitHub\\smzy_study\\DSStudy\\sort\\QuickSort.c",
-  "file": "E:/GitHub/smzy_study/DSStudy/sort/QuickSort.c",
-  "output": "CMakeFiles/smzy.dir/DSStudy/sort/QuickSort.c.obj"
+  "command": "\"E:\\Program Files\\mingw\\bin\\g++.exe\"  @CMakeFiles/smzy.dir/includes_CXX.rsp -g -std=c++17 -Wall -Wextra -pedantic -o CMakeFiles\\smzy.dir\\cpp_study\\day_15\\text1.cpp.obj -c E:\\GitHub\\smzy_study\\cpp_study\\day_15\\text1.cpp",
+  "file": "E:/GitHub/smzy_study/cpp_study/day_15/text1.cpp",
+  "output": "CMakeFiles/smzy.dir/cpp_study/day_15/text1.cpp.obj"
 }
 ]

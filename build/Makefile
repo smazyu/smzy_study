@@ -128,29 +128,29 @@ smzy/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/build
 .PHONY : smzy/fast
 
-DSStudy/sort/QuickSort.obj: DSStudy/sort/QuickSort.c.obj
-.PHONY : DSStudy/sort/QuickSort.obj
+cpp_study/day_15/text1.obj: cpp_study/day_15/text1.cpp.obj
+.PHONY : cpp_study/day_15/text1.obj
 
 # target to build an object file
-DSStudy/sort/QuickSort.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DSStudy/sort/QuickSort.c.obj
-.PHONY : DSStudy/sort/QuickSort.c.obj
+cpp_study/day_15/text1.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/cpp_study/day_15/text1.cpp.obj
+.PHONY : cpp_study/day_15/text1.cpp.obj
 
-DSStudy/sort/QuickSort.i: DSStudy/sort/QuickSort.c.i
-.PHONY : DSStudy/sort/QuickSort.i
+cpp_study/day_15/text1.i: cpp_study/day_15/text1.cpp.i
+.PHONY : cpp_study/day_15/text1.i
 
 # target to preprocess a source file
-DSStudy/sort/QuickSort.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DSStudy/sort/QuickSort.c.i
-.PHONY : DSStudy/sort/QuickSort.c.i
+cpp_study/day_15/text1.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/cpp_study/day_15/text1.cpp.i
+.PHONY : cpp_study/day_15/text1.cpp.i
 
-DSStudy/sort/QuickSort.s: DSStudy/sort/QuickSort.c.s
-.PHONY : DSStudy/sort/QuickSort.s
+cpp_study/day_15/text1.s: cpp_study/day_15/text1.cpp.s
+.PHONY : cpp_study/day_15/text1.s
 
 # target to generate assembly for a file
-DSStudy/sort/QuickSort.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/DSStudy/sort/QuickSort.c.s
-.PHONY : DSStudy/sort/QuickSort.c.s
+cpp_study/day_15/text1.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/cpp_study/day_15/text1.cpp.s
+.PHONY : cpp_study/day_15/text1.cpp.s
 
 # Help Target
 help:
@@ -161,9 +161,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... smzy
-	@echo ... DSStudy/sort/QuickSort.obj
-	@echo ... DSStudy/sort/QuickSort.i
-	@echo ... DSStudy/sort/QuickSort.s
+	@echo ... cpp_study/day_15/text1.obj
+	@echo ... cpp_study/day_15/text1.i
+	@echo ... cpp_study/day_15/text1.s
 .PHONY : help
 
 

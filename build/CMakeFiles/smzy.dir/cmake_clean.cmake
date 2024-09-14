@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/smzy.dir/DSStudy/sort/QuickSort.c.obj"
-  "CMakeFiles/smzy.dir/DSStudy/sort/QuickSort.c.obj.d"
+  "CMakeFiles/smzy.dir/cpp_study/day_15/text1.cpp.obj"
+  "CMakeFiles/smzy.dir/cpp_study/day_15/text1.cpp.obj.d"
   "libsmzy.dll.a"
   "smzy.exe"
   "smzy.exe.manifest"
@@ -8,6 +8,6 @@ file(REMOVE_RECURSE
 )
 
 # Per-language clean rules from dependency scanning.
-foreach(lang C)
+foreach(lang CXX)
   include(CMakeFiles/smzy.dir/cmake_clean_${lang}.cmake OPTIONAL)
 endforeach()
