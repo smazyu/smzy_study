@@ -52,7 +52,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-g -std=c++17 -fdiagnostics-color=always"
+					"fragment" : "-O3 -DNDEBUG -std=c11 -fdiagnostics-color=always"
 				},
 				{
 					"backtrace" : 2,
@@ -74,14 +74,14 @@
 					"path" : "E:/GitHub/smzy_study/include"
 				}
 			],
-			"language" : "CXX",
+			"language" : "C",
 			"languageStandard" : 
 			{
 				"backtraces" : 
 				[
 					1
 				],
-				"standard" : "17"
+				"standard" : "11"
 			},
 			"sourceIndexes" : 
 			[
@@ -95,7 +95,7 @@
 		"commandFragments" : 
 		[
 			{
-				"fragment" : "-g",
+				"fragment" : "-O3 -DNDEBUG",
 				"role" : "flags"
 			},
 			{
@@ -107,7 +107,7 @@
 				"role" : "libraries"
 			}
 		],
-		"language" : "CXX"
+		"language" : "C"
 	},
 	"name" : "smzy",
 	"nameOnDisk" : "smzy.exe",
@@ -131,7 +131,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "cpp_study/day_16/text1.cpp",
+			"path" : "AlgorithmExercises/\u5224\u65ad\u5b57\u7b26\u662f\u5426\u552f\u4e00.c",
 			"sourceGroupIndex" : 0
 		}
 	],

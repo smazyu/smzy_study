@@ -14,13 +14,13 @@ set(CMAKE_C_EXTENSIONS OFF)
 set(CMAKE_CXX_EXTENSIONS OFF)
 
 # 自动收集所有源文件
-file(GLOB_RECURSE SOURCES
-        ${PROJECT_SOURCE_DIR}/cpp_study/day_16/text1.cpp
-)
+#file(GLOB_RECURSE SOURCES
+#        ${PROJECT_SOURCE_DIR}/cpp_study/day_16/text1.cpp
+#)
 
 # 定义可执行目标
 add_executable(smzy ${SOURCES}
-        cpp_study/day_16/text1.cpp)
+        AlgorithmExercises/判断字符是否唯一.c)
 
 # 为目标设置包含目录
 target_include_directories(smzy PRIVATE ${PROJECT_SOURCE_DIR}/include)
