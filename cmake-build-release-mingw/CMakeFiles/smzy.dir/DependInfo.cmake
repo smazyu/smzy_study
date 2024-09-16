@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "E:/GitHub/smzy_study/AlgorithmExercises/判断字符是否唯一.c" "CMakeFiles/smzy.dir/AlgorithmExercises/判断字符是否唯一.c.obj" "gcc" "CMakeFiles/smzy.dir/AlgorithmExercises/判断字符是否唯一.c.obj.d"
+  "E:/GitHub/smzy_study/cpp_study/day_17/text1.cpp" "CMakeFiles/smzy.dir/cpp_study/day_17/text1.cpp.obj" "gcc" "CMakeFiles/smzy.dir/cpp_study/day_17/text1.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

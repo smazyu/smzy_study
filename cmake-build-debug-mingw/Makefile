@@ -128,29 +128,29 @@ smzy/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/build
 .PHONY : smzy/fast
 
-AlgorithmExercises/判断字符是否唯一.obj: AlgorithmExercises/判断字符是否唯一.c.obj
-.PHONY : AlgorithmExercises/判断字符是否唯一.obj
+cpp_study/day_17/text1.obj: cpp_study/day_17/text1.cpp.obj
+.PHONY : cpp_study/day_17/text1.obj
 
 # target to build an object file
-AlgorithmExercises/判断字符是否唯一.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/AlgorithmExercises/判断字符是否唯一.c.obj
-.PHONY : AlgorithmExercises/判断字符是否唯一.c.obj
+cpp_study/day_17/text1.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/cpp_study/day_17/text1.cpp.obj
+.PHONY : cpp_study/day_17/text1.cpp.obj
 
-AlgorithmExercises/判断字符是否唯一.i: AlgorithmExercises/判断字符是否唯一.c.i
-.PHONY : AlgorithmExercises/判断字符是否唯一.i
+cpp_study/day_17/text1.i: cpp_study/day_17/text1.cpp.i
+.PHONY : cpp_study/day_17/text1.i
 
 # target to preprocess a source file
-AlgorithmExercises/判断字符是否唯一.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/AlgorithmExercises/判断字符是否唯一.c.i
-.PHONY : AlgorithmExercises/判断字符是否唯一.c.i
+cpp_study/day_17/text1.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/cpp_study/day_17/text1.cpp.i
+.PHONY : cpp_study/day_17/text1.cpp.i
 
-AlgorithmExercises/判断字符是否唯一.s: AlgorithmExercises/判断字符是否唯一.c.s
-.PHONY : AlgorithmExercises/判断字符是否唯一.s
+cpp_study/day_17/text1.s: cpp_study/day_17/text1.cpp.s
+.PHONY : cpp_study/day_17/text1.s
 
 # target to generate assembly for a file
-AlgorithmExercises/判断字符是否唯一.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/AlgorithmExercises/判断字符是否唯一.c.s
-.PHONY : AlgorithmExercises/判断字符是否唯一.c.s
+cpp_study/day_17/text1.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/cpp_study/day_17/text1.cpp.s
+.PHONY : cpp_study/day_17/text1.cpp.s
 
 # Help Target
 help:
@@ -161,9 +161,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... smzy
-	@echo ... AlgorithmExercises/判断字符是否唯一.obj
-	@echo ... AlgorithmExercises/判断字符是否唯一.i
-	@echo ... AlgorithmExercises/判断字符是否唯一.s
+	@echo ... cpp_study/day_17/text1.obj
+	@echo ... cpp_study/day_17/text1.i
+	@echo ... cpp_study/day_17/text1.s
 .PHONY : help
 
 
