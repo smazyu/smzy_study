@@ -4,11 +4,14 @@
 #include <iostream>
 using namespace std;
 class Date{
-    friend void f(Date&d); 
+    friend void f(Date&d);
 public:
     Date():_year(10){}
     void Print(){
         cout <<_year<<"-"<<_month<<"-"<<_day<<endl;
+    }
+    void operator << (ostream&out){
+        out << _year <<"/" <<_month <<"/" << _day << endl;
     }
 private:
     //c++11
@@ -26,7 +29,10 @@ void f(Date &d){
 int main(){
     Date d1;
     d1.Print();
+    d1 << cout;
+    f(d1);
     return 0;
 }
 //类里面都是声明
 //友元 类外面访问类里面私有的方式
+//友元 类外面访问
