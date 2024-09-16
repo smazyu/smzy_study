@@ -4,15 +4,14 @@
 #include <iostream>
 using namespace std;
 class Date{
+    friend void operator << (ostream&out,const Date& d);
     friend void f(Date&d);
 public:
     Date():_year(10){}
     void Print(){
         cout <<_year<<"-"<<_month<<"-"<<_day<<endl;
     }
-    void operator << (ostream&out){
-        out << _year <<"/" <<_month <<"/" << _day << endl;
-    }
+
 private:
     //c++11
     //声明时给缺省值
@@ -22,6 +21,9 @@ private:
     //static int _n 这个不能给初始值 必须在类外面去定义
 };
 //int Date::n = 1;
+void operator << (ostream&out,const Date& d){
+    out << d._year <<"/" <<d._month <<"/" << d._day << endl;
+}
 void f(Date &d){
     d._year = 10;
     cout << d._year <<endl;
@@ -29,7 +31,7 @@ void f(Date &d){
 int main(){
     Date d1;
     d1.Print();
-    d1 << cout;
+    cout << d1; // operator  << (cout,d1);
     f(d1);
     return 0;
 }
