@@ -4,6 +4,7 @@
 #include <iostream>
 using namespace std;
 class Date{
+    friend void f(Date&d); 
 public:
     Date():_year(10){}
     void Print(){
@@ -28,4 +29,4 @@ int main(){
     return 0;
 }
 //类里面都是声明
-//友员 类外面访问类里面私有的方式
+//友元 类外面访问类里面私有的方式
