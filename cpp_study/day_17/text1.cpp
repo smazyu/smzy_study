@@ -6,7 +6,9 @@
 using namespace std;
 
 class Date {
-    friend void operator<<(ostream &out, const Date &d);
+    friend ostream &operator<<(ostream &out, const Date &d);
+
+    friend istream &operator>>(istream &in, Date &d);
 
     friend void f(Date &d);
 
@@ -30,8 +32,9 @@ private:
 };
 
 //int Date::n = 1;
-void operator<<(ostream &out, const Date &d) {
+ostream &operator<<(ostream &out, const Date &d) {
     out << d._year << "/" << d._month << "/" << d._day << endl;
+    return out;
 }
 
 void f(Date &d) {
@@ -39,15 +42,32 @@ void f(Date &d) {
     cout << d._year << endl;
 }
 
+istream &operator>>(istream &in, Date &d) {
+    in >> d._year >> d._month >> d._day;
+    return in;
+}
+
 int main() {
-    Date d1;
+//    Date d1;
 //    d1.Print();
-    cout << d1; // operator  << (cout,d1);
-    int i = 0, j = 1;
-    cout << i << j << endl;
-    f(d1);
+    Date d1(2024, 9, 13);
+    Date d2(2024, 9, 14);
+    cout << d1 << d2; // operator  << (cout,d1);
+//    int i = 0, j = 1;
+//    cout << i << j << endl;
+//    f(d1);
+    int x = 1;
+    double y = 1.11;
+    //为什么能自动识别类型，因为函数重载
+    cout << x;
+    cout << y;
     return 0;
 }
 //类里面都是声明
 //友元 类外面访问类里面私有的方式
 //友元 类外面访问
+
+//cout -> ostream
+//cin -> istream
+
+//面向对象 低耦合，高内聚，工程项目
