@@ -23,16 +23,22 @@
 //2.编译器去读这个程序，通过编译链接生成二进制可执行程序 a.out
 //3./a.out 在一个终端下运行程序，相当于终端创建了一个子进程 然后进行替换
 
-int main() {
-//    c函数
-    int *p1 = (int *) malloc(sizeof(int));
-    int *p3 = (int*) malloc(sizeof(int)*10);
-    free(p1);
-    free(p2);
-//c++ 操作符
-    int *p2 = new int(10);//申请一个int4四个字节的空间，初始化为10
-    int* p4 = new int[10];//申请10个int的40个字节的空间
-    delete p2;
-    delete []p4;
-    return 0;
-}
+//int main() {
+////    c函数
+//    int *p1 = (int *) malloc(sizeof(int));
+//    int *p3 = (int*) malloc(sizeof(int)*10);
+//    free(p1);
+//    free(p2);
+////c++ 操作符
+//    int *p2 = new int(10);//申请一个int4四个字节的空间，初始化为10
+//    int* p4 = new int[10];//申请10个int的40个字节的空间
+//    delete p2;
+//    delete []p4;
+//    return 0;
+//}
+//既然已经有个malloc和free，new和delete的意义
+//1.对于上面内置类型，他们的效果是一样的
+//2.对于自定义类型，效果不一样 A* p3 = (int*)malloc(sizeof(A));//申请空间
+//A*p4 = new A;申请空间 + 初始化
+//malloc只申请空间
+//new 申请空间加构造函数初始化
