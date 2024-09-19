@@ -19,12 +19,20 @@ ListNode_C *BuyNode(int val) {
     return node_c;
 }
 
+struct ListNode_CPP {
+    int _val;
+    //c++兼容C struct的用法
+    //在CPP钟，struct已经可以认为是类，和class一样，区别是有默认访问限定符
+    ListNode_CPP *_next;
+    ListNode_CPP *_prev;
+};
+
 int main() {
     int *p1 = (int *) malloc(sizeof(int));
     int *p2 = new int;
     //内置类型 new和malloc一样
     //自定义类型 new和malloc不同
     //new 会调用自定义类型的构造函数和析构函数
-
+    ListNode_CPP*node4 = new ListNode_CPP;
     return 0;
 }
