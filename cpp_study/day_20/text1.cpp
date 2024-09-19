@@ -30,14 +30,21 @@ struct ListNode_CPP {
 void DestoryListNode_C(ListNode_C* node){
 
 }
-int main() {
-    int *p1 = (int *) malloc(sizeof(int));
-    int *p2 = new int;
-    //内置类型 new和malloc一样
-    //自定义类型 new和malloc不同
-    //new 会调用自定义类型的构造函数和析构函数
-    ListNode_CPP*node4 = new ListNode_CPP;
-    delete node4;
-    //c++
+//int main() {
+//    int *p1 = (int *) malloc(sizeof(int));
+//    int *p2 = new int;
+//    //内置类型 new和malloc一样
+//    //自定义类型 new和malloc不同
+//    //new 会调用自定义类型的构造函数和析构函数
+//    ListNode_CPP*node4 = new ListNode_CPP;
+//    delete node4;
+//    //c++
+//    return 0;
+//}
+int main(){
+    ListNode_CPP a[10]; //当定义 ListNode 时调用一次构造函数 a[10] 代表调用十次
+    ListNode_CPP* p = new ListNode_CPP[10];
+    //创建十次,需要手动调用析构函数
+    delete[] p;
     return 0;
 }
