@@ -27,6 +27,9 @@ struct ListNode_CPP {
     ListNode_CPP *_prev;
 };
 
+void DestoryListNode_C(ListNode_C* node){
+
+}
 int main() {
     int *p1 = (int *) malloc(sizeof(int));
     int *p2 = new int;
@@ -34,5 +37,7 @@ int main() {
     //自定义类型 new和malloc不同
     //new 会调用自定义类型的构造函数和析构函数
     ListNode_CPP*node4 = new ListNode_CPP;
+    delete node4;
+    //c++
     return 0;
 }
