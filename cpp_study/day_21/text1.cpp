@@ -40,3 +40,9 @@ int main() {
 
 //operator new和malloc的区别
 //结论 使用的方式都一样，处理错误的方式不一样
+
+//malloc free
+//operator new delete == malloc + 失败抛异常实现
+//new delete -> operator new + 构造函数
+//new 比起malloc不一样的地方 1.调用构造函数初始化 2.失败了抛异常
+//operator delete的出现与operator new配对
