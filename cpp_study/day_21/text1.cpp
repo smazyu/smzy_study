@@ -29,9 +29,14 @@ int main() {
 //    cout <<p4 <<endl;
     try{
         void* p5 = operator new(1024*1024*1024*2);
+        operator delete(p5);
     }
     catch(exception&e){
         cout <<e.what() <<endl;
     }
+
     return 0;
 }
+
+//operator new和malloc的区别
+//结论 使用的方式都一样，处理错误的方式不一样
