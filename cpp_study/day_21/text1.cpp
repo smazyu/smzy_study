@@ -25,6 +25,13 @@ int main() {
     A *p3 = (A *) operator new(sizeof(A));
 
     //operator new和malloc的区别是什么
-    void* p4 = malloc()
+//    void* p4 = malloc(1024*1024*1024*2);
+//    cout <<p4 <<endl;
+    try{
+        void* p5 = operator new(1024*1024*1024*2);
+    }
+    catch(exception&e){
+        cout <<e.what() <<endl;
+    }
     return 0;
 }
