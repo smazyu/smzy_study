@@ -84,7 +84,7 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="E:/GitHub/smzy_study/cpp_study/day_21/text1.cpp">
+		<Unit filename="E:/GitHub/smzy_study/cpp_study/day_21/text2.cpp">
 			<Option target="smzy"/>
 		</Unit>
 		<Unit filename="E:/GitHub/smzy_study/CMakeLists.txt">
