@@ -6,3 +6,15 @@
 //一些函数和类，针对不同类型需要写很多重复的代码
 //函数：比如我们想实现交换int,double,char等等各种类型对象函数Swap
 //类:比如我们想实现一个数据结构栈 stack
+//1.函数模板
+//template<class T>
+//void swap(T &a, T &b);
+//2.类模板
+//template<class T>
+//class stack {
+//private:
+//    T *_a;
+//    size_t _size;
+//    size_t _capacity;
+//};
+//编译器根据调用的函数模板和类模板的类型，实例化出对应的函数和类
