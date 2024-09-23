@@ -40,19 +40,23 @@ public:
         _a = nullptr;
         _size = _capacity = 0;
     }
-    size_t size(){
+
+    size_t size() {
         return _size;
     }
-    void push_back(const T &x) ;
+
+    void push_back(const T &x);
 
     //类里面声明，类外面定义
     void push_pop();
 
 
-    T operator[](size_t i){
-        assert(i <_size);
+    T& operator[](size_t i) {
+        assert(i < _size);
         return _a[i];
+        //使用[]读
     }
+
 private:
     T *_a;
     size_t _size;
@@ -61,16 +65,36 @@ private:
 
 template<class T>
 void vector<T>::push_back(const T &x) {
-    if(_size == _capacity){
-        size_t newcapacity = _capacity == 0 ? 2: _capacity*2;
-        T* tmp = new T[newcapacity];
-        if(_a){
-            memcpy(tmp,_a,sizeof(T)*_size);
+    if (_size == _capacity) {
+        size_t newcapacity = _capacity == 0 ? 2 : _capacity * 2;
+        T *tmp = new T[newcapacity];
+        if (_a) {
+            memcpy(tmp, _a, sizeof(T) * _size);
             delete[] _a;
-            _a = tmp;
         }
+        _a = tmp;
         _capacity = newcapacity;
     }
     _a[_size] = x;
     ++_size;
 }
+int main(){
+    vector<int> v;
+
+    v.push_back(1);
+    v.push_back(1);
+    v.push_back(1);
+    v.push_back(1);
+    for(size_t i = 0;i < v.size();++i){
+        v[i] *= 2;
+    }
+    for(size_t i = 0;i<v.size();++i){
+        cout << v[i] <<" ";
+
+    }
+    cout << endl;
+    return 0;
+}
+
+//引用传参 1.修改传递的实参比如swap 2.减少拷贝
+//引用传返回值 1.修改返回对象如operator[] 2.减少拷贝
