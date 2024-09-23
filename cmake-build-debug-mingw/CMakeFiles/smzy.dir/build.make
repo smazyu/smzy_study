@@ -68,29 +68,29 @@ include CMakeFiles/smzy.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/smzy.dir/flags.make
 
-CMakeFiles/smzy.dir/cpp_study/day_22/STL.cpp.obj: CMakeFiles/smzy.dir/flags.make
-CMakeFiles/smzy.dir/cpp_study/day_22/STL.cpp.obj: CMakeFiles/smzy.dir/includes_CXX.rsp
-CMakeFiles/smzy.dir/cpp_study/day_22/STL.cpp.obj: E:/GitHub/smzy_study/cpp_study/day_22/STL.cpp
-CMakeFiles/smzy.dir/cpp_study/day_22/STL.cpp.obj: CMakeFiles/smzy.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\GitHub\smzy_study\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/smzy.dir/cpp_study/day_22/STL.cpp.obj"
-	"E:\Program Files\JetBrains\CLion 2024.1.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/smzy.dir/cpp_study/day_22/STL.cpp.obj -MF CMakeFiles\smzy.dir\cpp_study\day_22\STL.cpp.obj.d -o CMakeFiles\smzy.dir\cpp_study\day_22\STL.cpp.obj -c E:\GitHub\smzy_study\cpp_study\day_22\STL.cpp
+CMakeFiles/smzy.dir/cpp_study/day_23/string.cpp.obj: CMakeFiles/smzy.dir/flags.make
+CMakeFiles/smzy.dir/cpp_study/day_23/string.cpp.obj: CMakeFiles/smzy.dir/includes_CXX.rsp
+CMakeFiles/smzy.dir/cpp_study/day_23/string.cpp.obj: E:/GitHub/smzy_study/cpp_study/day_23/string.cpp
+CMakeFiles/smzy.dir/cpp_study/day_23/string.cpp.obj: CMakeFiles/smzy.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\GitHub\smzy_study\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/smzy.dir/cpp_study/day_23/string.cpp.obj"
+	"E:\Program Files\JetBrains\CLion 2024.1.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/smzy.dir/cpp_study/day_23/string.cpp.obj -MF CMakeFiles\smzy.dir\cpp_study\day_23\string.cpp.obj.d -o CMakeFiles\smzy.dir\cpp_study\day_23\string.cpp.obj -c E:\GitHub\smzy_study\cpp_study\day_23\string.cpp
 
-CMakeFiles/smzy.dir/cpp_study/day_22/STL.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/smzy.dir/cpp_study/day_22/STL.cpp.i"
-	"E:\Program Files\JetBrains\CLion 2024.1.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\GitHub\smzy_study\cpp_study\day_22\STL.cpp > CMakeFiles\smzy.dir\cpp_study\day_22\STL.cpp.i
+CMakeFiles/smzy.dir/cpp_study/day_23/string.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/smzy.dir/cpp_study/day_23/string.cpp.i"
+	"E:\Program Files\JetBrains\CLion 2024.1.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\GitHub\smzy_study\cpp_study\day_23\string.cpp > CMakeFiles\smzy.dir\cpp_study\day_23\string.cpp.i
 
-CMakeFiles/smzy.dir/cpp_study/day_22/STL.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/smzy.dir/cpp_study/day_22/STL.cpp.s"
-	"E:\Program Files\JetBrains\CLion 2024.1.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\GitHub\smzy_study\cpp_study\day_22\STL.cpp -o CMakeFiles\smzy.dir\cpp_study\day_22\STL.cpp.s
+CMakeFiles/smzy.dir/cpp_study/day_23/string.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/smzy.dir/cpp_study/day_23/string.cpp.s"
+	"E:\Program Files\JetBrains\CLion 2024.1.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\GitHub\smzy_study\cpp_study\day_23\string.cpp -o CMakeFiles\smzy.dir\cpp_study\day_23\string.cpp.s
 
 # Object files for target smzy
 smzy_OBJECTS = \
-"CMakeFiles/smzy.dir/cpp_study/day_22/STL.cpp.obj"
+"CMakeFiles/smzy.dir/cpp_study/day_23/string.cpp.obj"
 
 # External object files for target smzy
 smzy_EXTERNAL_OBJECTS =
 
-smzy.exe: CMakeFiles/smzy.dir/cpp_study/day_22/STL.cpp.obj
+smzy.exe: CMakeFiles/smzy.dir/cpp_study/day_23/string.cpp.obj
 smzy.exe: CMakeFiles/smzy.dir/build.make
 smzy.exe: CMakeFiles/smzy.dir/linkLibs.rsp
 smzy.exe: CMakeFiles/smzy.dir/objects1.rsp

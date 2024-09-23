@@ -128,29 +128,29 @@ smzy/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/build
 .PHONY : smzy/fast
 
-cpp_study/day_22/STL.obj: cpp_study/day_22/STL.cpp.obj
-.PHONY : cpp_study/day_22/STL.obj
+cpp_study/day_23/string.obj: cpp_study/day_23/string.cpp.obj
+.PHONY : cpp_study/day_23/string.obj
 
 # target to build an object file
-cpp_study/day_22/STL.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/cpp_study/day_22/STL.cpp.obj
-.PHONY : cpp_study/day_22/STL.cpp.obj
+cpp_study/day_23/string.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/cpp_study/day_23/string.cpp.obj
+.PHONY : cpp_study/day_23/string.cpp.obj
 
-cpp_study/day_22/STL.i: cpp_study/day_22/STL.cpp.i
-.PHONY : cpp_study/day_22/STL.i
+cpp_study/day_23/string.i: cpp_study/day_23/string.cpp.i
+.PHONY : cpp_study/day_23/string.i
 
 # target to preprocess a source file
-cpp_study/day_22/STL.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/cpp_study/day_22/STL.cpp.i
-.PHONY : cpp_study/day_22/STL.cpp.i
+cpp_study/day_23/string.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/cpp_study/day_23/string.cpp.i
+.PHONY : cpp_study/day_23/string.cpp.i
 
-cpp_study/day_22/STL.s: cpp_study/day_22/STL.cpp.s
-.PHONY : cpp_study/day_22/STL.s
+cpp_study/day_23/string.s: cpp_study/day_23/string.cpp.s
+.PHONY : cpp_study/day_23/string.s
 
 # target to generate assembly for a file
-cpp_study/day_22/STL.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/cpp_study/day_22/STL.cpp.s
-.PHONY : cpp_study/day_22/STL.cpp.s
+cpp_study/day_23/string.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/cpp_study/day_23/string.cpp.s
+.PHONY : cpp_study/day_23/string.cpp.s
 
 # Help Target
 help:
@@ -161,9 +161,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... smzy
-	@echo ... cpp_study/day_22/STL.obj
-	@echo ... cpp_study/day_22/STL.i
-	@echo ... cpp_study/day_22/STL.s
+	@echo ... cpp_study/day_23/string.obj
+	@echo ... cpp_study/day_23/string.i
+	@echo ... cpp_study/day_23/string.s
 .PHONY : help
 
 
