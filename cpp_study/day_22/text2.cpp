@@ -51,7 +51,7 @@ public:
     void push_pop();
 
 
-    T& operator[](size_t i) {
+    T &operator[](size_t i) {
         assert(i < _size);
         return _a[i];
         //使用[]读
@@ -78,23 +78,42 @@ void vector<T>::push_back(const T &x) {
     _a[_size] = x;
     ++_size;
 }
-int main(){
-    vector<int> v;
-
-    v.push_back(1);
-    v.push_back(1);
-    v.push_back(1);
-    v.push_back(1);
-    for(size_t i = 0;i < v.size();++i){
-        v[i] *= 2;
-    }
-    for(size_t i = 0;i<v.size();++i){
-        cout << v[i] <<" ";
-
-    }
-    cout << endl;
-    return 0;
-}
+//int main(){
+//    vector<int> v;
+//
+//    v.push_back(1);
+//    v.push_back(1);
+//    v.push_back(1);
+//    v.push_back(1);
+//    for(size_t i = 0;i < v.size();++i){
+//        v[i] *= 2;
+//    }
+//    for(size_t i = 0;i<v.size();++i){
+//        cout << v[i] <<" ";
+//
+//    }
+//    cout << endl;
+//    return 0;
+//}
 
 //引用传参 1.修改传递的实参比如swap 2.减少拷贝
 //引用传返回值 1.修改返回对象如operator[] 2.减少拷贝
+
+template<class T>
+T Add(const T &left, const T &right) {
+    return left + right;
+}
+
+int main() {
+    int a1 = 10, a2 = 20;
+    double d1 = 10.0, d2 = 20.0;
+    //隐式实例化 编译器自己推导的就是隐式实例化
+    Add(a1, a2);
+    Add(d1, d2);
+
+    Add(a1, (int) d1);
+    //显式实例化
+    //类模板也是显示实例化
+    Add<int>(a1, d1);
+    return 0;
+}
