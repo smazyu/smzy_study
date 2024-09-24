@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style type="text/css">
+			@keyframes myframe{
+							form{
+								transform: scale(1.0,1.0);
+							}to{
+								transform: scale(1.05,1.05);
+							}
+						}
+						img:hover{
+							animation: myframe 0.5s forwards;
+						}
+						 table {
+						 			/*margin: auto;*/
+						            width: 30%;}
+						        
+						        body {
+						            font-family: Arial;
+						            background-color: #f4f4f4;
+						            margin: 0;
+						            padding: 20px;
+						        }
+						        td {
+			            padding: 15px;
+			            text-align: center;
+			        }
+			        a {
+			            display: block;
+			            margin-top: 2px;
+			            text-decoration: none;
+			        }
+		</style>
+	</head>
+	<body>
+		<table>
+			<tr>
+				<td>
+					<img src="p1.jpg">
+				</td>
+				<td>
+					<img src="p5.jpg">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<a href="https://www.360kuai.com/pc/detail?url=http%3A%2F%2Fvideo.news.so.com%2Fcc4234616d9d4df379a278a19e7ed008&amp;check=56a8f3ce93ba5f54&amp;uid=142322668.1228148506911931100.1727141462139.2693&amp;scene=&amp;refer_scene=so_92&amp;tj_url=&amp;ucheck=c7c09ac01e469ae3326d1d8e214a238a&amp;sign=360_da20e874" target="_blank" rel="noopener noreferrer">内蒙古80后厅长秦艳，有新职</a>
+				</td>
+				<td>
+					<a href="https://www.360kuai.com/pc/detail?url=http%3A%2F%2Fvideo.news.so.com%2F97209a77cd2660b386968050efa72b7d&amp;check=45c9e4624e0857c3&amp;ucheck=cbd633f9f7031420134244384a581cd2&amp;sign=360_da20e874&amp;uid=d56f1fba73fb6a3ecdbbda1bc49c8615723&amp;scene=&amp;refer_scene=so_92&amp;tj_url=" target="_blank" rel="noopener noreferrer">职校女保安被保安队长杀害 死者男友身中4刀</a>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<img src="p3.jpg">
+				</td>
+				<td>
+					<img src="p4.jpg">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<a href="https://www.360kuai.com/pc/9f68d7a946ec7e73f?sign=360_3445a720&amp;s=duanju&amp;panel=1" target="_blank" rel="noopener noreferrer">若把你放到这部剧里能活几集？假太监求生欲拉满</a>
+				</td>
+				<td>
+					<a href="https://auto.360.cn/" target="_blank" rel="noopener noreferrer">8月份销量几近腰斩，宝马再次重返“价格战”</a>
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>
+</html>
