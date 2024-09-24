@@ -30,7 +30,9 @@ void test_string2() {
     name += "K.";
     cout << name << endl;
 }
+
 int main() {
-    test_string1();
+    // test_string1();
+    test_string2();
     return 0;
 }
