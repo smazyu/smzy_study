@@ -29,6 +29,28 @@ void test_string2() {
     string name("John");
     name += "K.";
     cout << name << endl;
+    //[] + 下标遍历
+    //写
+    for(size_t i = 0;i < name.size();++i) {
+        name[i] += 1;
+    }
+    //读
+    for (size_t i = 0; i < name.size(); ++i) {
+        cout << name[i] << " ";
+    }
+    cout << endl;
+
+    //迭代器
+    string::iterator it = name.begin();
+    while (it != name.end()) {
+        *it -= 1;
+        ++ it;
+    }
+    it = name.begin();//使用的还是迭代器变量,就没有重复定义
+    while(it != name.end()) {
+        cout << *it << " ";
+        ++it;
+    }
 }
 
 int main() {
