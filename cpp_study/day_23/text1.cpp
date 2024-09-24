@@ -42,6 +42,8 @@ void test_string2() {
 
     //迭代器
     string::iterator it = name.begin();
+
+    //也可以是auto it = s1.begin() auto自动推导变量的类型
     while (it != name.end()) {
         //这里的end是最后一个字符的下一个位置
         *it -= 1;
@@ -63,8 +65,33 @@ void test_string2() {
 
 //迭代器就像指针一样
 //1.迭代器不一定是指针，只是像指针一样的东西
+//再看看其他迭代器
+//反向迭代器
+int string2int(const string& nums) {
+    int val = 0;
+    string::const_iterator it = nums.begin();
+    while(it != nums.end()) {
+        //const迭代器只能读不能写
+        val *= 10;
+        val += (*it -'0');
+        ++it;
+    }
+    return val;
+}
+void test_string3() {
+    string s1("hello world");
+    //倒着遍历 反向迭代器
+    auto rit = s1.rbegin();
+    while(rit != s1.rend()) {
+        cout << *rit <<" ";
+        ++rit;
+    }
+    string nums("12345");
+    cout << string2int(nums) <<endl;
+}
 int main() {
     // test_string1();
-    test_string2();
+    // test_string2();
+    test_string3();
     return 0;
 }
