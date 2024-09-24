@@ -39,7 +39,6 @@ CMakeFiles\smzy.dir\cpp_study\day_23\text2.cpp.obj: "C:\Program Files (x86)\Wind
 CMakeFiles\smzy.dir\cpp_study\day_23\text2.cpp.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.22621.0\ucrt\corecrt_wstdio.h"
 CMakeFiles\smzy.dir\cpp_study\day_23\text2.cpp.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.22621.0\ucrt\corecrt_stdio_config.h"
 CMakeFiles\smzy.dir\cpp_study\day_23\text2.cpp.obj: "C:\Program Files\Microsoft Visual Studio\2022\Professional\VC\Tools\MSVC\14.39.33519\include\iterator"
-CMakeFiles\smzy.dir\cpp_study\day_23\text2.cpp.obj: "C:\Program Files\Microsoft Visual Studio\2022\Professional\VC\Tools\MSVC\14.39.33519\include\iosfwd"
 CMakeFiles\smzy.dir\cpp_study\day_23\text2.cpp.obj: "C:\Program Files\Microsoft Visual Studio\2022\Professional\VC\Tools\MSVC\14.39.33519\include\cstring"
 CMakeFiles\smzy.dir\cpp_study\day_23\text2.cpp.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.22621.0\ucrt\string.h"
 CMakeFiles\smzy.dir\cpp_study\day_23\text2.cpp.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.22621.0\ucrt\corecrt_memory.h"
@@ -206,13 +205,11 @@ E:\GitHub\smzy_study\cpp_study\day_23\text2.cpp:
 
 "C:\Program Files\Microsoft Visual Studio\2022\Professional\VC\Tools\MSVC\14.39.33519\include\iterator":
 
-"C:\Program Files (x86)\Windows Kits\10\include\10.0.22621.0\ucrt\corecrt_memory.h":
-
-"C:\Program Files\Microsoft Visual Studio\2022\Professional\VC\Tools\MSVC\14.39.33519\include\iosfwd":
-
 "C:\Program Files\Microsoft Visual Studio\2022\Professional\VC\Tools\MSVC\14.39.33519\include\cstring":
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.22621.0\ucrt\string.h":
+
+"C:\Program Files (x86)\Windows Kits\10\include\10.0.22621.0\ucrt\corecrt_memory.h":
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.22621.0\ucrt\corecrt_wconio.h":
 

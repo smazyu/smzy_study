@@ -33,8 +33,14 @@ void test_string() {
     s.append("1234");
 
     s += 'x';
+    s.insert(s.begin(),'0');
+    s.insert(1,"9");
+    cout << s << endl;
+    // s.erase(2,3);
+    s.erase(2);
     cout << s << endl;
 }
 int main() {
-    TextString();
+    // TextString();
+    test_string();
 }
