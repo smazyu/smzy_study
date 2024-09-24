@@ -31,7 +31,7 @@ void test_string2() {
     cout << name << endl;
     //[] + 下标遍历
     //写
-    for(size_t i = 0;i < name.size();++i) {
+    for (size_t i = 0; i < name.size(); ++i) {
         name[i] += 1;
     }
     //读
@@ -43,16 +43,26 @@ void test_string2() {
     //迭代器
     string::iterator it = name.begin();
     while (it != name.end()) {
+        //这里的end是最后一个字符的下一个位置
         *it -= 1;
-        ++ it;
+        ++it;
     }
-    it = name.begin();//使用的还是迭代器变量,就没有重复定义
-    while(it != name.end()) {
+    it = name.begin(); //使用的还是迭代器变量,就没有重复定义
+    while (it != name.end()) {
         cout << *it << " ";
         ++it;
     }
+    cout << endl;
+    //范围for 基于范围自动遍历
+    //原理是迭代器 原理是被替换成迭代器 在c++11中受支持
+    for (auto ch: name) {
+        cout << ch << " ";
+    }
+    cout << endl;
 }
 
+//迭代器就像指针一样
+//1.迭代器不一定是指针，只是像指针一样的东西
 int main() {
     // test_string1();
     test_string2();
