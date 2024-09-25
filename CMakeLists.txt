@@ -1,33 +1,34 @@
-cmake_minimum_required(VERSION 3.20)
+ cmake_minimum_required(VERSION 3.20)
 
-# 设置项目名称并指定使用的语言
-project(smzy_study LANGUAGES C CXX)
+ # 设置项目名称并指定使用的语言
+ project(smzy_study LANGUAGES C CXX)
 
-# 设置 C 和 C++ 标准
-set(CMAKE_C_STANDARD 11)
-set(CMAKE_CXX_STANDARD 17)
+ # 设置 C 和 C++ 标准
+ set(CMAKE_C_STANDARD 11)
+ set(CMAKE_CXX_STANDARD 17)
 
-# 强制使用指定的标准并禁用编译器扩展以提高可移植性
-set(CMAKE_C_STANDARD_REQUIRED ON)
-set(CMAKE_CXX_STANDARD_REQUIRED ON)
-set(CMAKE_C_EXTENSIONS OFF)
-set(CMAKE_CXX_EXTENSIONS OFF)
+ # 强制使用指定的标准并禁用编译器扩展以提高可移植性
+ set(CMAKE_C_STANDARD_REQUIRED ON)
+ set(CMAKE_CXX_STANDARD_REQUIRED ON)
+ set(CMAKE_C_EXTENSIONS OFF)
+ set(CMAKE_CXX_EXTENSIONS OFF)
 
-# 自动收集所有源文件
-#file(GLOB_RECURSE SOURCES
-#        ${PROJECT_SOURCE_DIR}/cpp_study/day_16/text1.cpp
-#)
+ # 自动收集所有源文件
+ #file(GLOB_RECURSE SOURCES
+ #        ${PROJECT_SOURCE_DIR}/cpp_study/day_16/text1.cpp
+ #)
 
-# 定义可执行目标
-add_executable(smzy ${SOURCES}
-        AlgorithmExercises/firstUniqueCharacterInString.cpp)
+ # 定义可执行目标
+ add_executable(smzy ${SOURCES}
+#         AlgorithmExercises/firstUniqueCharacterInString.cpp
+         cpp_study/day_23/text2.cpp)
 
-# 为目标设置包含目录
-target_include_directories(smzy PRIVATE ${PROJECT_SOURCE_DIR}/include)
+ # 为目标设置包含目录
+ target_include_directories(smzy PRIVATE ${PROJECT_SOURCE_DIR}/include)
 
-# 可选：为提高代码质量添加编译器警告
-if (MSVC)
-    target_compile_options(smzy PRIVATE /W4)
-else()
-    target_compile_options(smzy PRIVATE -Wall -Wextra -pedantic)
-endif()
+ # 可选：为提高代码质量添加编译器警告
+ if (MSVC)
+     target_compile_options(smzy PRIVATE /W4)
+ else()
+     target_compile_options(smzy PRIVATE -Wall -Wextra -pedantic)
+ endif()

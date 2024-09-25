@@ -8,6 +8,7 @@ class Solution {
 public:
     void characterOccurrences(int chr, int (&char_occur)[26]) {
         if (chr >= 'a' && chr <= 'z') {
+
             char_occur[chr - 'a']++;
         }
     }
