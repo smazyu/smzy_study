@@ -118,6 +118,30 @@ smzy\fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\smzy.dir\build
 .PHONY : smzy\fast
 
+AlgorithmExercises\firstUniqueCharacterInString.obj: AlgorithmExercises\firstUniqueCharacterInString.cpp.obj
+.PHONY : AlgorithmExercises\firstUniqueCharacterInString.obj
+
+# target to build an object file
+AlgorithmExercises\firstUniqueCharacterInString.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\smzy.dir\AlgorithmExercises\firstUniqueCharacterInString.cpp.obj
+.PHONY : AlgorithmExercises\firstUniqueCharacterInString.cpp.obj
+
+AlgorithmExercises\firstUniqueCharacterInString.i: AlgorithmExercises\firstUniqueCharacterInString.cpp.i
+.PHONY : AlgorithmExercises\firstUniqueCharacterInString.i
+
+# target to preprocess a source file
+AlgorithmExercises\firstUniqueCharacterInString.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\smzy.dir\AlgorithmExercises\firstUniqueCharacterInString.cpp.i
+.PHONY : AlgorithmExercises\firstUniqueCharacterInString.cpp.i
+
+AlgorithmExercises\firstUniqueCharacterInString.s: AlgorithmExercises\firstUniqueCharacterInString.cpp.s
+.PHONY : AlgorithmExercises\firstUniqueCharacterInString.s
+
+# target to generate assembly for a file
+AlgorithmExercises\firstUniqueCharacterInString.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\smzy.dir\AlgorithmExercises\firstUniqueCharacterInString.cpp.s
+.PHONY : AlgorithmExercises\firstUniqueCharacterInString.cpp.s
+
 cpp_study\day_23\text2.obj: cpp_study\day_23\text2.cpp.obj
 .PHONY : cpp_study\day_23\text2.obj
 
@@ -151,6 +175,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... smzy
+	@echo ... AlgorithmExercises/firstUniqueCharacterInString.obj
+	@echo ... AlgorithmExercises/firstUniqueCharacterInString.i
+	@echo ... AlgorithmExercises/firstUniqueCharacterInString.s
 	@echo ... cpp_study/day_23/text2.obj
 	@echo ... cpp_study/day_23/text2.i
 	@echo ... cpp_study/day_23/text2.s

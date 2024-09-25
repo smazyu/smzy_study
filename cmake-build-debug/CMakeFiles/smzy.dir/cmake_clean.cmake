@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/smzy.dir/AlgorithmExercises/firstUniqueCharacterInString.cpp.obj"
+  "CMakeFiles/smzy.dir/AlgorithmExercises/firstUniqueCharacterInString.cpp.obj.d"
   "CMakeFiles/smzy.dir/cpp_study/day_23/text2.cpp.obj"
   "CMakeFiles/smzy.dir/cpp_study/day_23/text2.cpp.obj.d"
   "smzy.exe"
