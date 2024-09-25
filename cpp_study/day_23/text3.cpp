@@ -43,6 +43,21 @@ void test_string() {
     cout << s1.c_str() << endl; //直接输出const char*
     cout << "-------" << endl;
 
+    s1 += '\0';
+    s1 += "world";
+
+    cout << s1 << endl; //调用string重载的operator <<
+    cout << s1.c_str() << endl; //直接输出const char*
+    //编码表 值和表示符号(字母或者文字) 映射关系
+    //ascii码表(早期计算机只需要表示英文) 值和字母标点等的映射关系
+    for (unsigned char ch = 0; ch < 255; ++ch) {
+        cout << ch << " ";
+    }
+    cout << endl;
+    //当计算机普及到全世界，要用计算机去表示几百个国家的文字
+    //Unicode
+    //linux utf8
+    //windows gbk
 }
 
 int main() {
