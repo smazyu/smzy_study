@@ -1066,18 +1066,6 @@
 			"value" : "FALSE"
 		},
 		{
-			"name" : "ENABLE_DEBUG",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Enable debug mode"
-				}
-			],
-			"type" : "BOOL",
-			"value" : "ON"
-		},
-		{
 			"name" : "smzy_study_BINARY_DIR",
 			"properties" : 
 			[
