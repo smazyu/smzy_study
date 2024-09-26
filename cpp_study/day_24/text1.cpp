@@ -32,6 +32,20 @@ void test_string() {
     cout << url.substr(path_start + 1) << endl;
 }
 
+void test_string1() {
+    string s1("hello");
+    string ret1 = s1 + "world";
+    string ret2 = s1+= "world";
+    cout << ret1 <<endl;
+    cout << ret2 <<endl;
+
+    string s2 = "abcd";
+    cout << (s2 < "bbcd") <<endl;
+}
 int main() {
-    test_string();
+    // test_string();
+
+    //cin遇到空格换行都结束
+    //getline 遇到换行才结束
+    test_string1();
 }
