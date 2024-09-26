@@ -25,6 +25,8 @@ void test_string() {
     if(pos3 != string::npos) {
         cout << s3.substr(pos3) << endl;
     }
+
+    string url("https://blog.simazhangyu.com/");
 }
 
 int main() {
