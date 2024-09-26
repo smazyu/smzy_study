@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "E:/GitHub/smzy_study/cpp_study/day_24/text3.c" "CMakeFiles/smzy.dir/cpp_study/day_24/text3.c.obj" "msvc" "CMakeFiles/smzy.dir/cpp_study/day_24/text3.c.obj.d"
   "E:/GitHub/smzy_study/cpp_study/day_24/text2.cpp" "CMakeFiles/smzy.dir/cpp_study/day_24/text2.cpp.obj" "msvc" "CMakeFiles/smzy.dir/cpp_study/day_24/text2.cpp.obj.d"
   )
 
