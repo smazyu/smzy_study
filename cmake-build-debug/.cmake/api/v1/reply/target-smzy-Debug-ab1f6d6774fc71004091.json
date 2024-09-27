@@ -79,38 +79,6 @@
 			[
 				0
 			]
-		},
-		{
-			"compileCommandFragments" : 
-			[
-				{
-					"fragment" : "/DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -std:c11 -MDd"
-				},
-				{
-					"backtrace" : 2,
-					"fragment" : "/W4"
-				}
-			],
-			"includes" : 
-			[
-				{
-					"backtrace" : 3,
-					"path" : "E:/GitHub/smzy_study/include"
-				}
-			],
-			"language" : "C",
-			"languageStandard" : 
-			{
-				"backtraces" : 
-				[
-					1
-				],
-				"standard" : "11"
-			},
-			"sourceIndexes" : 
-			[
-				1
-			]
 		}
 	],
 	"id" : "smzy::@6890427a1f51a3e7e1df",
@@ -146,7 +114,13 @@
 			"name" : "Source Files",
 			"sourceIndexes" : 
 			[
-				0,
+				0
+			]
+		},
+		{
+			"name" : "Header Files",
+			"sourceIndexes" : 
+			[
 				1
 			]
 		}
@@ -156,14 +130,13 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "cpp_study/day_24/text2.cpp",
+			"path" : "cpp_study/day_25/text1.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
-			"compileGroupIndex" : 1,
-			"path" : "cpp_study/day_24/text3.c",
-			"sourceGroupIndex" : 0
+			"path" : "cpp_study/day_25/string.h",
+			"sourceGroupIndex" : 1
 		}
 	],
 	"type" : "EXECUTABLE"

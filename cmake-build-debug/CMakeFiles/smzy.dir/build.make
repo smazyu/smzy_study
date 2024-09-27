@@ -58,59 +58,37 @@ include CMakeFiles\smzy.dir\progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles\smzy.dir\flags.make
 
-CMakeFiles\smzy.dir\cpp_study\day_24\text2.cpp.obj: CMakeFiles\smzy.dir\flags.make
-CMakeFiles\smzy.dir\cpp_study\day_24\text2.cpp.obj: E:\GitHub\smzy_study\cpp_study\day_24\text2.cpp
-CMakeFiles\smzy.dir\cpp_study\day_24\text2.cpp.obj: CMakeFiles\smzy.dir\compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\GitHub\smzy_study\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/smzy.dir/cpp_study/day_24/text2.cpp.obj"
-	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\smzy.dir\cpp_study\day_24\text2.cpp.obj.d --working-dir=E:\GitHub\smzy_study\cmake-build-debug --filter-prefix="注意: 包含文件:  " -- C:\PROGRA~1\MICROS~3\2022\PROFES~1\VC\Tools\MSVC\1439~1.335\bin\Hostx64\x64\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /showIncludes /FoCMakeFiles\smzy.dir\cpp_study\day_24\text2.cpp.obj /FdCMakeFiles\smzy.dir\ /FS -c E:\GitHub\smzy_study\cpp_study\day_24\text2.cpp
+CMakeFiles\smzy.dir\cpp_study\day_25\text1.cpp.obj: CMakeFiles\smzy.dir\flags.make
+CMakeFiles\smzy.dir\cpp_study\day_25\text1.cpp.obj: E:\GitHub\smzy_study\cpp_study\day_25\text1.cpp
+CMakeFiles\smzy.dir\cpp_study\day_25\text1.cpp.obj: CMakeFiles\smzy.dir\compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\GitHub\smzy_study\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/smzy.dir/cpp_study/day_25/text1.cpp.obj"
+	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\smzy.dir\cpp_study\day_25\text1.cpp.obj.d --working-dir=E:\GitHub\smzy_study\cmake-build-debug --filter-prefix="注意: 包含文件:  " -- C:\PROGRA~1\MICROS~3\2022\PROFES~1\VC\Tools\MSVC\1439~1.335\bin\Hostx64\x64\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /showIncludes /FoCMakeFiles\smzy.dir\cpp_study\day_25\text1.cpp.obj /FdCMakeFiles\smzy.dir\ /FS -c E:\GitHub\smzy_study\cpp_study\day_25\text1.cpp
 <<
 
-CMakeFiles\smzy.dir\cpp_study\day_24\text2.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/smzy.dir/cpp_study/day_24/text2.cpp.i"
-	C:\PROGRA~1\MICROS~3\2022\PROFES~1\VC\Tools\MSVC\1439~1.335\bin\Hostx64\x64\cl.exe > CMakeFiles\smzy.dir\cpp_study\day_24\text2.cpp.i @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\GitHub\smzy_study\cpp_study\day_24\text2.cpp
+CMakeFiles\smzy.dir\cpp_study\day_25\text1.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/smzy.dir/cpp_study/day_25/text1.cpp.i"
+	C:\PROGRA~1\MICROS~3\2022\PROFES~1\VC\Tools\MSVC\1439~1.335\bin\Hostx64\x64\cl.exe > CMakeFiles\smzy.dir\cpp_study\day_25\text1.cpp.i @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\GitHub\smzy_study\cpp_study\day_25\text1.cpp
 <<
 
-CMakeFiles\smzy.dir\cpp_study\day_24\text2.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/smzy.dir/cpp_study/day_24/text2.cpp.s"
+CMakeFiles\smzy.dir\cpp_study\day_25\text1.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/smzy.dir/cpp_study/day_25/text1.cpp.s"
 	C:\PROGRA~1\MICROS~3\2022\PROFES~1\VC\Tools\MSVC\1439~1.335\bin\Hostx64\x64\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\smzy.dir\cpp_study\day_24\text2.cpp.s /c E:\GitHub\smzy_study\cpp_study\day_24\text2.cpp
-<<
-
-CMakeFiles\smzy.dir\cpp_study\day_24\text3.c.obj: CMakeFiles\smzy.dir\flags.make
-CMakeFiles\smzy.dir\cpp_study\day_24\text3.c.obj: E:\GitHub\smzy_study\cpp_study\day_24\text3.c
-CMakeFiles\smzy.dir\cpp_study\day_24\text3.c.obj: CMakeFiles\smzy.dir\compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:\GitHub\smzy_study\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/smzy.dir/cpp_study/day_24/text3.c.obj"
-	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\smzy.dir\cpp_study\day_24\text3.c.obj.d --working-dir=E:\GitHub\smzy_study\cmake-build-debug --filter-prefix="注意: 包含文件:  " -- C:\PROGRA~1\MICROS~3\2022\PROFES~1\VC\Tools\MSVC\1439~1.335\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /showIncludes /FoCMakeFiles\smzy.dir\cpp_study\day_24\text3.c.obj /FdCMakeFiles\smzy.dir\ /FS -c E:\GitHub\smzy_study\cpp_study\day_24\text3.c
-<<
-
-CMakeFiles\smzy.dir\cpp_study\day_24\text3.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/smzy.dir/cpp_study/day_24/text3.c.i"
-	C:\PROGRA~1\MICROS~3\2022\PROFES~1\VC\Tools\MSVC\1439~1.335\bin\Hostx64\x64\cl.exe > CMakeFiles\smzy.dir\cpp_study\day_24\text3.c.i @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\GitHub\smzy_study\cpp_study\day_24\text3.c
-<<
-
-CMakeFiles\smzy.dir\cpp_study\day_24\text3.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/smzy.dir/cpp_study/day_24/text3.c.s"
-	C:\PROGRA~1\MICROS~3\2022\PROFES~1\VC\Tools\MSVC\1439~1.335\bin\Hostx64\x64\cl.exe @<<
- /nologo $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) /FoNUL /FAs /FaCMakeFiles\smzy.dir\cpp_study\day_24\text3.c.s /c E:\GitHub\smzy_study\cpp_study\day_24\text3.c
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\smzy.dir\cpp_study\day_25\text1.cpp.s /c E:\GitHub\smzy_study\cpp_study\day_25\text1.cpp
 <<
 
 # Object files for target smzy
 smzy_OBJECTS = \
-"CMakeFiles\smzy.dir\cpp_study\day_24\text2.cpp.obj" \
-"CMakeFiles\smzy.dir\cpp_study\day_24\text3.c.obj"
+"CMakeFiles\smzy.dir\cpp_study\day_25\text1.cpp.obj"
 
 # External object files for target smzy
 smzy_EXTERNAL_OBJECTS =
 
-smzy.exe: CMakeFiles\smzy.dir\cpp_study\day_24\text2.cpp.obj
-smzy.exe: CMakeFiles\smzy.dir\cpp_study\day_24\text3.c.obj
+smzy.exe: CMakeFiles\smzy.dir\cpp_study\day_25\text1.cpp.obj
 smzy.exe: CMakeFiles\smzy.dir\build.make
 smzy.exe: CMakeFiles\smzy.dir\objects1.rsp
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=E:\GitHub\smzy_study\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable smzy.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=E:\GitHub\smzy_study\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable smzy.exe"
 	"E:\Program Files\JetBrains\CLion 2024.1.1\bin\cmake\win\x64\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\smzy.dir --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100226~1.0\x64\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100226~1.0\x64\mt.exe --manifests -- C:\PROGRA~1\MICROS~3\2022\PROFES~1\VC\Tools\MSVC\1439~1.335\bin\Hostx64\x64\link.exe /nologo @CMakeFiles\smzy.dir\objects1.rsp @<<
  /out:smzy.exe /implib:smzy.lib /pdb:E:\GitHub\smzy_study\cmake-build-debug\smzy.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib 
 <<

@@ -23,7 +23,8 @@
  add_executable(smzy ${SOURCES}
 #         AlgorithmExercises/firstUniqueCharacterInString.cpp
 #         cpp_study/day_24/text1.cpp
-         cpp_study/day_24/text3.cpp)
+         cpp_study/day_25/text1.cpp
+         cpp_study/day_25/string.h)
 
  # 为目标设置包含目录
  target_include_directories(smzy PRIVATE ${PROJECT_SOURCE_DIR}/include)
