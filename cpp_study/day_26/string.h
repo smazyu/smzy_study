@@ -22,6 +22,11 @@ namespace simulation {
             _str = nullptr;
         }
 
+        //string s2(s1)
+        string(const string &s)
+            : _str(new char[]){
+        }
+
         size_t size() {
             return strlen(_str);
         }
@@ -63,6 +68,7 @@ namespace simulation {
         string s2(s1);
         //浅拷贝 s1 和 s2 指向了同一个指针地址
         //然后析构的时候
+        //调用默认拷贝 即浅拷贝-值拷贝
         //同一个地址被析构了两次导致报错
         // cout << s1.c_str() << endl;
         // cout << s2.c_str() << endl;
