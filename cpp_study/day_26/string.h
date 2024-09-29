@@ -61,10 +61,11 @@ namespace simulation {
     void test_string2() {
         string s1("hello");
         string s2(s1);
-
+        //浅拷贝 s1 和 s2 指向了同一个指针地址
+        //然后析构的时候
+        //同一个地址被析构了两次导致报错
         // cout << s1.c_str() << endl;
         // cout << s2.c_str() << endl;
-        
     }
 }
 
