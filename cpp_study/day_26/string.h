@@ -6,7 +6,7 @@ namespace simulation {
         string(): _str(nullptr) {
         }
 
-        string(char *str): _str(str) {
+        string(char *str): _str(new char[strlen(str) + 1]) {
             ;
         };
 
@@ -17,7 +17,8 @@ namespace simulation {
         char &operator[](int i) {
             return _str[i];
         }
-//堆的特点是 自由管理
+
+        //堆的特点是 自由管理
     private
     :
         char *_str;
