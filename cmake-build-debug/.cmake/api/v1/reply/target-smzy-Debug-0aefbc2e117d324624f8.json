@@ -35,13 +35,13 @@
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 34,
+				"line" : 35,
 				"parent" : 0
 			},
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 30,
+				"line" : 31,
 				"parent" : 0
 			}
 		]
@@ -121,7 +121,8 @@
 			"name" : "Header Files",
 			"sourceIndexes" : 
 			[
-				1
+				1,
+				2
 			]
 		}
 	],
@@ -136,6 +137,11 @@
 		{
 			"backtrace" : 1,
 			"path" : "cpp_study/day_25/string.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "cpp_study/day_27/string.h",
 			"sourceGroupIndex" : 1
 		}
 	],

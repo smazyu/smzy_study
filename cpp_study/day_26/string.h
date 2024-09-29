@@ -18,9 +18,9 @@ namespace simulation {
             return _str[i];
         }
 
-    private
-    :
-        char *_str;
+        private
+        :
+            char *_str;
     };
 
     void test_string1() {
