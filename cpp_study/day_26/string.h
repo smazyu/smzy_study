@@ -30,6 +30,10 @@ namespace simulation {
             return _str[i];
         }
 
+        const char *c_str() {
+            return _str;
+        }
+
         //堆的特点是 自由管理
     private
     :
@@ -52,6 +56,15 @@ namespace simulation {
             cout << s2[i] << " ";
         }
         cout << endl;
+    }
+
+    void test_string2() {
+        string s1("hello");
+        string s2(s1);
+
+        // cout << s1.c_str() << endl;
+        // cout << s2.c_str() << endl;
+        
     }
 }
 
