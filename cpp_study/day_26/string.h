@@ -17,10 +17,10 @@ namespace simulation {
         char &operator[](int i) {
             return _str[i];
         }
-
-        private
-        :
-            char *_str;
+//堆的特点是 自由管理
+    private
+    :
+        char *_str;
     };
 
     void test_string1() {
@@ -29,10 +29,10 @@ namespace simulation {
 
 
         for (size_t i = 0; i < s1.size(); i++) {
-
             cout << s1[i] << " ";
         }
         cout << endl;
     }
 }
+
 //常量，代码指令都在代码段
