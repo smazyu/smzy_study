@@ -12,8 +12,14 @@ namespace simulation {
             strcpy(_str, str);
         };
 */
+        //全缺省 "" 这里是\0
         string(char *str = ""): _str(new char[strlen(str) + 1]) {
-            strcpy(_str, str);
+            strcpy_s(_str, strlen(str) + 1, str);
+        }
+
+        ~string() {
+            delete[] _str;
+            _str = nullptr;
         }
 
         size_t size() {
