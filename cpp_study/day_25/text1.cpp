@@ -4,7 +4,7 @@
 #include <iostream>
 #include "string.h"
 using namespace std;
+
 int main() {
     simulation::test_string1();
 }
-
