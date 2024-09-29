@@ -4,12 +4,17 @@ using namespace std;
 namespace simulation {
     class string {
     public:
-        string(): _str(nullptr) {
+        /*string(): _str(new char[0]) {
+            _str[0] = '\0';
         }
 
         string(char *str): _str(new char[strlen(str) + 1]) {
             strcpy(_str, str);
         };
+*/
+        string(char *str = ""): _str(new char[strlen(str) + 1]) {
+            strcpy(_str, str);
+        }
 
         size_t size() {
             return strlen(_str);
@@ -33,6 +38,12 @@ namespace simulation {
         for (size_t i = 0; i < s1.size(); i++) {
             s1[i] += 1;
             cout << s1[i] << " ";
+        }
+        cout << endl;
+
+        for (size_t i = 0; i < s2.size(); i++) {
+            s2[i] += 1;
+            cout << s2[i] << " ";
         }
         cout << endl;
     }

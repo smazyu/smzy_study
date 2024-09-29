@@ -69,7 +69,6 @@ CMakeFiles\smzy.dir\cpp_study\day_26\text.cpp.obj: "C:\Program Files\Microsoft V
 CMakeFiles\smzy.dir\cpp_study\day_26\text.cpp.obj: "C:\Program Files\Microsoft Visual Studio\2022\Professional\VC\Tools\MSVC\14.39.33519\include\streambuf"
 CMakeFiles\smzy.dir\cpp_study\day_26\text.cpp.obj: "C:\Program Files\Microsoft Visual Studio\2022\Professional\VC\Tools\MSVC\14.39.33519\include\xiosbase"
 CMakeFiles\smzy.dir\cpp_study\day_26\text.cpp.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.22621.0\ucrt\share.h"
-CMakeFiles\smzy.dir\cpp_study\day_26\text.cpp.obj: "C:\Program Files\Microsoft Visual Studio\2022\Professional\VC\Tools\MSVC\14.39.33519\include\system_error"
 CMakeFiles\smzy.dir\cpp_study\day_26\text.cpp.obj: "C:\Program Files\Microsoft Visual Studio\2022\Professional\VC\Tools\MSVC\14.39.33519\include\__msvc_system_error_abi.hpp"
 CMakeFiles\smzy.dir\cpp_study\day_26\text.cpp.obj: "C:\Program Files\Microsoft Visual Studio\2022\Professional\VC\Tools\MSVC\14.39.33519\include\cerrno"
 CMakeFiles\smzy.dir\cpp_study\day_26\text.cpp.obj: "C:\Program Files\Microsoft Visual Studio\2022\Professional\VC\Tools\MSVC\14.39.33519\include\stdexcept"
@@ -257,8 +256,6 @@ E:\GitHub\smzy_study\cpp_study\day_26\text.cpp:
 "C:\Program Files\Microsoft Visual Studio\2022\Professional\VC\Tools\MSVC\14.39.33519\include\xiosbase":
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.22621.0\ucrt\share.h":
-
-"C:\Program Files\Microsoft Visual Studio\2022\Professional\VC\Tools\MSVC\14.39.33519\include\system_error":
 
 "C:\Program Files\Microsoft Visual Studio\2022\Professional\VC\Tools\MSVC\14.39.33519\include\__msvc_system_error_abi.hpp":
 
