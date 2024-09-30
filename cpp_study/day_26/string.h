@@ -22,10 +22,14 @@ namespace simulation {
             _str = nullptr;
         }
 
+        void operator=(char *str) {
+            strcpy(this->_str, str);
+        }
+
         //string s2(s1) -> 深拷贝
         string(const string &s)
             : _str(new char[strlen(s._str) + 1]) {
-            strcpy_s(_str,strlen(s._str)+1,s._str);
+            strcpy_s(_str, strlen(s._str) + 1, s._str);
         }
 
         size_t size() {

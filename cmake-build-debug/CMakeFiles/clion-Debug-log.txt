@@ -1,4 +1,4 @@
 "E:\Program Files\JetBrains\CLion 2024.1.1\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "NMake Makefiles" -S E:\GitHub\smzy_study -B E:\GitHub\smzy_study\cmake-build-debug
--- Configuring done (0.0s)
+-- Configuring done (0.1s)
 -- Generating done (0.0s)
 -- Build files have been written to: E:/GitHub/smzy_study/cmake-build-debug
