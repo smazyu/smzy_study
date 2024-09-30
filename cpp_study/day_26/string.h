@@ -123,12 +123,15 @@ namespace simulation {
             strcpy_s(_str + _size, len + 1, str); // 使用安全的strcpy_s
             _size += len;
         }
+        //resize将字符串大小调整为 n 个字符 
 
     private:
         char* _str; // 字符串指针
         size_t _size; // 字符串长度
         size_t _capacity; // 字符串容量
+        static size_t npos;
     };
+    size_t string::npos = -1;
 
     // 输出运算符重载
     ostream& operator<<(ostream& out, const string& s) {
