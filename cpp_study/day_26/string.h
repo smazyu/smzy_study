@@ -139,7 +139,7 @@ namespace simulation {
             ++it2;
         }
         cout << endl;
-
+        //范围for最终会被替换为迭代器
         for (auto e: s2) {
             cout << e << " ";
         }
