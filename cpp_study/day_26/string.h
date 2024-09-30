@@ -12,8 +12,13 @@ namespace simulation {
             strcpy(_str, str);
         };
 */
+
+
         //全缺省 "" 这里是\0
-        string(char *str = ""): _str(new char[strlen(str) + 1]) {
+        string(const char *str = "") {
+            _size = strlen(str);
+            _capacity = _size;
+            _str = new char[_capacity + 1];
             strcpy_s(_str, strlen(str) + 1, str);
         }
 
@@ -22,11 +27,14 @@ namespace simulation {
             _str = nullptr;
         }
 
-        string operator=(const string &s) {
-            char *tmp = new char[strlen(s._str) + 1];
-            strcpy(tmp, s._str);
-            delete[] _str;
-            _str = tmp;
+        string &operator=(const string &s) {
+            if (this != &s) {
+                char *tmp = new char[strlen(s._str) + 1];
+                strcpy(tmp, s._str);
+                delete[] _str;
+                _str = tmp;
+                return *this;
+            }
         }
 
         //string s2(s1) -> 深拷贝
@@ -51,6 +59,8 @@ namespace simulation {
     private
     :
         char *_str;
+        size_t _size;
+        size_t _capacity; //\0不是有效字符
     };
 
     void test_string1() {
