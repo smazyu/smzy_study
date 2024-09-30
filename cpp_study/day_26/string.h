@@ -25,6 +25,7 @@ namespace simulation {
         ~string() {
             delete[] _str;
             _str = nullptr;
+            _size = _capacity = 0;
         }
 
         string &operator=(const string &s) {
