@@ -77,6 +77,46 @@ namespace simulation {
             return _str;
         }
 
+        void push_back(char ch) {
+            //空间满了则进行增容
+            if (_size == _capacity) {
+                size_t newcapacity = _capacity == 0 ? 2 : _capacity * 2;
+                reserve(newcapacity);
+            }
+            _str[_size] = ch;
+            ++_size;
+        };
+
+        void reserve(size_t n) {
+            if (n > _capacity) {
+                char *newstr = new char[n + 1];
+                strcpy(newstr, _str);
+                delete[] _str;
+                _str = newstr;
+                _capacity = n;
+            }
+        }
+
+        void append(const char *str) {
+            size_t len = strlen(str);
+            if (_size + len > _capacity) {
+                reserve(_size + len);
+            }
+            strcpy(_str + _size, str);
+            _size += len;
+        };
+
+        string &operator+=(char ch) {
+            this->push_back(ch);
+            return *this;
+        }
+
+        //
+        string &operator+=(const char *str) {
+            this.append(str);
+            return *this;
+        }
+
     private:
         char *_str; // 字符串指针
         size_t _size; // 字符串长度
