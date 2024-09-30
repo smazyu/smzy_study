@@ -6,6 +6,16 @@ namespace simulation {
     class string {
     public:
         // 构造函数，默认参数为""，即\0
+        typedef char *iterator;
+
+        iterator begin() {
+            return _str;
+        }
+
+        iterator end() {
+            return _str + _size;
+        }
+
         string(const char *str = "") {
             _size = strlen(str);
             _capacity = _size;
@@ -110,6 +120,25 @@ namespace simulation {
         cout << s1 << endl;
         cout << s1.c_str() << endl;
         cout << s2.c_str() << endl;
+    }
+
+    void test_string3() {
+        string s1("hello");
+        string s2(s1);
+
+        for (size_t i = 0; i < s2.size(); ++i) {
+            s2[i] += 2;
+            cout << s2[i] << " ";
+        }
+        cout << endl;
+
+        string::iterator it2 = s2.begin();
+        while (it2 != s2.end()) {
+            *it2 -= 1;
+            cout << *it2 << " ";
+            ++it2;
+        }
+        cout << endl;
     }
 }
 
