@@ -139,6 +139,11 @@ namespace simulation {
             ++it2;
         }
         cout << endl;
+
+        for (auto e: s2) {
+            cout << e << " ";
+        }
+        cout << endl;
     }
 }
 
