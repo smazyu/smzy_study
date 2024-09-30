@@ -103,3 +103,5 @@ C:/Program Files (x86)/Windows Kits/10/include/10.0.22621.0/ucrt/ctype.h
 C:/Program Files/Microsoft Visual Studio/2022/Professional/VC/Tools/MSVC/14.39.33519/include/clocale
 C:/Program Files (x86)/Windows Kits/10/include/10.0.22621.0/ucrt/locale.h
 E:/GitHub/smzy_study/cpp_study/day_26/string.h
+C:/Program Files/Microsoft Visual Studio/2022/Professional/VC/Tools/MSVC/14.39.33519/include/cassert
+C:/Program Files (x86)/Windows Kits/10/include/10.0.22621.0/ucrt/assert.h

@@ -1,80 +1,99 @@
+#include <cassert>
 #include <iostream>
 using namespace std;
 
 namespace simulation {
     class string {
     public:
-        /*string(): _str(new char[0]) {
-            _str[0] = '\0';
-        }
-
-        string(char *str): _str(new char[strlen(str) + 1]) {
-            strcpy(_str, str);
-        };
-*/
-
-
-        //全缺省 "" 这里是\0
+        // 构造函数，默认参数为""，即\0
         string(const char *str = "") {
             _size = strlen(str);
             _capacity = _size;
             _str = new char[_capacity + 1];
-            strcpy_s(_str, strlen(str) + 1, str);
+            strcpy_s(_str, _capacity + 1, str); // 使用安全的strcpy_s
         }
 
+        // 析构函数
         ~string() {
             delete[] _str;
             _str = nullptr;
             _size = _capacity = 0;
         }
 
+        // 赋值运算符重载，确保深拷贝
         string &operator=(const string &s) {
             if (this != &s) {
                 char *tmp = new char[strlen(s._str) + 1];
-                strcpy(tmp, s._str);
+                strcpy_s(tmp, strlen(s._str) + 1, s._str); // 使用安全的strcpy_s
                 delete[] _str;
                 _str = tmp;
-                return *this;
+                _size = s._size;
+                _capacity = s._capacity;
             }
+            return *this;
         }
 
-        //string s2(s1) -> 深拷贝
-        string(const string &s)
-            : _str(new char[strlen(s._str) + 1]) {
-            strcpy_s(_str, strlen(s._str) + 1, s._str);
+        // 拷贝构造函数，深拷贝
+        string(const string &s) : _str(new char[strlen(s._str) + 1]) {
+            strcpy_s(_str, strlen(s._str) + 1, s._str); // 使用安全的strcpy_s
+            _size = s._size;
+            _capacity = s._capacity;
         }
 
-        size_t size() {
-            return strlen(_str);
+        // 返回字符串的长度
+        size_t size() const {
+            return _size;
         }
 
-        char &operator[](int i) {
+        // 返回字符串的容量
+        size_t capacity() const {
+            return _capacity;
+        }
+
+        // 下标运算符重载，非const版本
+        char &operator[](size_t i) {
+            assert(i < _size);
             return _str[i];
         }
 
-        const char *c_str() {
+        // 下标运算符重载，const版本
+        const char &operator[](size_t i) const {
+            assert(i < _size);
+            return _str[i];
+        }
+
+        // 返回C风格字符串
+        const char *c_str() const {
             return _str;
         }
 
-        //堆的特点是 自由管理
-    private
-    :
-        char *_str;
-        size_t _size;
-        size_t _capacity; //\0不是有效字符
+    private:
+        char *_str; // 字符串指针
+        size_t _size; // 字符串长度
+        size_t _capacity; // 容量，_capacity >= _size
     };
 
+    // 输出运算符重载
+    ostream &operator<<(ostream &out, const string &s) {
+        for (size_t i = 0; i < s.size(); ++i) {
+            out << s[i];
+        }
+        return out;
+    }
+
+    // 测试用例1：测试字符串的修改和访问
     void test_string1() {
         string s1("hello");
         string s2;
-        //c++的缺陷之一就是 它是一个历史包袱很多的语言
-        // string对象存指针，指针指向的数组存储字符，字符里面有\0
+
+        // 对s1中的字符逐个修改
         for (size_t i = 0; i < s1.size(); i++) {
             s1[i] += 1;
             cout << s1[i] << " ";
         }
         cout << endl;
 
+        // 测试空字符串s2
         for (size_t i = 0; i < s2.size(); i++) {
             s2[i] += 1;
             cout << s2[i] << " ";
@@ -82,15 +101,15 @@ namespace simulation {
         cout << endl;
     }
 
+    // 测试用例2：测试深拷贝和输出
     void test_string2() {
         string s1("hello");
-        string s2(s1);
-        //浅拷贝 s1 和 s2 指向了同一个指针地址
-        //然后析构的时候
-        //调用默认拷贝 即浅拷贝-值拷贝
-        //同一个地址被析构了两次导致报错
-        // cout << s1.c_str() << endl;
-        // cout << s2.c_str() << endl;
+        string s2(s1); // 深拷贝
+
+        // 输出s1和s2
+        cout << s1 << endl;
+        cout << s1.c_str() << endl;
+        cout << s2.c_str() << endl;
     }
 }
 
