@@ -56,6 +56,8 @@ namespace simulation {
         }
 
         // += 运算符重载，添加字符
+
+        //运算符重载是让我们可以用这个运算符
         string& operator+=(char ch) {
             this->push_back(ch);
             return *this;
