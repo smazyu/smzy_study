@@ -142,6 +142,9 @@ namespace simulation {
             ++_size;
         }
 
+        void insert(size_t pos, const char* stt) {
+            
+        }
     private:
         char *_str; // 字符串指针
         size_t _size; // 字符串长度
