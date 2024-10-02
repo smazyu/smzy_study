@@ -128,11 +128,18 @@ namespace simulation {
 
         //resize将字符串大小调整为 n 个字符
         void insert(size_t pos, char ch) {
+            assert(pos < _size);
             if (size == _capacity) {
                 size_t newcapacity = _capacity == 0 ? 2 : _capacity * 2;
-
                 reserve(newcapacity);
             }
+            int end = _size;
+            while (end >= pos) {
+                _str[end + 1] = _str[end];
+                --end;
+            }
+            _str[pos] = ch;
+            ++_size;
         }
 
     private:
