@@ -1,5 +1,6 @@
 #include <cassert>
 #include <iostream>
+#include <string.h>
 using namespace std;
 
 namespace simulation {
@@ -127,24 +128,41 @@ namespace simulation {
         }
 
         //resize将字符串大小调整为 n 个字符
+        // 插入单个字符
         void insert(size_t pos, char ch) {
-            assert(pos < _size);
-            if (size == _capacity) {
+            assert(pos <= _size); // 修正条件，允许在末尾插入
+            if (_size == _capacity) { // 调用 size() 函数
                 size_t newcapacity = _capacity == 0 ? 2 : _capacity * 2;
                 reserve(newcapacity);
             }
             int end = _size;
-            while (end >= pos) {
+            while (end >= static_cast<int>(pos)) { // 确保类型一致
                 _str[end + 1] = _str[end];
                 --end;
             }
             _str[pos] = ch;
             ++_size;
+            _str[_size] = '\0'; // 别忘了在结尾加上 '\0'
         }
 
+        // 插入字符串
         void insert(size_t pos, const char* stt) {
-            
+            assert(pos <= _size); // 插入位置不应超过现有字符串长度
+            size_t len = strlen(stt);
+            if (_size + len > _capacity) {
+                reserve(_size + len);
+            }
+            for (int i = _size - 1; i >= static_cast<int>(pos); --i) {
+                _str[i + len] = _str[i];
+            }
+            for (size_t i = 0; i < len; ++i) {
+                _str[pos + i] = stt[i];
+            }
+            _size += len;
+            _str[_size] = '\0'; // 别忘了更新结尾的 '\0'
         }
+
+
     private:
         char *_str; // 字符串指针
         size_t _size; // 字符串长度

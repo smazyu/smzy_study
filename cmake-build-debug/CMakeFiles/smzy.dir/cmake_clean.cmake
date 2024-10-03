@@ -1,9 +1,9 @@
 file(REMOVE_RECURSE
   "CMakeFiles/smzy.dir/cpp_study/day_27/text.cpp.obj"
   "CMakeFiles/smzy.dir/cpp_study/day_27/text.cpp.obj.d"
+  "libsmzy.dll.a"
   "smzy.exe"
   "smzy.exe.manifest"
-  "smzy.lib"
   "smzy.pdb"
 )
 
