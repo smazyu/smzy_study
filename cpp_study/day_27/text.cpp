@@ -4,8 +4,10 @@
 #include <iostream>
 #include "string.h"
 using namespace std;
+
 int main() {
     // simulation::test_string1();
-    simulation::test_string2();
-}
 
+    // simulation::test_string2();
+    simulation::text_string4();
+}

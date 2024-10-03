@@ -241,9 +241,10 @@ namespace simulation {
 
     void text_string4() {
         string s1("hello");
-        s1.insert(1,'x');
+        s1.insert(1, 'x');
         cout << s1 << endl;
-        s1.insert(1,"helloworld");
+        s1.insert(1, "helloworld");
+        cout << s1 << endl;
     }
 }
 
