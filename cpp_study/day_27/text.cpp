@@ -2,6 +2,7 @@
 // Created by 20212 on 24-9-28.
 //
 #include <iostream>
+#include <string.h>
 #include "string.h"
 using namespace std;
 

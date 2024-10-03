@@ -1,6 +1,5 @@
 #include <cassert>
 #include <iostream>
-#include <string.h>
 using namespace std;
 
 namespace simulation {
@@ -129,7 +128,7 @@ namespace simulation {
 
         //resize将字符串大小调整为 n 个字符
         // 插入单个字符
-        void insert(size_t pos, char ch) {
+        string &insert(size_t pos, char ch) {
             assert(pos <= _size); // 修正条件，允许在末尾插入
             if (_size == _capacity) {
                 // 调用 size() 函数
@@ -145,6 +144,7 @@ namespace simulation {
             _str[pos] = ch;
             ++_size;
             _str[_size] = '\0'; // 别忘了在结尾加上 '\0'
+            return *this;
         }
 
         // 插入字符串
@@ -163,6 +163,21 @@ namespace simulation {
             _size += len;
             _str[_size] = '\0'; // 别忘了更新结尾的 '\0'
             return *this;
+        }
+
+        void resize(size_t n, char ch = '\0') {
+            if (n < _size) {
+                _str[n] = '\0';
+                _size = n;
+            } else {
+                if (n > _capacity)
+                    reserve(n);
+                for (size_t i = _size; i < n; i++) {
+                    _str[i] = ch;
+                }
+                _size = n;
+                _str[n] = '\0';
+            }
         }
 
     private:
