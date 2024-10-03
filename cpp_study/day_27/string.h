@@ -131,12 +131,14 @@ namespace simulation {
         // 插入单个字符
         void insert(size_t pos, char ch) {
             assert(pos <= _size); // 修正条件，允许在末尾插入
-            if (_size == _capacity) { // 调用 size() 函数
+            if (_size == _capacity) {
+                // 调用 size() 函数
                 size_t newcapacity = _capacity == 0 ? 2 : _capacity * 2;
                 reserve(newcapacity);
             }
             int end = _size;
-            while (end >= static_cast<int>(pos)) { // 确保类型一致
+            while (end >= static_cast<int>(pos)) {
+                // 确保类型一致
                 _str[end + 1] = _str[end];
                 --end;
             }
@@ -146,7 +148,7 @@ namespace simulation {
         }
 
         // 插入字符串
-        void insert(size_t pos, const char* stt) {
+        string &insert(size_t pos, const char *stt) {
             assert(pos <= _size); // 插入位置不应超过现有字符串长度
             size_t len = strlen(stt);
             if (_size + len > _capacity) {
@@ -160,8 +162,8 @@ namespace simulation {
             }
             _size += len;
             _str[_size] = '\0'; // 别忘了更新结尾的 '\0'
+            return *this;
         }
-
 
     private:
         char *_str; // 字符串指针
