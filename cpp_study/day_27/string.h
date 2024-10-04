@@ -175,8 +175,22 @@ namespace simulation {
                 for (size_t i = _size; i < n; i++) {
                     _str[i] = ch;
                 }
-                _size = n;
                 _str[n] = '\0';
+                _size = n;
+            }
+        }
+
+        void erase(size_t pos, size_t len) {
+            if (len >= _size - pos) {
+                _str[pos] = '\0';
+                _size = pos;
+            } else {
+                size_t i = pos + len;
+                while (i <= _size) {
+                    _str[i - len] = _str[i];
+                    i++;
+                }
+                _size -= len;
             }
         }
 
@@ -254,12 +268,42 @@ namespace simulation {
         cout << endl;
     }
 
-    void text_string4() {
+    void test_string4() {
         string s1("hello");
         s1.insert(1, 'x');
         cout << s1 << endl;
         s1.insert(1, "helloworld");
         cout << s1 << endl;
+    }
+
+    void test_string5() {
+        std::string s2("hello");
+
+        // 输出初始状态
+        std::cout << "Initial size: " << s2.size() << std::endl;
+        std::cout << "Initial string: " << s2 << std::endl;
+        std::cout << "Initial capacity: " << s2.capacity() << std::endl;
+
+        // 扩展到 8 个字符，应该用 '\0' 填充多余的部分
+        s2.resize(8);
+        std::cout << "\nAfter resize(8):" << std::endl;
+        std::cout << "Size: " << s2.size() << std::endl;
+        std::cout << "String: " << s2 << std::endl;
+        std::cout << "Capacity: " << s2.capacity() << std::endl;
+
+        // 扩展到 10 个字符，用 'a' 填充
+        s2.resize(10, 'a');
+        std::cout << "\nAfter resize(10, 'a'):" << std::endl;
+        std::cout << "Size: " << s2.size() << std::endl;
+        std::cout << "String: " << s2 << std::endl;
+        std::cout << "Capacity: " << s2.capacity() << std::endl;
+
+        // 扩展到 20 个字符，用 'y' 填充
+        s2.resize(20, 'y');
+        std::cout << "\nAfter resize(20, 'y'):" << std::endl;
+        std::cout << "Size: " << s2.size() << std::endl;
+        std::cout << "String: " << s2 << std::endl;
+        std::cout << "Capacity: " << s2.capacity() << std::endl;
     }
 }
 
