@@ -216,7 +216,7 @@ namespace simulation {
 
     size_t string::npos = -1;
 
-// 输出运算符重载
+    // 输出运算符重载
     // 输出运算符重载
     ostream &operator<<(ostream &out, const string &s) {
         for (size_t i = 0; i < s.size(); ++i) out << s[i];
@@ -230,10 +230,10 @@ namespace simulation {
         // in >> buffer;
         // s.append(buffer);
         // return in;
-        while(1) {
+        while (1) {
             char ch;
             ch = in.get();
-            if(ch == ' ' || ch == '\n') {
+            if (ch == ' ' || ch == '\n') {
                 break;
             }
             s += ch;
@@ -241,172 +241,216 @@ namespace simulation {
         return in;
     }
 
-// 测试用例1：测试字符串的修改和访问
-void test_string1() {
-    string s1("hello");
-    string s2;
+    // 测试用例1：测试字符串的修改和访问
+    void test_string1() {
+        string s1("hello");
+        string s2;
 
-    // 对s1中的字符逐个修改
-    for (size_t i = 0; i < s1.size(); i++) {
-        s1[i] += 1;
-        cout << s1[i] << " ";
+        // 对s1中的字符逐个修改
+        for (size_t i = 0; i < s1.size(); i++) {
+            s1[i] += 1;
+            cout << s1[i] << " ";
+        }
+        cout << endl;
+
+        // 测试空字符串s2
+        for (size_t i = 0; i < s2.size(); i++) {
+            s2[i] += 1;
+            cout << s2[i] << " ";
+        }
+        cout << endl;
     }
-    cout << endl;
 
-    // 测试空字符串s2
-    for (size_t i = 0; i < s2.size(); i++) {
-        s2[i] += 1;
-        cout << s2[i] << " ";
+    // 测试用例2：测试深拷贝和输出
+    void test_string2() {
+        string s1("hello");
+        string s2(s1); // 深拷贝
+
+        // 输出s1和s2
+        cout << s1 << endl;
+        cout << s1.c_str() << endl;
+        cout << s2.c_str() << endl;
     }
-    cout << endl;
-}
 
-// 测试用例2：测试深拷贝和输出
-void test_string2() {
-    string s1("hello");
-    string s2(s1); // 深拷贝
+    // 测试用例3：测试字符串的迭代器操作
+    void test_string3() {
+        string s1("hello");
+        string s2(s1);
 
-    // 输出s1和s2
-    cout << s1 << endl;
-    cout << s1.c_str() << endl;
-    cout << s2.c_str() << endl;
-}
+        for (size_t i = 0; i < s2.size(); ++i) {
+            s2[i] += 2;
+            cout << s2[i] << " ";
+        }
+        cout << endl;
 
-// 测试用例3：测试字符串的迭代器操作
-void test_string3() {
-    string s1("hello");
-    string s2(s1);
+        string::iterator it2 = s2.begin();
+        while (it2 != s2.end()) {
+            *it2 -= 1;
+            cout << *it2 << " ";
+            ++it2;
+        }
+        cout << endl;
 
-    for (size_t i = 0; i < s2.size(); ++i) {
-        s2[i] += 2;
-        cout << s2[i] << " ";
+        // 范围for最终会被替换为迭代器
+        for (auto e: s2) {
+            cout << e << " ";
+        }
+        cout << endl;
     }
-    cout << endl;
 
-    string::iterator it2 = s2.begin();
-    while (it2 != s2.end()) {
-        *it2 -= 1;
-        cout << *it2 << " ";
-        ++it2;
+    void test_string4() {
+        string s1("hello");
+        s1.insert(1, 'x');
+        cout << s1 << endl;
+        s1.insert(1, "helloworld");
+        cout << s1 << endl;
     }
-    cout << endl;
 
-    // 范围for最终会被替换为迭代器
-    for (auto e: s2) {
-        cout << e << " ";
+    void test_string5() {
+        std::string s2("hello");
+
+        // 输出初始状态
+        std::cout << "Initial size: " << s2.size() << std::endl;
+        std::cout << "Initial string: " << s2 << std::endl;
+        std::cout << "Initial capacity: " << s2.capacity() << std::endl;
+
+        // 扩展到 8 个字符，应该用 '\0' 填充多余的部分
+        s2.resize(8);
+        std::cout << "\nAfter resize(8):" << std::endl;
+        std::cout << "Size: " << s2.size() << std::endl;
+        std::cout << "String: " << s2 << std::endl;
+        std::cout << "Capacity: " << s2.capacity() << std::endl;
+
+        // 扩展到 10 个字符，用 'a' 填充
+        s2.resize(10, 'a');
+        std::cout << "\nAfter resize(10, 'a'):" << std::endl;
+        std::cout << "Size: " << s2.size() << std::endl;
+        std::cout << "String: " << s2 << std::endl;
+        std::cout << "Capacity: " << s2.capacity() << std::endl;
+
+        // 扩展到 20 个字符，用 'y' 填充
+        s2.resize(20, 'y');
+        std::cout << "\nAfter resize(20, 'y'):" << std::endl;
+        std::cout << "Size: " << s2.size() << std::endl;
+        std::cout << "String: " << s2 << std::endl;
+        std::cout << "Capacity: " << s2.capacity() << std::endl;
     }
-    cout << endl;
-}
 
-void test_string4() {
-    string s1("hello");
-    s1.insert(1, 'x');
-    cout << s1 << endl;
-    s1.insert(1, "helloworld");
-    cout << s1 << endl;
-}
+    void test_string6() {
+        string s1("abcde");
 
-void test_string5() {
-    std::string s2("hello");
+        // 插入单个字符
+        s1.insert(2, 'X');
+        cout << "After inserting 'X' at index 2: " << s1 << endl; // abXcde
 
-    // 输出初始状态
-    std::cout << "Initial size: " << s2.size() << std::endl;
-    std::cout << "Initial string: " << s2 << std::endl;
-    std::cout << "Initial capacity: " << s2.capacity() << std::endl;
-
-    // 扩展到 8 个字符，应该用 '\0' 填充多余的部分
-    s2.resize(8);
-    std::cout << "\nAfter resize(8):" << std::endl;
-    std::cout << "Size: " << s2.size() << std::endl;
-    std::cout << "String: " << s2 << std::endl;
-    std::cout << "Capacity: " << s2.capacity() << std::endl;
-
-    // 扩展到 10 个字符，用 'a' 填充
-    s2.resize(10, 'a');
-    std::cout << "\nAfter resize(10, 'a'):" << std::endl;
-    std::cout << "Size: " << s2.size() << std::endl;
-    std::cout << "String: " << s2 << std::endl;
-    std::cout << "Capacity: " << s2.capacity() << std::endl;
-
-    // 扩展到 20 个字符，用 'y' 填充
-    s2.resize(20, 'y');
-    std::cout << "\nAfter resize(20, 'y'):" << std::endl;
-    std::cout << "Size: " << s2.size() << std::endl;
-    std::cout << "String: " << s2 << std::endl;
-    std::cout << "Capacity: " << s2.capacity() << std::endl;
-}
-
-void test_string6() {
-    string s1("abcde");
-
-    // 插入单个字符
-    s1.insert(2, 'X');
-    cout << "After inserting 'X' at index 2: " << s1 << endl; // abXcde
-
-    // 插入字符串
-    s1.insert(4, "YZ");
-    cout << "After inserting 'YZ' at index 4: " << s1 << endl; // abXYcYZde
-}
-
-// 测试用例7：测试字符串删除
-void test_string7() {
-    string s1("abcdefgh");
-
-    // 删除从索引2开始的3个字符
-    s1.erase(2, 3);
-    cout << "After erasing 3 characters from index 2: " << s1 << endl; // abfgh
-
-    // 删除超出范围的字符，应该处理得当
-    s1.erase(3, 10);
-    cout << "After trying to erase more characters than available: " << s1 << endl; // abf
-}
-
-// 测试用例8：测试字符串查找
-void test_string8() {
-    string s1("hello world");
-
-    // 查找字符
-    size_t pos1 = s1.find('o');
-    cout << "First occurrence of 'o': " << pos1 << endl; // 4
-
-    // 查找不存在的字符
-    size_t pos2 = s1.find('z');
-    if (pos2 == -1)
-        cout << "'z' not found" << endl; // 'z' not found
-
-    // 查找子字符串
-    size_t pos3 = s1.find("world");
-    cout << "Position of 'world': " << pos3 << endl; // 6
-
-    // 从指定位置开始查找
-    size_t pos4 = s1.find('o', 5);
-    cout << "First occurrence of 'o' after index 5: " << pos4 << endl; // 7
-}
-
-// 测试用例9：测试+= 运算符
-void test_string9() {
-    string s1("abc");
-
-    // 添加单个字符
-    s1 += 'd';
-    cout << "After adding 'd': " << s1 << endl; // abcd
-
-    // 添加字符串
-    s1 += "efg";
-    cout << "After adding 'efg': " << s1 << endl; // abcdefg
-}
-
-// 测试用例10：测试扩容与 push_back
-void test_string10() {
-    string s1;
-
-    // 添加字符，测试自动扩容
-    for (char ch = 'a'; ch <= 'z'; ++ch) {
-        s1.push_back(ch);
-        cout << "String: " << s1 << ", Size: " << s1.size() << ", Capacity: " << s1.capacity() << endl;
+        // 插入字符串
+        s1.insert(4, "YZ");
+        cout << "After inserting 'YZ' at index 4: " << s1 << endl; // abXYcYZde
     }
-}
 
+    // 测试用例7：测试字符串删除
+    void test_string7() {
+        string s1("abcdefgh");
+
+        // 删除从索引2开始的3个字符
+        s1.erase(2, 3);
+        cout << "After erasing 3 characters from index 2: " << s1 << endl; // abfgh
+
+        // 删除超出范围的字符，应该处理得当
+        s1.erase(3, 10);
+        cout << "After trying to erase more characters than available: " << s1 << endl; // abf
+    }
+
+    // 测试用例8：测试字符串查找
+    void test_string8() {
+        string s1("hello world");
+
+        // 查找字符
+        size_t pos1 = s1.find('o');
+        cout << "First occurrence of 'o': " << pos1 << endl; // 4
+
+        // 查找不存在的字符
+        size_t pos2 = s1.find('z');
+        if (pos2 == -1)
+            cout << "'z' not found" << endl; // 'z' not found
+
+        // 查找子字符串
+        size_t pos3 = s1.find("world");
+        cout << "Position of 'world': " << pos3 << endl; // 6
+
+        // 从指定位置开始查找
+        size_t pos4 = s1.find('o', 5);
+        cout << "First occurrence of 'o' after index 5: " << pos4 << endl; // 7
+    }
+
+    // 测试用例9：测试+= 运算符
+    void test_string9() {
+        string s1("abc");
+
+        // 添加单个字符
+        s1 += 'd';
+        cout << "After adding 'd': " << s1 << endl; // abcd
+
+        // 添加字符串
+        s1 += "efg";
+        cout << "After adding 'efg': " << s1 << endl; // abcdefg
+    }
+
+    // 测试用例10：测试扩容与 push_back
+    void test_string10() {
+        string s1;
+
+        // 添加字符，测试自动扩容
+        for (char ch = 'a'; ch <= 'z'; ++ch) {
+            s1.push_back(ch);
+            cout << "String: " << s1 << ", Size: " << s1.size() << ", Capacity: " << s1.capacity() << endl;
+        }
+    }
 }
 
 // 常量，代码指令都在代码段
+
+namespace string_copy {
+    //构造 析构 拷贝 赋值
+    class string {
+        string(const char *str = ""): _str(new char[strlen(str) + 1]) {
+            strcpy(_str, str);
+        }
+
+        ~string() {
+            delete[]_str;
+            _str = nullptr;
+        }
+
+        //传统写法
+        // string(const string &s): _str(new char[strlen(s._str) + 1]) {
+        //     strcpy(this->_str, s._str);
+        // }
+
+        //现代写法
+        string(const string &s): _str(nullptr) {
+            string tmp(s._str);
+            //使用s._str调用析构函数开空间
+            //然后用空 和 这个 进行交换
+            swap(_str, tmp._str);
+        }
+
+        //s1 = s2
+        string &operator=(string &s) {
+            //比较 当前和 传入的地址 这样就可以判断
+            if (this != &s) {
+                // char *tmp = new char[strlen(s._str) + 1];
+                // strcpy(tmp, _str);
+                // delete[] _str;
+                // _str = tmp;
+                string tmp(s._str);
+                //tmp是一个临时对象，出作用域调用析构函数
+                swap(_str, tmp._str);
+            }
+            return *this;
+        }
+
+    private:
+        char *_str;
+    };
+}
