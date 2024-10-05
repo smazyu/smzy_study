@@ -56,8 +56,6 @@ namespace simulation {
         }
 
         // += 运算符重载，添加字符
-
-        //运算符重载是让我们可以用这个运算符
         string &operator+=(char ch) {
             this->push_back(ch);
             return *this;
@@ -126,18 +124,16 @@ namespace simulation {
             _size += len;
         }
 
-        //resize将字符串大小调整为 n 个字符
+        // resize将字符串大小调整为 n 个字符
         // 插入单个字符
         string &insert(size_t pos, char ch) {
             assert(pos <= _size); // 修正条件，允许在末尾插入
             if (_size == _capacity) {
-                // 调用 size() 函数
                 size_t newcapacity = _capacity == 0 ? 2 : _capacity * 2;
                 reserve(newcapacity);
             }
             int end = _size;
             while (end >= static_cast<int>(pos)) {
-                // 确保类型一致
                 _str[end + 1] = _str[end];
                 --end;
             }
@@ -170,17 +166,15 @@ namespace simulation {
                 _str[n] = '\0';
                 _size = n;
             } else {
-                if (n > _capacity)
-                    reserve(n);
-                for (size_t i = _size; i < n; i++) {
-                    _str[i] = ch;
-                }
+                if (n > _capacity) reserve(n);
+                for (size_t i = _size; i < n; i++) _str[i] = ch;
                 _str[n] = '\0';
                 _size = n;
             }
         }
 
         void erase(size_t pos, size_t len) {
+            assert(pos < _size);
             if (len >= _size - pos) {
                 _str[pos] = '\0';
                 _size = pos;
@@ -194,6 +188,44 @@ namespace simulation {
             }
         }
 
+        size_t find(char ch, size_t pos = 0) {
+            for (size_t i = pos; i < _size; ++i) {
+                if (_str[i] == ch) return i;
+            }
+            return npos;
+        }
+
+        size_t find(const char *str, size_t pos) {
+            char *p = strstr(_str, str);
+            if (p == nullptr) return npos;
+            else return p - _str;
+        }
+
+        bool operator<(const string &s) {
+            int ret = strcmp(_str, s._str);
+            return ret < 0;
+        }
+
+        bool operator==(const string &s) {
+            int ret = strcmp(_str, s._str);
+            return ret == 0;
+        }
+
+        bool operator<=(const string &s) {
+            return *this == s || *this < s;
+        }
+
+        bool operator>(const string &s) {
+            !(*this <= s);
+        }
+
+        bool operator>=(const string &s) {
+            return !(*this < s);
+        }
+
+        bool operator !=(const string &s) {
+        }
+
     private:
         char *_str; // 字符串指针
         size_t _size; // 字符串长度
@@ -205,9 +237,7 @@ namespace simulation {
 
     // 输出运算符重载
     ostream &operator<<(ostream &out, const string &s) {
-        for (size_t i = 0; i < s.size(); ++i) {
-            out << s[i];
-        }
+        for (size_t i = 0; i < s.size(); ++i) out << s[i];
         return out;
     }
 
@@ -304,6 +334,77 @@ namespace simulation {
         std::cout << "Size: " << s2.size() << std::endl;
         std::cout << "String: " << s2 << std::endl;
         std::cout << "Capacity: " << s2.capacity() << std::endl;
+    }
+
+    void test_string6() {
+        string s1("abcde");
+
+        // 插入单个字符
+        s1.insert(2, 'X');
+        cout << "After inserting 'X' at index 2: " << s1 << endl; // abXcde
+
+        // 插入字符串
+        s1.insert(4, "YZ");
+        cout << "After inserting 'YZ' at index 4: " << s1 << endl; // abXYcYZde
+    }
+
+    // 测试用例7：测试字符串删除
+    void test_string7() {
+        string s1("abcdefgh");
+
+        // 删除从索引2开始的3个字符
+        s1.erase(2, 3);
+        cout << "After erasing 3 characters from index 2: " << s1 << endl; // abfgh
+
+        // 删除超出范围的字符，应该处理得当
+        s1.erase(3, 10);
+        cout << "After trying to erase more characters than available: " << s1 << endl; // abf
+    }
+
+    // 测试用例8：测试字符串查找
+    void test_string8() {
+        string s1("hello world");
+
+        // 查找字符
+        size_t pos1 = s1.find('o');
+        cout << "First occurrence of 'o': " << pos1 << endl; // 4
+
+        // 查找不存在的字符
+        size_t pos2 = s1.find('z');
+        if (pos2 == string::npos)
+            cout << "'z' not found" << endl; // 'z' not found
+
+        // 查找子字符串
+        size_t pos3 = s1.find("world");
+        cout << "Position of 'world': " << pos3 << endl; // 6
+
+        // 从指定位置开始查找
+        size_t pos4 = s1.find('o', 5);
+        cout << "First occurrence of 'o' after index 5: " << pos4 << endl; // 7
+    }
+
+    // 测试用例9：测试+= 运算符
+    void test_string9() {
+        string s1("abc");
+
+        // 添加单个字符
+        s1 += 'd';
+        cout << "After adding 'd': " << s1 << endl; // abcd
+
+        // 添加字符串
+        s1 += "efg";
+        cout << "After adding 'efg': " << s1 << endl; // abcdefg
+    }
+
+    // 测试用例10：测试扩容与 push_back
+    void test_string10() {
+        string s1;
+
+        // 添加字符，测试自动扩容
+        for (char ch = 'a'; ch <= 'z'; ++ch) {
+            s1.push_back(ch);
+            cout << "String: " << s1 << ", Size: " << s1.size() << ", Capacity: " << s1.capacity() << endl;
+        }
     }
 }
 
