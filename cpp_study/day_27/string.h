@@ -225,10 +225,19 @@ namespace simulation {
 
     // 输入运算符重载
     istream &operator>>(istream &in, string &s) {
-        s.resize(0);
-        char buffer[1024];
-        in >> buffer;
-        s.append(buffer);
+        // s.resize(0);
+        // char buffer[1024];
+        // in >> buffer;
+        // s.append(buffer);
+        // return in;
+        while(1) {
+            char ch;
+            ch = in.get();
+            if(ch == ' ' || ch == '\n') {
+                break;
+            }
+            s += ch;
+        }
         return in;
     }
 
