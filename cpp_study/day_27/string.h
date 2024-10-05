@@ -195,7 +195,7 @@ namespace simulation {
             return npos;
         }
 
-        size_t find(const char *str, size_t pos) {
+        size_t find(const char *str, size_t pos = 0) {
             char *p = strstr(_str, str);
             if (p == nullptr) return npos;
             else return p - _str;
@@ -239,6 +239,20 @@ namespace simulation {
     ostream &operator<<(ostream &out, const string &s) {
         for (size_t i = 0; i < s.size(); ++i) out << s[i];
         return out;
+    }
+
+    istream &operator>>(istream &in, string &s) {
+        while (1) {
+            char ch;
+            // in >> ch;
+            ch = in.get();
+            if (ch == '  ' || ch == '\n') {
+                break;
+            } else {
+                s += ch;
+            }
+        }
+        return in;
     }
 
     // 测试用例1：测试字符串的修改和访问
@@ -371,7 +385,7 @@ namespace simulation {
 
         // 查找不存在的字符
         size_t pos2 = s1.find('z');
-        if (pos2 == string::npos)
+        if (pos2 == -1)
             cout << "'z' not found" << endl; // 'z' not found
 
         // 查找子字符串
