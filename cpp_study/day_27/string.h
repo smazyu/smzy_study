@@ -436,17 +436,21 @@ namespace string_copy {
         }
 
         //s1 = s2
-        string &operator=(string &s) {
-            //比较 当前和 传入的地址 这样就可以判断
-            if (this != &s) {
-                // char *tmp = new char[strlen(s._str) + 1];
-                // strcpy(tmp, _str);
-                // delete[] _str;
-                // _str = tmp;
-                string tmp(s._str);
-                //tmp是一个临时对象，出作用域调用析构函数
-                swap(_str, tmp._str);
-            }
+        // string &operator=(string &s) {
+        //     //比较 当前和 传入的地址 这样就可以判断
+        //     if (this != &s) {
+        //         // char *tmp = new char[strlen(s._str) + 1];
+        //         // strcpy(tmp, _str);
+        //         // delete[] _str;
+        //         // _str = tmp;
+        //         string tmp(s._str);
+        //         //tmp是一个临时对象，出作用域调用析构函数
+        //         swap(_str, tmp._str);
+        //     }
+        //     return *this;
+        // }
+        string &operator=(string s) {
+            swap(_str,s._str);
             return *this;
         }
 
