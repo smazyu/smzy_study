@@ -212,7 +212,6 @@ namespace simulation {
         char *_str; // 字符串指针
         size_t _size; // 字符串长度
         size_t _capacity; // 字符串容量
-        static size_t npos;
     };
 
     size_t string::npos = -1;
