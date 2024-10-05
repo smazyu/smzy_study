@@ -152,6 +152,30 @@ cpp_study/day_27/text.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/cpp_study/day_27/text.cpp.s
 .PHONY : cpp_study/day_27/text.cpp.s
 
+cpp_study/day_28_vector/test.obj: cpp_study/day_28_vector/test.cpp.obj
+.PHONY : cpp_study/day_28_vector/test.obj
+
+# target to build an object file
+cpp_study/day_28_vector/test.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/cpp_study/day_28_vector/test.cpp.obj
+.PHONY : cpp_study/day_28_vector/test.cpp.obj
+
+cpp_study/day_28_vector/test.i: cpp_study/day_28_vector/test.cpp.i
+.PHONY : cpp_study/day_28_vector/test.i
+
+# target to preprocess a source file
+cpp_study/day_28_vector/test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/cpp_study/day_28_vector/test.cpp.i
+.PHONY : cpp_study/day_28_vector/test.cpp.i
+
+cpp_study/day_28_vector/test.s: cpp_study/day_28_vector/test.cpp.s
+.PHONY : cpp_study/day_28_vector/test.s
+
+# target to generate assembly for a file
+cpp_study/day_28_vector/test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/cpp_study/day_28_vector/test.cpp.s
+.PHONY : cpp_study/day_28_vector/test.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -164,6 +188,9 @@ help:
 	@echo ... cpp_study/day_27/text.obj
 	@echo ... cpp_study/day_27/text.i
 	@echo ... cpp_study/day_27/text.s
+	@echo ... cpp_study/day_28_vector/test.obj
+	@echo ... cpp_study/day_28_vector/test.i
+	@echo ... cpp_study/day_28_vector/test.s
 .PHONY : help
 
 

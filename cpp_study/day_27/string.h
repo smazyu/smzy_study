@@ -14,11 +14,14 @@ namespace simulation {
             _str = new char[_capacity + 1];
             strcpy_s(_str, _capacity + 1, str);
         }
-
-        string(const string &s) : _str(new char[strlen(s._str) + 1]) {
-            strcpy_s(_str, strlen(s._str) + 1, s._str);
-            _size = s._size;
-            _capacity = s._capacity;
+        void swap(string&s) {
+            ::swap(_str,s._str);
+            ::swap(_size,s._size);
+            ::swap(_capacity,s._capacity);
+        }
+        string(const string &s) : _str(nullptr),_size(0),_capacity(0) {
+            string tmp(s._str);
+            this -> swap(tmp);
         }
 
         ~string() {
@@ -27,14 +30,9 @@ namespace simulation {
             _size = _capacity = 0;
         }
 
-        string &operator=(const string &s) {
+        string &operator=(string s) {
             if (this != &s) {
-                char *tmp = new char[strlen(s._str) + 1];
-                strcpy_s(tmp, strlen(s._str) + 1, s._str);
-                delete[] _str;
-                _str = tmp;
-                _size = s._size;
-                _capacity = s._capacity;
+                this -> swap(s);
             }
             return *this;
         }
@@ -115,7 +113,8 @@ namespace simulation {
                 reserve(newcapacity);
             }
             int end = _size;
-            while (end >= static_cast<int>(pos)) {
+            //有符号与无符号进行比较时 往数据大的转 有符号无符号都是占用4个字节 无符号的数更大
+            while (end >= (int)pos) {
                 _str[end + 1] = _str[end];
                 --end;
             }
@@ -131,7 +130,7 @@ namespace simulation {
             if (_size + len > _capacity) {
                 reserve(_size + len);
             }
-            for (int i = _size - 1; i >= static_cast<int>(pos); --i) {
+            for (int i = _size - 1; i >= (int)pos; --i) {
                 _str[i + len] = _str[i];
             }
             for (size_t i = 0; i < len; ++i) {
