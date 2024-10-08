@@ -6,6 +6,23 @@
         网页整体布局分区
     </title>
     <style>
+         ul {
+            list-style: none;
+        }
+        li {
+            float: left;
+            font-size: 20px;
+            font-family: "隶书";
+        }
+        a {
+            display: block;/*设置块级元素*/
+            width: 80px;
+            text-decoration: none; /* 去掉下划线 */
+            text-align: center; /* 居中对齐 */
+            color : red;
+            background-color: #546fff;
+            margin-left: 10px;
+        }
         #aa {
             width: 100%;
             height: 100px;
@@ -43,16 +60,16 @@
     <div>
         <!-- 导航-->
         <div id="aa">
-            <ul>
-                <li><a
-                        href="https://www.360kuai.com/pc/detail?url=http%3A%2F%2Fzm.news.so.com%2F3353f2a05dff438b6b75208828641282&check=6c1d3b99e046caeb&refer_scene=so_92&tj_url=&ucheck=94d08cc5e9625202fb5f536b65daee0a&sign=360_da20e874&uid=142322668.1228148506911931100.1727141462139.2693&scene=">头条</a>
-                </li>
-                <li><a href="https://www.baidu.com/s?ie=UTF-8&wd=%E5%A4%A9%E6%B0%94">天气</a></li>
-                <li><a href="#">体育</a></li>
-                <li><a href="#">美食</a></li>
-                <li><a href="#">汽车</a></li>
-                <li><a href="#">生活</a></li>
-            </ul>
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="https://www.360kuai.com/pc/detail?url=http%3A%2F%2Fzm.news.so.com%2F3353f2a05dff438b6b75208828641282&check=6c1d3b99e046caeb&refer_scene=so_92&tj_url=&ucheck=94d08cc5e9625202fb5f536b65daee0a&sign=360_da20e874&uid=142322668.1228148506911931100.1727141462139.2693&scene=" title="最新头条">头条</a></li>
+                    <li><a href="https://www.baidu.com/s?ie=UTF-8&wd=%E5%A4%A9%E6%B0%94" title="查看天气">天气</a></li>
+                    <li><a href="#" title="查看体育资讯">体育</a></li>
+                    <li><a href="#" title="美食推荐">美食</a></li>
+                    <li><a href="#" title="最新汽车资讯">汽车</a></li>
+                    <li><a href="#" title="生活常识">生活</a></li>
+                </ul>
+            </nav>
         </div>
         <!-- 中间 -->
         <div id="bb">中间一</div>
