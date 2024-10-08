@@ -9,6 +9,7 @@
  */
 #include <iostream>
 #include <vector>
+#include <algorithm>
 using namespace std;
 //string更多的表示单项信息
 //allocator 内存池
@@ -149,7 +150,13 @@ void test_vector6() {
     }
     cout << endl;
     //要求删掉211
-    v.erase(v.begin() + 1);
+    // v.erase(v.begin() + 1);
+    vector<int>::iterator pos = find(v.begin(),v.end(),211);
+    sort(v.begin(),v.end());
+    if (pos != v.end()) {
+        v.erase(pos);
+    }
+
     for(auto e: v) {
         cout << e << " ";
     }
