@@ -103,8 +103,9 @@ void test_vector3() {
     }
     cout << endl;
 }
+
 void test_vector4() {
-    vector <int> v;
+    vector<int> v;
     v.push_back(1);
     v.push_back(2);
     v.push_back(12);
@@ -112,8 +113,8 @@ void test_vector4() {
     v.push_back(8);
     v.push_back(6);
 
-    cout <<v.size()<<" ";
-    cout <<v.capacity() << endl;
+    cout << v.size() << " ";
+    cout << v.capacity() << endl;
 
     //增容次数越多效率越低 因为每次增容都会有代价
 
@@ -122,8 +123,35 @@ void test_vector4() {
 
     //vector有一定程度的缺陷 缺陷是增容是会付出代价的
 }
+
+void test_vector5() {
+    vector<int> v;
+    v.push_back(1);
+    v.push_back(2);
+    v.push_back(3);
+    v.push_back(4);
+    v.push_back(5);
+    v.push_back(6);
+    //vector[]使用断言来防止错误
+}
+void test_vector6() {
+    vector<int> v;
+    v.push_back(1);
+    v.push_back(2);
+    v.push_back(3);
+    v.push_back(4);
+    v.push_back(5);
+    v.push_back(6);
+    v.insert(v.begin(),0);
+    for(auto e: v) {
+        cout << e << " ";
+    }
+    cout << endl;
+}
 int main() {
     // text_vector1();
     // test_vector();
-    test_vector4();
+    // test_vector4();
+    test_vector6();
 }
+
