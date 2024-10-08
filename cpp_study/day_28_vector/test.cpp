@@ -136,17 +136,23 @@ void test_vector5() {
 }
 void test_vector6() {
     vector<int> v;
-    v.push_back(1);
-    v.push_back(2);
-    v.push_back(3);
-    v.push_back(4);
-    v.push_back(5);
-    v.push_back(6);
-    v.insert(v.begin(),0);
+    v.push_back(10);
+    v.push_back(211);
+    v.push_back(31);
+    v.push_back(42);
+    v.push_back(501);
+    v.push_back(61);
+    // v.insert(v.begin(),0);
+    // v.insert(v.begin(),-1);
     for(auto e: v) {
         cout << e << " ";
     }
     cout << endl;
+    //要求删掉211
+    v.erase(v.begin() + 1);
+    for(auto e: v) {
+        cout << e << " ";
+    }
 }
 int main() {
     // text_vector1();
