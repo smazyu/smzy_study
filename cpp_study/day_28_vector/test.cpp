@@ -103,9 +103,27 @@ void test_vector3() {
     }
     cout << endl;
 }
+void test_vector4() {
+    vector <int> v;
+    v.push_back(1);
+    v.push_back(2);
+    v.push_back(12);
+    v.push_back(2);
+    v.push_back(8);
+    v.push_back(6);
 
+    cout <<v.size()<<" ";
+    cout <<v.capacity() << endl;
+
+    //增容次数越多效率越低 因为每次增容都会有代价
+
+    //为什么是二倍，为什么是1.5倍
+    //增多增少是一种选择 windows和linux平台不同 增多少是一种选择
+
+    //vector有一定程度的缺陷 缺陷是增容是会付出代价的
+}
 int main() {
     // text_vector1();
     // test_vector();
-    test_vector3();
+    test_vector4();
 }
