@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        网页整体布局分区
+    </title>
+    <style>
+        #aa {
+            width: 100%;
+            height: 100px;
+            /* background-color: blue; */
+        }
+
+        #bb {
+            width: 85%;
+            height: 300px;
+            background-color: cornflowerblue;
+            margin: 0 auto;
+            /*居中 0 挨着上一个元素 左右居中*/
+        }
+
+        #cc {
+            width: 85%;
+            height: 100px;
+            background-color: rgb(12, 38, 86);
+            margin: 0 auto;
+            /*居中 0 挨着上一个元素 左右居中*/
+        }
+
+        #footer {
+            width: 85%;
+            height: 300px;
+            background-color: rgb(216, 122, 50);
+            /* margin:0 auto;居中 0 挨着上一个元素 左右居中 */
+            padding-top: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <!-- 导航-->
+        <div id="aa">
+            <ul>
+                <li><a
+                        href="https://www.360kuai.com/pc/detail?url=http%3A%2F%2Fzm.news.so.com%2F3353f2a05dff438b6b75208828641282&check=6c1d3b99e046caeb&refer_scene=so_92&tj_url=&ucheck=94d08cc5e9625202fb5f536b65daee0a&sign=360_da20e874&uid=142322668.1228148506911931100.1727141462139.2693&scene=">头条</a>
+                </li>
+                <li><a href="https://www.baidu.com/s?ie=UTF-8&wd=%E5%A4%A9%E6%B0%94">天气</a></li>
+                <li><a href="#">体育</a></li>
+                <li><a href="#">美食</a></li>
+                <li><a href="#">汽车</a></li>
+                <li><a href="#">生活</a></li>
+            </ul>
+        </div>
+        <!-- 中间 -->
+        <div id="bb">中间一</div>
+        <!-- 中间二 -->
+        <div id="cc">中间二</div>
+        <!-- 页脚 -->
+        <div id="footer">
+            <p>习近平总书记感慨：“中华文明五千年</p>
+            <p>版权日期，备案编号</p>
+        </div>
+    </div>
+</body>
+
+</html>
