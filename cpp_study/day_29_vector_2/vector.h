@@ -20,14 +20,14 @@ namespace vector_study {
 
         void reserve(size_t n) {
             if (n > capacity()) {
-                size_t size = this -> size();
+                size_t sz = size();
                 T *tmp = new T[n]; // 新的内存
                 if (_start) {
-                    memcpy(tmp, _start, sizeof(T) * size); // 复制已有元素
+                    memcpy(tmp, _start, sizeof(T) * sz); // 复制已有元素
                     delete[] _start; // 释放旧内存
                 }
                 _start = tmp;
-                _finish = _start + size;
+                _finish = _start + sz;
                 _endofstorage = _start + n; // 更新 _endofstorage
             }
         }
