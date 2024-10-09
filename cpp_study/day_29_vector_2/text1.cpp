@@ -36,6 +36,29 @@ void test_vector() {
     cout << endl;
 }
 
+void test_vector2() {
+    vector<int> v;
+    v.push_back(1);
+    v.push_back(12);
+    v.push_back(32);
+    v.push_back(4);
+    v.push_back(8);
+    v.push_back(6);
+    v.push_back(7);
+
+    vector<int>::iterator it = v.begin();
+    while (it != v.end()) {
+        if (*it % 2 == 0) {
+            v.erase(it);//删除it之后，it的位置就失效了，再++ 就不行 因为已经被删除了
+        }
+        ++it;
+    }
+    for (auto e: v) {
+        cout << e << " ";
+    }
+    cout << endl;
+}
+
 int main() {
-    test_vector();
+    test_vector2();
 }
