@@ -4,6 +4,6 @@
 #include "vector.h"
 
 int main() {
-    vector_study::test_vector1();
+    vector_study::vector_test2();
     return 0;
 }
