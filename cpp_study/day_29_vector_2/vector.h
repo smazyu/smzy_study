@@ -41,14 +41,26 @@ namespace vector_study {
                 _endofstorage = _start + n; // 更新 _endofstorage
             }
         }
-
-        void push_back(const T& x) {
+        void insert(iterator pos,T& x) {
             if (_finish == _endofstorage) {
+                size_t n = pos - _start;
                 size_t newcapacity = capacity() == 0 ? 2 : capacity() * 2;
                 reserve(newcapacity);
+                //扩容之后产生了一段新的内存空间
+                //会出现迭代器失效
+                pos = _start + n;
             }
-            *_finish = x;
+            iterator end = _finish - 1;
+            //pos是指向原本内存空间的指针
+            while(end >= pos) {
+                *(end + 1) = *end;
+                end--;
+            }
+            *pos = x;
             ++_finish;
+        }
+        void push_back(const T& x) {
+            insert(_finish,x);
         }
 
         size_t size() {
