@@ -8,7 +8,12 @@ public:
 
     vector(): _start(nullptr), _finish(nullptr), _endofstorage() {
     };
-
+    iterator begin() {
+        return _start;
+    }
+    iterator end() {
+        return _finish;
+    }
     void reserve(size_t n) {
         T *tmp = new T[n];
         if (n > capacity()) {
