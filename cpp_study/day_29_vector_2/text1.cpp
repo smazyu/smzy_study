@@ -49,14 +49,18 @@ void test_vector2() {
     vector<int>::iterator it = v.begin();
     while (it != v.end()) {
         if (*it % 2 == 0) {
-            v.erase(it);//删除it之后，it的位置就失效了，再++ 就不行 因为已经被删除了
+            it = v.erase(it);//删除it之后，it的位置就失效了，再++ 就不行 因为已经被删除了
+            //it会返回删除的it的下一个位置的迭代器
+        }else {
+            ++it;
         }
-        ++it;
     }
     for (auto e: v) {
         cout << e << " ";
     }
     cout << endl;
+
+    //不管在哪个平台 erase(it)之后就已经失效了 只是导致的结果不一样而已
 }
 
 int main() {
