@@ -21,8 +21,8 @@
 
  # 定义可执行目标
  add_executable(smzy ${SOURCES}
-         cpp_study/day_29_vector_2/vector.h
-         cpp_study/day_29_vector_2/test.cpp)
+         cpp_study/day_30_vector_3/test.cpp
+         cpp_study/day_30_vector_3/vector.h)
 
  # 为目标设置包含目录
  target_include_directories(smzy PRIVATE ${PROJECT_SOURCE_DIR}/include)
