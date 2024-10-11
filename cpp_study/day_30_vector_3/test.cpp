@@ -3,5 +3,6 @@
 //
 #include "vector.h"
 int main() {
-    vector_study::vector_test2();
+    // vector_study::vector_test2();
+    vector_study::test_resize();
 }
