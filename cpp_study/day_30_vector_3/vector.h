@@ -9,8 +9,8 @@ namespace vector_study {
     template<class T>
     class vector {
     public:
-        typedef T* iterator;
-        typedef const T* const_iterator;
+        typedef T *iterator;
+        typedef const T *const_iterator;
 
         vector() : _start(nullptr), _finish(nullptr), _endofstorage(nullptr) {
         }
@@ -39,7 +39,7 @@ namespace vector_study {
         void reserve(size_t n) {
             if (n > capacity()) {
                 size_t sz = size();
-                T* tmp = new T[n]; // 新的内存
+                T *tmp = new T[n]; // 新的内存
                 if (_start) {
                     std::copy(_start, _finish, tmp); // 使用 std::copy 复制已有元素
                     delete[] _start; // 释放旧内存
@@ -50,7 +50,7 @@ namespace vector_study {
             }
         }
 
-        void insert(iterator pos, const T& x) {
+        void insert(iterator pos, const T &x) {
             if (_finish == _endofstorage) {
                 size_t n = pos - _start;
                 size_t newcapacity = capacity() == 0 ? 2 : capacity() * 2;
@@ -66,7 +66,7 @@ namespace vector_study {
             ++_finish;
         }
 
-        void push_back(const T& x) {
+        void push_back(const T &x) {
             insert(_finish, x);
         }
 
@@ -78,7 +78,7 @@ namespace vector_study {
             return _endofstorage ? (_endofstorage - _start) : 0; //防御性编程，使代码更加健壮
         }
 
-        T& operator[](size_t i) {
+        T &operator[](size_t i) {
             assert(i < size());
             return _start[i]; // _start[i] 是 *(_start + i) 的简写
         }
@@ -91,7 +91,8 @@ namespace vector_study {
         iterator erase(iterator pos) {
             assert(pos < _finish);
             iterator it = pos;
-            while (it < _finish - 1) { // 移动元素，直到倒数第二个元素
+            while (it < _finish - 1) {
+                // 移动元素，直到倒数第二个元素
                 *it = *(it + 1);
                 ++it;
             }
@@ -99,7 +100,7 @@ namespace vector_study {
             return pos;
         }
 
-        void resize(size_t n, const T& val = T()) {
+        void resize(size_t n, const T &val = T()) {
             if (n < size()) {
                 _finish = _start + n;
             } else {
@@ -119,7 +120,7 @@ namespace vector_study {
         iterator _endofstorage; // 容器的总容量
     };
 
-    void print_vector(const vector<int>& v) {
+    void print_vector(const vector<int> &v) {
         vector<int>::const_iterator it = v.begin();
         while (it != v.end()) {
             cout << *it << " ";
@@ -254,7 +255,27 @@ namespace vector_study {
         cout << "After pushing back 42: ";
         print_vector(v); // 应该输出: 42
     }
+
+    void test_vector() {
+        vector<int> v1;
+        v1.push_back(1);
+        v1.push_back(2);
+        v1.push_back(3);
+        v1.push_back(4);
+
+        vector<int> v2(v1);
+        for (size_t i = 0; i < v1.size(); ++i) {
+            cout << v1[i] << " ";
+        }
+        cout << endl;
+
+        for (size_t i = 0; i < v2.size(); ++i) {
+            cout << v2[i] << " ";
+        }
+        cout << endl;
+    }
 }
+
 //memset 是按字节处理
 //mem系列全部都是按字节处理
 
