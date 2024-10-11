@@ -17,6 +17,7 @@ namespace vector_study {
 
         ~vector() {
             delete[] _start; // 添加析构函数以释放内存
+            _start = _finish = _endofstorage = nullptr;
         }
 
         iterator begin() {
@@ -255,3 +256,10 @@ namespace vector_study {
     }
 }
 //memset 是按字节处理
+//mem系列全部都是按字节处理
+
+//int j = int()
+//int i = int()
+//double d = double();
+//double e = double(1.1);
+//可以认为内置函数也有构造函数 int()就是 0 严格来说内置类型是没有构造函数的 但为了更好的支持模板 于是就产生了
