@@ -44,7 +44,7 @@ namespace vector_study {
             }
         }
 
-        void insert(iterator pos, const int &x) {
+        void insert(iterator pos, const T &x) {
             if (_finish == _endofstorage) {
                 size_t n = pos - _start;
                 size_t newcapacity = capacity() == 0 ? 2 : capacity() * 2;
@@ -65,7 +65,7 @@ namespace vector_study {
             ++_finish;
         }
 
-        void push_back(const int &x) {
+        void push_back(const T &x) {
             insert(_finish, x);
         }
 
@@ -90,12 +90,25 @@ namespace vector_study {
         iterator erase(iterator pos) {
             assert(pos < _finish);
             iterator it = pos;
-            while(it < _finish) {
+            while (it < _finish) {
                 *(it) = *(it + 1);
-                it ++;
+                it++;
             }
             --_finish;
             return pos;
+        }
+
+        iterator resize(size_t n, const T &val = T()) {
+            if (n < *(_finish)) {
+                _finish = _start + n;
+            } else {
+                if (_endofstorage > (_finish + n)) {
+                    while (_finish + n > _finish) {
+                        
+                    }
+
+                }
+            }
         }
 
     private:
