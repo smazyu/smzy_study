@@ -29,6 +29,8 @@ namespace vector_study {
         //     }
         // }
         vector<T> &operator =(vector<T> v) {
+
+            //通过这个每次交换都会进行一次深拷贝，代价极大
             swap(_start, v._start);
             swap(_finish, v._finish);
             swap(_endofstorage, v._endofstorage);
@@ -74,6 +76,9 @@ namespace vector_study {
                 size_t sz = size();
                 T *tmp = new T[n]; // 新的内存
                 if (_start) {
+                    //使用memcpy就会出现问题，因为memcpy是一个浅拷贝
+
+                    //for(size_t i = 0;i < sz;++i){tmp[i] = _start[i]}调用的是 operator = 是深拷贝
                     std::copy(_start, _finish, tmp); // 使用 std::copy 复制已有元素
                     delete[] _start; // 释放旧内存
                 }
@@ -312,6 +317,18 @@ namespace vector_study {
         }
         cout << endl;
     }
+
+    void test_vector5() {
+        vector<string> v;
+        v.push_back("111111111111111111111111111111");
+        v.push_back("222211111111111111111111111111111");
+        v.push_back("333311111111111111111111111111");
+        v.push_back("444441111111111111111111111111");
+        for(auto e:v) {
+            cout << e << " ";
+        }
+        cout <<endl;
+    }
 }
 
 //memset 是按字节处理
@@ -322,3 +339,5 @@ namespace vector_study {
 //double d = double();
 //double e = double(1.1);
 //可以认为内置函数也有构造函数 int()就是 0 严格来说内置类型是没有构造函数的 但为了更好的支持模板 于是就产生了
+
+//memcpy是一个浅拷贝 memcpy 只是按字节将数据从源地址复制到目标地址
