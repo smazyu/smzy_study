@@ -254,3 +254,4 @@ namespace vector_study {
         print_vector(v); // 应该输出: 42
     }
 }
+//memset 是按字节处理
