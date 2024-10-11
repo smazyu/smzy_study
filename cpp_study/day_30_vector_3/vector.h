@@ -104,7 +104,7 @@ namespace vector_study {
             } else {
                 if (_endofstorage > (_finish + n)) {
                     while (_finish + n > _finish) {
-                        
+
                     }
 
                 }
