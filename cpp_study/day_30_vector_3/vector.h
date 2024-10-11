@@ -19,7 +19,14 @@ namespace vector_study {
             delete[] _start; // 添加析构函数以释放内存
             _start = _finish = _endofstorage = nullptr;
         }
-
+        //v1 = v3
+        vector<T>& operator= (const vector<T> &v) {
+            if( this != &v) {
+                delete[]_start;
+                _start = new T[v.capacity()];
+                memcpy(_start,v._start,sizeof(T)*v.size());
+            }
+        }
         //v2(v1)
         /* vector(const vector<T> &v) {
              _start = new T[v.capacity()];
