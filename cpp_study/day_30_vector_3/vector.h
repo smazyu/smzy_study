@@ -20,6 +20,24 @@ namespace vector_study {
             _start = _finish = _endofstorage = nullptr;
         }
 
+        //v2(v1)
+        /* vector(const vector<T> &v) {
+             _start = new T[v.capacity()];
+             _finish = _start;
+             _endofstorage = _start + v.capacity();
+             for(size_t i = 0;i < v.size();i++) {
+                 *_finish = v[i];
+                 ++_finish;
+             }
+         }
+         */
+        vector(const vector<T> &v): _finish(nullptr), _start(nullptr), _endofstorage(nullptr) {
+            reserve(v.capacity());
+            for (const auto e: v) {
+                this->push_back(e);
+            }
+        }
+
         iterator begin() {
             return _start;
         }
@@ -79,6 +97,11 @@ namespace vector_study {
         }
 
         T &operator[](size_t i) {
+            assert(i < size());
+            return _start[i]; // _start[i] 是 *(_start + i) 的简写
+        }
+
+        const T &operator[](size_t i) const {
             assert(i < size());
             return _start[i]; // _start[i] 是 *(_start + i) 的简写
         }
