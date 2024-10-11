@@ -8,14 +8,16 @@ namespace vector_study {
     template<class T>
     class vector {
     public:
-        typedef T* iterator;
-        typedef const T* const_iterator;
+        typedef T *iterator;
+        typedef const T *const_iterator;
 
-        vector() : _start(nullptr), _finish(nullptr), _endofstorage(nullptr) {}
+        vector() : _start(nullptr), _finish(nullptr), _endofstorage(nullptr) {
+        }
 
         iterator begin() {
             return _start;
         }
+
         const_iterator begin() const {
             return _start;
         }
@@ -31,7 +33,7 @@ namespace vector_study {
         void reserve(size_t n) {
             if (n > capacity()) {
                 size_t sz = size();
-                T* tmp = new T[n]; // 新的内存
+                T *tmp = new T[n]; // 新的内存
                 if (_start) {
                     memcpy(tmp, _start, sizeof(T) * sz); // 复制已有元素
                     delete[] _start; // 释放旧内存
@@ -41,26 +43,30 @@ namespace vector_study {
                 _endofstorage = _start + n; // 更新 _endofstorage
             }
         }
-        void insert(iterator pos,T& x) {
+
+        void insert(iterator pos, const int &x) {
             if (_finish == _endofstorage) {
                 size_t n = pos - _start;
                 size_t newcapacity = capacity() == 0 ? 2 : capacity() * 2;
                 reserve(newcapacity);
                 //扩容之后产生了一段新的内存空间
                 //会出现迭代器失效
+
+                //增容原来的pos就失效了，需要重新计算位置
                 pos = _start + n;
             }
             iterator end = _finish - 1;
             //pos是指向原本内存空间的指针
-            while(end >= pos) {
+            while (end >= pos) {
                 *(end + 1) = *end;
                 end--;
             }
             *pos = x;
             ++_finish;
         }
-        void push_back(const T& x) {
-            insert(_finish,x);
+
+        void push_back(const int &x) {
+            insert(_finish, x);
         }
 
         size_t size() {
@@ -68,10 +74,10 @@ namespace vector_study {
         }
 
         size_t capacity() {
-            return _endofstorage ? (_endofstorage - _start) : 0;//防御性编程，使代码更加健壮
+            return _endofstorage ? (_endofstorage - _start) : 0; //防御性编程，使代码更加健壮
         }
 
-        T& operator[](size_t i) {
+        T &operator[](size_t i) {
             assert(i < size());
             return _start[i]; // _start[i] 是 *(_start + i) 的简写
         }
@@ -81,16 +87,28 @@ namespace vector_study {
             --_finish;
         }
 
+        iterator erase(iterator pos) {
+            assert(pos < _finish);
+            iterator it = pos;
+            while(it < _finish) {
+                *(it) = *(it + 1);
+                it ++;
+            }
+            --_finish;
+            return pos;
+        }
+
     private:
         iterator _start;
         iterator _finish;
         iterator _endofstorage; // 容器的总容量
     };
+
     void print_vector(const vector<int> &v) {
         vector<int>::const_iterator it = v.begin();
-        while(it != v.end()) {
+        while (it != v.end()) {
             cout << *it << " ";
-            it ++;
+            it++;
         }
         cout << endl;
     }
@@ -114,8 +132,7 @@ namespace vector_study {
         std::cout << std::endl;
 
         // 测试范围循环
-        for (auto &e : v) {
-
+        for (auto &e: v) {
             e -= 1;
             std::cout << e << " ";
         }
@@ -145,6 +162,7 @@ namespace vector_study {
         }
         std::cout << std::endl;
     }
+
     void vector_test2() {
         vector<int> v;
         v.push_back(1);
@@ -153,6 +171,8 @@ namespace vector_study {
         v.push_back(4);
         v.push_back(5);
         v.push_back(6);
+        // print_vector(v);
+        v.insert(v.begin(), 0);
         print_vector(v);
     }
 }
