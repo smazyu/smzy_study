@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "c:/Users/admin/Desktop/smzy_study/cmake-build-debug"
+			"value" : "c:/Users/20212/Desktop/smzy_study/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -559,7 +559,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/admin/Desktop/smzy_study/cmake-build-debug/CMakeFiles/pkgRedirects"
+			"value" : "C:/Users/20212/Desktop/smzy_study/cmake-build-debug/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -631,7 +631,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/Users/admin/Desktop/smzy_study"
+			"value" : "C:/Users/20212/Desktop/smzy_study"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -675,7 +675,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "D:/PROGRA~2/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe"
+			"value" : "D:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/mingw32-make.exe"
 		},
 		{
 			"name" : "CMAKE_MODULE_LINKER_FLAGS",
@@ -1279,7 +1279,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/admin/Desktop/smzy_study/cmake-build-debug"
+			"value" : "C:/Users/20212/Desktop/smzy_study/cmake-build-debug"
 		},
 		{
 			"name" : "smzy_study_IS_TOP_LEVEL",
@@ -1303,7 +1303,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/admin/Desktop/smzy_study"
+			"value" : "C:/Users/20212/Desktop/smzy_study"
 		}
 	],
 	"kind" : "cache",

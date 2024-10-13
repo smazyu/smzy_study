@@ -20,6 +20,8 @@
 //1.不支持随机访问
 //所以实际使用中 vector和llist是相辅相成的两个容器
 
+
+//list是应该顺序容器，允许在任意地方 插入 本质是一个双向链表
 #include <list>
 #include <iostream>
 using namespace std;
