@@ -3,6 +3,7 @@
 //
 #include <list>
 #include <algorithm>
+#include <vector>
 using namespace std;
 
 void print_list(const list<int>& l)
@@ -89,9 +90,25 @@ void test_list3()
     list<int>::iterator pos = find(lit1.begin(), lit1.end(), 3);
     if(pos != lit1.end())
     {
-        lit1.insert(pos,30);
+        lit1.insert(pos,30);//这里insert之后迭代器失效了吗
     }
     print_list(lit1);
+}
+
+void test_vector()
+{
+    vector<int> v;
+    v.push_back(1);
+    v.push_back(2);
+    v.push_back(3);
+    v.push_back(4);
+    v.push_back(5);
+    v.push_back(6);
+    vector<int>::iterator pos = find(v.begin(), v.end(), 3);
+    if(pos != v.end())
+    {
+        v.insert(pos,30);//这里insert之后迭代器失效了吗
+    }
 }
 int main()
 {
