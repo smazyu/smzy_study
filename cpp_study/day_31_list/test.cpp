@@ -40,3 +40,5 @@ void test_list() {
     }
     cout << endl;
 }
+
+//list是一个运行在y任意位置插入删除
