@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* 导航栏样式 */
+        #aa {
+            background-color: rgb(180, 180, 215);
+            padding-top: 20px;
+            margin-top: 20px;
+            width: 980px; /* 设置宽度与图片一致 */
+            height: 20px; /* 设置高度与图片一致 */
+            margin: 0 auto;
+        }
+
+        /* 表格居中样式 */
+        table {
+            width: 80%;
+            margin: 0 auto;
+            z-index: 1; /* 确保表格在图片上方 */
+            position: absolute; /* 绝对定位 */
+            top: 60%; /* 根据需要调整位置 */
+            left: 50%; /* 水平居中 */
+            transform: translate(-50%, -50%); /* 垂直居中 */
+        }
+
+        body {
+            font-family: Arial;
+            background-color: #f4f4f4;
+            margin: 0 auto;
+            max-width: 1230px;
+            padding: 80px;
+            position: relative; /* 使绝对定位生效 */
+        }
+
+        td {
+            padding: 15px;
+            text-align: center;
+        }
+
+        /* 设置图片与表格的容器 */
+        #bb {
+            position: relative;
+            width: 980px; /* 设置宽度与图片一致 */
+            height: 442px; /* 设置高度与图片一致 */
+            margin: 40px auto;
+            text-align: center;
+        }
+
+        /* 设置背景图片样式 */
+        #bb img:first-child {
+            width: 100%;
+            height: auto;
+        }
+
+        /* 表格样式 */
+        table {
+            margin-top: 30px; /* 上间隔30px */
+            margin-bottom: 30px; /* 下间隔30px */
+            color: white;
+            font-size: 18px;
+        }
+
+        td img {
+            width: 100px;
+            height: 100px;
+        }
+
+        /* 页脚样式 */
+        #footer {
+            text-align: center;
+            padding-top: 5px;
+            margin-top: 10px;
+            width: 980px; /* 设置宽度与图片一致 */
+            /* height: 442px; 设置高度与图片一致 */
+            margin: 0 auto;
+            background-color: rgb(180, 180, 215);
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <!-- 导航-->
+        <div id="aa">
+            <nav id="main-nav">
+                <!-- 导航内容 -->
+            </nav>
+        </div>
+
+        <!-- 中间部分：图片和表格 -->
+        <div id="bb">
+            <img src="003.jpg" alt="背景图片">
+            <table>
+                <tr>
+                    <td>
+                        <img src="002.jpg">
+                    </td>
+                    <td>
+                        <img src="002.jpg">
+                    </td>
+                    <td>
+                        <img src="002.jpg">
+                    </td>
+                    <td>
+                        <img src="002.jpg">
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- 页脚 -->
+        <div id="footer">
+            <p>Copyright © 2024com, All rights reserved.</p>
+            <p>2024.10.08, 版权所有 23前端课堂作业</p>
+        </div>
+    </div>
+</body>
+</html>
