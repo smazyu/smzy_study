@@ -81,13 +81,13 @@ void test_list3()
     lit1.push_back(4);
     lit1.push_back(5);
     lit1.push_front(-1);
-    print_list(lit1);
-    lit1.pop_front();
-    lit1.pop_back();
+    // print_list(lit1);
+    // lit1.pop_front();
+    // lit1.pop_back();
     //lit1.insert(begin() + 3,30) 因为是链表 所以不支持
     //使用算法代替
     list<int>::iterator pos = find(lit1.begin(), lit1.end(), 3);
-    if(pos == lit1.end())
+    if(pos != lit1.end())
     {
         lit1.insert(pos,30);
     }
@@ -95,6 +95,6 @@ void test_list3()
 }
 int main()
 {
-    test_list2();
+    test_list3();
     // test_list();
 }
