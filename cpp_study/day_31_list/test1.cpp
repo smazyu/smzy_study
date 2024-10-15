@@ -114,8 +114,46 @@ void test_vector()
 //迭代器失效 增容问题
 
 //replace 把一个链表转移到另外一个链表
+
+void test_list4()
+{
+    list<int> lt;
+    lt.push_back(1);
+    lt.push_back(6);
+    lt.push_back(3);
+    lt.push_back(2);
+    // lt.sort();
+    lt.reverse();
+    print_list(lt);
+}
+
+void test_list5()
+{
+    list<int> lt;
+    lt.push_back(1);
+    lt.push_back(6);
+    lt.push_back(3);
+    lt.push_back(2);
+    lt.push_back(4);
+    lt.push_back(5);
+    lt.push_back(6);
+    list<int>::iterator it = lt.begin();
+    while(it != lt.end())
+    {
+        if(*it % 2 == 0)
+        {
+            it = lt.erase(it);//erase掉这里后，这里就已经失效了
+        }
+        else
+        {
+            ++it;
+        }
+        // ++it;
+    }
+    print_list(lt);
+}
 int main()
 {
-    test_list3();
+    test_list5();
     // test_list();
 }
