@@ -110,6 +110,10 @@ void test_vector()
         v.insert(pos,30);//这里insert之后迭代器失效了吗
     }
 }
+
+//迭代器失效 增容问题
+
+//replace 把一个链表转移到另外一个链表
 int main()
 {
     test_list3();
