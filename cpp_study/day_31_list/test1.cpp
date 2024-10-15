@@ -55,9 +55,38 @@ void test_list()
     }
     cout << endl;
 }
+
+void test_list2()
+{
+    list<int> lit1;
+    lit1.push_back(1);
+    lit1.push_back(2);
+    lit1.push_back(3);
+    lit1.push_back(4);
+    lit1.push_back(0);
+    lit1.push_front(-1);
+    print_list(lit1);
+    lit1.pop_front();
+    lit1.pop_back();
+}
 //迭代器从使用性质分为三种 ：单向forword_list 双向list 随机vector
 //从使用的场景分迭代器 ：正向迭代器 反向迭代器 + const迭代器
+
+void test_list3()
+{
+    list<int> lit1;
+    lit1.push_back(1);
+    lit1.push_back(2);
+    lit1.push_back(3);
+    lit1.push_back(4);
+    lit1.push_back(5);
+    lit1.push_front(-1);
+    print_list(lit1);
+    lit1.pop_front();
+    lit1.pop_back();
+}
 int main()
 {
-    test_list();
+    test_list2();
+    // test_list();
 }
