@@ -2,7 +2,7 @@
 // Created by 20212 on 24-10-15.
 //
 #include <list>
-
+#include <algorithm>
 using namespace std;
 
 void print_list(const list<int>& l)
@@ -84,6 +84,14 @@ void test_list3()
     print_list(lit1);
     lit1.pop_front();
     lit1.pop_back();
+    //lit1.insert(begin() + 3,30) 因为是链表 所以不支持
+    //使用算法代替
+    list<int>::iterator pos = find(lit1.begin(), lit1.end(), 3);
+    if(pos == lit1.end())
+    {
+        lit1.insert(pos,30);
+    }
+    print_list(lit1);
 }
 int main()
 {
