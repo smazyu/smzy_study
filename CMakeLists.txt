@@ -22,7 +22,6 @@
  # 定义可执行目标
  add_executable(smzy ${SOURCES}
 #         cpp_study/day_30_vector_3/test1.cpp
-         cpp_study/day_31_list/test1.cpp
          cpp_study/day_31_list/lish.h)
 
  # 为目标设置包含目录
