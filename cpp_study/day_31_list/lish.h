@@ -13,24 +13,31 @@ namespace study_list
         __list_node<T>* next;
         T _data;
     };
+
     template <class T>
     class list
     {
-        typedef __list_node<T> node;
-        public:
+        typedef __list_node<T> Node;
+
+    public:
         //带头双向循环链表
         list()
         {
-            _head = new node();
-            _head-> _next = _head;
-            _head-> _prev = _head;
+            _head = new Node();
+            _head->_next = _head;
+            _head->_prev = _head;
         }
 
 
         void push_back(const T& data)
         {
-            
+            Node* tail = _head->_prev;
+            Node* new_node = new Node();
+            tail->_next = _head;
         }
+
+    private:
+        Node* _head;
     };
 }
 
