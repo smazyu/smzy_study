@@ -25,6 +25,9 @@ namespace study_list
             _head-> _next = _head;
             _head-> _prev = _head;
         }
+
+
+        void push_back
     };
 }
 
