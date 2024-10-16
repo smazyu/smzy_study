@@ -33,9 +33,12 @@ namespace study_list
         {
             Node* tail = _head->_prev;
             Node* new_node = new Node();
-            tail->_next = _head;
+            tail->_next = new_node;
+            new_node->_prev = tail;
+            new_node->_next = _head;
+            _head->_prev = new_node;
         }
-
+        
     private:
         Node* _head;
     };
