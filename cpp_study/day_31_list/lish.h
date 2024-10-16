@@ -21,16 +21,34 @@ namespace study_list
         {
             Node* _node;
 
-            __list_iterator(Node* node) : _node(node) {}
+            __list_iterator(Node* node) : _node(node)
+            {
+            }
 
             T& operator*()
             {
                 return _node->_data;
             }
-
+            T* operator->()
+            {
+                return &(_node->_data);
+            }
             __list_iterator& operator++()
             {
                 _node = _node->next; // 修改为next
+                return *this;
+            }
+
+            __list_iterator operator++(int)//int参数的存在是为了区分前置和后置++
+            {
+                __list_iterator tmp = *this;
+                _node = _node->next; // 修改为next
+                return *this;
+            }
+
+            __list_iterator& operator--()
+            {
+                _node = _node->prev; // 修改为next
                 return *this;
             }
 
@@ -60,11 +78,11 @@ namespace study_list
         {
             Node* tail = _head->prev; // 修改为prev
             Node* new_node = new Node();
-            new_node->_data = data; // 初始化数据
-            tail->next = new_node; // 修改为next
-            new_node->prev = tail; // 修改为prev
-            new_node->next = _head; // 修改为next
-            _head->prev = new_node; // 修改为prev
+            new_node->_data = data ;
+            tail->next = new_node;
+            new_node->prev = tail;
+            new_node->next = _head;
+            _head->prev = new_node;
         }
 
         iterator begin() { return iterator(_head->next); } // 修改为next
@@ -72,17 +90,14 @@ namespace study_list
 
         void clear()
         {
-            Node* current = _head->next; // 修改为next
-            while (current != _head)
+            iterator it = begin();
+            while (it != end())
             {
-                Node* next_node = current->next; // 修改为next
-                delete current;
-                current = next_node;
+                erase(it++);
             }
-            _head->next = _head; // 修改为next
-            _head->prev = _head; // 修改为prev
         }
 
+        // void erase(iterator& it)
     private:
         Node* _head;
     };
@@ -97,10 +112,30 @@ namespace study_list
         lt.push_back(5);
         lt.push_back(6);
 
-        for (auto it = lt.begin(); it != lt.end(); ++it)
+        list<int>::iterator it = lt.begin();
+        while (it != lt.end())
         {
-            std::cout << *it << " "; // 使用迭代器遍历
-        }
+            std::cout << *it << " ";
+            ++it;
+        } //lt.end() = head
         std::cout << std::endl;
     }
+    struct Data
+    {
+        int _year = 0;
+        int _month = 1;
+        int _day = 1;
+    };
+    void test_list2()
+    {
+        list<Data> lt;
+        lt.push_back(Data());
+        lt.push_back(Data());
+    }
 }
+
+//把迭代器弄成自定义类型
+//然后符号重载 实现迭代器操作
+
+
+//思考const_iterator<T,T &,T*>  template<classT,class Ref,class Ptr>
