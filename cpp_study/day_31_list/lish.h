@@ -1,8 +1,3 @@
-//
-// Created by 20212 on 24-10-16.
-//
-//一个类型去封装节点的指针构成一个自定义类型
-//然后重载*,++等运算符,就可以达到我们的行为
 #pragma once
 namespace study_list
 {
@@ -20,7 +15,9 @@ namespace study_list
         typedef __list_node<T> Node;
 
     public:
-        //带头双向循环链表
+        typedef __list_iterator<T> iterator;
+
+        // 带头双向循环链表
         list()
         {
             _head = new Node();
@@ -28,23 +25,81 @@ namespace study_list
             _head->_prev = _head;
         }
 
+        ~list() // 添加析构函数
+        {
+            clear();
+            delete _head;
+        }
 
         void push_back(const T& data)
         {
             Node* tail = _head->_prev;
             Node* new_node = new Node();
+            new_node->_data = data; // 初始化数据
             tail->_next = new_node;
             new_node->_prev = tail;
             new_node->_next = _head;
             _head->_prev = new_node;
         }
-        
+
+        iterator begin() { return iterator(_head->_next); }
+        iterator end() { return iterator(_head); }
+
+        void clear() // 清空链表的实现
+        {
+            Node* current = _head->_next;
+            while (current != _head)
+            {
+                Node* next_node = current->_next;
+                delete current;
+                current = next_node;
+            }
+            _head->_next = _head;
+            _head->_prev = _head;
+        }
+
+        struct __list_iterator
+        {
+            typedef __list_node<T> Node;
+            Node* _node;
+
+            __list_iterator(Node* node) : _node(node) {}
+
+            T& operator*()
+            {
+                return _node->_data;
+            }
+
+            __list_iterator& operator++()
+            {
+                _node = _node->_next;
+                return *this;
+            }
+
+            bool operator!=(const __list_iterator& it) const
+            {
+                return _node != it._node;
+            }
+        };
+
     private:
         Node* _head;
     };
-}
 
-//迭代器失效总结
-//1.vector的迭代器失效 iterator insert erase都会导致失效
-//push_back增容失效
-//2.list的iterator,erase会导致失效
+    void test_list1()
+    {
+        list<int> lt;
+        lt.push_back(1);
+        lt.push_back(2);
+        lt.push_back(3);
+        lt.push_back(4);
+        lt.push_back(5);
+        lt.push_back(6);
+
+        for (auto it = lt.begin(); it != lt.end(); ++it)
+        {
+            std::cout << *it << " "; // 使用迭代器遍历
+        }
+        std::cout << std::endl;
+    }
+}
