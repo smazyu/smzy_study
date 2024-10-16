@@ -27,7 +27,10 @@ namespace study_list
         }
 
 
-        void push_back
+        void push_back(const T& data)
+        {
+            
+        }
     };
 }
 
