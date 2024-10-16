@@ -22,24 +22,30 @@
 
 
 //list是应该顺序容器，允许在任意地方 插入 本质是一个双向链表
-#include <list>
-#include <iostream>
-using namespace std;
-
-void test_list() {
-    list<int> l;
-    l.push_back(1);
-    l.push_back(12);
-    l.push_back(13);
-    l.push_back(14);
-    
-    list<int>::iterator it = l.begin();
-    while (it != l.end()) {
-        cout << *it << " ";
-        ++it;
-    }
-    cout << endl;
-}
+//#include <list>
+//#include <iostream>
+//using namespace std;
+//
+//void test_list() {
+//    list<int> l;
+//    l.push_back(1);
+//    l.push_back(12);
+//    l.push_back(13);
+//    l.push_back(14);
+//
+//    list<int>::iterator it = l.begin();
+//    while (it != l.end()) {
+//        cout << *it << " ";
+//        ++it;
+//    }
+//    cout << endl;
+//}
 
 //list是一个运行在任意位置以常数时间插入删除
 //O(1)即为常数次
+#include <iostream>
+#include "lish.h"
+int main()
+{
+    study_list::test_list1();
+}
