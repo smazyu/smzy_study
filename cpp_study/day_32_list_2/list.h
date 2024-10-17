@@ -1,5 +1,6 @@
 #pragma once
 #include <iostream>
+using namespace std;
 
 namespace study_list
 {
@@ -9,7 +10,7 @@ namespace study_list
     {
         __list_node<T>* prev; // 指向前一个节点
         __list_node<T>* next; // 指向下一个节点
-        T _data;              // 存储节点的数据
+        T _data; // 存储节点的数据
     };
 
     // 定义双向循环链表类模板
@@ -85,8 +86,8 @@ namespace study_list
         // 析构函数，清空链表并释放头节点
         ~list()
         {
-            clear();        // 清空链表中的所有节点
-            delete _head;   // 释放头节点
+            clear(); // 清空链表中的所有节点
+            delete _head; // 释放头节点
         }
 
         // 在链表末尾插入元素
@@ -94,18 +95,30 @@ namespace study_list
         {
             Node* tail = _head->prev; // 找到当前尾节点
             Node* new_node = new Node();
-            new_node->_data = data;    // 设置新节点数据
-            tail->next = new_node;     // 尾节点的next指向新节点
-            new_node->prev = tail;     // 新节点的prev指向尾节点
-            new_node->next = _head;    // 新节点的next指向头节点
-            _head->prev = new_node;    // 头节点的prev指向新节点
+            new_node->_data = data; // 设置新节点数据
+            tail->next = new_node; // 尾节点的next指向新节点
+            new_node->prev = tail; // 新节点的prev指向尾节点
+            new_node->next = _head; // 新节点的next指向头节点
+            _head->prev = new_node; // 头节点的prev指向新节点
         }
 
         // 返回指向链表第一个元素的迭代器
-        iterator begin() { return iterator(_head->next); }
+        iterator begin() const { return iterator(_head->next); }
 
         // 返回指向链表尾节点后的迭代器（即头节点）
-        iterator end() { return iterator(_head); }
+        iterator end() const { return iterator(_head); }
+
+        // 打印链表内容
+        void print_list() const
+        {
+            iterator it = begin();
+            while (it != end())
+            {
+                cout << *it << " "; // 输出节点数据
+                ++it; // 需要递增迭代器，避免无限循环
+            }
+            cout << endl;
+        }
 
         // 清空链表，删除所有节点
         void clear()
@@ -118,7 +131,7 @@ namespace study_list
         }
 
         // 删除指定位置的节点
-        void erase(iterator& it)
+        void erase(iterator it)
         {
             Node* node_to_delete = it._node;
             node_to_delete->prev->next = node_to_delete->next; // 连接前后节点
@@ -146,7 +159,7 @@ namespace study_list
         while (it != lt.end())
         {
             std::cout << *it << " "; // 输出节点数据
-            ++it;                    // 移动到下一个节点
+            ++it; // 移动到下一个节点
         }
         std::cout << std::endl;
     }
@@ -171,9 +184,21 @@ namespace study_list
         while (it != lt.end())
         {
             std::cout << "Year: " << it->_year << " "
-                      << "Month: " << it->_month << " "
-                      << "Day: " << it->_day << std::endl;
+                << "Month: " << it->_month << " "
+                << "Day: " << it->_day << std::endl;
             ++it;
         }
+    }
+
+    // 测试函数3：打印链表内容
+    void test_list3()
+    {
+        list<int> lt;
+        lt.push_back(1);
+        lt.push_back(2);
+        lt.push_back(3);
+        lt.push_back(4);
+        lt.push_back(5);
+        lt.print_list(); // 打印链表内容
     }
 }
