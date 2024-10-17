@@ -97,7 +97,10 @@ namespace study_list
             }
         }
 
-        // void erase(iterator& it)
+        void erase(iterator& it)
+        {
+            delete[] it._node;
+        }
     private:
         Node* _head;
     };
