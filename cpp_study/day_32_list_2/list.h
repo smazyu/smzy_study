@@ -20,10 +20,11 @@ namespace study_list
 
     public:
         // 定义迭代器模板
-        template <class U>
+        template <class U, class Ref, class Ptr>
         struct __list_iterator
         {
             Node* _node; // 当前迭代器指向的节点
+            typedef __list_iterator<U, Ref, Ptr> self;
 
             // 迭代器构造函数
             __list_iterator(Node* node) : _node(node)
@@ -31,47 +32,47 @@ namespace study_list
             }
 
             // 解引用运算符，返回节点数据
-            U& operator*()
+            Ref operator*()
             {
                 return _node->_data;
             }
 
             // 成员访问运算符，返回节点数据指针
-            U* operator->()
+            Ptr operator->()
             {
                 return &(_node->_data);
             }
 
             // 前置++运算符，移动到下一个节点
-            __list_iterator& operator++()
+            self& operator++()
             {
                 _node = _node->next;
                 return *this;
             }
 
             // 后置++运算符，移动到下一个节点
-            __list_iterator operator++(int)
+            self operator++(int)
             {
-                __list_iterator tmp = *this;
+                self tmp = *this; // 保存当前迭代器
                 _node = _node->next;
-                return tmp;
+                return tmp; // 返回保存的副本
             }
 
             // 前置--运算符，移动到前一个节点
-            __list_iterator& operator--()
+            self& operator--()
             {
                 _node = _node->prev;
                 return *this;
             }
 
             // 不等于运算符，判断迭代器是否指向相同的节点
-            bool operator!=(const __list_iterator& it) const
+            bool operator!=(const self& it) const
             {
                 return _node != it._node;
             }
         };
 
-        typedef __list_iterator<T> iterator; // 定义迭代器类型
+        typedef __list_iterator<T, T&, T*> iterator; // 定义迭代器类型
 
         // 构造函数，初始化带头双向循环链表
         list()
@@ -84,8 +85,8 @@ namespace study_list
         // 析构函数，清空链表并释放头节点
         ~list()
         {
-            clear();
-            delete _head;
+            clear();        // 清空链表中的所有节点
+            delete _head;   // 释放头节点
         }
 
         // 在链表末尾插入元素
@@ -112,7 +113,7 @@ namespace study_list
             iterator it = begin();
             while (it != end())
             {
-                erase(it++);
+                erase(it++); // 删除当前节点，并将迭代器移到下一个节点
             }
         }
 
@@ -140,11 +141,12 @@ namespace study_list
         lt.push_back(5);
         lt.push_back(6);
 
+        // 通过迭代器遍历链表
         list<int>::iterator it = lt.begin();
         while (it != lt.end())
         {
-            std::cout << *it << " ";
-            ++it;
+            std::cout << *it << " "; // 输出节点数据
+            ++it;                    // 移动到下一个节点
         }
         std::cout << std::endl;
     }
@@ -163,5 +165,15 @@ namespace study_list
         list<Data> lt;
         lt.push_back(Data());
         lt.push_back(Data());
+
+        // 遍历链表，输出结构体数据
+        list<Data>::iterator it = lt.begin();
+        while (it != lt.end())
+        {
+            std::cout << "Year: " << it->_year << " "
+                      << "Month: " << it->_month << " "
+                      << "Day: " << it->_day << std::endl;
+            ++it;
+        }
     }
 }
