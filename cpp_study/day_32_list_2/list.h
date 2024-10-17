@@ -79,6 +79,23 @@ namespace study_list {
 			_head->prev = _head;
 			// 初始化头节点的prev指向自己
 		}
+		list(const list<T>& lt)
+		{
+			_head = new Node;
+			_head -> next = _head;
+			_head -> prev = _head;
+
+			// const_iterator it = lt.begin();
+			// while(it != lt.end())
+			// {
+			// 	push_back(*it);
+			// 	++it;
+			// }
+			for(auto e:lt)
+			{
+				push_back(e);
+			}
+		}
 		// 析构函数，清空链表并释放头节点
 		~list() {
 			clear();
@@ -138,6 +155,7 @@ namespace study_list {
 		}
 		// 删除指定位置的节点
 		void erase(iterator it) {
+
 			Node* node_to_delete = it._node;
 			// 取得要删除的节点
 			node_to_delete->prev->next = node_to_delete->next;
@@ -145,6 +163,14 @@ namespace study_list {
 			node_to_delete->next->prev = node_to_delete->prev;
 			delete node_to_delete;
 			// 删除节点
+		}
+		void pop_back()
+		{
+			erase(end()--);
+		}
+		void pop_front()
+		{
+			erase(begin());
 		}
 		// 在指定位置插入节点
 		void insert(iterator pos, const T& data) {
@@ -216,7 +242,9 @@ namespace study_list {
 		lt.push_back(3);
 		lt.push_back(4);
 		lt.push_back(5);
-		lt.print_list();
+		list<int> lt2(lt);
+		lt2.print_list();
 		// 打印链表内容
 	}
+	//栈都是后定义先析构
 }
