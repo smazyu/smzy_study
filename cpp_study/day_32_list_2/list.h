@@ -134,6 +134,18 @@ namespace study_list {
 		const_iterator end() const {
 			return const_iterator(_head);
 		}
+		list<T>& operator=(const list<T>&lt)
+		{
+			if(this != &lt)
+			{
+				clear();
+				for(auto e : lt)
+				{
+					push_back(e);
+				}
+			}
+			return *this;
+		}
 		// 打印链表内容
 		void print_list() const {
 			const_iterator it = begin();
