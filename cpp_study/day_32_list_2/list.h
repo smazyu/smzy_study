@@ -12,6 +12,67 @@ namespace study_list
         __list_node<T>* next; // 指向下一个节点
         T _data; // 存储节点的数据
     };
+//__list_iterator<class T,class Ref,class Ptr> -> iterator
+//__list_iterator<class T,const class Ref,const class Ptr> -> const iterator
+    template <class T, class Ref, class Ptr>
+    struct __list_iterator
+    {
+        typedef __list_node<T> Node; // 为节点类型定义别名
+
+        Node* _node; // 当前迭代器指向的节点
+        typedef __list_iterator<T, Ref, Ptr> self;
+
+        // 迭代器构造函数
+        __list_iterator(Node* node) : _node(node)
+        {
+        }
+
+        // 解引用运算符，返回节点数据
+        Ref operator*()
+        {
+            return _node->_data;
+        }
+
+        // 成员访问运算符，返回节点数据指针
+        Ptr operator->()
+        {
+            return &(_node->_data); 
+        }
+
+        // 前置++运算符，移动到下一个节点
+        self& operator++()
+        {
+            _node = _node->next;
+            return *this;
+        }
+
+        // 后置++运算符，移动到下一个节点
+        self operator++(int)
+        {
+            self tmp = *this; // 保存当前迭代器
+            _node = _node->next;
+            return tmp; // 返回保存的副本
+        }
+
+        // 前置--运算符，移动到前一个节点
+        self& operator--()
+        {
+            _node = _node->prev;
+            return *this;
+        }
+
+        // 不等于运算符，判断迭代器是否指向相同的节点
+        bool operator!=(const self& it) const
+        {
+            return _node != it._node;
+        }
+
+        // 等于运算符，判断迭代器是否指向相同的节点
+        bool operator==(const self& it) const
+        {
+            return _node == it._node;
+        }
+    };
 
     // 定义双向循环链表类模板
     template <class T>
@@ -20,60 +81,8 @@ namespace study_list
         typedef __list_node<T> Node; // 为节点类型定义别名
 
     public:
-        // 定义迭代器模板
-        template <class U, class Ref, class Ptr>
-        struct __list_iterator
-        {
-            Node* _node; // 当前迭代器指向的节点
-            typedef __list_iterator<U, Ref, Ptr> self;
-
-            // 迭代器构造函数
-            __list_iterator(Node* node) : _node(node)
-            {
-            }
-
-            // 解引用运算符，返回节点数据
-            Ref operator*()
-            {
-                return _node->_data;
-            }
-
-            // 成员访问运算符，返回节点数据指针
-            Ptr operator->()
-            {
-                return &(_node->_data);
-            }
-
-            // 前置++运算符，移动到下一个节点
-            self& operator++()
-            {
-                _node = _node->next;
-                return *this;
-            }
-
-            // 后置++运算符，移动到下一个节点
-            self operator++(int)
-            {
-                self tmp = *this; // 保存当前迭代器
-                _node = _node->next;
-                return tmp; // 返回保存的副本
-            }
-
-            // 前置--运算符，移动到前一个节点
-            self& operator--()
-            {
-                _node = _node->prev;
-                return *this;
-            }
-
-            // 不等于运算符，判断迭代器是否指向相同的节点
-            bool operator!=(const self& it) const
-            {
-                return _node != it._node;
-            }
-        };
-
         typedef __list_iterator<T, T&, T*> iterator; // 定义迭代器类型
+        typedef __list_iterator<T, const T&, const T*> const_iterator; // 定义常量迭代器类型
 
         // 构造函数，初始化带头双向循环链表
         list()
@@ -103,15 +112,21 @@ namespace study_list
         }
 
         // 返回指向链表第一个元素的迭代器
-        iterator begin() const { return iterator(_head->next); }
+        iterator begin() { return iterator(_head->next); }
 
         // 返回指向链表尾节点后的迭代器（即头节点）
-        iterator end() const { return iterator(_head); }
+        iterator end() { return iterator(_head); }
+
+        // 返回指向链表第一个元素的常量迭代器
+        const_iterator begin() const { return const_iterator(_head->next); }
+
+        // 返回指向链表尾节点后的常量迭代器（即头节点）
+        const_iterator end() const { return const_iterator(_head); }
 
         // 打印链表内容
         void print_list() const
         {
-            iterator it = begin();
+            const_iterator it = begin();
             while (it != end())
             {
                 cout << *it << " "; // 输出节点数据
