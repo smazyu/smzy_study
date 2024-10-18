@@ -128,29 +128,53 @@ smzy/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/build
 .PHONY : smzy/fast
 
-cpp_study/day_32_list_2/test.obj: cpp_study/day_32_list_2/test.cpp.obj
-.PHONY : cpp_study/day_32_list_2/test.obj
+cpp_study/day_33_stack_and_queue/test.obj: cpp_study/day_33_stack_and_queue/test.cpp.obj
+.PHONY : cpp_study/day_33_stack_and_queue/test.obj
 
 # target to build an object file
-cpp_study/day_32_list_2/test.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/cpp_study/day_32_list_2/test.cpp.obj
-.PHONY : cpp_study/day_32_list_2/test.cpp.obj
+cpp_study/day_33_stack_and_queue/test.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/cpp_study/day_33_stack_and_queue/test.cpp.obj
+.PHONY : cpp_study/day_33_stack_and_queue/test.cpp.obj
 
-cpp_study/day_32_list_2/test.i: cpp_study/day_32_list_2/test.cpp.i
-.PHONY : cpp_study/day_32_list_2/test.i
+cpp_study/day_33_stack_and_queue/test.i: cpp_study/day_33_stack_and_queue/test.cpp.i
+.PHONY : cpp_study/day_33_stack_and_queue/test.i
 
 # target to preprocess a source file
-cpp_study/day_32_list_2/test.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/cpp_study/day_32_list_2/test.cpp.i
-.PHONY : cpp_study/day_32_list_2/test.cpp.i
+cpp_study/day_33_stack_and_queue/test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/cpp_study/day_33_stack_and_queue/test.cpp.i
+.PHONY : cpp_study/day_33_stack_and_queue/test.cpp.i
 
-cpp_study/day_32_list_2/test.s: cpp_study/day_32_list_2/test.cpp.s
-.PHONY : cpp_study/day_32_list_2/test.s
+cpp_study/day_33_stack_and_queue/test.s: cpp_study/day_33_stack_and_queue/test.cpp.s
+.PHONY : cpp_study/day_33_stack_and_queue/test.s
 
 # target to generate assembly for a file
-cpp_study/day_32_list_2/test.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/cpp_study/day_32_list_2/test.cpp.s
-.PHONY : cpp_study/day_32_list_2/test.cpp.s
+cpp_study/day_33_stack_and_queue/test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/cpp_study/day_33_stack_and_queue/test.cpp.s
+.PHONY : cpp_study/day_33_stack_and_queue/test.cpp.s
+
+cpp_study/day_33_stack_and_queue/test1.obj: cpp_study/day_33_stack_and_queue/test1.cpp.obj
+.PHONY : cpp_study/day_33_stack_and_queue/test1.obj
+
+# target to build an object file
+cpp_study/day_33_stack_and_queue/test1.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/cpp_study/day_33_stack_and_queue/test1.cpp.obj
+.PHONY : cpp_study/day_33_stack_and_queue/test1.cpp.obj
+
+cpp_study/day_33_stack_and_queue/test1.i: cpp_study/day_33_stack_and_queue/test1.cpp.i
+.PHONY : cpp_study/day_33_stack_and_queue/test1.i
+
+# target to preprocess a source file
+cpp_study/day_33_stack_and_queue/test1.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/cpp_study/day_33_stack_and_queue/test1.cpp.i
+.PHONY : cpp_study/day_33_stack_and_queue/test1.cpp.i
+
+cpp_study/day_33_stack_and_queue/test1.s: cpp_study/day_33_stack_and_queue/test1.cpp.s
+.PHONY : cpp_study/day_33_stack_and_queue/test1.s
+
+# target to generate assembly for a file
+cpp_study/day_33_stack_and_queue/test1.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/cpp_study/day_33_stack_and_queue/test1.cpp.s
+.PHONY : cpp_study/day_33_stack_and_queue/test1.cpp.s
 
 # Help Target
 help:
@@ -161,9 +185,12 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... smzy
-	@echo ... cpp_study/day_32_list_2/test.obj
-	@echo ... cpp_study/day_32_list_2/test.i
-	@echo ... cpp_study/day_32_list_2/test.s
+	@echo ... cpp_study/day_33_stack_and_queue/test.obj
+	@echo ... cpp_study/day_33_stack_and_queue/test.i
+	@echo ... cpp_study/day_33_stack_and_queue/test.s
+	@echo ... cpp_study/day_33_stack_and_queue/test1.obj
+	@echo ... cpp_study/day_33_stack_and_queue/test1.i
+	@echo ... cpp_study/day_33_stack_and_queue/test1.s
 .PHONY : help
 
 

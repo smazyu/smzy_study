@@ -35,13 +35,13 @@
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 35,
+				"line" : 34,
 				"parent" : 0
 			},
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 29,
+				"line" : 28,
 				"parent" : 0
 			}
 		]
@@ -85,6 +85,7 @@
 			},
 			"sourceIndexes" : 
 			[
+				0,
 				1
 			]
 		}
@@ -119,16 +120,10 @@
 	"sourceGroups" : 
 	[
 		{
-			"name" : "Header Files",
-			"sourceIndexes" : 
-			[
-				0
-			]
-		},
-		{
 			"name" : "Source Files",
 			"sourceIndexes" : 
 			[
+				0,
 				1
 			]
 		}
@@ -137,14 +132,15 @@
 	[
 		{
 			"backtrace" : 1,
-			"path" : "cpp_study/day_32_list_2/list.h",
+			"compileGroupIndex" : 0,
+			"path" : "cpp_study/day_33_stack_and_queue/test.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "cpp_study/day_32_list_2/test.cpp",
-			"sourceGroupIndex" : 1
+			"path" : "cpp_study/day_33_stack_and_queue/test1.cpp",
+			"sourceGroupIndex" : 0
 		}
 	],
 	"type" : "EXECUTABLE"
