@@ -17,6 +17,8 @@ namespace stack_study
     //container适配器
     //list 适配出链表 vector 适配出数组
     //无论是数组还是链表都可以转换出我们要的东西
+
+    //! 容器进行适配转化
     class stack
     {
     public:
