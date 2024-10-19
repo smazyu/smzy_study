@@ -21,8 +21,8 @@
 
  # 定义可执行目标
  add_executable(smzy ${SOURCES}
-         cpp_study/day_33_stack_and_queue/test.cpp
-         cpp_study/day_33_stack_and_queue/test1.cpp)
+         cpp_study/day_33_stack_and_queue/test1.cpp
+         cpp_study/day_33_stack_and_queue/stack.h)
 
  # 为目标设置包含目录
  target_include_directories(smzy PRIVATE ${PROJECT_SOURCE_DIR}/include)
