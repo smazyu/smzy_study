@@ -8,11 +8,15 @@
 //通过容器转换出来的
 
 #pragma once
+#include <list>
 #include <vector>
 
 namespace stack_study
 {
     template <class T, class Container>
+    //container适配器
+    //list 适配出链表 vector 适配出数组
+    //无论是数组还是链表都可以转换出我们要的东西
     class stack
     {
     public:
@@ -47,7 +51,10 @@ namespace stack_study
 
     void test_stack()
     {
-        stack<int, std::vector<int>> st;
+        //list双向链表容器
+        //vector数组容器 可随机访问
+        //string 顺序容器
+        stack<int, std::list<int>> st;
         st.push(1);
         st.push(2);
         st.push(3);
