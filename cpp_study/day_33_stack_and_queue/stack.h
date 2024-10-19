@@ -71,3 +71,22 @@ namespace stack_study
         std::cout << std:: endl;
     }
 }
+
+namespace study_queue
+{
+    template<class T,class Container>
+    class queue
+    {
+    public:
+        void push(const T& x)
+        {
+            _con.push_back(x);
+        }
+        void pop(){_con.pop_front();}
+        size_t size(){ return _con.size();}
+        bool empty(){return _con.empty();}
+        T& front(){return _con.front();}
+    private:
+        Container _con;
+    };
+}
