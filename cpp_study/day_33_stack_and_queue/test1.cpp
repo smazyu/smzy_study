@@ -8,3 +8,12 @@
 
 //1.中缀转后缀
 //2.后缀进行计算
+#include <iostream>
+#include <stack>
+
+#include "stack.h"
+using namespace std;
+int main()
+{
+    stack_study::test_stack();
+}
