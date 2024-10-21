@@ -10,7 +10,7 @@
 #pragma once
 #include <list>
 #include <vector>
-
+#include <deque>
 namespace stack_study
 {
     template <class T, class Container>
@@ -99,3 +99,12 @@ namespace study_queue
 //导致有些地方因为一丁点的效率变得有些扭曲
 //比如:类型萃取
 
+//container adaptor容器适配器
+
+//deque 双端序列 随机访问 可以在任意位置插入删除， 也可以支持随机访问
+//也就是说既有vector优点也有list优点
+//看起来好像可以替代vector和list的一个容器
+//随机访问效率不容乐观
+
+//为什么栈和队列的适配可以用它
+//因为栈和队列并没有使用到它的随机访问
