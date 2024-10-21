@@ -61,6 +61,22 @@ namespace study
     };
 }
 
+void test_sort()
+{
+    vector<int> v;
+    v.push_back(1);
+    v.push_back(2);
+    v.push_back(3);
+    v.push_back(4);
+    v.push_back(5);
+    sort(v.begin(), v.end());
+    for (auto e : v)
+    {
+        cout << e << " ";
+    }
+    cout << endl;
+}
+
 //除了默认访问限定符不一样,struct和class在c++中是一样的
 //一般情况，成员部分私有部分共有就用class
 //所有成员都开放就用struct
@@ -69,9 +85,10 @@ int main()
     // test_priority_queue();
     // study_priority_queue::test_priority_queue();
 
-    study::less<int> lessFunc;
-    cout << lessFunc(1,2) << endl;
+    // study::less<int> lessFunc;
+    // cout << lessFunc(1, 2) << endl;
     //lessFunc不是一个函数，是一个对象 调用operator() lessFunc.operator()(1,2)
     //仿函数 函数对象 它的对象可以像函数一样使用
+    test_sort();
     return 0;
 }
