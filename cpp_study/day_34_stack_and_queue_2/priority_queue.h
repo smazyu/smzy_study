@@ -3,7 +3,7 @@
 #include <iostream>
 #include <algorithm>
 using namespace std;
-
+//优先级队列使用堆控制优先级
 namespace study_priority_queue
 {
     template <class T, class Container = vector<T>, class Compare = less<T>>
