@@ -1,12 +1,10 @@
-//
-// Created by 20212 on 24-10-21.
-//
-#pragma once;
+#pragma once
 #include <vector>
+#include <iostream>
+#include <algorithm>
 using namespace std;
 
-//函数全大写 变量小大写
-namespace bit
+namespace study_priority_queue
 {
     template <class T, class Container = vector<T>>
     class priority_queue
@@ -19,7 +17,7 @@ namespace bit
             {
                 if (_con[child] > _con[parent])
                 {
-                    swap(_con[child], _con[parent]);
+                    std::swap(_con[child], _con[parent]);
                     child = parent;
                     parent = (child - 1) / 2;
                 }
@@ -42,7 +40,7 @@ namespace bit
                 }
                 if (_con[child] > _con[parent])
                 {
-                    swap(_con[child] > _con[parent]);
+                    std::swap(_con[child], _con[parent]);
                     parent = child;
                     child = parent * 2 + 1;
                 }
@@ -56,34 +54,49 @@ namespace bit
         void push(const T& x)
         {
             _con.push_back(x);
-            //设父节点为i (i*2+1)为左节点 (i*2+2)为右节点
+            // 设父节点为i (i*2+1)为左节点 (i*2+2)为右节点
             AdjustUp(_con.size() - 1);
         }
 
         void pop()
         {
-            swap(_con[0], _con[_con.size() - 1]);
+            std::swap(_con[0], _con[_con.size() - 1]);
             _con.pop_back();
             AdjustDown(0);
         }
 
         T& top()
         {
+            return _con[0];
+        }
 
-        };
-
-
-
-        
-        //优先级最高的
-        size_t size()
+        size_t size() const
         {
             return _con.size();
         }
 
-        bool empty();
+        bool empty() const
+        {
+            return _con.empty();
+        }
 
     private:
         Container _con;
     };
+
+    void test_priority_queue()
+    {
+        priority_queue<int> pq;
+        pq.push(3);
+        pq.push(1);
+        pq.push(9);
+        pq.push(4);
+        pq.push(2);
+        while(!pq.empty())
+        {
+            cout << pq.top() << " ";
+            pq.pop();
+        }
+        cout << endl;
+    }
 }

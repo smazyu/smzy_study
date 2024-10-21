@@ -38,7 +38,9 @@ void test_priority_queue()
     }
     cout << endl;
 }
+#include "priority_queue.h"
 int main()
 {
-    test_priority_queue();
+    // test_priority_queue();
+    study_priority_queue::test_priority_queue();
 }
