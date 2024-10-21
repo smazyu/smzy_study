@@ -6,16 +6,19 @@ using namespace std;
 
 namespace study_priority_queue
 {
-    template <class T, class Container = vector<T>>
+    template <class T, class Container = vector<T>, class Compare = less<T>>
     class priority_queue
     {
     public:
         void AdjustUp(int child)
         {
+            Compare com;
             int parent = (child - 1) / 2;
             while (child > 0)
             {
-                if (_con[child] > _con[parent])
+                //_con[parent] < _con[child]
+                //com(_con[parent],_con[child])
+                if (com(_con[parent], _con[child]))
                 {
                     std::swap(_con[child], _con[parent]);
                     child = parent;
@@ -30,15 +33,18 @@ namespace study_priority_queue
 
         void AdjustDown(int root)
         {
+            Compare com;
             int parent = root;
             int child = parent * 2 + 1;
             while (child < _con.size())
             {
-                if (child + 1 < _con.size() && _con[child + 1] > _con[child])
+                //_con[child + 1] > _con[child]
+                if (child + 1 < _con.size() && com(_con[child], _con[child + 1]))
                 {
                     ++child;
                 }
-                if (_con[child] > _con[parent])
+                // _con[child] > _con[parent]
+                if (com(_con[parent], _con[child]))
                 {
                     std::swap(_con[child], _con[parent]);
                     parent = child;
@@ -92,7 +98,7 @@ namespace study_priority_queue
         pq.push(9);
         pq.push(4);
         pq.push(2);
-        while(!pq.empty())
+        while (!pq.empty())
         {
             cout << pq.top() << " ";
             pq.pop();

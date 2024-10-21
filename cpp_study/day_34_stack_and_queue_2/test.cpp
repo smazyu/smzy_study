@@ -50,6 +50,15 @@ namespace study
             return x1 < x2;
         }
     };
+
+    template <class T>
+    struct greater
+    {
+        bool operator()(const T& x1, const T& x2)
+        {
+            return x1 > x2;
+        }
+    };
 }
 
 //除了默认访问限定符不一样,struct和class在c++中是一样的
@@ -62,5 +71,7 @@ int main()
 
     study::less<int> lessFunc;
     cout << lessFunc(1,2) << endl;
+    //lessFunc不是一个函数，是一个对象 调用operator() lessFunc.operator()(1,2)
+    //仿函数 函数对象 它的对象可以像函数一样使用
     return 0;
 }
