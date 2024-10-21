@@ -18,6 +18,11 @@ namespace stack_study
     //list 适配出链表 vector 适配出数组
     //无论是数组还是链表都可以转换出我们要的东西
 
+    //stl中的stack和queue是通过容器转换出来的，不是原生实现的
+    //通过复用
+
+    //适配是一种开放包容的形态
+
     //! 容器进行适配转化
     class stack
     {
@@ -71,7 +76,6 @@ namespace stack_study
         std::cout << std:: endl;
     }
 }
-
 namespace study_queue
 {
     template<class T,class Container>
@@ -90,3 +94,8 @@ namespace study_queue
         Container _con;
     };
 }
+
+//c++是一个极度关注效率的语言
+//导致有些地方因为一丁点的效率变得有些扭曲
+//比如:类型萃取
+
