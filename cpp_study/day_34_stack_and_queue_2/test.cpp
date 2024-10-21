@@ -17,30 +17,50 @@
 #include <queue>
 #include <iostream>
 #include <functional>
-
+#include "priority_queue.h"
 using namespace std;
 //容器适配器 都不支持迭代器遍历，因为他们通常都包含一些特性
 //如果支持迭代器随便遍历，那他们无法很好的保持它的性质
 void test_priority_queue()
 {
     //如果想变成小的优先级高应该怎么做 仿函数
-    priority_queue<int,vector<int>,greater<int>> pq;
+    priority_queue<int, vector<int>, greater<int>> pq;
     pq.push(1);
     pq.push(2);
     pq.push(3);
     pq.push(4);
     pq.push(5);
     pq.push(6);
-    while(!pq.empty())
+    while (!pq.empty())
     {
         cout << pq.top() << " ";
         pq.pop();
     }
     cout << endl;
 }
-#include "priority_queue.h"
+
+//仿函数 函数对象
+namespace study
+{
+    template <class T>
+    struct less
+    {
+        bool operator()(const T& x1, const T& x2)
+        {
+            return x1 < x2;
+        }
+    };
+}
+
+//除了默认访问限定符不一样,struct和class在c++中是一样的
+//一般情况，成员部分私有部分共有就用class
+//所有成员都开放就用struct
 int main()
 {
     // test_priority_queue();
-    study_priority_queue::test_priority_queue();
+    // study_priority_queue::test_priority_queue();
+
+    study::less<int> lessFunc;
+    cout << lessFunc(1,2) << endl;
+    return 0;
 }
