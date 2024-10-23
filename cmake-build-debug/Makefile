@@ -128,29 +128,53 @@ smzy/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/build
 .PHONY : smzy/fast
 
-cpp_study/day_35_advanced_templates/test2.obj: cpp_study/day_35_advanced_templates/test2.cpp.obj
-.PHONY : cpp_study/day_35_advanced_templates/test2.obj
+cpp_study/day_35_advanced_templates/Func.obj: cpp_study/day_35_advanced_templates/Func.cpp.obj
+.PHONY : cpp_study/day_35_advanced_templates/Func.obj
 
 # target to build an object file
-cpp_study/day_35_advanced_templates/test2.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/cpp_study/day_35_advanced_templates/test2.cpp.obj
-.PHONY : cpp_study/day_35_advanced_templates/test2.cpp.obj
+cpp_study/day_35_advanced_templates/Func.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/cpp_study/day_35_advanced_templates/Func.cpp.obj
+.PHONY : cpp_study/day_35_advanced_templates/Func.cpp.obj
 
-cpp_study/day_35_advanced_templates/test2.i: cpp_study/day_35_advanced_templates/test2.cpp.i
-.PHONY : cpp_study/day_35_advanced_templates/test2.i
+cpp_study/day_35_advanced_templates/Func.i: cpp_study/day_35_advanced_templates/Func.cpp.i
+.PHONY : cpp_study/day_35_advanced_templates/Func.i
 
 # target to preprocess a source file
-cpp_study/day_35_advanced_templates/test2.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/cpp_study/day_35_advanced_templates/test2.cpp.i
-.PHONY : cpp_study/day_35_advanced_templates/test2.cpp.i
+cpp_study/day_35_advanced_templates/Func.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/cpp_study/day_35_advanced_templates/Func.cpp.i
+.PHONY : cpp_study/day_35_advanced_templates/Func.cpp.i
 
-cpp_study/day_35_advanced_templates/test2.s: cpp_study/day_35_advanced_templates/test2.cpp.s
-.PHONY : cpp_study/day_35_advanced_templates/test2.s
+cpp_study/day_35_advanced_templates/Func.s: cpp_study/day_35_advanced_templates/Func.cpp.s
+.PHONY : cpp_study/day_35_advanced_templates/Func.s
 
 # target to generate assembly for a file
-cpp_study/day_35_advanced_templates/test2.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/cpp_study/day_35_advanced_templates/test2.cpp.s
-.PHONY : cpp_study/day_35_advanced_templates/test2.cpp.s
+cpp_study/day_35_advanced_templates/Func.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/cpp_study/day_35_advanced_templates/Func.cpp.s
+.PHONY : cpp_study/day_35_advanced_templates/Func.cpp.s
+
+cpp_study/day_35_advanced_templates/test3.obj: cpp_study/day_35_advanced_templates/test3.cpp.obj
+.PHONY : cpp_study/day_35_advanced_templates/test3.obj
+
+# target to build an object file
+cpp_study/day_35_advanced_templates/test3.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/cpp_study/day_35_advanced_templates/test3.cpp.obj
+.PHONY : cpp_study/day_35_advanced_templates/test3.cpp.obj
+
+cpp_study/day_35_advanced_templates/test3.i: cpp_study/day_35_advanced_templates/test3.cpp.i
+.PHONY : cpp_study/day_35_advanced_templates/test3.i
+
+# target to preprocess a source file
+cpp_study/day_35_advanced_templates/test3.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/cpp_study/day_35_advanced_templates/test3.cpp.i
+.PHONY : cpp_study/day_35_advanced_templates/test3.cpp.i
+
+cpp_study/day_35_advanced_templates/test3.s: cpp_study/day_35_advanced_templates/test3.cpp.s
+.PHONY : cpp_study/day_35_advanced_templates/test3.s
+
+# target to generate assembly for a file
+cpp_study/day_35_advanced_templates/test3.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/cpp_study/day_35_advanced_templates/test3.cpp.s
+.PHONY : cpp_study/day_35_advanced_templates/test3.cpp.s
 
 # Help Target
 help:
@@ -161,9 +185,12 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... smzy
-	@echo ... cpp_study/day_35_advanced_templates/test2.obj
-	@echo ... cpp_study/day_35_advanced_templates/test2.i
-	@echo ... cpp_study/day_35_advanced_templates/test2.s
+	@echo ... cpp_study/day_35_advanced_templates/Func.obj
+	@echo ... cpp_study/day_35_advanced_templates/Func.i
+	@echo ... cpp_study/day_35_advanced_templates/Func.s
+	@echo ... cpp_study/day_35_advanced_templates/test3.obj
+	@echo ... cpp_study/day_35_advanced_templates/test3.i
+	@echo ... cpp_study/day_35_advanced_templates/test3.s
 .PHONY : help
 
 
