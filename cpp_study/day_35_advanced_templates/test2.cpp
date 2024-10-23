@@ -4,26 +4,60 @@
 #include <iostream>
 #include <string.h>
 using namespace std;
-//æ¨¡æ¿çš„ç‰¹åŒ–
+
+// Ä£°åº¯Êı£º±È½ÏÁ½¸ö¶ÔÏóÊÇ·ñÏàµÈ
 template <class T>
 bool IsEqual(T& left, T& right)
 {
-    return left == right;
+    return left == right; // Ä¬ÈÏÇé¿öÏÂÖ±½ÓÊ¹ÓÃ == ½øĞĞ±È½Ï
 }
 
-//ç‰¹åŒ– ï¼ˆé’ˆå¯¹æŸäº›ç±»å‹çš„ç‰¹æ®ŠåŒ–å¤„ç†ï¼‰
+// È«ÌØ»¯£ºÕë¶Ô char* ÀàĞÍ½øĞĞÌØÊâ´¦Àí£¬±È½Ï×Ö·û´®ÄÚÈİ
 template <>
 bool IsEqual<char*>(char*& left, char*& right)
 {
-    return strcmp(left,right) == 0;
+    return strcmp(left, right) == 0; // Ê¹ÓÃ strcmp º¯Êı±È½Ï×Ö·û´®ÄÚÈİÊÇ·ñÏàµÈ
 }
-//ç‰¹åŒ– <>
+
+// ÀàÄ£°å
+template <class T1, class T2>
+class Data
+{
+public:
+    Data() { cout << "ÆÕÍ¨Ä£°å: Data<T1,T2>" << endl; }
+};
+
+// ÀàÄ£°åµÄÆ«ÌØ»¯£ºÆ«ÌØ»¯´¦ÀíµÚÒ»¸öÄ£°å²ÎÊıÎª int µÄÇé¿ö
+template <class T2>
+class Data<int, T2>
+{
+public:
+    Data() { cout << "Æ«ÌØ»¯: Data<int,T2>" << endl; }
+};
+
+template <class T1, class T2>
+class Data<T1*, T2*>
+{
+public:
+    Data() { cout << "ÆÕÍ¨Ä£°å: Data<T1*,T2*>" << endl; }
+};
+//Æ«ÌØ»¯ ¿ÉÒÔÊÇÌØ»¯²¿·Ö²ÎÊı/»òÕß¶ÔÒ»Ğ©²ÎÊı½øÒ»²½µÄÏŞÖÆ
 int main()
 {
     int a = 0, b = 1;
-    cout << IsEqual(a, b) << endl;
-    char* p1 = "hello";
-    char* p2 = "world";
-    cout << IsEqual(p1, p2) << endl;
+    cout << IsEqual(a, b) << endl; // Êä³ö½á¹ûÎª 0£¨false£©£¬ÒòÎª 0 != 1
+
+    char* p1 = (char*)"hello"; // ×¢Òâ£ºĞèÒª½«×Ö·û´®×ÖÃæÁ¿×ª»»Îª char*
+    char* p2 = (char*)"world";
+    cout << IsEqual(p1, p2) << endl; // Êä³ö½á¹ûÎª 0£¨false£©£¬ÒòÎª "hello" != "world"
+
+    Data<int, char> d1; // Ê¹ÓÃÆ«ÌØ»¯µÄÄ£°å
+    Data<double, char> d2; // Ê¹ÓÃÆÕÍ¨Ä£°å
     return 0;
 }
+
+// È«ÌØ»¯ (Full Specialization)£ºÎªÌØ¶¨ÀàĞÍÌá¹©ÍêÈ«²»Í¬µÄÊµÏÖ£¬
+// ÈçÉÏÀıµÄ char* ÀàĞÍÌØ»¯£¬×¨ÃÅ´¦Àí×Ö·û´®µÄ±È½ÏÂß¼­¡£
+
+// Æ«ÌØ»¯ (Partial Specialization)£ºÖ»ÎªÄ³Ğ©ÌØ¶¨Ìõ¼şÏÂµÄÀàĞÍÌá¹©ÌØÊâ´¦Àí£¬
+// ÀıÈç£¬ÔÚÀàÄ£°åÖĞ£¬Æ«ÌØ»¯´¦ÀíµÚÒ»¸öÄ£°å²ÎÊıÎª int µÄÇé¿ö¡£
