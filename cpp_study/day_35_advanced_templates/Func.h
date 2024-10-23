@@ -7,4 +7,4 @@ using namespace std;
 void F1();
 
 template<class T>
-void F2();
+void F2(const T&x);
