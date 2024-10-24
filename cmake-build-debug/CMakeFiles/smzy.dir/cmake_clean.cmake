@@ -1,8 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/smzy.dir/cpp_study/day_35_advanced_templates/Func.cpp.obj"
-  "CMakeFiles/smzy.dir/cpp_study/day_35_advanced_templates/Func.cpp.obj.d"
-  "CMakeFiles/smzy.dir/cpp_study/day_35_advanced_templates/test3.cpp.obj"
-  "CMakeFiles/smzy.dir/cpp_study/day_35_advanced_templates/test3.cpp.obj.d"
+  "CMakeFiles/smzy.dir/cpp_study/day_36_inheritance_and_polymorphism/test.cpp.obj"
+  "CMakeFiles/smzy.dir/cpp_study/day_36_inheritance_and_polymorphism/test.cpp.obj.d"
   "libsmzy.dll.a"
   "smzy.exe"
   "smzy.exe.manifest"

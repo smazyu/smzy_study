@@ -8,8 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/Users/20212/Desktop/smzy_study/cpp_study/day_35_advanced_templates/Func.cpp" "CMakeFiles/smzy.dir/cpp_study/day_35_advanced_templates/Func.cpp.obj" "gcc" "CMakeFiles/smzy.dir/cpp_study/day_35_advanced_templates/Func.cpp.obj.d"
-  "C:/Users/20212/Desktop/smzy_study/cpp_study/day_35_advanced_templates/test3.cpp" "CMakeFiles/smzy.dir/cpp_study/day_35_advanced_templates/test3.cpp.obj" "gcc" "CMakeFiles/smzy.dir/cpp_study/day_35_advanced_templates/test3.cpp.obj.d"
+  "C:/Users/20212/Desktop/smzy_study/cpp_study/day_36_inheritance_and_polymorphism/test.cpp" "CMakeFiles/smzy.dir/cpp_study/day_36_inheritance_and_polymorphism/test.cpp.obj" "gcc" "CMakeFiles/smzy.dir/cpp_study/day_36_inheritance_and_polymorphism/test.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

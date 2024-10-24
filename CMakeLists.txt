@@ -21,9 +21,7 @@
 
  # 定义可执行目标
  add_executable(smzy ${SOURCES}
-         cpp_study/day_35_advanced_templates/Func.h
-         cpp_study/day_35_advanced_templates/Func.cpp
-         cpp_study/day_35_advanced_templates/test3.cpp)
+         cpp_study/day_36_inheritance_and_polymorphism/test.cpp)
 
  # 为目标设置包含目录
  target_include_directories(smzy PRIVATE ${PROJECT_SOURCE_DIR}/include)
