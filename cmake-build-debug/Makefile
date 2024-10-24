@@ -128,30 +128,6 @@ smzy/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/build
 .PHONY : smzy/fast
 
-cpp_study/day_36_inheritance_and_polymorphism/test.obj: cpp_study/day_36_inheritance_and_polymorphism/test.cpp.obj
-.PHONY : cpp_study/day_36_inheritance_and_polymorphism/test.obj
-
-# target to build an object file
-cpp_study/day_36_inheritance_and_polymorphism/test.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/cpp_study/day_36_inheritance_and_polymorphism/test.cpp.obj
-.PHONY : cpp_study/day_36_inheritance_and_polymorphism/test.cpp.obj
-
-cpp_study/day_36_inheritance_and_polymorphism/test.i: cpp_study/day_36_inheritance_and_polymorphism/test.cpp.i
-.PHONY : cpp_study/day_36_inheritance_and_polymorphism/test.i
-
-# target to preprocess a source file
-cpp_study/day_36_inheritance_and_polymorphism/test.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/cpp_study/day_36_inheritance_and_polymorphism/test.cpp.i
-.PHONY : cpp_study/day_36_inheritance_and_polymorphism/test.cpp.i
-
-cpp_study/day_36_inheritance_and_polymorphism/test.s: cpp_study/day_36_inheritance_and_polymorphism/test.cpp.s
-.PHONY : cpp_study/day_36_inheritance_and_polymorphism/test.s
-
-# target to generate assembly for a file
-cpp_study/day_36_inheritance_and_polymorphism/test.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/cpp_study/day_36_inheritance_and_polymorphism/test.cpp.s
-.PHONY : cpp_study/day_36_inheritance_and_polymorphism/test.cpp.s
-
 cpp_study/day_36_inheritance_and_polymorphism/test1.obj: cpp_study/day_36_inheritance_and_polymorphism/test1.cpp.obj
 .PHONY : cpp_study/day_36_inheritance_and_polymorphism/test1.obj
 
@@ -185,9 +161,6 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... smzy
-	@echo ... cpp_study/day_36_inheritance_and_polymorphism/test.obj
-	@echo ... cpp_study/day_36_inheritance_and_polymorphism/test.i
-	@echo ... cpp_study/day_36_inheritance_and_polymorphism/test.s
 	@echo ... cpp_study/day_36_inheritance_and_polymorphism/test1.obj
 	@echo ... cpp_study/day_36_inheritance_and_polymorphism/test1.i
 	@echo ... cpp_study/day_36_inheritance_and_polymorphism/test1.s

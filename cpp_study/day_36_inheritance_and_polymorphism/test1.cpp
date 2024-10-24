@@ -9,3 +9,12 @@
 
 //继承当中的作用域
 //子类和父类中有同名成员，子类成员将屏蔽父类对同名成员的访问,这种叫隐藏，也叫重定义
+//函数名相同叫做隐藏
+
+//继承public 基类public 继承到派生类仍然是public
+//protect 基类public 继承到派生类之后 在派生类里面是protect protect仍是protect
+
+using namespace std;
+#include <iostream>
+//构造父类调父类的构造 析构调父类的析构
+//不能自己初始化父类的
