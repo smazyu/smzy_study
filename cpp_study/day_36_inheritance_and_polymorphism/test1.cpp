@@ -25,3 +25,14 @@ using namespace std;
 //~Student ~Person构成隐藏 因为他们的名字会被编译器统一处理
 
 //如何设计一个不能被继承的类
+//构造私有私有的构造函数
+class A
+{
+private:
+    A(){};
+};
+class B:public A{};
+int main()
+{
+    //B b此时B无法生成，因为构造函数被私有，即使B中没有成员，但因为是继承的A，在构造的时候也会采用父类的构造函数，不会生成自己的
+}
