@@ -152,6 +152,30 @@ cpp_study/day_36_inheritance_and_polymorphism/test1.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/cpp_study/day_36_inheritance_and_polymorphism/test1.cpp.s
 .PHONY : cpp_study/day_36_inheritance_and_polymorphism/test1.cpp.s
 
+cpp_study/day_37_polymorphism.obj: cpp_study/day_37_polymorphism.cpp.obj
+.PHONY : cpp_study/day_37_polymorphism.obj
+
+# target to build an object file
+cpp_study/day_37_polymorphism.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/cpp_study/day_37_polymorphism.cpp.obj
+.PHONY : cpp_study/day_37_polymorphism.cpp.obj
+
+cpp_study/day_37_polymorphism.i: cpp_study/day_37_polymorphism.cpp.i
+.PHONY : cpp_study/day_37_polymorphism.i
+
+# target to preprocess a source file
+cpp_study/day_37_polymorphism.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/cpp_study/day_37_polymorphism.cpp.i
+.PHONY : cpp_study/day_37_polymorphism.cpp.i
+
+cpp_study/day_37_polymorphism.s: cpp_study/day_37_polymorphism.cpp.s
+.PHONY : cpp_study/day_37_polymorphism.s
+
+# target to generate assembly for a file
+cpp_study/day_37_polymorphism.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/cpp_study/day_37_polymorphism.cpp.s
+.PHONY : cpp_study/day_37_polymorphism.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -164,6 +188,9 @@ help:
 	@echo ... cpp_study/day_36_inheritance_and_polymorphism/test1.obj
 	@echo ... cpp_study/day_36_inheritance_and_polymorphism/test1.i
 	@echo ... cpp_study/day_36_inheritance_and_polymorphism/test1.s
+	@echo ... cpp_study/day_37_polymorphism.obj
+	@echo ... cpp_study/day_37_polymorphism.i
+	@echo ... cpp_study/day_37_polymorphism.s
 .PHONY : help
 
 

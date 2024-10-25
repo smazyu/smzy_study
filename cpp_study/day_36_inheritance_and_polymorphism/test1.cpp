@@ -27,18 +27,18 @@ using namespace std;
 
 //如何设计一个不能被继承的类
 //构造私有私有的构造函数
-class A
-{
-private:
-    A(){};
-};
-class B:public A{};
-int main()
-{
-    //B b此时B无法生成，因为构造函数被私有，即使B中没有成员，但因为是继承的A，在构造的时候也会采用父类的构造函数，不会生成自己的
-
-
-}
+// class A
+// {
+// private:
+//     A(){};
+// };
+// class B:public A{};
+// int main()
+// {
+//     //B b此时B无法生成，因为构造函数被私有，即使B中没有成员，但因为是继承的A，在构造的时候也会采用父类的构造函数，不会生成自己的
+//
+//
+// }
 
 //友缘关系不能被继承 有缘关系各自是各自的
 //静态被继承还是同一个
@@ -50,3 +50,53 @@ int main()
 //继承是类的复用
 //菱形继承的问题是:数据冗余和二义性 二义性无法明确知道访问的是哪一个
 
+//显示指定访问哪个父类成员可以解决二义性问题
+
+//虚继承解决了数据冗余和二义性
+//面试题:c++的缺陷有哪些?多继承就是一个问题 ->菱形继承 ->虚继承 引发的问题 底层结构的对象非常复杂，且有一定的效率损失
+//什么是菱形继承 菱形继承的问题 数据冗余二义性
+
+//内存对象模型(对象在内存中是怎么存的)
+
+#include <iostream>
+using namespace std;
+
+// 基类 A
+class A {
+public:
+    A() { cout << "Constructing A" << endl; }
+    virtual void sayHello() { cout << "Hello from A" << endl; }
+};
+
+// 类 B 和类 C 都继承自 A，且使用虚继承
+class B : virtual public A {
+public:
+    B() { cout << "Constructing B" << endl; }
+    void sayHello() override { cout << "Hello from B" << endl; }
+};
+
+class C : virtual public A {
+public:
+    C() { cout << "Constructing C" << endl; }
+    void sayHello() { cout << "Hello from C" << endl; }
+};
+
+// 类 D 同时继承 B 和 C
+class D : public B, public C {
+public:
+    D() { cout << "Constructing D" << endl; }
+    void sayHello() {
+        cout << "Hello from D" << endl;
+        B::sayHello(); // 调用B的sayHello
+        C::sayHello(); // 调用C的sayHello
+        A::sayHello(); // 调用A的sayHello
+    }
+};
+
+int main() {
+    // D d;
+    // d.sayHello();
+    // return 0;
+    B b;
+    b.sayHello();
+}
