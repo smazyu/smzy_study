@@ -22,7 +22,8 @@
  # 定义可执行目标
  add_executable(smzy ${SOURCES}
          cpp_study/day_36_inheritance_and_polymorphism/test1.cpp
-         cpp_study/day_37_polymorphism.cpp)
+         cpp_study/day_37_polymorphism/test.cpp
+ )
 
  # 为目标设置包含目录
  target_include_directories(smzy PRIVATE ${PROJECT_SOURCE_DIR}/include)

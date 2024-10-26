@@ -152,29 +152,29 @@ cpp_study/day_36_inheritance_and_polymorphism/test1.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/cpp_study/day_36_inheritance_and_polymorphism/test1.cpp.s
 .PHONY : cpp_study/day_36_inheritance_and_polymorphism/test1.cpp.s
 
-cpp_study/day_37_polymorphism.obj: cpp_study/day_37_polymorphism.cpp.obj
-.PHONY : cpp_study/day_37_polymorphism.obj
+cpp_study/day_37_polymorphism/test.obj: cpp_study/day_37_polymorphism/test.cpp.obj
+.PHONY : cpp_study/day_37_polymorphism/test.obj
 
 # target to build an object file
-cpp_study/day_37_polymorphism.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/cpp_study/day_37_polymorphism.cpp.obj
-.PHONY : cpp_study/day_37_polymorphism.cpp.obj
+cpp_study/day_37_polymorphism/test.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/cpp_study/day_37_polymorphism/test.cpp.obj
+.PHONY : cpp_study/day_37_polymorphism/test.cpp.obj
 
-cpp_study/day_37_polymorphism.i: cpp_study/day_37_polymorphism.cpp.i
-.PHONY : cpp_study/day_37_polymorphism.i
+cpp_study/day_37_polymorphism/test.i: cpp_study/day_37_polymorphism/test.cpp.i
+.PHONY : cpp_study/day_37_polymorphism/test.i
 
 # target to preprocess a source file
-cpp_study/day_37_polymorphism.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/cpp_study/day_37_polymorphism.cpp.i
-.PHONY : cpp_study/day_37_polymorphism.cpp.i
+cpp_study/day_37_polymorphism/test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/cpp_study/day_37_polymorphism/test.cpp.i
+.PHONY : cpp_study/day_37_polymorphism/test.cpp.i
 
-cpp_study/day_37_polymorphism.s: cpp_study/day_37_polymorphism.cpp.s
-.PHONY : cpp_study/day_37_polymorphism.s
+cpp_study/day_37_polymorphism/test.s: cpp_study/day_37_polymorphism/test.cpp.s
+.PHONY : cpp_study/day_37_polymorphism/test.s
 
 # target to generate assembly for a file
-cpp_study/day_37_polymorphism.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/cpp_study/day_37_polymorphism.cpp.s
-.PHONY : cpp_study/day_37_polymorphism.cpp.s
+cpp_study/day_37_polymorphism/test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/cpp_study/day_37_polymorphism/test.cpp.s
+.PHONY : cpp_study/day_37_polymorphism/test.cpp.s
 
 # Help Target
 help:
@@ -188,9 +188,9 @@ help:
 	@echo ... cpp_study/day_36_inheritance_and_polymorphism/test1.obj
 	@echo ... cpp_study/day_36_inheritance_and_polymorphism/test1.i
 	@echo ... cpp_study/day_36_inheritance_and_polymorphism/test1.s
-	@echo ... cpp_study/day_37_polymorphism.obj
-	@echo ... cpp_study/day_37_polymorphism.i
-	@echo ... cpp_study/day_37_polymorphism.s
+	@echo ... cpp_study/day_37_polymorphism/test.obj
+	@echo ... cpp_study/day_37_polymorphism/test.i
+	@echo ... cpp_study/day_37_polymorphism/test.s
 .PHONY : help
 
 

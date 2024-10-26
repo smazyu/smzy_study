@@ -83,31 +83,31 @@ CMakeFiles/smzy.dir/cpp_study/day_36_inheritance_and_polymorphism/test1.cpp.s: c
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/smzy.dir/cpp_study/day_36_inheritance_and_polymorphism/test1.cpp.s"
 	"D:\Program Files\JetBrains\CLion 2024.2.2\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\20212\Desktop\smzy_study\cpp_study\day_36_inheritance_and_polymorphism\test1.cpp -o CMakeFiles\smzy.dir\cpp_study\day_36_inheritance_and_polymorphism\test1.cpp.s
 
-CMakeFiles/smzy.dir/cpp_study/day_37_polymorphism.cpp.obj: CMakeFiles/smzy.dir/flags.make
-CMakeFiles/smzy.dir/cpp_study/day_37_polymorphism.cpp.obj: CMakeFiles/smzy.dir/includes_CXX.rsp
-CMakeFiles/smzy.dir/cpp_study/day_37_polymorphism.cpp.obj: C:/Users/20212/Desktop/smzy_study/cpp_study/day_37_polymorphism.cpp
-CMakeFiles/smzy.dir/cpp_study/day_37_polymorphism.cpp.obj: CMakeFiles/smzy.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\20212\Desktop\smzy_study\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/smzy.dir/cpp_study/day_37_polymorphism.cpp.obj"
-	"D:\Program Files\JetBrains\CLion 2024.2.2\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/smzy.dir/cpp_study/day_37_polymorphism.cpp.obj -MF CMakeFiles\smzy.dir\cpp_study\day_37_polymorphism.cpp.obj.d -o CMakeFiles\smzy.dir\cpp_study\day_37_polymorphism.cpp.obj -c C:\Users\20212\Desktop\smzy_study\cpp_study\day_37_polymorphism.cpp
+CMakeFiles/smzy.dir/cpp_study/day_37_polymorphism/test.cpp.obj: CMakeFiles/smzy.dir/flags.make
+CMakeFiles/smzy.dir/cpp_study/day_37_polymorphism/test.cpp.obj: CMakeFiles/smzy.dir/includes_CXX.rsp
+CMakeFiles/smzy.dir/cpp_study/day_37_polymorphism/test.cpp.obj: C:/Users/20212/Desktop/smzy_study/cpp_study/day_37_polymorphism/test.cpp
+CMakeFiles/smzy.dir/cpp_study/day_37_polymorphism/test.cpp.obj: CMakeFiles/smzy.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\20212\Desktop\smzy_study\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/smzy.dir/cpp_study/day_37_polymorphism/test.cpp.obj"
+	"D:\Program Files\JetBrains\CLion 2024.2.2\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/smzy.dir/cpp_study/day_37_polymorphism/test.cpp.obj -MF CMakeFiles\smzy.dir\cpp_study\day_37_polymorphism\test.cpp.obj.d -o CMakeFiles\smzy.dir\cpp_study\day_37_polymorphism\test.cpp.obj -c C:\Users\20212\Desktop\smzy_study\cpp_study\day_37_polymorphism\test.cpp
 
-CMakeFiles/smzy.dir/cpp_study/day_37_polymorphism.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/smzy.dir/cpp_study/day_37_polymorphism.cpp.i"
-	"D:\Program Files\JetBrains\CLion 2024.2.2\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\20212\Desktop\smzy_study\cpp_study\day_37_polymorphism.cpp > CMakeFiles\smzy.dir\cpp_study\day_37_polymorphism.cpp.i
+CMakeFiles/smzy.dir/cpp_study/day_37_polymorphism/test.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/smzy.dir/cpp_study/day_37_polymorphism/test.cpp.i"
+	"D:\Program Files\JetBrains\CLion 2024.2.2\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\20212\Desktop\smzy_study\cpp_study\day_37_polymorphism\test.cpp > CMakeFiles\smzy.dir\cpp_study\day_37_polymorphism\test.cpp.i
 
-CMakeFiles/smzy.dir/cpp_study/day_37_polymorphism.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/smzy.dir/cpp_study/day_37_polymorphism.cpp.s"
-	"D:\Program Files\JetBrains\CLion 2024.2.2\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\20212\Desktop\smzy_study\cpp_study\day_37_polymorphism.cpp -o CMakeFiles\smzy.dir\cpp_study\day_37_polymorphism.cpp.s
+CMakeFiles/smzy.dir/cpp_study/day_37_polymorphism/test.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/smzy.dir/cpp_study/day_37_polymorphism/test.cpp.s"
+	"D:\Program Files\JetBrains\CLion 2024.2.2\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\20212\Desktop\smzy_study\cpp_study\day_37_polymorphism\test.cpp -o CMakeFiles\smzy.dir\cpp_study\day_37_polymorphism\test.cpp.s
 
 # Object files for target smzy
 smzy_OBJECTS = \
 "CMakeFiles/smzy.dir/cpp_study/day_36_inheritance_and_polymorphism/test1.cpp.obj" \
-"CMakeFiles/smzy.dir/cpp_study/day_37_polymorphism.cpp.obj"
+"CMakeFiles/smzy.dir/cpp_study/day_37_polymorphism/test.cpp.obj"
 
 # External object files for target smzy
 smzy_EXTERNAL_OBJECTS =
 
 smzy.exe: CMakeFiles/smzy.dir/cpp_study/day_36_inheritance_and_polymorphism/test1.cpp.obj
-smzy.exe: CMakeFiles/smzy.dir/cpp_study/day_37_polymorphism.cpp.obj
+smzy.exe: CMakeFiles/smzy.dir/cpp_study/day_37_polymorphism/test.cpp.obj
 smzy.exe: CMakeFiles/smzy.dir/build.make
 smzy.exe: CMakeFiles/smzy.dir/linkLibs.rsp
 smzy.exe: CMakeFiles/smzy.dir/objects1.rsp
