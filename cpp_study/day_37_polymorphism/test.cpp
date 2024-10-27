@@ -44,7 +44,8 @@ using namespace std;
 class Person
 {
 public:
-    virtual ~Person()
+     virtual ~Person()
+    //析构函数的函数名会被处理成destructor
     {
         cout <<"~Person"<<endl;
     }
@@ -53,13 +54,22 @@ class Student:public Person
 {
 public:
     virtual ~Student()
+    //析构函数的函数名会被处理成destructor
     {
         cout << "~Student" <<endl;
     }
 };
 int main()
 {
-    Person p;
-    Student s;
+    Person * p1 = new Person;
+    delete p1;
+//重写是对函数体重写
+    Person* p2 = new Student;
+    delete p2;
     return 0;
 }
+//面试题 ：析构函数是否需要定义成虚函数?
+//不构成多态：
+//调用的指针类型是谁就调用谁的析构函数
+//构成多态
+//调用的指针指向谁就调用谁的析构函数

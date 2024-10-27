@@ -21,7 +21,6 @@
 
  # 定义可执行目标
  add_executable(smzy ${SOURCES}
-         cpp_study/day_36_inheritance_and_polymorphism/test1.cpp
          cpp_study/day_37_polymorphism/test.cpp
  )
 
