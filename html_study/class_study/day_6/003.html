@@ -2,56 +2,128 @@
 <html>
 <head>
     <title>网易招聘信息</title>
-
     <style type="text/css">
-        /* 首图 */
+        /* banner样式 */
         #banner {
-            width: 980px;
-            height: 266px;
-            margin: 0 auto;
+            width: 980px;  /* 宽度 */
+            height: 266px; /* 高度 */
+            margin: 0 auto; /* 居中 */
         }
+        /* 内容区样式 */
         #content {
-            width: 980px;
-            height: 934px;
-            margin: -20px auto;
-            background-image: url("bg.jpg");
+            width: 980px; /* 宽度 */
+            height: 934px; /* 高度 */
+            margin: -20px auto; /* 居中 */
+            background-image: url("bg.jpg"); /* 背景图 */
         }
-        #content p {margin-left: 150px;
-        font-size: 20px;
+        #content p {
+            margin-left: 150px; /* 左边距 */
+            font-size: 20px; /* 字体大小 */
         }
-        #content p img{
-            margin-top: 20px;
+        #content p img {
+            margin-top: 20px; /* 图片上边距 */
         }
-        /* footer */
+        /* footer样式 */
         #footer {
-            width: 100%;
-            height: 78px;
-            background: #829a99;
-            color: black;
-            text-align: center;
-            padding-top: 10px;
+            width: 100%; /* 100%宽度 */
+            height: 78px; /* 高度 */
+            background: #829a99; /* 背景色 */
+            color: black; /* 字体颜色 */
+            text-align: center; /* 文本居中 */
+            padding-top: 10px; /* 内边距 */
         }
-
     </style>
-
+</head>
 <body>
-<!--banner首图-->
+<!-- banner -->
 <div id="banner">
-    <img src="001.png">
+    <img src="001.png"> <!-- 横幅图 -->
 </div>
-<!--banner结束-->
-<!--注册页面-->
+<!-- 注册页面 -->
 <div id="content">
-    <form action="#" method="post">
-        <p>注册步骤: &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<img src="step.jpg"> </p>
-    </form>
+    <form action="#" method="post"> <!-- 表单 -->
+        <p>注册步骤: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="step.jpg"> </p>
+        <br>
+        <p style="font-size: 25px"> 您的账号信息 :</p> <!-- 账号信息标题 -->
+        <hr style="width: 70%; color: black"> <!-- 分隔线 -->
+
+        <!-- 注册方式选择 -->
+        <p style="font-size: 20px">注册方式 :
+            <label><input type="radio" name="group">E-mail注册 </label>
+            &nbsp;&nbsp;<label><input type="radio" name="group">手机号注册 </label>
+        </p>
+
+        <!-- 输入框 -->
+        <p style="font-size: 20px">注册邮箱 :&nbsp;&nbsp
+            <label>
+                <input type="text" name="q1" style="width: 38%"> <!-- 注册邮箱 -->
+            </label>
+        </p>
+
+        <p style="font-size: 20px">注册手机 :&nbsp;&nbsp
+            <label>
+                <input type="text" name="q2" style="width: 38%"> <!-- 注册手机 -->
+            </label>
+        </p>
+
+        <p style="font-size: 20px">登录密码 :&nbsp;&nbsp
+            <label>
+                <input type="text" name="q3" style="width: 38%"> <!-- 登录密码 -->
+            </label>
+        </p>
+
+        <p style="font-size: 25px"> 您的个人信息 :</p> <!-- 个人信息标题 -->
+        <hr style="width: 70%; color: black"> <!-- 分隔线 -->
+
+        <!-- 性别选择 -->
+        <p style="font-size: 20px">性别 :
+            <label><input type="radio" name="gender">男 </label>
+            &nbsp;&nbsp;<label><input type="radio" name="gender">女 </label>
+        </p>
+
+        <!-- 学历选择 -->
+        <p style="font-size: 20px">学历 :&nbsp;&nbsp
+            <select name="education"> <!-- 学历下拉 -->
+                <option>-请选择-</option>
+                <option>小学</option>
+                <option>初中</option>
+                <option>高中</option>
+                <option>大专</option>
+                <option>本科</option>
+                <option>硕士</option>
+                <option>博士</option>
+            </select>
+        </p>
+
+        <!-- 所在城市选择 -->
+        <p style="font-size: 20px">所在城市 :&nbsp;&nbsp
+            <select name="city"> <!-- 城市下拉 -->
+                <option>-请选择-</option>
+                <!-- 这里可以添加城市选项 -->
+            </select>
+        </p>
+
+        <!-- 兴趣爱好选择 -->
+        <p style="font-size: 20px">兴趣爱好 :
+            <label><input type="checkbox" name="interest1">足球 </label>
+            &nbsp;&nbsp;<label><input type="checkbox" name="interest2">篮球 </label>
+            &nbsp;&nbsp;<label><input type="checkbox" name="interest3">游泳 </label>
+            &nbsp;&nbsp;<label><input type="checkbox" name="interest4">唱歌 </label>
+            &nbsp;&nbsp;<label><input type="checkbox" name="interest5">跑步 </label>
+        </p>
+
+        <!-- 自我介绍 -->
+        <p style="font-size: 20px; display: flex; align-items: center;">
+            自我介绍 :
+            <textarea rows="10" cols="60" style="margin-left: 10px;"></textarea> <!-- 文本区域 -->
+        </p>
+    </form> <!-- 表单结束 -->
 </div>
-<!--注册结束-->
-<!--页脚-->
+<!-- 页脚 -->
 <div id="footer">
     <p>Copyright ? 2024-2025 传媒技术com, All rights reserved.</p>
     <p>2024-2025，XJ CP备00000002</p>
 </div>
-<!--页脚结束-->
+<!-- 页脚结束 -->
 </body>
 </html>
