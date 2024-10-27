@@ -85,21 +85,21 @@ public:
 //重定义 两个基类和派生类的同名函数不构成重写就是重定义
 
 //抽象类的特点 不能实例化出对象
-class Car
-{
-public:
-    virtual void Drive() = 0; //不需要实现，纯虚函数
-};
-
-class Benz:public Car
-{
-public:
-    virtual void Drive(){};
-};
-int main()
-{
-    // Car car; //抽象类不能实例化出对象
-    return 0;
-}
+// class Car
+// {
+// public:
+//     virtual void Drive() = 0; //不需要实现，纯虚函数
+// };
+//
+// class Benz:public Car
+// {
+// public:
+//     virtual void Drive(){};
+// };
+// int main()
+// {
+//     // Car car; //抽象类不能实例化出对象
+//     return 0;
+// }
 //1.纯虚函数的作用，强制子类去完成重写
 //2.表示抽象的类型。 抽象就是在现实中没有对应的实体的。
