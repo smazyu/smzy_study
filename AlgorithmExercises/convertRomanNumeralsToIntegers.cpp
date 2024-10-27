@@ -23,6 +23,7 @@ C 可以放在 D (500) 和 M (1000) 的左边，来表示 400 和 900。
 输出: 3
 */
 #include <iostream>
+#include <string>
 using namespace std;
 
 int ConvertRomanToInt(char r)
@@ -43,9 +44,11 @@ int ConvertRomanToInt(char r)
 int romanToInt(string s)
 {
     int length = s.size();
+    // string:: reverse_iterator rit = s.rbegin();
     int num = 0;
     for(int i = 0;i < length;i++)
     {
+
         int currentVal = ConvertRomanToInt(s[i]);
         int nextVal = (i < length - 1) ? ConvertRomanToInt(s[i + 1]) : 0;
         if(nextVal > currentVal)
