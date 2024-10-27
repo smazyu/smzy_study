@@ -21,7 +21,7 @@
 
  # 定义可执行目标
  add_executable(smzy ${SOURCES}
-         cpp_study/day_37_polymorphism/test1.cpp
+         AlgorithmExercises/convertRomanNumeralsToIntegers.cpp
  )
 
  # 为目标设置包含目录

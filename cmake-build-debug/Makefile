@@ -128,6 +128,30 @@ smzy/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/build
 .PHONY : smzy/fast
 
+AlgorithmExercises/convertRomanNumeralsToIntegers.obj: AlgorithmExercises/convertRomanNumeralsToIntegers.cpp.obj
+.PHONY : AlgorithmExercises/convertRomanNumeralsToIntegers.obj
+
+# target to build an object file
+AlgorithmExercises/convertRomanNumeralsToIntegers.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/AlgorithmExercises/convertRomanNumeralsToIntegers.cpp.obj
+.PHONY : AlgorithmExercises/convertRomanNumeralsToIntegers.cpp.obj
+
+AlgorithmExercises/convertRomanNumeralsToIntegers.i: AlgorithmExercises/convertRomanNumeralsToIntegers.cpp.i
+.PHONY : AlgorithmExercises/convertRomanNumeralsToIntegers.i
+
+# target to preprocess a source file
+AlgorithmExercises/convertRomanNumeralsToIntegers.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/AlgorithmExercises/convertRomanNumeralsToIntegers.cpp.i
+.PHONY : AlgorithmExercises/convertRomanNumeralsToIntegers.cpp.i
+
+AlgorithmExercises/convertRomanNumeralsToIntegers.s: AlgorithmExercises/convertRomanNumeralsToIntegers.cpp.s
+.PHONY : AlgorithmExercises/convertRomanNumeralsToIntegers.s
+
+# target to generate assembly for a file
+AlgorithmExercises/convertRomanNumeralsToIntegers.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/AlgorithmExercises/convertRomanNumeralsToIntegers.cpp.s
+.PHONY : AlgorithmExercises/convertRomanNumeralsToIntegers.cpp.s
+
 cpp_study/day_37_polymorphism/test1.obj: cpp_study/day_37_polymorphism/test1.cpp.obj
 .PHONY : cpp_study/day_37_polymorphism/test1.obj
 
@@ -161,6 +185,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... smzy
+	@echo ... AlgorithmExercises/convertRomanNumeralsToIntegers.obj
+	@echo ... AlgorithmExercises/convertRomanNumeralsToIntegers.i
+	@echo ... AlgorithmExercises/convertRomanNumeralsToIntegers.s
 	@echo ... cpp_study/day_37_polymorphism/test1.obj
 	@echo ... cpp_study/day_37_polymorphism/test1.i
 	@echo ... cpp_study/day_37_polymorphism/test1.s

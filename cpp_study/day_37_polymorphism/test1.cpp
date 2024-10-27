@@ -47,25 +47,42 @@ class Person
 public:
     virtual void BuyTicket()
     {
-        cout << "买票-全价"<< endl;
+        cout << "买票-全价" << endl;
     }
 
+    int _p = 1;
 };
-class Student:public Person
+
+class Student : public Person
 {
 public:
     virtual void BuyTicket() override
     {
         cout << "买票-半价" << endl;
     }
+
+    int _s = 2;
 };
 
-void Func(Person &p)
+void Func(Person& p)
 {
+    //p指向person类型的对象就调用person虚函数
+    //p指向student类型的对象就调用student虚函数
     p.BuyTicket();
 }
+
 int main()
 {
     Person Mike;
-    Func (Mike);
+    Func(Mike);
+    cout << sizeof(Mike) << endl;
+    Student Peter;
+    Func(Peter);
+    cout << sizeof(Peter) << endl;
+
+    //满足多态的两个条件 1.虚函数的重写2.父类的指针或引用调用
+    //多态的原理是 指向谁就到谁的虚表里面去找
+
+    //重写的目的是覆盖虚表
+    //多态是运行时到指向的对象的虚表中查找要调用的虚函数的地址来进行调用
 }
