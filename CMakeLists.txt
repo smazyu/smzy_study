@@ -22,6 +22,7 @@
  # 定义可执行目标
  add_executable(smzy ${SOURCES}
          cpp_study/day_37_polymorphism/test.cpp
+         cpp_study/day_37_polymorphism/test1.cpp
  )
 
  # 为目标设置包含目录
