@@ -128,6 +128,30 @@ smzy/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/build
 .PHONY : smzy/fast
 
+cpp_study/day_37_polymorphism/single_and_multiple_inheritance_vtable.obj: cpp_study/day_37_polymorphism/single_and_multiple_inheritance_vtable.cpp.obj
+.PHONY : cpp_study/day_37_polymorphism/single_and_multiple_inheritance_vtable.obj
+
+# target to build an object file
+cpp_study/day_37_polymorphism/single_and_multiple_inheritance_vtable.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/cpp_study/day_37_polymorphism/single_and_multiple_inheritance_vtable.cpp.obj
+.PHONY : cpp_study/day_37_polymorphism/single_and_multiple_inheritance_vtable.cpp.obj
+
+cpp_study/day_37_polymorphism/single_and_multiple_inheritance_vtable.i: cpp_study/day_37_polymorphism/single_and_multiple_inheritance_vtable.cpp.i
+.PHONY : cpp_study/day_37_polymorphism/single_and_multiple_inheritance_vtable.i
+
+# target to preprocess a source file
+cpp_study/day_37_polymorphism/single_and_multiple_inheritance_vtable.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/cpp_study/day_37_polymorphism/single_and_multiple_inheritance_vtable.cpp.i
+.PHONY : cpp_study/day_37_polymorphism/single_and_multiple_inheritance_vtable.cpp.i
+
+cpp_study/day_37_polymorphism/single_and_multiple_inheritance_vtable.s: cpp_study/day_37_polymorphism/single_and_multiple_inheritance_vtable.cpp.s
+.PHONY : cpp_study/day_37_polymorphism/single_and_multiple_inheritance_vtable.s
+
+# target to generate assembly for a file
+cpp_study/day_37_polymorphism/single_and_multiple_inheritance_vtable.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/cpp_study/day_37_polymorphism/single_and_multiple_inheritance_vtable.cpp.s
+.PHONY : cpp_study/day_37_polymorphism/single_and_multiple_inheritance_vtable.cpp.s
+
 cpp_study/day_37_polymorphism/test1.obj: cpp_study/day_37_polymorphism/test1.cpp.obj
 .PHONY : cpp_study/day_37_polymorphism/test1.obj
 
@@ -161,6 +185,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... smzy
+	@echo ... cpp_study/day_37_polymorphism/single_and_multiple_inheritance_vtable.obj
+	@echo ... cpp_study/day_37_polymorphism/single_and_multiple_inheritance_vtable.i
+	@echo ... cpp_study/day_37_polymorphism/single_and_multiple_inheritance_vtable.s
 	@echo ... cpp_study/day_37_polymorphism/test1.obj
 	@echo ... cpp_study/day_37_polymorphism/test1.i
 	@echo ... cpp_study/day_37_polymorphism/test1.s
