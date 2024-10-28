@@ -45,7 +45,18 @@ public:
 private:
     int b = 2;
 };
+typedef void(*VF_PTR)();//义一个函数指针变量定 参数为空 返回值为void
+//函数指针类型typedef
+void PrintVFTable(VF_PTR* pTable)
+{
+    for(size_t i = 0;pTable[i] !=0;++i)
+    {
+        printf("vfTable[%d]:%p\n",i,pTable[i]);
+    }
+}
 int main()
 {
+    Base b;
+    Derive d;
     return 0;
 }
