@@ -3,7 +3,7 @@
 //
 using namespace std;
 #include <iostream>
-
+//单继承
 class Base
 {
 public:
@@ -61,8 +61,9 @@ int main()
 {
     Base b;
     Derive d;
-    PrintVFTable((VF_PTR*)(*(void**)&b));
+    PrintVFTable((VF_PTR*)(*(int**)&b));
 
-    PrintVFTable((VF_PTR*)(*(void**)&d));
+    PrintVFTable((VF_PTR*)(*(int**)&d));
     return 0;
 }
+//多继承

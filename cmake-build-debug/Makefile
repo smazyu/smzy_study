@@ -128,6 +128,30 @@ smzy/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/build
 .PHONY : smzy/fast
 
+AlgorithmExercises/longest_common_prefix.obj: AlgorithmExercises/longest_common_prefix.cpp.obj
+.PHONY : AlgorithmExercises/longest_common_prefix.obj
+
+# target to build an object file
+AlgorithmExercises/longest_common_prefix.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/AlgorithmExercises/longest_common_prefix.cpp.obj
+.PHONY : AlgorithmExercises/longest_common_prefix.cpp.obj
+
+AlgorithmExercises/longest_common_prefix.i: AlgorithmExercises/longest_common_prefix.cpp.i
+.PHONY : AlgorithmExercises/longest_common_prefix.i
+
+# target to preprocess a source file
+AlgorithmExercises/longest_common_prefix.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/AlgorithmExercises/longest_common_prefix.cpp.i
+.PHONY : AlgorithmExercises/longest_common_prefix.cpp.i
+
+AlgorithmExercises/longest_common_prefix.s: AlgorithmExercises/longest_common_prefix.cpp.s
+.PHONY : AlgorithmExercises/longest_common_prefix.s
+
+# target to generate assembly for a file
+AlgorithmExercises/longest_common_prefix.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/AlgorithmExercises/longest_common_prefix.cpp.s
+.PHONY : AlgorithmExercises/longest_common_prefix.cpp.s
+
 cpp_study/day_37_polymorphism/single_and_multiple_inheritance_vtable.obj: cpp_study/day_37_polymorphism/single_and_multiple_inheritance_vtable.cpp.obj
 .PHONY : cpp_study/day_37_polymorphism/single_and_multiple_inheritance_vtable.obj
 
@@ -161,6 +185,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... smzy
+	@echo ... AlgorithmExercises/longest_common_prefix.obj
+	@echo ... AlgorithmExercises/longest_common_prefix.i
+	@echo ... AlgorithmExercises/longest_common_prefix.s
 	@echo ... cpp_study/day_37_polymorphism/single_and_multiple_inheritance_vtable.obj
 	@echo ... cpp_study/day_37_polymorphism/single_and_multiple_inheritance_vtable.i
 	@echo ... cpp_study/day_37_polymorphism/single_and_multiple_inheritance_vtable.s

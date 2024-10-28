@@ -21,7 +21,7 @@
 
  # 定义可执行目标
  add_executable(smzy ${SOURCES}
-         cpp_study/day_37_polymorphism/single_and_multiple_inheritance_vtable.cpp
+         AlgorithmExercises/longest_common_prefix.cpp
  )
 
  # 为目标设置包含目录
