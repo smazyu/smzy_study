@@ -1,8 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/smzy.dir/cpp_study/day_37_polymorphism/single_and_multiple_inheritance_vtable.cpp.obj"
   "CMakeFiles/smzy.dir/cpp_study/day_37_polymorphism/single_and_multiple_inheritance_vtable.cpp.obj.d"
-  "CMakeFiles/smzy.dir/cpp_study/day_37_polymorphism/test1.cpp.obj"
-  "CMakeFiles/smzy.dir/cpp_study/day_37_polymorphism/test1.cpp.obj.d"
   "libsmzy.dll.a"
   "smzy.exe"
   "smzy.exe.manifest"
