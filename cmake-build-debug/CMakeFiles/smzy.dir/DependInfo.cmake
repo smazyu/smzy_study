@@ -9,7 +9,6 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/Users/20212/Desktop/smzy_study/AlgorithmExercises/longest_common_prefix.cpp" "CMakeFiles/smzy.dir/AlgorithmExercises/longest_common_prefix.cpp.obj" "gcc" "CMakeFiles/smzy.dir/AlgorithmExercises/longest_common_prefix.cpp.obj.d"
-  "C:/Users/20212/Desktop/smzy_study/cpp_study/day_37_polymorphism/single_and_multiple_inheritance_vtable.cpp" "CMakeFiles/smzy.dir/cpp_study/day_37_polymorphism/single_and_multiple_inheritance_vtable.cpp.obj" "gcc" "CMakeFiles/smzy.dir/cpp_study/day_37_polymorphism/single_and_multiple_inheritance_vtable.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.
