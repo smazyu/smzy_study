@@ -14,18 +14,12 @@
  set(CMAKE_C_EXTENSIONS OFF)
  set(CMAKE_CXX_EXTENSIONS OFF)
 
- # 自动收集所有源文件
- #file(GLOB_RECURSE SOURCES
- #        ${PROJECT_SOURCE_DIR}/cpp_study/day_16/text1.cpp
- #)
-
  # 定义可执行目标
- add_executable(smzy ${SOURCES}
-         AlgorithmExercises/longest_common_prefix.cpp
+ add_executable(smzy 
+         cpp_study/day_37_polymorphism/test.cpp
  )
-
  # 为目标设置包含目录
- target_include_directories(smzy PRIVATE ${PROJECT_SOURCE_DIR}/include)
+ #target_include_directories(smzy PRIVATE ${PROJECT_SOURCE_DIR}/include)
 
  # 可选：为提高代码质量添加编译器警告
  if (MSVC)

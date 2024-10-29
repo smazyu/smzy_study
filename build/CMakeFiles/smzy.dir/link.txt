@@ -1,3 +1,0 @@
-"E:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\smzy.dir/objects.a
-"E:\Program Files\mingw\bin\ar.exe" qc CMakeFiles\smzy.dir/objects.a @CMakeFiles\smzy.dir\objects1.rsp
-"E:\Program Files\mingw\bin\g++.exe" -g -Wl,--whole-archive CMakeFiles\smzy.dir/objects.a -Wl,--no-whole-archive -o smzy.exe -Wl,--out-implib,libsmzy.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\smzy.dir\linkLibs.rsp

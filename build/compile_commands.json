@@ -1,8 +1,0 @@
-[
-{
-  "directory": "E:/GitHub/smzy_study/build",
-  "command": "\"E:\\Program Files\\mingw\\bin\\g++.exe\"  @CMakeFiles/smzy.dir/includes_CXX.rsp -g -std=c++17 -Wall -Wextra -pedantic -o CMakeFiles\\smzy.dir\\cpp_study\\day_22\\text2.cpp.obj -c E:\\GitHub\\smzy_study\\cpp_study\\day_22\\text2.cpp",
-  "file": "E:/GitHub/smzy_study/cpp_study/day_22/text2.cpp",
-  "output": "CMakeFiles/smzy.dir/cpp_study/day_22/text2.cpp.obj"
-}
-]
