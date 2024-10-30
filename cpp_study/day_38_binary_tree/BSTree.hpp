@@ -22,7 +22,27 @@ class BTree
 public:
     bool Insert(const K& key)
     {
-
+        if(_root == nullptr)
+        {
+            _root = new Node(key);
+            return true;
+        }
+        Node* cur = _root;
+        while (cur)
+        {
+            if(cur -> _key > key)
+            {
+                cur = cur -> _left;
+            }else if(cur -> _key < key)
+            {
+                cur = cur -> _right;
+            }else
+            {
+                return false;
+            }
+            cur = new Node(key);
+            return true;
+        }
     }
 private:
     Node* _root = nullptr;
