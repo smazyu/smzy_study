@@ -1,5 +1,4 @@
-#ifndef BSTRESS_H
-#define BSTRESS_H
+
 
 #include <iostream>
 using namespace std;
@@ -76,7 +75,23 @@ public:
         _InOrder(_root);
         cout << endl;
     }
-
+    bool Find(const K& key)
+    {
+        Node* cur = _root;
+        while(cur)
+        {
+            if(cur -> _key < key)
+            {
+                cur = cur -> _right;
+            }else if(cur -> _key > key){
+                cur = cur -> _left;
+            }
+            else
+            {
+                return true;
+            }
+        }
+    }
 private:
     Node* _root = nullptr;
 };
@@ -92,4 +107,3 @@ void TestBSTree()
     t.InOrder();
 }
 
-#endif // BSTRESS_H
