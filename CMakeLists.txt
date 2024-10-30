@@ -16,7 +16,8 @@
 
  # 定义可执行目标
  add_executable(smzy
-         cpp_study/day_38_binary_tree/test.cpp
+         cpp_study/day_38_binary_tree/BSTree.hpp
+         cpp_study/day_38_binary_tree/Test3.cpp
  )
  # 为目标设置包含目录
  #target_include_directories(smzy PRIVATE ${PROJECT_SOURCE_DIR}/include)
