@@ -9,6 +9,7 @@
 #pragma once
 using namespace std;
 #include <iostream>
+
 template <class K>
 struct BTreeNode
 {
@@ -16,30 +17,40 @@ struct BTreeNode
     BTreeNode<K>* _right;
 
     K _key;
-    BTreeNode(const K& key):_left(nullptr),_right(nullptr),_key(key){}
+
+    BTreeNode(const K& key): _left(nullptr), _right(nullptr), _key(key)
+    {
+    }
 };
 
 template <class K>
 class BTree
-{   typedef BTreeNode<K> Node;
+{
+    typedef BTreeNode<K> Node;
+
 public:
     bool Insert(const K& key)
     {
-        if(_root == nullptr)
+        if (_root == nullptr)
         {
             _root = new Node(key);
             return true;
         }
+        Node* parent = nullptr;
         Node* cur = _root;
         while (cur)
         {
-            if(cur -> _key > key)
+            if (cur->_key > key)
             {
-                cur = cur -> _left;
-            }else if(cur -> _key < key)
+                parent = cur;
+                cur = cur->_left;
+            }
+            else if (cur->_key < key)
             {
-                cur = cur -> _right;
-            }else
+                parent = cur;
+                cur = cur->_right;
+            }
+            else
             {
                 return false;
             }
@@ -47,27 +58,31 @@ public:
             return true;
         }
     }
+
     void _InOrder(Node* root)
     {
-        if(root == nullptr)
+        if (root == nullptr)
             return;
-        _InOrder(root -> _left);
-        cout << root -> _key << " ";
-        _InOrder(root -> _right);
+        _InOrder(root->_left);
+        cout << root->_key << " ";
+        _InOrder(root->_right);
     }
+
     void InOrder()
     {
         _InOrder(_root);
         cout << endl;
     }
+
 private:
     Node* _root = nullptr;
 };
+
 void TestBSTree()
 {
     BTree<int> t;
-    int a[] = {5,3,4,1,7,8,2,6,0,9};
-    for(auto e : a)
+    int a[] = {5, 3, 4, 1, 7, 8, 2, 6, 0, 9};
+    for (auto e : a)
     {
         t.Insert(e);
     }
