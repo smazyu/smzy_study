@@ -162,8 +162,8 @@ public:
                 }
                 return true;
             }
-            return false;
         }
+        return false;
     }
 
 private:
@@ -178,6 +178,11 @@ void TestBSTree()
     {
         t.Insert(e);
     }
+    t.InOrder();
+    t.Erase(2);
+    t.InOrder();
+    t.Erase(1);
+    t.Erase(8);
     t.InOrder();
 }
 
