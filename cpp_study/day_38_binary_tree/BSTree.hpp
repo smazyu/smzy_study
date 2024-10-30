@@ -124,39 +124,41 @@ public:
                 //3.左右都不为空
                 if (cur->_left == nullptr)
                 {
-                    if(parent -> _right == cur)
+                    if (parent->_right == cur)
                     {
-                        parent -> _right = cur -> _right;
+                        parent->_right = cur->_right;
                         delete cur;
-                    }else if(parent -> _left == cur)
+                    }
+                    else if (parent->_left == cur)
                     {
-                        parent -> _left = cur ->_right;
+                        parent->_left = cur->_right;
                         delete cur;
                     }
                 }
                 else if (cur->_right == nullptr)
                 {
-                    if(parent->_left == cur)
+                    if (parent->_left == cur)
                     {
-                        parent -> _left = cur -> _left;
+                        parent->_left = cur->_left;
                         delete cur;
-                    }else
+                    }
+                    else
                     {
-                        parent -> _right = cur -> _left;
+                        parent->_right = cur->_left;
                         delete cur;
                     }
                 }
                 else
                 {
                     Node* rightMinParent = nullptr;
-                    Node* rightMin = cur -> _right;
-                    while(rightMin -> _left)
+                    Node* rightMin = cur->_right;
+                    while (rightMin->_left)
                     {
                         rightMinParent = rightMin;
-                        rightMin = rightMin -> _left;
+                        rightMin = rightMin->_left;
                     }
-                    cur -> _key = rightMin -> _key;
-                    rightMinParent -> _left = rightMin -> _right;
+                    cur->_key = rightMin->_key;
+                    rightMinParent->_left = rightMin->_right;
                     //转换成删除rightMin
                     delete rightMin;
                 }
