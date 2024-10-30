@@ -7,13 +7,16 @@
 
 #endif //BSTRESS_H
 #pragma once
+using namespace std;
+#include <iostream>
 template <class K>
-class BTreeNode
+struct BTreeNode
 {
     BTreeNode<K>* _left;
     BTreeNode<K>* _right;
 
     K _key;
+    BTreeNode(const K& key):_left(nullptr),_right(nullptr),_key(key){}
 };
 
 template <class K>
@@ -44,6 +47,29 @@ public:
             return true;
         }
     }
+    void _InOrder(Node* root)
+    {
+        if(root == nullptr)
+            return;
+        _InOrder(root -> _left);
+        cout << root -> _key << " ";
+        _InOrder(root -> _right);
+    }
+    void InOrder()
+    {
+        _InOrder(_root);
+        cout << endl;
+    }
 private:
     Node* _root = nullptr;
 };
+void TestBSTree()
+{
+    BTree<int> t;
+    int a[] = {5,3,4,1,7,8,2,6,0,9};
+    for(auto e : a)
+    {
+        t.Insert(e);
+    }
+    t.InOrder();
+}
