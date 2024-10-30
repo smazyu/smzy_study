@@ -127,9 +127,11 @@ public:
                     if(parent -> _right == cur)
                     {
                         parent -> _right = cur -> _right;
+                        delete cur;
                     }else if(parent -> _left == cur)
                     {
                         parent -> _left = cur ->_right;
+                        delete cur;
                     }
                 }
                 else if (cur->_right == nullptr)
@@ -137,19 +139,26 @@ public:
                     if(parent->_left == cur)
                     {
                         parent -> _left = cur -> _left;
+                        delete cur;
                     }else
                     {
                         parent -> _right = cur -> _left;
+                        delete cur;
                     }
                 }
                 else
                 {
+                    Node* rightMinParent = nullptr;
                     Node* rightMin = cur -> _right;
                     while(rightMin -> _left)
                     {
+                        rightMinParent = rightMin;
                         rightMin = rightMin -> _left;
                     }
-                    cur -> _key = rightMin -> _ket
+                    cur -> _key = rightMin -> _key;
+                    rightMinParent -> _left = rightMin -> _right;
+                    //转换成删除rightMin
+                    delete rightMin;
                 }
                 return true;
             }
