@@ -1,6 +1,5 @@
-
-
 #include <iostream>
+#include <pstl/execution_defs.h>
 using namespace std;
 
 template <class K>
@@ -10,7 +9,9 @@ struct BTreeNode
     BTreeNode<K>* _right;
     K _key;
 
-    BTreeNode(const K& key) : _left(nullptr), _right(nullptr), _key(key) {}
+    BTreeNode(const K& key) : _left(nullptr), _right(nullptr), _key(key)
+    {
+    }
 };
 
 template <class K>
@@ -19,7 +20,9 @@ class BTree
     typedef BTreeNode<K> Node;
 
 public:
-    BTree() : _root(nullptr) {}
+    BTree() : _root(nullptr)
+    {
+    }
 
     bool Insert(const K& key)
     {
@@ -75,23 +78,85 @@ public:
         _InOrder(_root);
         cout << endl;
     }
+
     bool Find(const K& key)
     {
         Node* cur = _root;
-        while(cur)
+        while (cur)
         {
-            if(cur -> _key < key)
+            if (cur->_key < key)
             {
-                cur = cur -> _right;
-            }else if(cur -> _key > key){
-                cur = cur -> _left;
+                cur = cur->_right;
+            }
+            else if (cur->_key > key)
+            {
+                cur = cur->_left;
             }
             else
             {
                 return true;
             }
         }
+        return false;
     }
+
+    bool Erase(const K& key)
+    {
+        Node* parent = nullptr;
+        Node* cur = _root;
+        while (cur)
+        {
+            if (cur->_key < key)
+            {
+                parent = cur;
+                cur = cur->_right;
+            }
+            else if (cur->_key > key)
+            {
+                parent = cur;
+                cur = cur->_left;
+            }
+            else
+            {
+                //找到了
+                //1.左为空
+                //2.右为空
+                //3.左右都不为空
+                if (cur->_left == nullptr)
+                {
+                    if(parent -> _right == cur)
+                    {
+                        parent -> _right = cur -> _right;
+                    }else if(parent -> _left == cur)
+                    {
+                        parent -> _left = cur ->_right;
+                    }
+                }
+                else if (cur->_right == nullptr)
+                {
+                    if(parent->_left == cur)
+                    {
+                        parent -> _left = cur -> _left;
+                    }else
+                    {
+                        parent -> _right = cur -> _left;
+                    }
+                }
+                else
+                {
+                    Node* rightMin = cur -> _right;
+                    while(rightMin -> _left)
+                    {
+                        rightMin = rightMin -> _left;
+                    }
+                    cur -> _key = rightMin -> _ket
+                }
+                return true;
+            }
+            return false;
+        }
+    }
+
 private:
     Node* _root = nullptr;
 };
@@ -107,3 +172,5 @@ void TestBSTree()
     t.InOrder();
 }
 
+//删除 左子树的最右节点 右子树的最左节点
+//左为空，父亲指向我的右 右为空，父亲指向我的左
