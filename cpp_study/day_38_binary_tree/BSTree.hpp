@@ -179,6 +179,7 @@ void TestBSTree()
         t.Insert(e);
     }
     t.InOrder();
+    t.Erase(7);
     t.Erase(2);
     t.InOrder();
     t.Erase(1);
