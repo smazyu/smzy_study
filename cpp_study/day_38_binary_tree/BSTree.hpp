@@ -1,26 +1,17 @@
-//
-// Created by 20212 on 24-10-30.
-//
-
 #ifndef BSTRESS_H
 #define BSTRESS_H
 
-#endif //BSTRESS_H
-#pragma once
-using namespace std;
 #include <iostream>
+using namespace std;
 
 template <class K>
 struct BTreeNode
 {
     BTreeNode<K>* _left;
     BTreeNode<K>* _right;
-
     K _key;
 
-    BTreeNode(const K& key): _left(nullptr), _right(nullptr), _key(key)
-    {
-    }
+    BTreeNode(const K& key) : _left(nullptr), _right(nullptr), _key(key) {}
 };
 
 template <class K>
@@ -29,6 +20,8 @@ class BTree
     typedef BTreeNode<K> Node;
 
 public:
+    BTree() : _root(nullptr) {}
+
     bool Insert(const K& key)
     {
         if (_root == nullptr)
@@ -38,25 +31,35 @@ public:
         }
         Node* parent = nullptr;
         Node* cur = _root;
+
         while (cur)
         {
+            parent = cur; // 每次循环更新父节点
             if (cur->_key > key)
             {
-                parent = cur;
                 cur = cur->_left;
             }
             else if (cur->_key < key)
             {
-                parent = cur;
                 cur = cur->_right;
             }
             else
             {
-                return false;
+                return false; // 键值已存在
             }
-            cur = new Node(key);
-            return true;
         }
+
+        // 创建新节点并连接到父节点
+        Node* newNode = new Node(key);
+        if (parent->_key > key)
+        {
+            parent->_left = newNode;
+        }
+        else
+        {
+            parent->_right = newNode;
+        }
+        return true; // 成功插入
     }
 
     void _InOrder(Node* root)
@@ -88,3 +91,5 @@ void TestBSTree()
     }
     t.InOrder();
 }
+
+#endif // BSTRESS_H
