@@ -1,0 +1,4 @@
+# ninja log v5
+1	55	7518715923831450	build.ninja	fc51d93565f171a
+1	5	0	clean	94eb5120419ed6fe
+1	230	7518715925444351	CMakeFiles/smzy.dir/cpp_study/day_37_polymorphism/test.cpp.obj	2ec2722e4416a88c

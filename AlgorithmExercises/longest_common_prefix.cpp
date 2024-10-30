@@ -40,8 +40,7 @@ public:
         }
         return strs[0].substr(0, minLength); // 返回完整的最短字符串
     }
-};
-
+}
 int main() {
     Solution sol;
     std::vector<std::string> strs = {"flower", "flow", "flight"};
