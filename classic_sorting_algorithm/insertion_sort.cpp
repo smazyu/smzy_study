@@ -54,7 +54,7 @@ namespace method2
                 v[j + 1] = v[j];
                 j --;
             }
-            v[++j] = key;
+            v[j + 1] = key;
         }
     }
 }
