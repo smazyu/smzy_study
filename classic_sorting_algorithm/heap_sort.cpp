@@ -1,42 +1,57 @@
-//
-// Created by 20212 on 24-11-1.
-//
-//ä¸‹æ ‡ä¸ºiçš„èŠ‚ç‚¹çš„çˆ¶èŠ‚ç‚¹(i-1)/2
-//å·¦å­©å­ i*2 + 1;
-//å³å­©å­ i*2 + 2;
-void swap(int* a, int* b)
-{
+#include <stdio.h>
+
+void swap(int* a, int* b) {
     int temp = *a;
     *a = *b;
     *b = temp;
 }
 
-void heapify(int arr[], int n, int i)
-{
+void heapify(int arr[], int n, int i) {
     int largest = i;
-    int lson = i * 2 + 1;
-    int rson = i * 2 + 2;
-    if (lson < n && arr[largest] < arr[lson])
+    int lson = 2 * i + 1; // ×ó×Ó½Úµã
+    int rson = 2 * i + 2; // ÓÒ×Ó½Úµã
+    
+    if (lson < n && arr[lson] > arr[largest]) // ĞŞÕı±È½Ï·ûºÅ
         largest = lson;
-    if (rson < n && arr[largest] < arr[rson])
+    if (rson < n && arr[rson] > arr[largest]) // ĞŞÕı±È½Ï·ûºÅ
         largest = rson;
-    if (largest != i)
-    {
+    
+    if (largest != i) {
         swap(&arr[largest], &arr[i]);
         heapify(arr, n, largest);
     }
 }
 
-void head_sort(int arr[], int n)
-{
-    int i;
-    for (i = n / 2 - 1; i >= 0; i--)
-    {
+void heap_sort(int arr[], int n) { // ĞŞÕıº¯ÊıÃû
+    for (int i = n / 2 - 1; i >= 0; i--) {
         heapify(arr, n, i);
     }
-    for (i = n - 1; i > 0; i--)
-    {
+    for (int i = n - 1; i > 0; i--) {
         swap(&arr[i], &arr[0]);
         heapify(arr, i, 0);
     }
+}
+
+void testHeapSort() { // ĞŞÕıº¯ÊıÃû
+    int arr[] = {64, 34, 25, 12, 22, 11, 90};
+    int n = sizeof(arr) / sizeof(arr[0]);
+
+    printf("Ô­Ê¼Êı×é: ");
+    for (int i = 0; i < n; i++) {
+        printf("%d ", arr[i]);
+    }
+    printf("\n");
+
+    heap_sort(arr, n); // ĞŞÕıº¯ÊıÃû
+
+    printf("ÅÅĞòºóµÄÊı×é: ");
+    for (int i = 0; i < n; i++) {
+        printf("%d ", arr[i]);
+    }
+    printf("\n");
+}
+
+int main() {
+    testHeapSort();
+    return 0;
 }

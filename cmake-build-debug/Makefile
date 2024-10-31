@@ -152,6 +152,30 @@ classic_sorting_algorithm/heap_sort.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/classic_sorting_algorithm/heap_sort.cpp.s
 .PHONY : classic_sorting_algorithm/heap_sort.cpp.s
 
+classic_sorting_algorithm/shell_sort.obj: classic_sorting_algorithm/shell_sort.cpp.obj
+.PHONY : classic_sorting_algorithm/shell_sort.obj
+
+# target to build an object file
+classic_sorting_algorithm/shell_sort.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/classic_sorting_algorithm/shell_sort.cpp.obj
+.PHONY : classic_sorting_algorithm/shell_sort.cpp.obj
+
+classic_sorting_algorithm/shell_sort.i: classic_sorting_algorithm/shell_sort.cpp.i
+.PHONY : classic_sorting_algorithm/shell_sort.i
+
+# target to preprocess a source file
+classic_sorting_algorithm/shell_sort.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/classic_sorting_algorithm/shell_sort.cpp.i
+.PHONY : classic_sorting_algorithm/shell_sort.cpp.i
+
+classic_sorting_algorithm/shell_sort.s: classic_sorting_algorithm/shell_sort.cpp.s
+.PHONY : classic_sorting_algorithm/shell_sort.s
+
+# target to generate assembly for a file
+classic_sorting_algorithm/shell_sort.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/classic_sorting_algorithm/shell_sort.cpp.s
+.PHONY : classic_sorting_algorithm/shell_sort.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -164,6 +188,9 @@ help:
 	@echo ... classic_sorting_algorithm/heap_sort.obj
 	@echo ... classic_sorting_algorithm/heap_sort.i
 	@echo ... classic_sorting_algorithm/heap_sort.s
+	@echo ... classic_sorting_algorithm/shell_sort.obj
+	@echo ... classic_sorting_algorithm/shell_sort.i
+	@echo ... classic_sorting_algorithm/shell_sort.s
 .PHONY : help
 
 

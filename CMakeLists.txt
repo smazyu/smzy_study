@@ -16,7 +16,7 @@
 
  # 定义可执行目标
  add_executable(smzy
-         classic_sorting_algorithm/heap_sort.cpp
+         classic_sorting_algorithm/shell_sort.cpp
  )
  # 为目标设置包含目录
  #target_include_directories(smzy PRIVATE ${PROJECT_SOURCE_DIR}/include)
