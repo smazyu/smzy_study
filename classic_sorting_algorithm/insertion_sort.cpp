@@ -73,3 +73,4 @@ int main()
     }
     cout << endl;
 }
+//O(n^2) 稳定

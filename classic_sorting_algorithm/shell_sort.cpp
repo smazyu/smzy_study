@@ -18,3 +18,5 @@ void shell_sort(int arr[], int n)
         }
     }
 }
+//O(n^1.5) 不稳定
+
