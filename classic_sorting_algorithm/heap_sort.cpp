@@ -4,12 +4,13 @@
 //下标为i的节点的父节点(i-1)/2
 //左孩子 i*2 + 1;
 //右孩子 i*2 + 2;
-void swap(int*a,int*b)
+void swap(int* a, int* b)
 {
     int temp = *a;
     *a = *b;
     *b = temp;
 }
+
 void heapify(int arr[], int n, int i)
 {
     int largest = i;
@@ -22,7 +23,20 @@ void heapify(int arr[], int n, int i)
     if (largest != i)
     {
         swap(&arr[largest], &arr[i]);
-        heapify(arr,n,largest);
+        heapify(arr, n, largest);
     }
 }
-void 
+
+void head_sort(int arr[], int n)
+{
+    int i;
+    for (i = n / 2 - 1; i >= 0; i--)
+    {
+        heapify(arr, n, i);
+    }
+    for (i = n - 1; i > 0; i--)
+    {
+        swap(&arr[i], &arr[0]);
+        heapify(arr, i, 0);
+    }
+}
