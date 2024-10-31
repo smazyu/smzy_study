@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/smzy.dir/classic_sorting_algorithm/insertion_sort.cpp.obj"
-  "CMakeFiles/smzy.dir/classic_sorting_algorithm/insertion_sort.cpp.obj.d"
+  "CMakeFiles/smzy.dir/classic_sorting_algorithm/heap_sort.cpp.obj"
+  "CMakeFiles/smzy.dir/classic_sorting_algorithm/heap_sort.cpp.obj.d"
   "libsmzy.dll.a"
   "smzy.exe"
   "smzy.exe.manifest"
