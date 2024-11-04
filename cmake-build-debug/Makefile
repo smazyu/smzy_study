@@ -152,6 +152,30 @@ AlgorithmExercises/checksIfTwoStringsAreAlmostEqual.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/AlgorithmExercises/checksIfTwoStringsAreAlmostEqual.cpp.s
 .PHONY : AlgorithmExercises/checksIfTwoStringsAreAlmostEqual.cpp.s
 
+AlgorithmExercises/stringDecoding.obj: AlgorithmExercises/stringDecoding.cpp.obj
+.PHONY : AlgorithmExercises/stringDecoding.obj
+
+# target to build an object file
+AlgorithmExercises/stringDecoding.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/AlgorithmExercises/stringDecoding.cpp.obj
+.PHONY : AlgorithmExercises/stringDecoding.cpp.obj
+
+AlgorithmExercises/stringDecoding.i: AlgorithmExercises/stringDecoding.cpp.i
+.PHONY : AlgorithmExercises/stringDecoding.i
+
+# target to preprocess a source file
+AlgorithmExercises/stringDecoding.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/AlgorithmExercises/stringDecoding.cpp.i
+.PHONY : AlgorithmExercises/stringDecoding.cpp.i
+
+AlgorithmExercises/stringDecoding.s: AlgorithmExercises/stringDecoding.cpp.s
+.PHONY : AlgorithmExercises/stringDecoding.s
+
+# target to generate assembly for a file
+AlgorithmExercises/stringDecoding.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/AlgorithmExercises/stringDecoding.cpp.s
+.PHONY : AlgorithmExercises/stringDecoding.cpp.s
+
 classic_sorting_algorithm/shell_sort.obj: classic_sorting_algorithm/shell_sort.cpp.obj
 .PHONY : classic_sorting_algorithm/shell_sort.obj
 
@@ -188,6 +212,9 @@ help:
 	@echo ... AlgorithmExercises/checksIfTwoStringsAreAlmostEqual.obj
 	@echo ... AlgorithmExercises/checksIfTwoStringsAreAlmostEqual.i
 	@echo ... AlgorithmExercises/checksIfTwoStringsAreAlmostEqual.s
+	@echo ... AlgorithmExercises/stringDecoding.obj
+	@echo ... AlgorithmExercises/stringDecoding.i
+	@echo ... AlgorithmExercises/stringDecoding.s
 	@echo ... classic_sorting_algorithm/shell_sort.obj
 	@echo ... classic_sorting_algorithm/shell_sort.i
 	@echo ... classic_sorting_algorithm/shell_sort.s

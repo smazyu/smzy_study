@@ -18,6 +18,7 @@
  add_executable(smzy
          classic_sorting_algorithm/shell_sort.cpp
          AlgorithmExercises/checksIfTwoStringsAreAlmostEqual.cpp
+         AlgorithmExercises/stringDecoding.cpp
 
  )
  # 为目标设置包含目录
