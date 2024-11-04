@@ -128,29 +128,53 @@ smzy/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/build
 .PHONY : smzy/fast
 
-classic_sorting_algorithm/quick_sort.obj: classic_sorting_algorithm/quick_sort.cpp.obj
-.PHONY : classic_sorting_algorithm/quick_sort.obj
+AlgorithmExercises/checksIfTwoStringsAreAlmostEqual.obj: AlgorithmExercises/checksIfTwoStringsAreAlmostEqual.cpp.obj
+.PHONY : AlgorithmExercises/checksIfTwoStringsAreAlmostEqual.obj
 
 # target to build an object file
-classic_sorting_algorithm/quick_sort.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/classic_sorting_algorithm/quick_sort.cpp.obj
-.PHONY : classic_sorting_algorithm/quick_sort.cpp.obj
+AlgorithmExercises/checksIfTwoStringsAreAlmostEqual.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/AlgorithmExercises/checksIfTwoStringsAreAlmostEqual.cpp.obj
+.PHONY : AlgorithmExercises/checksIfTwoStringsAreAlmostEqual.cpp.obj
 
-classic_sorting_algorithm/quick_sort.i: classic_sorting_algorithm/quick_sort.cpp.i
-.PHONY : classic_sorting_algorithm/quick_sort.i
+AlgorithmExercises/checksIfTwoStringsAreAlmostEqual.i: AlgorithmExercises/checksIfTwoStringsAreAlmostEqual.cpp.i
+.PHONY : AlgorithmExercises/checksIfTwoStringsAreAlmostEqual.i
 
 # target to preprocess a source file
-classic_sorting_algorithm/quick_sort.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/classic_sorting_algorithm/quick_sort.cpp.i
-.PHONY : classic_sorting_algorithm/quick_sort.cpp.i
+AlgorithmExercises/checksIfTwoStringsAreAlmostEqual.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/AlgorithmExercises/checksIfTwoStringsAreAlmostEqual.cpp.i
+.PHONY : AlgorithmExercises/checksIfTwoStringsAreAlmostEqual.cpp.i
 
-classic_sorting_algorithm/quick_sort.s: classic_sorting_algorithm/quick_sort.cpp.s
-.PHONY : classic_sorting_algorithm/quick_sort.s
+AlgorithmExercises/checksIfTwoStringsAreAlmostEqual.s: AlgorithmExercises/checksIfTwoStringsAreAlmostEqual.cpp.s
+.PHONY : AlgorithmExercises/checksIfTwoStringsAreAlmostEqual.s
 
 # target to generate assembly for a file
-classic_sorting_algorithm/quick_sort.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/classic_sorting_algorithm/quick_sort.cpp.s
-.PHONY : classic_sorting_algorithm/quick_sort.cpp.s
+AlgorithmExercises/checksIfTwoStringsAreAlmostEqual.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/AlgorithmExercises/checksIfTwoStringsAreAlmostEqual.cpp.s
+.PHONY : AlgorithmExercises/checksIfTwoStringsAreAlmostEqual.cpp.s
+
+classic_sorting_algorithm/shell_sort.obj: classic_sorting_algorithm/shell_sort.cpp.obj
+.PHONY : classic_sorting_algorithm/shell_sort.obj
+
+# target to build an object file
+classic_sorting_algorithm/shell_sort.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/classic_sorting_algorithm/shell_sort.cpp.obj
+.PHONY : classic_sorting_algorithm/shell_sort.cpp.obj
+
+classic_sorting_algorithm/shell_sort.i: classic_sorting_algorithm/shell_sort.cpp.i
+.PHONY : classic_sorting_algorithm/shell_sort.i
+
+# target to preprocess a source file
+classic_sorting_algorithm/shell_sort.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/classic_sorting_algorithm/shell_sort.cpp.i
+.PHONY : classic_sorting_algorithm/shell_sort.cpp.i
+
+classic_sorting_algorithm/shell_sort.s: classic_sorting_algorithm/shell_sort.cpp.s
+.PHONY : classic_sorting_algorithm/shell_sort.s
+
+# target to generate assembly for a file
+classic_sorting_algorithm/shell_sort.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/classic_sorting_algorithm/shell_sort.cpp.s
+.PHONY : classic_sorting_algorithm/shell_sort.cpp.s
 
 # Help Target
 help:
@@ -161,9 +185,12 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... smzy
-	@echo ... classic_sorting_algorithm/quick_sort.obj
-	@echo ... classic_sorting_algorithm/quick_sort.i
-	@echo ... classic_sorting_algorithm/quick_sort.s
+	@echo ... AlgorithmExercises/checksIfTwoStringsAreAlmostEqual.obj
+	@echo ... AlgorithmExercises/checksIfTwoStringsAreAlmostEqual.i
+	@echo ... AlgorithmExercises/checksIfTwoStringsAreAlmostEqual.s
+	@echo ... classic_sorting_algorithm/shell_sort.obj
+	@echo ... classic_sorting_algorithm/shell_sort.i
+	@echo ... classic_sorting_algorithm/shell_sort.s
 .PHONY : help
 
 

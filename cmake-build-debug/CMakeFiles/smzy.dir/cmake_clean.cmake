@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/smzy.dir/classic_sorting_algorithm/quick_sort.cpp.obj"
-  "CMakeFiles/smzy.dir/classic_sorting_algorithm/quick_sort.cpp.obj.d"
+  "CMakeFiles/smzy.dir/AlgorithmExercises/checksIfTwoStringsAreAlmostEqual.cpp.obj"
+  "CMakeFiles/smzy.dir/AlgorithmExercises/checksIfTwoStringsAreAlmostEqual.cpp.obj.d"
+  "CMakeFiles/smzy.dir/classic_sorting_algorithm/shell_sort.cpp.obj"
+  "CMakeFiles/smzy.dir/classic_sorting_algorithm/shell_sort.cpp.obj.d"
   "libsmzy.dll.a"
   "smzy.exe"
   "smzy.exe.manifest"

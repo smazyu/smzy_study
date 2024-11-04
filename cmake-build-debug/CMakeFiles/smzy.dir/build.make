@@ -68,33 +68,49 @@ include CMakeFiles/smzy.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/smzy.dir/flags.make
 
-CMakeFiles/smzy.dir/classic_sorting_algorithm/quick_sort.cpp.obj: CMakeFiles/smzy.dir/flags.make
-CMakeFiles/smzy.dir/classic_sorting_algorithm/quick_sort.cpp.obj: C:/Users/20212/Desktop/smzy_study/classic_sorting_algorithm/quick_sort.cpp
-CMakeFiles/smzy.dir/classic_sorting_algorithm/quick_sort.cpp.obj: CMakeFiles/smzy.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\20212\Desktop\smzy_study\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/smzy.dir/classic_sorting_algorithm/quick_sort.cpp.obj"
-	"D:\Program Files\JetBrains\CLion 2024.2.2\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/smzy.dir/classic_sorting_algorithm/quick_sort.cpp.obj -MF CMakeFiles\smzy.dir\classic_sorting_algorithm\quick_sort.cpp.obj.d -o CMakeFiles\smzy.dir\classic_sorting_algorithm\quick_sort.cpp.obj -c C:\Users\20212\Desktop\smzy_study\classic_sorting_algorithm\quick_sort.cpp
+CMakeFiles/smzy.dir/classic_sorting_algorithm/shell_sort.cpp.obj: CMakeFiles/smzy.dir/flags.make
+CMakeFiles/smzy.dir/classic_sorting_algorithm/shell_sort.cpp.obj: C:/Users/20212/Desktop/smzy_study/classic_sorting_algorithm/shell_sort.cpp
+CMakeFiles/smzy.dir/classic_sorting_algorithm/shell_sort.cpp.obj: CMakeFiles/smzy.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\20212\Desktop\smzy_study\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/smzy.dir/classic_sorting_algorithm/shell_sort.cpp.obj"
+	"D:\Program Files\JetBrains\CLion 2024.2.2\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/smzy.dir/classic_sorting_algorithm/shell_sort.cpp.obj -MF CMakeFiles\smzy.dir\classic_sorting_algorithm\shell_sort.cpp.obj.d -o CMakeFiles\smzy.dir\classic_sorting_algorithm\shell_sort.cpp.obj -c C:\Users\20212\Desktop\smzy_study\classic_sorting_algorithm\shell_sort.cpp
 
-CMakeFiles/smzy.dir/classic_sorting_algorithm/quick_sort.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/smzy.dir/classic_sorting_algorithm/quick_sort.cpp.i"
-	"D:\Program Files\JetBrains\CLion 2024.2.2\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\20212\Desktop\smzy_study\classic_sorting_algorithm\quick_sort.cpp > CMakeFiles\smzy.dir\classic_sorting_algorithm\quick_sort.cpp.i
+CMakeFiles/smzy.dir/classic_sorting_algorithm/shell_sort.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/smzy.dir/classic_sorting_algorithm/shell_sort.cpp.i"
+	"D:\Program Files\JetBrains\CLion 2024.2.2\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\20212\Desktop\smzy_study\classic_sorting_algorithm\shell_sort.cpp > CMakeFiles\smzy.dir\classic_sorting_algorithm\shell_sort.cpp.i
 
-CMakeFiles/smzy.dir/classic_sorting_algorithm/quick_sort.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/smzy.dir/classic_sorting_algorithm/quick_sort.cpp.s"
-	"D:\Program Files\JetBrains\CLion 2024.2.2\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\20212\Desktop\smzy_study\classic_sorting_algorithm\quick_sort.cpp -o CMakeFiles\smzy.dir\classic_sorting_algorithm\quick_sort.cpp.s
+CMakeFiles/smzy.dir/classic_sorting_algorithm/shell_sort.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/smzy.dir/classic_sorting_algorithm/shell_sort.cpp.s"
+	"D:\Program Files\JetBrains\CLion 2024.2.2\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\20212\Desktop\smzy_study\classic_sorting_algorithm\shell_sort.cpp -o CMakeFiles\smzy.dir\classic_sorting_algorithm\shell_sort.cpp.s
+
+CMakeFiles/smzy.dir/AlgorithmExercises/checksIfTwoStringsAreAlmostEqual.cpp.obj: CMakeFiles/smzy.dir/flags.make
+CMakeFiles/smzy.dir/AlgorithmExercises/checksIfTwoStringsAreAlmostEqual.cpp.obj: C:/Users/20212/Desktop/smzy_study/AlgorithmExercises/checksIfTwoStringsAreAlmostEqual.cpp
+CMakeFiles/smzy.dir/AlgorithmExercises/checksIfTwoStringsAreAlmostEqual.cpp.obj: CMakeFiles/smzy.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\20212\Desktop\smzy_study\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/smzy.dir/AlgorithmExercises/checksIfTwoStringsAreAlmostEqual.cpp.obj"
+	"D:\Program Files\JetBrains\CLion 2024.2.2\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/smzy.dir/AlgorithmExercises/checksIfTwoStringsAreAlmostEqual.cpp.obj -MF CMakeFiles\smzy.dir\AlgorithmExercises\checksIfTwoStringsAreAlmostEqual.cpp.obj.d -o CMakeFiles\smzy.dir\AlgorithmExercises\checksIfTwoStringsAreAlmostEqual.cpp.obj -c C:\Users\20212\Desktop\smzy_study\AlgorithmExercises\checksIfTwoStringsAreAlmostEqual.cpp
+
+CMakeFiles/smzy.dir/AlgorithmExercises/checksIfTwoStringsAreAlmostEqual.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/smzy.dir/AlgorithmExercises/checksIfTwoStringsAreAlmostEqual.cpp.i"
+	"D:\Program Files\JetBrains\CLion 2024.2.2\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\20212\Desktop\smzy_study\AlgorithmExercises\checksIfTwoStringsAreAlmostEqual.cpp > CMakeFiles\smzy.dir\AlgorithmExercises\checksIfTwoStringsAreAlmostEqual.cpp.i
+
+CMakeFiles/smzy.dir/AlgorithmExercises/checksIfTwoStringsAreAlmostEqual.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/smzy.dir/AlgorithmExercises/checksIfTwoStringsAreAlmostEqual.cpp.s"
+	"D:\Program Files\JetBrains\CLion 2024.2.2\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\20212\Desktop\smzy_study\AlgorithmExercises\checksIfTwoStringsAreAlmostEqual.cpp -o CMakeFiles\smzy.dir\AlgorithmExercises\checksIfTwoStringsAreAlmostEqual.cpp.s
 
 # Object files for target smzy
 smzy_OBJECTS = \
-"CMakeFiles/smzy.dir/classic_sorting_algorithm/quick_sort.cpp.obj"
+"CMakeFiles/smzy.dir/classic_sorting_algorithm/shell_sort.cpp.obj" \
+"CMakeFiles/smzy.dir/AlgorithmExercises/checksIfTwoStringsAreAlmostEqual.cpp.obj"
 
 # External object files for target smzy
 smzy_EXTERNAL_OBJECTS =
 
-smzy.exe: CMakeFiles/smzy.dir/classic_sorting_algorithm/quick_sort.cpp.obj
+smzy.exe: CMakeFiles/smzy.dir/classic_sorting_algorithm/shell_sort.cpp.obj
+smzy.exe: CMakeFiles/smzy.dir/AlgorithmExercises/checksIfTwoStringsAreAlmostEqual.cpp.obj
 smzy.exe: CMakeFiles/smzy.dir/build.make
 smzy.exe: CMakeFiles/smzy.dir/linkLibs.rsp
 smzy.exe: CMakeFiles/smzy.dir/objects1.rsp
 smzy.exe: CMakeFiles/smzy.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\20212\Desktop\smzy_study\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable smzy.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\20212\Desktop\smzy_study\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable smzy.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\smzy.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

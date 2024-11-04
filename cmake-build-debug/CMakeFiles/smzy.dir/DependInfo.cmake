@@ -8,7 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/Users/20212/Desktop/smzy_study/classic_sorting_algorithm/quick_sort.cpp" "CMakeFiles/smzy.dir/classic_sorting_algorithm/quick_sort.cpp.obj" "gcc" "CMakeFiles/smzy.dir/classic_sorting_algorithm/quick_sort.cpp.obj.d"
+  "C:/Users/20212/Desktop/smzy_study/AlgorithmExercises/checksIfTwoStringsAreAlmostEqual.cpp" "CMakeFiles/smzy.dir/AlgorithmExercises/checksIfTwoStringsAreAlmostEqual.cpp.obj" "gcc" "CMakeFiles/smzy.dir/AlgorithmExercises/checksIfTwoStringsAreAlmostEqual.cpp.obj.d"
+  "C:/Users/20212/Desktop/smzy_study/classic_sorting_algorithm/shell_sort.cpp" "CMakeFiles/smzy.dir/classic_sorting_algorithm/shell_sort.cpp.obj" "gcc" "CMakeFiles/smzy.dir/classic_sorting_algorithm/shell_sort.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.
