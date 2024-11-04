@@ -150,7 +150,7 @@ public:
                 }
                 else
                 {
-                    Node* rightMinParent = nullptr;
+                    Node* rightMinParent = cur;
                     Node* rightMin = cur->_right;
                     while (rightMin->_left)
                     {
@@ -158,7 +158,11 @@ public:
                         rightMin = rightMin->_left;
                     }
                     cur->_key = rightMin->_key;
-                    rightMinParent->_left = rightMin->_right;
+                    //转换成删rightmin 因为rightmin是左为空 父亲指向他的右
+                    if(rightMin == rightMinParent -> _left)
+                        rightMinParent->_left = rightMin -> _right;
+                    else
+                        rightMinParent->_left = rightMin->_right;
                     //转换成删除rightMin
                     delete rightMin;
                 }
@@ -191,3 +195,6 @@ void TestBSTree()
 
 //删除 左子树的最右节点 右子树的最左节点
 //左为空，父亲指向我的右 右为空，父亲指向我的左
+
+//搜索使用场景:1.key的模型 判断在不在
+//2.key/value的模型 通过key找对应的value
