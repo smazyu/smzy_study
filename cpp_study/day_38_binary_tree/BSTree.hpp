@@ -154,7 +154,7 @@ public:
                     Node* rightMin = cur->_right;
                     while (rightMin->_left)
                     {
-                        rightMinParent = rightMin;
+                        rightMinParent = rightMin;//8
                         rightMin = rightMin->_left;
                     }
                     cur->_key = rightMin->_key;

@@ -200,6 +200,30 @@ classic_sorting_algorithm/shell_sort.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/classic_sorting_algorithm/shell_sort.cpp.s
 .PHONY : classic_sorting_algorithm/shell_sort.cpp.s
 
+cpp_study/day_38_binary_tree/Test3.obj: cpp_study/day_38_binary_tree/Test3.cpp.obj
+.PHONY : cpp_study/day_38_binary_tree/Test3.obj
+
+# target to build an object file
+cpp_study/day_38_binary_tree/Test3.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/cpp_study/day_38_binary_tree/Test3.cpp.obj
+.PHONY : cpp_study/day_38_binary_tree/Test3.cpp.obj
+
+cpp_study/day_38_binary_tree/Test3.i: cpp_study/day_38_binary_tree/Test3.cpp.i
+.PHONY : cpp_study/day_38_binary_tree/Test3.i
+
+# target to preprocess a source file
+cpp_study/day_38_binary_tree/Test3.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/cpp_study/day_38_binary_tree/Test3.cpp.i
+.PHONY : cpp_study/day_38_binary_tree/Test3.cpp.i
+
+cpp_study/day_38_binary_tree/Test3.s: cpp_study/day_38_binary_tree/Test3.cpp.s
+.PHONY : cpp_study/day_38_binary_tree/Test3.s
+
+# target to generate assembly for a file
+cpp_study/day_38_binary_tree/Test3.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/cpp_study/day_38_binary_tree/Test3.cpp.s
+.PHONY : cpp_study/day_38_binary_tree/Test3.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -218,6 +242,9 @@ help:
 	@echo ... classic_sorting_algorithm/shell_sort.obj
 	@echo ... classic_sorting_algorithm/shell_sort.i
 	@echo ... classic_sorting_algorithm/shell_sort.s
+	@echo ... cpp_study/day_38_binary_tree/Test3.obj
+	@echo ... cpp_study/day_38_binary_tree/Test3.i
+	@echo ... cpp_study/day_38_binary_tree/Test3.s
 .PHONY : help
 
 

@@ -16,9 +16,7 @@
 
  # 定义可执行目标
  add_executable(smzy
-         classic_sorting_algorithm/shell_sort.cpp
-         AlgorithmExercises/checksIfTwoStringsAreAlmostEqual.cpp
-         AlgorithmExercises/stringDecoding.cpp
+         cpp_study/day_38_binary_tree/Test3.cpp
 
  )
  # 为目标设置包含目录
