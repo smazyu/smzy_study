@@ -8,16 +8,28 @@
  */
 #include <iostream>
 #include <string>
+#include <vector>
 using namespace std;
 class Solution {
 public:
     bool checkAlmostEquivalent(string word1, string word2) {
         int n = word1.size();
-        for(int i = 0;i < n;i++)//这里前置++ 和后置++ 一样
-            //0 n-1
+        vector<int> w1(26,0);
+        vector<int> w2(26,0);
+        for(auto a:word1)
         {
-            if(word1[i] - word2[2] > 3)
+            w1[a - 'a']++;
+        }
+        for(auto b:word2)
+        {
+            w2[b - 'a']++;
+        }
+        for(int i = 0;i < 26;i++)
+        {
+            if(w1[i] - w2[i] > 3)
+            {
                 return false;
+            }
         }
         return true;
     }
