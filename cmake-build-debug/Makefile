@@ -128,6 +128,30 @@ smzy/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/build
 .PHONY : smzy/fast
 
+AlgorithmExercises/binary_tree_to_create_string.obj: AlgorithmExercises/binary_tree_to_create_string.cpp.obj
+.PHONY : AlgorithmExercises/binary_tree_to_create_string.obj
+
+# target to build an object file
+AlgorithmExercises/binary_tree_to_create_string.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/AlgorithmExercises/binary_tree_to_create_string.cpp.obj
+.PHONY : AlgorithmExercises/binary_tree_to_create_string.cpp.obj
+
+AlgorithmExercises/binary_tree_to_create_string.i: AlgorithmExercises/binary_tree_to_create_string.cpp.i
+.PHONY : AlgorithmExercises/binary_tree_to_create_string.i
+
+# target to preprocess a source file
+AlgorithmExercises/binary_tree_to_create_string.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/AlgorithmExercises/binary_tree_to_create_string.cpp.i
+.PHONY : AlgorithmExercises/binary_tree_to_create_string.cpp.i
+
+AlgorithmExercises/binary_tree_to_create_string.s: AlgorithmExercises/binary_tree_to_create_string.cpp.s
+.PHONY : AlgorithmExercises/binary_tree_to_create_string.s
+
+# target to generate assembly for a file
+AlgorithmExercises/binary_tree_to_create_string.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/AlgorithmExercises/binary_tree_to_create_string.cpp.s
+.PHONY : AlgorithmExercises/binary_tree_to_create_string.cpp.s
+
 cpp_study/day_38_binary_tree/Test3.obj: cpp_study/day_38_binary_tree/Test3.cpp.obj
 .PHONY : cpp_study/day_38_binary_tree/Test3.obj
 
@@ -161,6 +185,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... smzy
+	@echo ... AlgorithmExercises/binary_tree_to_create_string.obj
+	@echo ... AlgorithmExercises/binary_tree_to_create_string.i
+	@echo ... AlgorithmExercises/binary_tree_to_create_string.s
 	@echo ... cpp_study/day_38_binary_tree/Test3.obj
 	@echo ... cpp_study/day_38_binary_tree/Test3.i
 	@echo ... cpp_study/day_38_binary_tree/Test3.s
