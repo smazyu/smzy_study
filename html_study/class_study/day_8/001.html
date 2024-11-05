@@ -31,20 +31,34 @@
             width: 295px;
             height: 310px;
             float: left;
-            background: rgb(112, 17, 102);
+            /*background: rgb(112, 17, 102);*/
             margin-left: 5px;
         }
 
         .style dt, .style dd{float:left;}
         .style .left2{
             /*width:81px;*/
+            /*width: 90px;*/
             height: 169px;
-            line-height: 160px;
+            line-height: 169px;
         }
         .style .left4{
             height: 137px;
-            line-height: 132px;
+            line-height: 137px;
         }
+
+        .style a{
+            display: block;
+            background: black;
+            text-decoration: none;
+            text-align: center;
+            width: 90px;
+        }
+
+        .style a:hover{
+            background: #916161;
+        }
+
     </style>
 </head>
 <body>
@@ -55,22 +69,26 @@
 <div class="bg"><!-- 绿背景-->
     <div class="style">
         <!--第一组-->
+<!--        <div class ="block1">-->
+            <dl>
+                <dt class = "img1"><img src="pic01.jpg"></dt>
+                <dd class="left2"><a href="#">助学金申报</a></dd>
+                <dt><img src = "pic02.jpg"></dt>
+                <dd class="left4"><a href="#">博雅讲坛</a></dd>
+            </dl>
+<!--        </div>-->
+        <!--第二组-->
         <dl>
-            <dt><img src="pic01.jpg"></dt>
+            <dt class = "img1"><img src="pic01.jpg"></dt>
             <dd class="left2"><a href="#">助学金申报</a></dd>
             <dt><img src = "pic02.jpg"></dt>
             <dd class="left4"><a href="#">博雅讲坛</a></dd>
         </dl>
-        <!--第二组-->
         <dl>
-            <dt>2222</dt>
-            <dd><a href="#">课程设计</a></dd>
-            <dt>2222</dt>
-            <dd><a href="#">视频展示</a></dd>
-        </dl>
-        <dl>
-            <dt>333</dt>
-            <dd>333</dd>
+            <dt class = "img1"><img src="pic01.jpg"></dt>
+            <dd class="left2"><a href="#">助学金申报</a></dd>
+            <dt><img src = "pic02.jpg"></dt>
+            <dd class="left4"><a href="#">博雅讲坛</a></dd>
         </dl>
     </div>
 </div>
