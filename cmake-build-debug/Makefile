@@ -128,78 +128,6 @@ smzy/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/build
 .PHONY : smzy/fast
 
-AlgorithmExercises/checksIfTwoStringsAreAlmostEqual.obj: AlgorithmExercises/checksIfTwoStringsAreAlmostEqual.cpp.obj
-.PHONY : AlgorithmExercises/checksIfTwoStringsAreAlmostEqual.obj
-
-# target to build an object file
-AlgorithmExercises/checksIfTwoStringsAreAlmostEqual.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/AlgorithmExercises/checksIfTwoStringsAreAlmostEqual.cpp.obj
-.PHONY : AlgorithmExercises/checksIfTwoStringsAreAlmostEqual.cpp.obj
-
-AlgorithmExercises/checksIfTwoStringsAreAlmostEqual.i: AlgorithmExercises/checksIfTwoStringsAreAlmostEqual.cpp.i
-.PHONY : AlgorithmExercises/checksIfTwoStringsAreAlmostEqual.i
-
-# target to preprocess a source file
-AlgorithmExercises/checksIfTwoStringsAreAlmostEqual.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/AlgorithmExercises/checksIfTwoStringsAreAlmostEqual.cpp.i
-.PHONY : AlgorithmExercises/checksIfTwoStringsAreAlmostEqual.cpp.i
-
-AlgorithmExercises/checksIfTwoStringsAreAlmostEqual.s: AlgorithmExercises/checksIfTwoStringsAreAlmostEqual.cpp.s
-.PHONY : AlgorithmExercises/checksIfTwoStringsAreAlmostEqual.s
-
-# target to generate assembly for a file
-AlgorithmExercises/checksIfTwoStringsAreAlmostEqual.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/AlgorithmExercises/checksIfTwoStringsAreAlmostEqual.cpp.s
-.PHONY : AlgorithmExercises/checksIfTwoStringsAreAlmostEqual.cpp.s
-
-AlgorithmExercises/stringDecoding.obj: AlgorithmExercises/stringDecoding.cpp.obj
-.PHONY : AlgorithmExercises/stringDecoding.obj
-
-# target to build an object file
-AlgorithmExercises/stringDecoding.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/AlgorithmExercises/stringDecoding.cpp.obj
-.PHONY : AlgorithmExercises/stringDecoding.cpp.obj
-
-AlgorithmExercises/stringDecoding.i: AlgorithmExercises/stringDecoding.cpp.i
-.PHONY : AlgorithmExercises/stringDecoding.i
-
-# target to preprocess a source file
-AlgorithmExercises/stringDecoding.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/AlgorithmExercises/stringDecoding.cpp.i
-.PHONY : AlgorithmExercises/stringDecoding.cpp.i
-
-AlgorithmExercises/stringDecoding.s: AlgorithmExercises/stringDecoding.cpp.s
-.PHONY : AlgorithmExercises/stringDecoding.s
-
-# target to generate assembly for a file
-AlgorithmExercises/stringDecoding.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/AlgorithmExercises/stringDecoding.cpp.s
-.PHONY : AlgorithmExercises/stringDecoding.cpp.s
-
-classic_sorting_algorithm/shell_sort.obj: classic_sorting_algorithm/shell_sort.cpp.obj
-.PHONY : classic_sorting_algorithm/shell_sort.obj
-
-# target to build an object file
-classic_sorting_algorithm/shell_sort.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/classic_sorting_algorithm/shell_sort.cpp.obj
-.PHONY : classic_sorting_algorithm/shell_sort.cpp.obj
-
-classic_sorting_algorithm/shell_sort.i: classic_sorting_algorithm/shell_sort.cpp.i
-.PHONY : classic_sorting_algorithm/shell_sort.i
-
-# target to preprocess a source file
-classic_sorting_algorithm/shell_sort.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/classic_sorting_algorithm/shell_sort.cpp.i
-.PHONY : classic_sorting_algorithm/shell_sort.cpp.i
-
-classic_sorting_algorithm/shell_sort.s: classic_sorting_algorithm/shell_sort.cpp.s
-.PHONY : classic_sorting_algorithm/shell_sort.s
-
-# target to generate assembly for a file
-classic_sorting_algorithm/shell_sort.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/classic_sorting_algorithm/shell_sort.cpp.s
-.PHONY : classic_sorting_algorithm/shell_sort.cpp.s
-
 cpp_study/day_38_binary_tree/Test3.obj: cpp_study/day_38_binary_tree/Test3.cpp.obj
 .PHONY : cpp_study/day_38_binary_tree/Test3.obj
 
@@ -233,15 +161,6 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... smzy
-	@echo ... AlgorithmExercises/checksIfTwoStringsAreAlmostEqual.obj
-	@echo ... AlgorithmExercises/checksIfTwoStringsAreAlmostEqual.i
-	@echo ... AlgorithmExercises/checksIfTwoStringsAreAlmostEqual.s
-	@echo ... AlgorithmExercises/stringDecoding.obj
-	@echo ... AlgorithmExercises/stringDecoding.i
-	@echo ... AlgorithmExercises/stringDecoding.s
-	@echo ... classic_sorting_algorithm/shell_sort.obj
-	@echo ... classic_sorting_algorithm/shell_sort.i
-	@echo ... classic_sorting_algorithm/shell_sort.s
 	@echo ... cpp_study/day_38_binary_tree/Test3.obj
 	@echo ... cpp_study/day_38_binary_tree/Test3.i
 	@echo ... cpp_study/day_38_binary_tree/Test3.s
