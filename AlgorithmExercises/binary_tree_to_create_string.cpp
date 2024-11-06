@@ -24,6 +24,7 @@ public:
         }
         if(t -> right){
             str += '(';
+
             str += tree2str(t->right);
             str += ')';
         }
