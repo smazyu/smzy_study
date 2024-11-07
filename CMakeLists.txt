@@ -16,9 +16,7 @@
 
  # 定义可执行目标
  add_executable(smzy
-         cpp_study/day_38_binary_tree/Test3.cpp
-         cpp_study/day_39_binary_tree_2/Bstree.h
-         AlgorithmExercises/binary_tree_to_create_string.cpp
+         "AlgorithmExercises/binary_search_tree_and_doubly_linked_list .cpp"
 
  )
  # 为目标设置包含目录

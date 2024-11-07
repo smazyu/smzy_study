@@ -128,6 +128,30 @@ smzy/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/build
 .PHONY : smzy/fast
 
+AlgorithmExercises/binary_search_tree_and_doubly_linked_list_.obj: AlgorithmExercises/binary_search_tree_and_doubly_linked_list_.cpp.obj
+.PHONY : AlgorithmExercises/binary_search_tree_and_doubly_linked_list_.obj
+
+# target to build an object file
+AlgorithmExercises/binary_search_tree_and_doubly_linked_list_.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/AlgorithmExercises/binary_search_tree_and_doubly_linked_list_.cpp.obj
+.PHONY : AlgorithmExercises/binary_search_tree_and_doubly_linked_list_.cpp.obj
+
+AlgorithmExercises/binary_search_tree_and_doubly_linked_list_.i: AlgorithmExercises/binary_search_tree_and_doubly_linked_list_.cpp.i
+.PHONY : AlgorithmExercises/binary_search_tree_and_doubly_linked_list_.i
+
+# target to preprocess a source file
+AlgorithmExercises/binary_search_tree_and_doubly_linked_list_.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/AlgorithmExercises/binary_search_tree_and_doubly_linked_list_.cpp.i
+.PHONY : AlgorithmExercises/binary_search_tree_and_doubly_linked_list_.cpp.i
+
+AlgorithmExercises/binary_search_tree_and_doubly_linked_list_.s: AlgorithmExercises/binary_search_tree_and_doubly_linked_list_.cpp.s
+.PHONY : AlgorithmExercises/binary_search_tree_and_doubly_linked_list_.s
+
+# target to generate assembly for a file
+AlgorithmExercises/binary_search_tree_and_doubly_linked_list_.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/AlgorithmExercises/binary_search_tree_and_doubly_linked_list_.cpp.s
+.PHONY : AlgorithmExercises/binary_search_tree_and_doubly_linked_list_.cpp.s
+
 AlgorithmExercises/binary_tree_to_create_string.obj: AlgorithmExercises/binary_tree_to_create_string.cpp.obj
 .PHONY : AlgorithmExercises/binary_tree_to_create_string.obj
 
@@ -185,6 +209,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... smzy
+	@echo ... AlgorithmExercises/binary_search_tree_and_doubly_linked_list_.obj
+	@echo ... AlgorithmExercises/binary_search_tree_and_doubly_linked_list_.i
+	@echo ... AlgorithmExercises/binary_search_tree_and_doubly_linked_list_.s
 	@echo ... AlgorithmExercises/binary_tree_to_create_string.obj
 	@echo ... AlgorithmExercises/binary_tree_to_create_string.i
 	@echo ... AlgorithmExercises/binary_tree_to_create_string.s
