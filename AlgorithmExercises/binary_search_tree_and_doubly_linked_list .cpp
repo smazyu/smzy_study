@@ -15,3 +15,10 @@ using namespace std;
 //int a = 0
 //int &b =a;
 
+//int a,b;
+// swap(&a,&b);
+// void swap(int*pa,int*pb){}
+
+// int*p1,int*p2;
+// void swap(int**p1,int**p2)
+// void swap(int*&p1,int*&p2)
