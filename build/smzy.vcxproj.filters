@@ -1,25 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="C:\Users\20212\Desktop\smzy_study\cpp_study\day_38_binary_tree\Test3.cpp">
+    <ClCompile Include="C:\Users\20212\Desktop\smzy_study\AlgorithmExercises\multiplyStr.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\20212\Desktop\smzy_study\AlgorithmExercises\binary_tree_to_create_string.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="C:\Users\20212\Desktop\smzy_study\cpp_study\day_39_binary_tree_2\Bstree.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="C:\Users\20212\Desktop\smzy_study\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
-    <Filter Include="Header Files">
-      <UniqueIdentifier>{E45A950F-091D-32C0-A3F2-BAB27C6A1918}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Source Files">
       <UniqueIdentifier>{F13B96E7-6492-3091-97A2-867042399156}</UniqueIdentifier>
     </Filter>

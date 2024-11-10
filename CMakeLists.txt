@@ -1,4 +1,4 @@
- cmake_minimum_required(VERSION 3.20)
+﻿ cmake_minimum_required(VERSION 3.20)
 
  # 设置项目名称并指定使用的语言
  project(smzy_study LANGUAGES C CXX)
@@ -16,7 +16,6 @@
 
  # 定义可执行目标
  add_executable(smzy
-         AlgorithmExercises/str_compression.cpp
          AlgorithmExercises/multiplyStr.cpp
 
  )

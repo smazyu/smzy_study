@@ -1,2 +1,0 @@
-C:/Users/20212/Desktop/smzy_study/build/CMakeFiles/CMakeScratch/TryCompile-6hfpxh/CMakeFiles/cmTC_15f97.dir
-C:/Users/20212/Desktop/smzy_study/build/CMakeFiles/CMakeScratch/TryCompile-6hfpxh/CMakeFiles/ALL_BUILD.dir

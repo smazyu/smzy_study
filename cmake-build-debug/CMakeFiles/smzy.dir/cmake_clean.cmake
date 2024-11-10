@@ -1,8 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/smzy.dir/AlgorithmExercises/multiplyStr.cpp.obj"
   "CMakeFiles/smzy.dir/AlgorithmExercises/multiplyStr.cpp.obj.d"
-  "CMakeFiles/smzy.dir/AlgorithmExercises/str_compression.cpp.obj"
-  "CMakeFiles/smzy.dir/AlgorithmExercises/str_compression.cpp.obj.d"
   "libsmzy.dll.a"
   "smzy.exe"
   "smzy.exe.manifest"

@@ -152,30 +152,6 @@ AlgorithmExercises/multiplyStr.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/AlgorithmExercises/multiplyStr.cpp.s
 .PHONY : AlgorithmExercises/multiplyStr.cpp.s
 
-AlgorithmExercises/str_compression.obj: AlgorithmExercises/str_compression.cpp.obj
-.PHONY : AlgorithmExercises/str_compression.obj
-
-# target to build an object file
-AlgorithmExercises/str_compression.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/AlgorithmExercises/str_compression.cpp.obj
-.PHONY : AlgorithmExercises/str_compression.cpp.obj
-
-AlgorithmExercises/str_compression.i: AlgorithmExercises/str_compression.cpp.i
-.PHONY : AlgorithmExercises/str_compression.i
-
-# target to preprocess a source file
-AlgorithmExercises/str_compression.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/AlgorithmExercises/str_compression.cpp.i
-.PHONY : AlgorithmExercises/str_compression.cpp.i
-
-AlgorithmExercises/str_compression.s: AlgorithmExercises/str_compression.cpp.s
-.PHONY : AlgorithmExercises/str_compression.s
-
-# target to generate assembly for a file
-AlgorithmExercises/str_compression.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/AlgorithmExercises/str_compression.cpp.s
-.PHONY : AlgorithmExercises/str_compression.cpp.s
-
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -188,9 +164,6 @@ help:
 	@echo ... AlgorithmExercises/multiplyStr.obj
 	@echo ... AlgorithmExercises/multiplyStr.i
 	@echo ... AlgorithmExercises/multiplyStr.s
-	@echo ... AlgorithmExercises/str_compression.obj
-	@echo ... AlgorithmExercises/str_compression.i
-	@echo ... AlgorithmExercises/str_compression.s
 .PHONY : help
 
 

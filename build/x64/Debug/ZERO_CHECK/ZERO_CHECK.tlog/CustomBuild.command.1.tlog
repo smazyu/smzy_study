@@ -1,0 +1,10 @@
+^C:\USERS\20212\DESKTOP\SMZY_STUDY\BUILD\CMAKEFILES\890BECCC75E3F697FC567CC98EF32F7F\GENERATE.STAMP.RULE
+setlocal
+"D:\Program Files\CMake\bin\cmake.exe" -SC:/Users/20212/Desktop/smzy_study -BC:/Users/20212/Desktop/smzy_study/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/20212/Desktop/smzy_study/build/smzy_study.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
