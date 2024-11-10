@@ -128,53 +128,29 @@ smzy/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/build
 .PHONY : smzy/fast
 
-AlgorithmExercises/binary_search_tree_and_doubly_linked_list_.obj: AlgorithmExercises/binary_search_tree_and_doubly_linked_list_.cpp.obj
-.PHONY : AlgorithmExercises/binary_search_tree_and_doubly_linked_list_.obj
+AlgorithmExercises/multiplyStr.obj: AlgorithmExercises/multiplyStr.cpp.obj
+.PHONY : AlgorithmExercises/multiplyStr.obj
 
 # target to build an object file
-AlgorithmExercises/binary_search_tree_and_doubly_linked_list_.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/AlgorithmExercises/binary_search_tree_and_doubly_linked_list_.cpp.obj
-.PHONY : AlgorithmExercises/binary_search_tree_and_doubly_linked_list_.cpp.obj
+AlgorithmExercises/multiplyStr.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/AlgorithmExercises/multiplyStr.cpp.obj
+.PHONY : AlgorithmExercises/multiplyStr.cpp.obj
 
-AlgorithmExercises/binary_search_tree_and_doubly_linked_list_.i: AlgorithmExercises/binary_search_tree_and_doubly_linked_list_.cpp.i
-.PHONY : AlgorithmExercises/binary_search_tree_and_doubly_linked_list_.i
-
-# target to preprocess a source file
-AlgorithmExercises/binary_search_tree_and_doubly_linked_list_.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/AlgorithmExercises/binary_search_tree_and_doubly_linked_list_.cpp.i
-.PHONY : AlgorithmExercises/binary_search_tree_and_doubly_linked_list_.cpp.i
-
-AlgorithmExercises/binary_search_tree_and_doubly_linked_list_.s: AlgorithmExercises/binary_search_tree_and_doubly_linked_list_.cpp.s
-.PHONY : AlgorithmExercises/binary_search_tree_and_doubly_linked_list_.s
-
-# target to generate assembly for a file
-AlgorithmExercises/binary_search_tree_and_doubly_linked_list_.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/AlgorithmExercises/binary_search_tree_and_doubly_linked_list_.cpp.s
-.PHONY : AlgorithmExercises/binary_search_tree_and_doubly_linked_list_.cpp.s
-
-AlgorithmExercises/str.obj: AlgorithmExercises/str.cpp.obj
-.PHONY : AlgorithmExercises/str.obj
-
-# target to build an object file
-AlgorithmExercises/str.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/AlgorithmExercises/str.cpp.obj
-.PHONY : AlgorithmExercises/str.cpp.obj
-
-AlgorithmExercises/str.i: AlgorithmExercises/str.cpp.i
-.PHONY : AlgorithmExercises/str.i
+AlgorithmExercises/multiplyStr.i: AlgorithmExercises/multiplyStr.cpp.i
+.PHONY : AlgorithmExercises/multiplyStr.i
 
 # target to preprocess a source file
-AlgorithmExercises/str.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/AlgorithmExercises/str.cpp.i
-.PHONY : AlgorithmExercises/str.cpp.i
+AlgorithmExercises/multiplyStr.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/AlgorithmExercises/multiplyStr.cpp.i
+.PHONY : AlgorithmExercises/multiplyStr.cpp.i
 
-AlgorithmExercises/str.s: AlgorithmExercises/str.cpp.s
-.PHONY : AlgorithmExercises/str.s
+AlgorithmExercises/multiplyStr.s: AlgorithmExercises/multiplyStr.cpp.s
+.PHONY : AlgorithmExercises/multiplyStr.s
 
 # target to generate assembly for a file
-AlgorithmExercises/str.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/AlgorithmExercises/str.cpp.s
-.PHONY : AlgorithmExercises/str.cpp.s
+AlgorithmExercises/multiplyStr.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/AlgorithmExercises/multiplyStr.cpp.s
+.PHONY : AlgorithmExercises/multiplyStr.cpp.s
 
 AlgorithmExercises/str_compression.obj: AlgorithmExercises/str_compression.cpp.obj
 .PHONY : AlgorithmExercises/str_compression.obj
@@ -209,12 +185,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... smzy
-	@echo ... AlgorithmExercises/binary_search_tree_and_doubly_linked_list_.obj
-	@echo ... AlgorithmExercises/binary_search_tree_and_doubly_linked_list_.i
-	@echo ... AlgorithmExercises/binary_search_tree_and_doubly_linked_list_.s
-	@echo ... AlgorithmExercises/str.obj
-	@echo ... AlgorithmExercises/str.i
-	@echo ... AlgorithmExercises/str.s
+	@echo ... AlgorithmExercises/multiplyStr.obj
+	@echo ... AlgorithmExercises/multiplyStr.i
+	@echo ... AlgorithmExercises/multiplyStr.s
 	@echo ... AlgorithmExercises/str_compression.obj
 	@echo ... AlgorithmExercises/str_compression.i
 	@echo ... AlgorithmExercises/str_compression.s

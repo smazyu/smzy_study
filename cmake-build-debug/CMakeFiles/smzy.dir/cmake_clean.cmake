@@ -1,8 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/smzy.dir/AlgorithmExercises/binary_search_tree_and_doubly_linked_list_.cpp.obj"
-  "CMakeFiles/smzy.dir/AlgorithmExercises/binary_search_tree_and_doubly_linked_list_.cpp.obj.d"
-  "CMakeFiles/smzy.dir/AlgorithmExercises/str.cpp.obj"
-  "CMakeFiles/smzy.dir/AlgorithmExercises/str.cpp.obj.d"
+  "CMakeFiles/smzy.dir/AlgorithmExercises/multiplyStr.cpp.obj"
+  "CMakeFiles/smzy.dir/AlgorithmExercises/multiplyStr.cpp.obj.d"
   "CMakeFiles/smzy.dir/AlgorithmExercises/str_compression.cpp.obj"
   "CMakeFiles/smzy.dir/AlgorithmExercises/str_compression.cpp.obj.d"
   "libsmzy.dll.a"

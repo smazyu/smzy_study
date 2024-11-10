@@ -17,6 +17,7 @@
  # 定义可执行目标
  add_executable(smzy
          AlgorithmExercises/str_compression.cpp
+         AlgorithmExercises/multiplyStr.cpp
 
  )
  # 为目标设置包含目录
