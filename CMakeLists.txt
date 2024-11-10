@@ -16,7 +16,7 @@
 
  # 定义可执行目标
  add_executable(smzy
-         "AlgorithmExercises/binary_search_tree_and_doubly_linked_list .cpp"
+         AlgorithmExercises/str_compression.cpp
 
  )
  # 为目标设置包含目录

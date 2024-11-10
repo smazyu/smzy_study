@@ -152,53 +152,53 @@ AlgorithmExercises/binary_search_tree_and_doubly_linked_list_.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/AlgorithmExercises/binary_search_tree_and_doubly_linked_list_.cpp.s
 .PHONY : AlgorithmExercises/binary_search_tree_and_doubly_linked_list_.cpp.s
 
-AlgorithmExercises/binary_tree_to_create_string.obj: AlgorithmExercises/binary_tree_to_create_string.cpp.obj
-.PHONY : AlgorithmExercises/binary_tree_to_create_string.obj
+AlgorithmExercises/str.obj: AlgorithmExercises/str.cpp.obj
+.PHONY : AlgorithmExercises/str.obj
 
 # target to build an object file
-AlgorithmExercises/binary_tree_to_create_string.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/AlgorithmExercises/binary_tree_to_create_string.cpp.obj
-.PHONY : AlgorithmExercises/binary_tree_to_create_string.cpp.obj
+AlgorithmExercises/str.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/AlgorithmExercises/str.cpp.obj
+.PHONY : AlgorithmExercises/str.cpp.obj
 
-AlgorithmExercises/binary_tree_to_create_string.i: AlgorithmExercises/binary_tree_to_create_string.cpp.i
-.PHONY : AlgorithmExercises/binary_tree_to_create_string.i
+AlgorithmExercises/str.i: AlgorithmExercises/str.cpp.i
+.PHONY : AlgorithmExercises/str.i
 
 # target to preprocess a source file
-AlgorithmExercises/binary_tree_to_create_string.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/AlgorithmExercises/binary_tree_to_create_string.cpp.i
-.PHONY : AlgorithmExercises/binary_tree_to_create_string.cpp.i
+AlgorithmExercises/str.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/AlgorithmExercises/str.cpp.i
+.PHONY : AlgorithmExercises/str.cpp.i
 
-AlgorithmExercises/binary_tree_to_create_string.s: AlgorithmExercises/binary_tree_to_create_string.cpp.s
-.PHONY : AlgorithmExercises/binary_tree_to_create_string.s
+AlgorithmExercises/str.s: AlgorithmExercises/str.cpp.s
+.PHONY : AlgorithmExercises/str.s
 
 # target to generate assembly for a file
-AlgorithmExercises/binary_tree_to_create_string.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/AlgorithmExercises/binary_tree_to_create_string.cpp.s
-.PHONY : AlgorithmExercises/binary_tree_to_create_string.cpp.s
+AlgorithmExercises/str.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/AlgorithmExercises/str.cpp.s
+.PHONY : AlgorithmExercises/str.cpp.s
 
-cpp_study/day_38_binary_tree/Test3.obj: cpp_study/day_38_binary_tree/Test3.cpp.obj
-.PHONY : cpp_study/day_38_binary_tree/Test3.obj
+AlgorithmExercises/str_compression.obj: AlgorithmExercises/str_compression.cpp.obj
+.PHONY : AlgorithmExercises/str_compression.obj
 
 # target to build an object file
-cpp_study/day_38_binary_tree/Test3.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/cpp_study/day_38_binary_tree/Test3.cpp.obj
-.PHONY : cpp_study/day_38_binary_tree/Test3.cpp.obj
+AlgorithmExercises/str_compression.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/AlgorithmExercises/str_compression.cpp.obj
+.PHONY : AlgorithmExercises/str_compression.cpp.obj
 
-cpp_study/day_38_binary_tree/Test3.i: cpp_study/day_38_binary_tree/Test3.cpp.i
-.PHONY : cpp_study/day_38_binary_tree/Test3.i
+AlgorithmExercises/str_compression.i: AlgorithmExercises/str_compression.cpp.i
+.PHONY : AlgorithmExercises/str_compression.i
 
 # target to preprocess a source file
-cpp_study/day_38_binary_tree/Test3.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/cpp_study/day_38_binary_tree/Test3.cpp.i
-.PHONY : cpp_study/day_38_binary_tree/Test3.cpp.i
+AlgorithmExercises/str_compression.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/AlgorithmExercises/str_compression.cpp.i
+.PHONY : AlgorithmExercises/str_compression.cpp.i
 
-cpp_study/day_38_binary_tree/Test3.s: cpp_study/day_38_binary_tree/Test3.cpp.s
-.PHONY : cpp_study/day_38_binary_tree/Test3.s
+AlgorithmExercises/str_compression.s: AlgorithmExercises/str_compression.cpp.s
+.PHONY : AlgorithmExercises/str_compression.s
 
 # target to generate assembly for a file
-cpp_study/day_38_binary_tree/Test3.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/cpp_study/day_38_binary_tree/Test3.cpp.s
-.PHONY : cpp_study/day_38_binary_tree/Test3.cpp.s
+AlgorithmExercises/str_compression.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/AlgorithmExercises/str_compression.cpp.s
+.PHONY : AlgorithmExercises/str_compression.cpp.s
 
 # Help Target
 help:
@@ -212,12 +212,12 @@ help:
 	@echo ... AlgorithmExercises/binary_search_tree_and_doubly_linked_list_.obj
 	@echo ... AlgorithmExercises/binary_search_tree_and_doubly_linked_list_.i
 	@echo ... AlgorithmExercises/binary_search_tree_and_doubly_linked_list_.s
-	@echo ... AlgorithmExercises/binary_tree_to_create_string.obj
-	@echo ... AlgorithmExercises/binary_tree_to_create_string.i
-	@echo ... AlgorithmExercises/binary_tree_to_create_string.s
-	@echo ... cpp_study/day_38_binary_tree/Test3.obj
-	@echo ... cpp_study/day_38_binary_tree/Test3.i
-	@echo ... cpp_study/day_38_binary_tree/Test3.s
+	@echo ... AlgorithmExercises/str.obj
+	@echo ... AlgorithmExercises/str.i
+	@echo ... AlgorithmExercises/str.s
+	@echo ... AlgorithmExercises/str_compression.obj
+	@echo ... AlgorithmExercises/str_compression.i
+	@echo ... AlgorithmExercises/str_compression.s
 .PHONY : help
 
 
