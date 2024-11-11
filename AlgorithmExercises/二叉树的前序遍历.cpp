@@ -1,10 +1,28 @@
 //  给你一棵二叉树的根节点 root ，返回其节点值的 后序遍历 。
+#if 0
+class Solution {
+public:
+    vector<int> preorderTraversal(TreeNode* root) {
+        vector<int> ret;
+        stack<TreeNode*> st;
 
-struct TreeNode
-{
-    int val;
-    *TreeNode *left;
-    *TreeNode *right;
-    *TreeNode() : val(0), left(nullptr), right(nullptr){} * TreeNode(int x) : val(x), left(nullptr), right(nullptr){} * TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right){}
-                                                                                                                                                                                                   *
+        TreeNode* cur = root;
+        while(cur || !st.empty()){
+            //左路节点
+            //访问左路节点的右子树
+
+            while(cur){
+                ret.push_back(cur -> val);
+                st.push(cur);
+                cur = cur -> left;
+            }
+            //取栈中的右子树出来访问
+            TreeNode* top = st.top();
+            st.pop();
+
+            cur = top -> right;
+        }
+        return ret;
+    }
 };
+#endif
