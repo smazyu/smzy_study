@@ -8,6 +8,9 @@ import logging
 import argparse
 from datetime import datetime
 import os
+import sys
+sys.stdout.reconfigure(encoding='utf-8')
+
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 # 设置日志记录
 logging.basicConfig(filename='C:/Users/20212/Desktop/smzy_study/Python_study/爬虫/豆瓣/douban_data.log', level=logging.INFO,
