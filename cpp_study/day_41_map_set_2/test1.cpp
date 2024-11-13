@@ -111,17 +111,46 @@ void test_map3()
     //         coutMap.insert(make_pair(str, 1));
     //     }
     // }
-    //第三种统计次数的方式
-    for(auto & str:strs)
+    // 第三种统计次数的方式
+    for (auto &str : strs)
     {
-        coutMap[str] ++;
+        // 1.如果水果不在map中，则[]会插入pair<str,0>,返回映射对象(次数)的引用进行++
+        // 2.如果水果在map中，则operator[]返回水果对应的映射对象(次数)的引用进行++
+        coutMap[str]++;
     }
-    
+
+    for (auto &str : strs)
+    {
+        // single element (1)
+        // pair<iterator, bool> insert(const value_type &val);
+        // 1.如果水果没在map则插入成功
+        // 2.如果水果已经在map中,插入失败,通过返回值拿到水果所在的节点迭代器,++次数
+        pair<map<string, int>::iterator, bool> ret = coutMap.insert(make_pair(str, 1));
+        if (ret.second == false)
+        {
+            ret.first->second++;
+        }
+    }
+
     for (auto &e : coutMap)
     {
         cout << e.first << " : " << e.second << " ";
     }
     cout << endl;
+    // mapped_type& operator[] (const key_type& k);
+    // operator 通过insert实现
+
+    // 为什么这里不用find实现呢
+    // 假设用find，如果map中没有这个k，如何返回？
+
+    // 这里用insert
+    // 1.如果k不在map中，则插入pair<k,mapped_type()>，再返回映射对象的引用
+    // 2.如果k在map中，则插入失败,返回k所在节点的映射对象
+
+    // map的operator[]的三层作用
+    // 1.插入
+    // 2.查找k对应的映射
+    // 3.修改k对应的映射
 }
 int main()
 {
