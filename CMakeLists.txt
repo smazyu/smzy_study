@@ -16,7 +16,7 @@
 
  # 定义可执行目标
  add_executable(smzy
-         AlgorithmExercises/multiplyStr.cpp
+         cpp_study/day_41_map_set_2/test1.cpp
 
  )
  # 为目标设置包含目录

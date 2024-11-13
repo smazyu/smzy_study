@@ -128,29 +128,29 @@ smzy/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/build
 .PHONY : smzy/fast
 
-AlgorithmExercises/multiplyStr.obj: AlgorithmExercises/multiplyStr.cpp.obj
-.PHONY : AlgorithmExercises/multiplyStr.obj
+cpp_study/day_41_map_set_2/test1.obj: cpp_study/day_41_map_set_2/test1.cpp.obj
+.PHONY : cpp_study/day_41_map_set_2/test1.obj
 
 # target to build an object file
-AlgorithmExercises/multiplyStr.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/AlgorithmExercises/multiplyStr.cpp.obj
-.PHONY : AlgorithmExercises/multiplyStr.cpp.obj
+cpp_study/day_41_map_set_2/test1.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/cpp_study/day_41_map_set_2/test1.cpp.obj
+.PHONY : cpp_study/day_41_map_set_2/test1.cpp.obj
 
-AlgorithmExercises/multiplyStr.i: AlgorithmExercises/multiplyStr.cpp.i
-.PHONY : AlgorithmExercises/multiplyStr.i
+cpp_study/day_41_map_set_2/test1.i: cpp_study/day_41_map_set_2/test1.cpp.i
+.PHONY : cpp_study/day_41_map_set_2/test1.i
 
 # target to preprocess a source file
-AlgorithmExercises/multiplyStr.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/AlgorithmExercises/multiplyStr.cpp.i
-.PHONY : AlgorithmExercises/multiplyStr.cpp.i
+cpp_study/day_41_map_set_2/test1.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/cpp_study/day_41_map_set_2/test1.cpp.i
+.PHONY : cpp_study/day_41_map_set_2/test1.cpp.i
 
-AlgorithmExercises/multiplyStr.s: AlgorithmExercises/multiplyStr.cpp.s
-.PHONY : AlgorithmExercises/multiplyStr.s
+cpp_study/day_41_map_set_2/test1.s: cpp_study/day_41_map_set_2/test1.cpp.s
+.PHONY : cpp_study/day_41_map_set_2/test1.s
 
 # target to generate assembly for a file
-AlgorithmExercises/multiplyStr.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/AlgorithmExercises/multiplyStr.cpp.s
-.PHONY : AlgorithmExercises/multiplyStr.cpp.s
+cpp_study/day_41_map_set_2/test1.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/cpp_study/day_41_map_set_2/test1.cpp.s
+.PHONY : cpp_study/day_41_map_set_2/test1.cpp.s
 
 # Help Target
 help:
@@ -161,9 +161,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... smzy
-	@echo ... AlgorithmExercises/multiplyStr.obj
-	@echo ... AlgorithmExercises/multiplyStr.i
-	@echo ... AlgorithmExercises/multiplyStr.s
+	@echo ... cpp_study/day_41_map_set_2/test1.obj
+	@echo ... cpp_study/day_41_map_set_2/test1.i
+	@echo ... cpp_study/day_41_map_set_2/test1.s
 .PHONY : help
 
 

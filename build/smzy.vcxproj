@@ -320,7 +320,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="C:\Users\20212\Desktop\smzy_study\AlgorithmExercises\multiplyStr.cpp" />
+    <ClCompile Include="C:\Users\20212\Desktop\smzy_study\cpp_study\day_41_map_set_2\test1.cpp" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

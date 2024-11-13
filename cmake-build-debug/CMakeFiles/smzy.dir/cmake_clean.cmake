@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/smzy.dir/AlgorithmExercises/multiplyStr.cpp.obj"
-  "CMakeFiles/smzy.dir/AlgorithmExercises/multiplyStr.cpp.obj.d"
+  "CMakeFiles/smzy.dir/cpp_study/day_41_map_set_2/test1.cpp.obj"
+  "CMakeFiles/smzy.dir/cpp_study/day_41_map_set_2/test1.cpp.obj.d"
   "libsmzy.dll.a"
   "smzy.exe"
   "smzy.exe.manifest"
