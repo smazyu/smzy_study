@@ -132,7 +132,8 @@ void test_map3()
         }
     }
 
-    for (auto &e : coutMap)
+    coutMap["œ„Ω∂"];
+    coutMap for (auto &e : coutMap)
     {
         cout << e.first << " : " << e.second << " ";
     }
