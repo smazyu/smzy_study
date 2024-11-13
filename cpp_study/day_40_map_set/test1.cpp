@@ -42,7 +42,8 @@ void test_set1()
     }
     cout << endl;
 }
-
+// erase 传值 底层就是由迭代器实现
+// erase 传迭代器可以判断是否找到了这个值
 int main()
 {
     test_set1();
