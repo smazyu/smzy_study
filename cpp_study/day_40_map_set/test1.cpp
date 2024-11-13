@@ -19,6 +19,28 @@ void test_set1()
         ++it;
     }
     cout << endl;
+
+    for (auto e : s)
+    {
+        cout << e << " ";
+    }
+    cout << endl;
+
+    // set<int> copy(s);
+
+    // for (auto e : copy)
+    // {
+    //     cout << e << " ";
+    // }
+    // cout << endl;
+    // auto pos = s.find(3);
+    set<int>::iterator pos = s.find(3);
+    s.erase(pos);
+    for (auto e : s)
+    {
+        cout << e << " ";
+    }
+    cout << endl;
 }
 
 int main()
