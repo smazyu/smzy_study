@@ -35,6 +35,7 @@ void test_set1()
     // cout << endl;
     // auto pos = s.find(3);
     set<int>::iterator pos = s.find(3);
+    // 使用算法find和使用set内置find的区别
     s.erase(pos);
     for (auto e : s)
     {
