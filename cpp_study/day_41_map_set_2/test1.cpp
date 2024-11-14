@@ -163,13 +163,55 @@ void test_map3()
     dict["string"] = "字符串";
     dict["left"] = "左边";
 
+    //一般使用operator[]去
+    //1.插入加修改
+    //2.修改
+
+    //一般不会用它去做查找，因为如果key不在不会插入数据
+
+    //map
+    //1.增 insert + operator[]
+    //2.删 erase
+    //3.查 find
+    //4.改 operator[]
+    //5.遍历 iterator + 范围for
+
+    //要注意的是 map 中存的是pair<k,v>键值对
 }
+void test_multi()
+{
+    //跟set的去别是 允许键值冗余
+    multiset<int> ms;
+    ms.insert(1);
+    ms.insert(3);
+    ms.insert(2);
+    ms.insert(3);
+    ms.insert(4);
+    ms.insert(5);
+
+    for(auto e:ms)
+    {
+        cout << e << " ";
+    }
+    cout <<endl;
+    //multi_map 和 map的区别和上面是一样的，都是可以允许冗余
+    //附加的是multi_map没有operator[],因为有多个相同的key的时候，不知道返回哪个key的value
+    //map的每一个元素实际上是一个键值对
+    //元素类型是pair
+    multimap<string,string> mm;
+    mm.insert(std::make_pair("苹果", "1"));
+    mm.insert(std::make_pair("苹果", "2"));
+    mm.insert(std::make_pair("苹果", "3"));
+    mm.insert(std::make_pair("苹果", "1"));
+}
+
 int main()
 {
     // test_set1();
     // test_map1();
     // test_map2();
-    test_map3();
+    // test_map3();
+    test_multi();
 }
 
 // 如果把中国所有人的身份存入set中，查找一个人在不在最多31次

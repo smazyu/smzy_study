@@ -128,29 +128,29 @@ smzy/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/build
 .PHONY : smzy/fast
 
-cpp_study/day_41_map_set_2/test1.obj: cpp_study/day_41_map_set_2/test1.cpp.obj
-.PHONY : cpp_study/day_41_map_set_2/test1.obj
+test.obj: test.cpp.obj
+.PHONY : test.obj
 
 # target to build an object file
-cpp_study/day_41_map_set_2/test1.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/cpp_study/day_41_map_set_2/test1.cpp.obj
-.PHONY : cpp_study/day_41_map_set_2/test1.cpp.obj
+test.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/test.cpp.obj
+.PHONY : test.cpp.obj
 
-cpp_study/day_41_map_set_2/test1.i: cpp_study/day_41_map_set_2/test1.cpp.i
-.PHONY : cpp_study/day_41_map_set_2/test1.i
+test.i: test.cpp.i
+.PHONY : test.i
 
 # target to preprocess a source file
-cpp_study/day_41_map_set_2/test1.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/cpp_study/day_41_map_set_2/test1.cpp.i
-.PHONY : cpp_study/day_41_map_set_2/test1.cpp.i
+test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/test.cpp.i
+.PHONY : test.cpp.i
 
-cpp_study/day_41_map_set_2/test1.s: cpp_study/day_41_map_set_2/test1.cpp.s
-.PHONY : cpp_study/day_41_map_set_2/test1.s
+test.s: test.cpp.s
+.PHONY : test.s
 
 # target to generate assembly for a file
-cpp_study/day_41_map_set_2/test1.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/cpp_study/day_41_map_set_2/test1.cpp.s
-.PHONY : cpp_study/day_41_map_set_2/test1.cpp.s
+test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/test.cpp.s
+.PHONY : test.cpp.s
 
 # Help Target
 help:
@@ -161,9 +161,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... smzy
-	@echo ... cpp_study/day_41_map_set_2/test1.obj
-	@echo ... cpp_study/day_41_map_set_2/test1.i
-	@echo ... cpp_study/day_41_map_set_2/test1.s
+	@echo ... test.obj
+	@echo ... test.i
+	@echo ... test.s
 .PHONY : help
 
 
