@@ -66,6 +66,8 @@ public:
 
 
     //更新完parent的bf,如果parent->bf == 1or -1,说明parent的高度变了,对上层有影响,继续往上更新
+
+    //更新完parent的bf，如果parent -> bf == 2 or -2,说明parent所在的子树出现了不平衡，需要旋转处理。旋转处理完
     cur=new Node (kv);
     if(parent->_kv.first<kv.first)
           {
