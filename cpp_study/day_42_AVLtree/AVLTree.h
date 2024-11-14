@@ -18,6 +18,8 @@ struct AVLTreeNode
     int _bf; // balance factor 平衡因子
 
     pair<K, V> _kv;
+    AVLTreeNode(const pair<K,V>& kv):_left(nullptr),_right(nullptr),_parent(nullptr),_kv(kv),_bf(0)
+    {}
 };
 
 class AVLTree
@@ -78,6 +80,30 @@ public:
               parent->_left = cur;
               cur->_parent = parent;
           }
+    //更新平衡因子
+    while(parent)
+    {
+        if(cur == parent -> _right)
+        {
+            parent -> _bf++;
+        }
+        else
+        {
+            parent -> _bg--;
+        }
+        if(parent -> _bf ==0)
+        {
+            break;
+        }else if(parent -> _bf == 1 || parent -> _bf == -1)
+        {
+            cur = parent;
+            parent = parent -> _parent;
+        }
+        else if(parent -> _bf == 2 || parent -> _bf == -2)
+        {
+            //旋转处理
+        }
+    }
     return true;
 
 private:
