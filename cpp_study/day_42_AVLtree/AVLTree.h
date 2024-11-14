@@ -5,9 +5,10 @@
 #ifndef AVLTREE_H
 #define AVLTREE_H
 
-#endif //AVLTREE_H
+#pragma once
+#include <utility> // 为了使用 std::pair
+using namespace std;
 
-#pragme once
 template <class K, class V>
 struct AVLTreeNode
 {
@@ -15,97 +16,96 @@ struct AVLTreeNode
     AVLTreeNode<K, V>* _right;
     AVLTreeNode<K, V>* _parent;
 
-    int _bf; // balance factor 平衡因子
+    int _bf; // 平衡因子
 
     pair<K, V> _kv;
     AVLTreeNode(const pair<K,V>& kv):_left(nullptr),_right(nullptr),_parent(nullptr),_kv(kv),_bf(0)
     {}
 };
 
+template <class K, class V>
 class AVLTree
 {
     typedef AVLTreeNode<K, V> Node;
 
 public:
+    AVLTree(): _root(nullptr) {}
+
     bool Insert(const pair<K, V>& kv)
     {
-        //1.先按搜索树的规则进行插入
-        //2.更新平衡因子
-        //3.如果更新完了，没有出现违反规则，则插入结束
-        //如果有违反规则，则旋转处理
+        // 按照搜索树的规则进行插入
         if (_root == nullptr)
         {
             _root = new Node(kv);
             return true;
         }
-    }
 
-    Node* parent = nullptr;
-    Node* cur = _root;
+        Node* parent = nullptr;
+        Node* cur = _root;
 
-    while(cur)
-    {
-        if (cur->_kv.first > kv.first) //_kv.first 当前左树
-        //插入的左树
+        // 查找插入位置
+        while(cur)
         {
-            parent = cur;
-            cur = cur->_left;
+            if (cur->_kv.first > kv.first)
+            {
+                parent = cur;
+                cur = cur->_left;
+            }
+            else if (cur->_kv.first < kv.first)
+            {
+                parent = cur;
+                cur = cur->_right;
+            }
+            else
+            {
+                return false; // 重复键，插入失败
+            }
         }
 
-        else if (cur->_kv.first < kv.first)
+        // 创建新节点并连接到树
+        cur = new Node(kv);
+        if (parent->_kv.first < kv.first)
         {
-            parent = cur;
-            cur = cur->_right;
+            parent->_right = cur;
         }
         else
         {
-            return false;
+            parent->_left = cur;
         }
+        cur->_parent = parent;
+
+        // 更新平衡因子
+        while(parent)
+        {
+            if (cur == parent->_right)
+            {
+                parent->_bf++;
+            }
+            else
+            {
+                parent->_bf--;
+            }
+
+            if (parent->_bf == 0) // 父节点高度不变，停止更新
+            {
+                break;
+            }
+            else if (parent->_bf == 1 || parent->_bf == -1) // 父节点高度发生变化，继续向上更新
+            {
+                cur = parent;
+                parent = parent->_parent;
+            }
+            else if (parent->_bf == 2 || parent->_bf == -2) // 需要旋转处理
+            {
+                // 旋转代码待实现
+                break;
+            }
+        }
+        return true;
     }
-//cur是parent的左 parent->bf-- ,cur是parent的右,parent ->bf++
-    //更新完parent的bf，如果parent->bf == 0,说明parent高度不变,更新结束,插入完成
-    //说明插入前,parent的bf是1or -1,现在变为0,说明把矮的那边补上了。说明我的高度不变，对上层没有影响
-
-
-    //更新完parent的bf,如果parent->bf == 1or -1,说明parent的高度变了,对上层有影响,继续往上更新
-
-    //更新完parent的bf，如果parent -> bf == 2 or -2,说明parent所在的子树出现了不平衡，需要旋转处理。旋转处理完
-    cur=new Node (kv);
-    if(parent->_kv.first<kv.first)
-          {
-              parent->_right = cur;
-              cur->_parent = parent;
-          }else
-          {
-              parent->_left = cur;
-              cur->_parent = parent;
-          }
-    //更新平衡因子
-    while(parent)
-    {
-        if(cur == parent -> _right)
-        {
-            parent -> _bf++;
-        }
-        else
-        {
-            parent -> _bg--;
-        }
-        if(parent -> _bf ==0)
-        {
-            break;
-        }else if(parent -> _bf == 1 || parent -> _bf == -1)
-        {
-            cur = parent;
-            parent = parent -> _parent;
-        }
-        else if(parent -> _bf == 2 || parent -> _bf == -2)
-        {
-            //旋转处理
-        }
-    }
-    return true;
 
 private:
     Node* _root;
 };
+
+#endif // AVLTREE_H
