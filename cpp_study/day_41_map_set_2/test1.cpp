@@ -133,7 +133,11 @@ void test_map3()
     }
 
     coutMap["Ïã½¶"];
-    coutMap for (auto &e : coutMap)
+    coutMap["Ïã½¶"] = 1;
+    cout << coutMap["Ïã½¶"] << endl;
+    coutMap["Î÷¹Ï"] = 5;
+
+    for (auto &e : coutMap)
     {
         cout << e.first << " : " << e.second << " ";
     }
@@ -152,6 +156,13 @@ void test_map3()
     // 1.²åÈë
     // 2.²éÕÒk¶ÔÓ¦µÄÓ³Éä
     // 3.ĞŞ¸Äk¶ÔÓ¦µÄÓ³Éä
+
+    std::map<std::string,std::string> dict;
+    dict.insert(make_pair("sort","ÅÅĞò"));
+    dict["string"];
+    dict["string"] = "×Ö·û´®";
+    dict["left"] = "×ó±ß";
+
 }
 int main()
 {
