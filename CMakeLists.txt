@@ -17,6 +17,7 @@
  # 定义可执行目标
  add_executable(smzy
          cpp_study/day_42_AVLtree/test1.cpp
+         cpp_study/day_42_AVLtree/AVLTree.h
 
  )
  # 为目标设置包含目录
