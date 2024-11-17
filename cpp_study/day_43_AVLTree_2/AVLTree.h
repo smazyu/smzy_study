@@ -134,6 +134,10 @@ public:
         parent->_bf = subR->_bf = 0;
     }
 
+    void RotateR(Node *parent)
+    {
+    }
+
 private:
     Node *_root;
 };
