@@ -106,7 +106,7 @@ public:
                     }
                     else if (cur->_bf == -1)
                     {
-                        //.....
+                        RotateRL(parent);
                     }
                 }
                 else if (parent->_bf == -2)
@@ -117,7 +117,7 @@ public:
                     }
                     else if (cur->_bf == 1)
                     {
-                        //...
+                        RotateLR(parent);
                     }
                 }
                 // 旋转完成之后，parent所在的树的高度恢复到了,插入节点前的高度
@@ -193,8 +193,62 @@ public:
         }
         subL->_bf = parent->_bf = 0;
     }
+    // 右左双旋
+    void RotateRL(Node *parent)
+    {
+        Node *subR = parent->_right;
+        Node *subRL = subR->_left;
 
-    //
+        int bf = subRL->_bf;
+        RotateR(parent->_right);
+        RotateL(parent);
+        if (bf == -1)
+        {
+            parent->_bf = 0;
+            subR->_bf = 1;
+            subRL->_bf = 0;
+        }
+        else if (bf == 1)
+        {
+            subR->_bf = 0;
+            parent->_bf = -1;
+            subRL = 0;
+        }
+        esle if (bf == 0)
+        {
+            subR->_bf = 0;
+            parent->_bf = 0;
+            subRL->_bf = 0;
+        }
+    }
+    // 左右双旋
+    void RotateLR(Node *parent)
+    {
+        Node *subL = parent->_left;
+        Node *subLR = subL->_right;
+        int bf = subLR->_bf;
+        RotateL(subL);
+        RotateR(parent);
+        if (bf == 1)
+        {
+            parent->_bf = 0;
+            subL->_bf = -1;
+            subLR->_bf = 0;
+        }
+        else if (bf == -1)
+        {
+            parent->_bf = 1;
+            subL->_bf = 0;
+            subLR->_bf = 0;
+        }
+        else if (bf == 0)
+        {
+            parent->_bf = 0;
+            subL->_bf = 0;
+            subLR->_bf = 0;
+        }
+    }
+
 private:
     Node *_root;
 };
