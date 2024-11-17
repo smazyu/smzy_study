@@ -320,8 +320,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="C:\Users\20212\Desktop\smzy_study\cpp_study\day_42_AVLtree\test1.cpp" />
-    <ClInclude Include="C:\Users\20212\Desktop\smzy_study\cpp_study\day_42_AVLtree\AVLTree.h" />
+    <ClCompile Include="C:\Users\20212\Desktop\smzy_study\cpp_study\day_42_AVLTree\test1.cpp" />
+    <ClInclude Include="C:\Users\20212\Desktop\smzy_study\cpp_study\day_42_AVLTree\AVLTree.h" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

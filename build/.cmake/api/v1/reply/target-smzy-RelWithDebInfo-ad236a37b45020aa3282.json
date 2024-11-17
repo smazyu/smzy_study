@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "Debug/smzy.exe"
+			"path" : "RelWithDebInfo/smzy.exe"
 		},
 		{
-			"path" : "Debug/smzy.pdb"
+			"path" : "RelWithDebInfo/smzy.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -45,7 +45,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "/DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -std:c++17 -MDd"
+					"fragment" : "/DWIN32 /D_WINDOWS /EHsc /Zi /O2 /Ob1 /DNDEBUG -std:c++17 -MD"
 				},
 				{
 					"backtrace" : 2,
@@ -79,7 +79,7 @@
 		"commandFragments" : 
 		[
 			{
-				"fragment" : "/DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd",
+				"fragment" : "/DWIN32 /D_WINDOWS /EHsc /Zi /O2 /Ob1 /DNDEBUG -MD",
 				"role" : "flags"
 			},
 			{
@@ -122,12 +122,12 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "cpp_study/day_42_AVLtree/test1.cpp",
+			"path" : "cpp_study/day_42_AVLTree/test1.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
-			"path" : "cpp_study/day_42_AVLtree/AVLTree.h",
+			"path" : "cpp_study/day_42_AVLTree/AVLTree.h",
 			"sourceGroupIndex" : 1
 		}
 	],

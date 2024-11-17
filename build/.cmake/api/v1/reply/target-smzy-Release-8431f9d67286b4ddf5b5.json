@@ -122,12 +122,12 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "cpp_study/day_42_AVLtree/test1.cpp",
+			"path" : "cpp_study/day_42_AVLTree/test1.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
-			"path" : "cpp_study/day_42_AVLtree/AVLTree.h",
+			"path" : "cpp_study/day_42_AVLTree/AVLTree.h",
 			"sourceGroupIndex" : 1
 		}
 	],
