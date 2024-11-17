@@ -100,6 +100,39 @@ public:
         }
         return true;
     }
+    void RotateL(Node *parent)
+    {
+        Node *subR = parent->_right;
+        Node *subRL = subR->_left;
+
+        parent->_right = subRL;
+        if (subRL)
+            subRL->_parent = parent;
+        subR->_left = parent;
+        Node *ppNode = parent->_parent;
+        parent->_parent = subR;
+        // 1.原本parent是这棵树的跟，现在sub是根
+        // 2.parent为根的树只是整棵树中的子树，改变链接关系，那么subR变成了树的根
+
+        if (_root == parent)
+        {
+            _root = subR;
+            subR->_parent = nullptr;
+        }
+        else
+        {
+            if (ppNode->_left == parent)
+            {
+                ppNode->_left = subR;
+            }
+            else
+            {
+                ppNode->_right = subR;
+            }
+            subR->_parent = ppNode;
+        }
+        parent->_bf = subR->_bf = 0;
+    }
 
 private:
     Node *_root;
