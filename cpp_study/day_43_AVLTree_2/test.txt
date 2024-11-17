@@ -15,3 +15,6 @@ AVLTree插入
 左单旋：
 subR的左边给parent的右边
 parent变成subR的左边
+
+
+右高 左旋 左高 右旋
