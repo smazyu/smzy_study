@@ -2,7 +2,7 @@
 #define AVLTREE_H
 
 #pragma once
-#include <utility> // 为了使用 std::pair
+#include <utility> // 使用 std::pair
 using namespace std;
 
 template <class K, class V>
@@ -11,13 +11,12 @@ struct AVLTreeNode
     AVLTreeNode<K, V> *_left;
     AVLTreeNode<K, V> *_right;
     AVLTreeNode<K, V> *_parent;
-
     int _bf; // 平衡因子
 
     pair<K, V> _kv;
-    AVLTreeNode(const pair<K, V> &kv) : _left(nullptr), _right(nullptr), _parent(nullptr), _kv(kv), _bf(0)
-    {
-    }
+
+    AVLTreeNode(const pair<K, V> &kv)
+        : _left(nullptr), _right(nullptr), _parent(nullptr), _bf(0), _kv(kv) {}
 };
 
 template <class K, class V>
@@ -28,9 +27,14 @@ class AVLTree
 public:
     AVLTree() : _root(nullptr) {}
 
+    ~AVLTree()
+    {
+        Destroy(_root);
+    }
+
     bool Insert(const pair<K, V> &kv)
     {
-        // 按照搜索树的规则进行插入
+        // 插入节点
         if (_root == nullptr)
         {
             _root = new Node(kv);
@@ -59,7 +63,7 @@ public:
             }
         }
 
-        // 创建新节点并连接到树
+        // 创建新节点并连接
         cur = new Node(kv);
         if (parent->_kv.first < kv.first)
         {
@@ -71,7 +75,7 @@ public:
         }
         cur->_parent = parent;
 
-        // 更新平衡因子
+        // 更新平衡因子并调整平衡
         while (parent)
         {
             if (cur == parent->_right)
@@ -83,51 +87,58 @@ public:
                 parent->_bf--;
             }
 
-            if (parent->_bf == 0) // 父节点高度不变，停止更新
+            if (parent->_bf == 0)
             {
-                break;
+                break; // 父节点平衡，停止调整
             }
-            else if (parent->_bf == 1 || parent->_bf == -1) // 父节点高度发生变化，继续向上更新
+            else if (parent->_bf == 1 || parent->_bf == -1)
             {
                 cur = parent;
-                parent = parent->_parent;
+                parent = parent->_parent; // 向上更新
             }
-            else if (parent->_bf == 2 || parent->_bf == -2)
-            // 需要旋转处理
-            // 1.旋转的前提是，保持它依旧是搜索二叉树
-            // 2.旋转成平衡树
+            else // parent->_bf == 2 或 -2，需旋转
             {
-                // 旋转代码待实现
                 if (parent->_bf == 2)
                 {
-                    if (cur->_bf == 1)
+                    if (cur->_bf == 1) // LL
                     {
-                        RotateL(parent)
+                        RotateL(parent);
                     }
-                    else if (cur->_bf == -1)
+                    else if (cur->_bf == -1) // RL
                     {
                         RotateRL(parent);
                     }
                 }
                 else if (parent->_bf == -2)
                 {
-                    if (cur->_bf == -1)
+                    if (cur->_bf == -1) // RR
                     {
                         RotateR(parent);
                     }
-                    else if (cur->_bf == 1)
+                    else if (cur->_bf == 1) // LR
                     {
                         RotateLR(parent);
                     }
                 }
-                // 旋转完成之后，parent所在的树的高度恢复到了,插入节点前的高度
-                // 如果是子树，对上一层没有影响
-                break;
+                break; // 调整后子树高度恢复，停止
             }
         }
         return true;
     }
-    // 单左旋
+
+private:
+    Node *_root;
+
+    void Destroy(Node *node)
+    {
+        if (node)
+        {
+            Destroy(node->_left);
+            Destroy(node->_right);
+            delete node;
+        }
+    }
+
     void RotateL(Node *parent)
     {
         Node *subR = parent->_right;
@@ -137,10 +148,9 @@ public:
         if (subRL)
             subRL->_parent = parent;
         subR->_left = parent;
+
         Node *ppNode = parent->_parent;
         parent->_parent = subR;
-        // 1.原本parent是这棵树的跟，现在sub是根
-        // 2.parent为根的树只是整棵树中的子树，改变链接关系，那么subR变成了树的根
 
         if (_root == parent)
         {
@@ -159,9 +169,11 @@ public:
             }
             subR->_parent = ppNode;
         }
+
+        // 更新平衡因子
         parent->_bf = subR->_bf = 0;
     }
-    // 单右旋
+
     void RotateR(Node *parent)
     {
         Node *subL = parent->_left;
@@ -171,8 +183,10 @@ public:
         if (subLR)
             subLR->_parent = parent;
         subL->_right = parent;
+
         Node *ppNode = parent->_parent;
-        parent->_parent = subLR;
+        parent->_parent = subL;
+
         if (_root == parent)
         {
             _root = subL;
@@ -188,12 +202,13 @@ public:
             {
                 ppNode->_right = subL;
             }
-
             subL->_parent = ppNode;
         }
-        subL->_bf = parent->_bf = 0;
+
+        // 更新平衡因子
+        parent->_bf = subL->_bf = 0;
     }
-    // 右左双旋
+
     void RotateRL(Node *parent)
     {
         Node *subR = parent->_right;
@@ -202,6 +217,7 @@ public:
         int bf = subRL->_bf;
         RotateR(parent->_right);
         RotateL(parent);
+
         if (bf == -1)
         {
             parent->_bf = 0;
@@ -210,25 +226,27 @@ public:
         }
         else if (bf == 1)
         {
-            subR->_bf = 0;
             parent->_bf = -1;
-            subRL = 0;
-        }
-        esle if (bf == 0)
-        {
             subR->_bf = 0;
+            subRL->_bf = 0;
+        }
+        else if (bf == 0)
+        {
             parent->_bf = 0;
+            subR->_bf = 0;
             subRL->_bf = 0;
         }
     }
-    // 左右双旋
+
     void RotateLR(Node *parent)
     {
         Node *subL = parent->_left;
         Node *subLR = subL->_right;
+
         int bf = subLR->_bf;
         RotateL(subL);
         RotateR(parent);
+
         if (bf == 1)
         {
             parent->_bf = 0;
@@ -248,9 +266,6 @@ public:
             subLR->_bf = 0;
         }
     }
-
-private:
-    Node *_root;
 };
 
 #endif // AVLTREE_H
