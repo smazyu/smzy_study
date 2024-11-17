@@ -136,7 +136,9 @@ public:
 
     void RotateR(Node *parent)
     {
-    }
+        Node *subL = parent->_left;
+        Node *subLR = subL->_right;
+        }
 
 private:
     Node *_root;
