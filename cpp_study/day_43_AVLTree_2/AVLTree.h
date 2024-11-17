@@ -138,7 +138,33 @@ public:
     {
         Node *subL = parent->_left;
         Node *subLR = subL->_right;
+
+        parent->_left = subLR;
+        if (subLR)
+            subLR->_parent = parent;
+        subL->_right = parent;
+        Node *ppNode = parent->_parent;
+        parent->_parent = subLR;
+        if (_root == parent)
+        {
+            _root = subL;
+            subL->_parent = nullptr;
         }
+        else
+        {
+            if (ppNode->_left == parent)
+            {
+                ppNode->_left = subL;
+            }
+            else
+            {
+                ppNode->_right = subL;
+            }
+
+            subL->_parent = ppNode;
+        }
+        subL->_bf = parent->_bf = 0;
+    }
 
 private:
     Node *_root;
