@@ -92,7 +92,10 @@ public:
                 cur = parent;
                 parent = parent->_parent;
             }
-            else if (parent->_bf == 2 || parent->_bf == -2) // 需要旋转处理
+            else if (parent->_bf == 2 || parent->_bf == -2)
+            // 需要旋转处理
+            // 1.旋转的前提是，保持它依旧是搜索二叉树
+            // 2.旋转成平衡树
             {
                 // 旋转代码待实现
                 if (parent->_bf == 2)
@@ -117,6 +120,8 @@ public:
                         //...
                     }
                 }
+                // 旋转完成之后，parent所在的树的高度恢复到了,插入节点前的高度
+                // 如果是子树，对上一层没有影响
                 break;
             }
         }
