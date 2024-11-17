@@ -95,11 +95,34 @@ public:
             else if (parent->_bf == 2 || parent->_bf == -2) // 需要旋转处理
             {
                 // 旋转代码待实现
+                if (parent->_bf == 2)
+                {
+                    if (cur->_bf == 1)
+                    {
+                        RotateL(parent)
+                    }
+                    else if (cur->_bf == -1)
+                    {
+                        //.....
+                    }
+                }
+                else if (parent->_bf == -2)
+                {
+                    if (cur->_bf == -1)
+                    {
+                        RotateR(parent);
+                    }
+                    else if (cur->_bf == 1)
+                    {
+                        //...
+                    }
+                }
                 break;
             }
         }
         return true;
     }
+    // 单左旋
     void RotateL(Node *parent)
     {
         Node *subR = parent->_right;
@@ -133,7 +156,7 @@ public:
         }
         parent->_bf = subR->_bf = 0;
     }
-
+    // 单右旋
     void RotateR(Node *parent)
     {
         Node *subL = parent->_left;
