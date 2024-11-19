@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>音频插入</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+        }
+
+        #box {
+            width: 400px;
+            height: auto;
+            /* border: 3px solid #5b5fd4; */
+            border-radius: 10px;
+
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            text-align: center;
+        }
+
+        h3 {
+            font-size: 24px;
+            margin: 0 0 20px;
+        }
+
+        #rotateImg {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 2px solid #ccc;
+            animation: rotateImg 10s linear infinite;
+        }
+
+        audio {
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        input[type="range"] {
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        @keyframes rotateImg {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box">
+        <div style="text-align: center;">
+            <h3>音乐欣赏</h3>
+            <hr>
+            <img id="rotateImg" src="sky2.png" alt="旋转的图片">
+            <audio id="audio" src="qt.mp3" controls preload="auto"></audio>
+            <div>
+                <input id="volume" type="range" min="0" max="1" step="0.1">
+            </div>
+            <!-- 当前音乐名 -->
+            <div>
+                当前音乐名: <span id="title">111</span>
+            </div>
+            <div>
+                <button id="prevBtn"><img src="previous.png" width="50" height="50" alt="上一首"></button>
+                <button id="toggleBtn"><img src="play.png" width="50" height="50" alt="播放"></button>
+                <button id="nextBtn"><img src="next.png" width="50" height="50" alt="下一首"></button>
+            </div>
+            <script>
+                // 获取元素
+                var music = document.getElementById("audio");
+                var volume = document.getElementById("volume");
+                var toggleBtn = document.getElementById("toggleBtn");
+                var title = document.getElementById("title");
+                var prevBtn = document.getElementById("prevBtn");
+                var nextBtn = document.getElementById("nextBtn");
+
+                // 音乐路径列表和标题列表
+                var list = ["qt.mp3", "222.mp3", "333.mp3"];
+                var titleList = ["qt", "222", "333"];
+                var i = 0; // 当前是第几首歌
+
+                // 播放/暂停功能
+                function toggleMusic() {
+                    if (music.paused) {
+                        music.play();
+                        toggleBtn.innerHTML = '<img src="pause.png" width="50" height="50" alt="暂停">';
+                    } else {
+                        music.pause();
+                        toggleBtn.innerHTML = '<img src="play.png" width="50" height="50" alt="播放">';
+                    }
+                }
+
+                // 调节音量
+                function setVolume() {
+                    music.volume = volume.value;
+                }
+
+                // 下一首
+                function nextMusic() {
+                    i = (i + 1) % list.length;
+                    changeMusic();
+                }
+
+                // 上一首
+                function prevMusic() {
+                    i = (i - 1 + list.length) % list.length;
+                    changeMusic();
+                }
+
+                // 改变音乐
+                function changeMusic() {
+                    music.src = list[i];
+                    title.innerHTML = titleList[i];
+                    music.play();
+                    toggleBtn.innerHTML = '<img src="pause.png" width="50" height="50" alt="暂停">';
+                }
+
+                // 绑定事件
+                toggleBtn.addEventListener("click", toggleMusic);
+                volume.addEventListener("input", setVolume);
+                nextBtn.addEventListener("click", nextMusic);
+                prevBtn.addEventListener("click", prevMusic);
+            </script>
+        </div>
+</body>
+
+</html>

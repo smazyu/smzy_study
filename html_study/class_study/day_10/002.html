@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>视频播放JS版</title>
+    <style>
+        body {
+            background: #eeddb3;
+            font-family: Arial, sans-serif;
+        }
+
+        #one {
+            width: 640px;
+            background-color: white;
+            margin: 20px auto;
+            box-shadow: 10px 10px 10px #86a5f4;
+            padding: 10px;
+            border-radius: 8px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        h3 {
+            text-align: center;
+            margin: 10px 0;
+        }
+
+        li {
+            display: flex;
+            align-items: center;
+            padding: 10px 0;
+            cursor: pointer;
+        }
+
+        li:hover {
+            background-color: #f0f0f0;
+            border-radius: 8px;
+        }
+
+        li span {
+            line-height: 50px;
+            height: 50px;
+            padding-left: 20px;
+            font-size: 18px;
+        }
+
+        img {
+            vertical-align: bottom;
+        }
+
+        hr {
+            border: 0;
+            border-top: 1px solid #ccc;
+        }
+
+        video {
+            display: block;
+            margin: 0 auto 20px auto;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="one">
+        <video id="screen" src="123.mp4" width="640" controls></video>
+        <ul>
+            <li>
+                <h3>播放列表</h3>
+            </li>
+            <hr>
+            <li onclick="playCourse('123.mp4', 0)">
+                <img src="play.png" width="50" height="50" alt="播放图标">
+                <span>第一集</span>
+            </li>
+            <hr>
+            <li onclick="playCourse('123.mp4', 10)">
+                <img src="play.png" width="50" height="50" alt="播放图标">
+                <span>第二集</span>
+            </li>
+        </ul>
+    </div>
+    <script>
+        // 获取 video 对象
+        var screen = document.getElementById("screen");
+        // 切换视频并跳转播放时间
+        function playCourse(videoSrc, startTime) {
+            // 切换视频文件
+            screen.src = videoSrc;
+            // 设置起始播放时间
+            screen.currentTime = startTime;
+            // 播放视频
+            screen.play();
+        }
+    </script>
+</body>
+
+</html>
