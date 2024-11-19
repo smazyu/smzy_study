@@ -26,6 +26,7 @@ public:
         if (_root == nullptr)
         {
             _root = new Node(kv);
+            _root->_col = BLACK;
             return true;
         }
         Node *parent = nullptr;
@@ -58,9 +59,10 @@ public:
             parent->_left = cur;
             cur->_parent = parent;
         }
+        cur->_col = RED;
         return true;
     };
 
 private:
     Node *_root = nullptr;
-}
+};
