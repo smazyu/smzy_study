@@ -69,6 +69,9 @@ public:
                 // 情况1 uncle存在 且为红
                 if (uncle && uncle->_col == RED)
                 {
+                    parent->_col = uncle->_col = BLACK;
+                    grandfather->_col = RED;
+                    cur -
                 }
             }
         }
