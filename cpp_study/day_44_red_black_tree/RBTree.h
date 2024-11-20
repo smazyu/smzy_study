@@ -60,7 +60,7 @@ public:
             cur->_parent = parent;
         }
         cur->_col = RED;
-        while (parent->_col == RED)
+        while (parent && parent->_col == RED)
         {
             Node *grandfather = parent->_parent;
             if (grandfather->_left == parent)
@@ -71,9 +71,25 @@ public:
                 {
                     parent->_col = uncle->_col = BLACK;
                     grandfather->_col = RED;
-                    cur -
+                    cur = grandfather;
+                    parent = cur->_parent;
+                }
+                // 情况二 or 情况三 uncle不存在或者uncle存在且为黑
+                else
+                {
+                    // 情况三：双旋
+                    if (cur == parent->_right)
+                    {
+                        RotateL(parent);
+                        swap(parent, cur);
+                    }
+                    RotateR(grandfather);
+                    grandfather->_col = RED;
+                    parent->_col = BLACK;
+                    break;
                 }
             }
+            _root->_col = BLACK;
         }
         return true;
     };
