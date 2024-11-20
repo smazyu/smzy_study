@@ -60,6 +60,18 @@ public:
             cur->_parent = parent;
         }
         cur->_col = RED;
+        while (parent->_col == RED)
+        {
+            Node *grandfather = parent->_parent;
+            if (grandfather->_left == parent)
+            {
+                Node *uncle = grandfather->_right;
+                // 情况1 uncle存在 且为红
+                if (uncle && uncle->_col == RED)
+                {
+                }
+            }
+        }
         return true;
     };
 

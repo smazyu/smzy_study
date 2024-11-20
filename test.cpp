@@ -1,42 +1,51 @@
 #include <stdio.h>
+
 int main() {
-    float num1, num2, result;
-    int choice;
-    printf("请输入第一个数字：");
-    scanf("%f", &num1);
-    printf("请输入第二个数字：");
-    scanf("%f", &num2);
-    printf("\n选择运算：\n");
-    printf("1. 加法\n");
-    printf("2. 减法\n");
-    printf("3. 乘法\n");
-    printf("4. 除法\n");
-    printf("请输入你的选择（1/2/3/4）：");
-    scanf("%d", &choice);
-    switch(choice) {
-    case 1:
-        result = num1 + num2;
-        printf("结果：%.2f + %.2f = %.2f\n", num1, num2, result);
-        break;
-    case 2:
-        result = num1 - num2;
-        printf("结果：%.2f - %.2f = %.2f\n", num1, num2, result);
-        break;
-    case 3:
-        result = num1 * num2;
-        printf("结果：%.2f * %.2f = %.2f\n", num1, num2, result);
-        break;
-    case 4:
-            if (num2 != 0) {
-                result = num1 / num2;
-                printf("结果：%.2f / %.2f = %.2f\n", num1, num2, result);
-            } else {
-                printf("除数不能为零！\n");
-            }
-        break;
-    default:
-        printf("无效的选择！\n");
-        break;
+    double balance, deposit, withdraw, interest_rate, interest_after_1_year;
+    int account_type;
+
+    // 初始账户余额
+    double regular_balance = 2000, savings_balance = 1000;
+
+    // 账户类型提示
+    printf("选择账户类型（1：定期账户，2：活期账户）：");
+    scanf("%d", &account_type);
+
+    // 2.2 输入存款金额
+    printf("请输入存款金额：");
+    scanf("%lf", &deposit);
+
+    // 根据选择的账户类型进行存款处理
+    if (account_type == 1) {
+        balance = regular_balance + deposit;
+        interest_rate = 0.05;  // 定期账户利率为5%
+    } else if (account_type == 2) {
+        balance = savings_balance + deposit;
+        interest_rate = 0.01;  // 活期账户利率为1%
+    } else {
+        printf("无效的账户类型\n");
+        return 0;
+    }
+
+    // 2.3 计算余额和利息
+    interest_after_1_year = balance * interest_rate;
+
+    printf("账户余额：%.2lf元\n", balance);
+    printf("1年后的利息：%.2lf元\n", interest_after_1_year);
+
+    // 2.4 取款功能
+    printf("请输入取款金额：");
+    scanf("%lf", &withdraw);
+
+    // 判断取款是否合法
+    if (withdraw > balance) {
+        printf("余额不足，无法取款\n");
+    } else {
+        balance -= withdraw;  // 扣除取款金额
+        interest_after_1_year = balance * interest_rate;  // 更新利息
+
+        printf("取款后账户余额：%.2lf元\n", balance);
+        printf("取款后1年后的利息：%.2lf元\n", interest_after_1_year);
     }
 
     return 0;
