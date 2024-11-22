@@ -16,10 +16,7 @@
 
  # 定义可执行目标
  add_executable(smzy
-         cpp_study/day_42_AVLtree/test1.cpp
-         cpp_study/day_42_AVLtree/AVLTree.h
-         test.cpp
-
+         cpp_study/day_44_red_black_tree/RBTree.h
  )
  # 为目标设置包含目录
  #target_include_directories(smzy PRIVATE ${PROJECT_SOURCE_DIR}/include)

@@ -34,7 +34,7 @@
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 31,
+				"line" : 30,
 				"parent" : 0
 			}
 		]
@@ -71,8 +71,7 @@
 			},
 			"sourceIndexes" : 
 			[
-				0,
-				2
+				1
 			]
 		}
 	],
@@ -106,15 +105,14 @@
 	"sourceGroups" : 
 	[
 		{
-			"name" : "Source Files",
+			"name" : "Header Files",
 			"sourceIndexes" : 
 			[
-				0,
-				2
+				0
 			]
 		},
 		{
-			"name" : "Header Files",
+			"name" : "Source Files",
 			"sourceIndexes" : 
 			[
 				1
@@ -125,20 +123,14 @@
 	[
 		{
 			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "cpp_study/day_42_AVLTree/test1.cpp",
+			"path" : "cpp_study/day_44_red_black_tree/RBTree.h",
 			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"path" : "cpp_study/day_42_AVLTree/AVLTree.h",
-			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"path" : "test.cpp",
-			"sourceGroupIndex" : 0
+			"sourceGroupIndex" : 1
 		}
 	],
 	"type" : "EXECUTABLE"
