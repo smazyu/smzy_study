@@ -135,6 +135,27 @@ public:
         return true;
     }
 
+    Node *Fond(const K &key)
+    {
+        Node *cur = _root;
+        while (cur)
+        {
+            if (cur->_kv.first < key)
+            {
+                cur = cur->_right;
+            }
+            else if (cur->_kv.first > key)
+            {
+                cur = cur->_left;
+            }
+            else
+            {
+                return cur;
+            }
+        }
+        return nullptr;
+    }
+
 private:
     Node *_root = nullptr;
 
