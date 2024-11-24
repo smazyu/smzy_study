@@ -1,12 +1,20 @@
 #pragma once
+#include <utility>
+using namespace std;
+
 enum Colour
 {
     BLACK,
     RED,
 };
+
 template <class K, class V>
 class RBTreeNode
 {
+public:
+    RBTreeNode(const pair<K, V> &kv)
+        : _kv(kv), _left(nullptr), _right(nullptr), _parent(nullptr), _col(RED) {}
+
     RBTreeNode<K, V> *_left;
     RBTreeNode<K, V> *_right;
     RBTreeNode<K, V> *_parent;
@@ -29,6 +37,7 @@ public:
             _root->_col = BLACK;
             return true;
         }
+
         Node *parent = nullptr;
         Node *cur = _root;
         while (cur)
@@ -45,55 +54,137 @@ public:
             }
             else
             {
-                return false;
+                return false; // Key already exists
             }
         }
+
         cur = new Node(kv);
         if (parent->_kv.first < kv.first)
         {
             parent->_right = cur;
-            cur->_parent = parent;
         }
         else
         {
             parent->_left = cur;
-            cur->_parent = parent;
         }
+        cur->_parent = parent;
+
         cur->_col = RED;
+
+        // Balance the tree after insertion
         while (parent && parent->_col == RED)
         {
             Node *grandfather = parent->_parent;
-            if (grandfather->_left == parent)
+            if (grandfather && grandfather->_left == parent)
             {
                 Node *uncle = grandfather->_right;
-                // 情况1 uncle存在 且为红
+
+                // Case 1: Uncle exists and is RED
                 if (uncle && uncle->_col == RED)
                 {
-                    parent->_col = uncle->_col = BLACK;
+                    parent->_col = BLACK;
+                    uncle->_col = BLACK;
                     grandfather->_col = RED;
                     cur = grandfather;
                     parent = cur->_parent;
                 }
-                // 情况二 or 情况三 uncle不存在或者uncle存在且为黑
                 else
                 {
-                    // 情况三：双旋
+                    // Case 3: Right-Left situation
                     if (cur == parent->_right)
                     {
                         RotateL(parent);
                         swap(parent, cur);
                     }
+                    // Case 2: Left-Left situation
                     RotateR(grandfather);
                     grandfather->_col = RED;
                     parent->_col = BLACK;
                     break;
                 }
             }
-            _root->_col = BLACK;
+            else if (grandfather)
+            {
+                Node *uncle = grandfather->_left;
+
+                // Symmetric to the above
+                if (uncle && uncle->_col == RED)
+                {
+                    parent->_col = BLACK;
+                    uncle->_col = BLACK;
+                    grandfather->_col = RED;
+                    cur = grandfather;
+                    parent = cur->_parent;
+                }
+                else
+                {
+                    if (cur == parent->_left)
+                    {
+                        RotateR(parent);
+                        swap(parent, cur);
+                    }
+                    RotateL(grandfather);
+                    grandfather->_col = RED;
+                    parent->_col = BLACK;
+                    break;
+                }
+            }
         }
+
+        _root->_col = BLACK;
         return true;
-    };
+    }
 
 private:
     Node *_root = nullptr;
+
+    void RotateL(Node *node)
+    {
+        Node *rightChild = node->_right;
+        node->_right = rightChild->_left;
+        if (rightChild->_left)
+        {
+            rightChild->_left->_parent = node;
+        }
+        rightChild->_parent = node->_parent;
+        if (node->_parent == nullptr)
+        {
+            _root = rightChild;
+        }
+        else if (node == node->_parent->_left)
+        {
+            node->_parent->_left = rightChild;
+        }
+        else
+        {
+            node->_parent->_right = rightChild;
+        }
+        rightChild->_left = node;
+        node->_parent = rightChild;
+    }
+
+    void RotateR(Node *node)
+    {
+        Node *leftChild = node->_left;
+        node->_left = leftChild->_right;
+        if (leftChild->_right)
+        {
+            leftChild->_right->_parent = node;
+        }
+        leftChild->_parent = node->_parent;
+        if (node->_parent == nullptr)
+        {
+            _root = leftChild;
+        }
+        else if (node == node->_parent->_left)
+        {
+            node->_parent->_left = leftChild;
+        }
+        else
+        {
+            node->_parent->_right = leftChild;
+        }
+        leftChild->_right = node;
+        node->_parent = leftChild;
+    }
 };
