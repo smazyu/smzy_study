@@ -8,29 +8,27 @@ enum Colour
     RED,
 };
 
-template <class T>
+template <class K, class V>
 class RBTreeNode
 {
 public:
     RBTreeNode(const pair<K, V> &kv)
         : _kv(kv), _left(nullptr), _right(nullptr), _parent(nullptr), _col(RED) {}
 
-    RBTreeNode<T> *_left;
-    RBTreeNode<T> *_right;
-    RBTreeNode<T> *_parent;
-    T _data;
-    // pair<K, V> _kv;
+    RBTreeNode<K, V> *_left;
+    RBTreeNode<K, V> *_right;
+    RBTreeNode<K, V> *_parent;
+    pair<K, V> _kv;
     Colour _col;
-    RBTreeNode(const T &data) : _left(nullptr), _right(nullptr), _parent(nullptr), _data(data), _col(RED) {};
 };
 
-template <class K, class T>
+template <class K, class V>
 class RBTree
 {
-    typedef RBTreeNode<T> Node;
+    typedef RBTreeNode<K, V> Node;
 
 public:
-    bool Insert(const T &data)
+    bool Insert(const pair<K, V> &kv)
     {
         if (_root == nullptr)
         {
@@ -40,18 +38,18 @@ public:
         }
 
         Node *parent = nullptr;
-        Node *cur = _root;
-        while (cur)
+        Node *current = _root;
+        while (current)
         {
-            if (cur->_kv.first < kv.first)
+            if (current->_kv.first < kv.first)
             {
-                parent = cur;
-                cur = cur->_right;
+                parent = current;
+                current = current->_right;
             }
-            else if (cur->_kv.first > kv.first)
+            else if (current->_kv.first > kv.first)
             {
-                parent = cur;
-                cur = cur->_left;
+                parent = current;
+                current = current->_left;
             }
             else
             {
@@ -59,99 +57,39 @@ public:
             }
         }
 
-        cur = new Node(kv);
+        Node *newNode = new Node(kv);
         if (parent->_kv.first < kv.first)
         {
-            parent->_right = cur;
+            parent->_right = newNode;
         }
         else
         {
-            parent->_left = cur;
+            parent->_left = newNode;
         }
-        cur->_parent = parent;
+        newNode->_parent = parent;
+        newNode->_col = RED;
 
-        cur->_col = RED;
+        BalanceAfterInsert(newNode);
 
-        // Balance the tree after insertion
-        while (parent && parent->_col == RED)
-        {
-            Node *grandfather = parent->_parent;
-            if (grandfather && grandfather->_left == parent)
-            {
-                Node *uncle = grandfather->_right;
-
-                // Case 1: Uncle exists and is RED
-                if (uncle && uncle->_col == RED)
-                {
-                    parent->_col = BLACK;
-                    uncle->_col = BLACK;
-                    grandfather->_col = RED;
-                    cur = grandfather;
-                    parent = cur->_parent;
-                }
-                else
-                {
-                    // Case 3: Right-Left situation
-                    if (cur == parent->_right)
-                    {
-                        RotateL(parent);
-                        swap(parent, cur);
-                    }
-                    // Case 2: Left-Left situation
-                    RotateR(grandfather);
-                    grandfather->_col = RED;
-                    parent->_col = BLACK;
-                    break;
-                }
-            }
-            else if (grandfather)
-            {
-                Node *uncle = grandfather->_left;
-
-                // Symmetric to the above
-                if (uncle && uncle->_col == RED)
-                {
-                    parent->_col = BLACK;
-                    uncle->_col = BLACK;
-                    grandfather->_col = RED;
-                    cur = grandfather;
-                    parent = cur->_parent;
-                }
-                else
-                {
-                    if (cur == parent->_left)
-                    {
-                        RotateR(parent);
-                        swap(parent, cur);
-                    }
-                    RotateL(grandfather);
-                    grandfather->_col = RED;
-                    parent->_col = BLACK;
-                    break;
-                }
-            }
-        }
-
-        _root->_col = BLACK;
         return true;
     }
 
-    Node *Fond(const K &key)
+    Node *Find(const K &key) const
     {
-        Node *cur = _root;
-        while (cur)
+        Node *current = _root;
+        while (current)
         {
-            if (cur->_kv.first < key)
+            if (current->_kv.first < key)
             {
-                cur = cur->_right;
+                current = current->_right;
             }
-            else if (cur->_kv.first > key)
+            else if (current->_kv.first > key)
             {
-                cur = cur->_left;
+                current = current->_left;
             }
             else
             {
-                return cur;
+                return current;
             }
         }
         return nullptr;
@@ -160,8 +98,79 @@ public:
 private:
     Node *_root = nullptr;
 
+    void BalanceAfterInsert(Node *node)
+    {
+        while (node->_parent && node->_parent->_col == RED)
+        {
+            Node *parent = node->_parent;
+            Node *grandparent = parent->_parent;
+
+            if (grandparent && parent == grandparent->_left)
+            {
+                Node *uncle = grandparent->_right;
+
+                // Case 1: Uncle is RED
+                if (uncle && uncle->_col == RED)
+                {
+                    parent->_col = BLACK;
+                    uncle->_col = BLACK;
+                    grandparent->_col = RED;
+                    node = grandparent;
+                }
+                else
+                {
+                    // Case 3: Right-Left
+                    if (node == parent->_right)
+                    {
+                        RotateL(parent);
+                        node = parent;
+                        parent = node->_parent;
+                    }
+
+                    // Case 2: Left-Left
+                    RotateR(grandparent);
+                    parent->_col = BLACK;
+                    grandparent->_col = RED;
+                }
+            }
+            else if (grandparent)
+            {
+                Node *uncle = grandparent->_left;
+
+                // Case 1: Uncle is RED
+                if (uncle && uncle->_col == RED)
+                {
+                    parent->_col = BLACK;
+                    uncle->_col = BLACK;
+                    grandparent->_col = RED;
+                    node = grandparent;
+                }
+                else
+                {
+                    // Case 3: Left-Right
+                    if (node == parent->_left)
+                    {
+                        RotateR(parent);
+                        node = parent;
+                        parent = node->_parent;
+                    }
+
+                    // Case 2: Right-Right
+                    RotateL(grandparent);
+                    parent->_col = BLACK;
+                    grandparent->_col = RED;
+                }
+            }
+        }
+
+        _root->_col = BLACK;
+    }
+
     void RotateL(Node *node)
     {
+        if (!node || !node->_right)
+            return;
+
         Node *rightChild = node->_right;
         node->_right = rightChild->_left;
         if (rightChild->_left)
@@ -187,6 +196,9 @@ private:
 
     void RotateR(Node *node)
     {
+        if (!node || !node->_left)
+            return;
+
         Node *leftChild = node->_left;
         node->_left = leftChild->_right;
         if (leftChild->_right)
