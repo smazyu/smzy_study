@@ -68,28 +68,28 @@ include CMakeFiles/smzy.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/smzy.dir/flags.make
 
-CMakeFiles/smzy.dir/test.cpp.obj: CMakeFiles/smzy.dir/flags.make
-CMakeFiles/smzy.dir/test.cpp.obj: C:/Users/20212/Desktop/smzy_study/test.cpp
-CMakeFiles/smzy.dir/test.cpp.obj: CMakeFiles/smzy.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\20212\Desktop\smzy_study\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/smzy.dir/test.cpp.obj"
-	"D:\Program Files\JetBrains\CLion 2024.2.2\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/smzy.dir/test.cpp.obj -MF CMakeFiles\smzy.dir\test.cpp.obj.d -o CMakeFiles\smzy.dir\test.cpp.obj -c C:\Users\20212\Desktop\smzy_study\test.cpp
+CMakeFiles/smzy.dir/cpp_study/day_12/text1.cpp.obj: CMakeFiles/smzy.dir/flags.make
+CMakeFiles/smzy.dir/cpp_study/day_12/text1.cpp.obj: C:/Users/20212/Desktop/smzy_study/cpp_study/day_12/text1.cpp
+CMakeFiles/smzy.dir/cpp_study/day_12/text1.cpp.obj: CMakeFiles/smzy.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\20212\Desktop\smzy_study\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/smzy.dir/cpp_study/day_12/text1.cpp.obj"
+	"D:\Program Files\JetBrains\CLion 2024.2.2\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/smzy.dir/cpp_study/day_12/text1.cpp.obj -MF CMakeFiles\smzy.dir\cpp_study\day_12\text1.cpp.obj.d -o CMakeFiles\smzy.dir\cpp_study\day_12\text1.cpp.obj -c C:\Users\20212\Desktop\smzy_study\cpp_study\day_12\text1.cpp
 
-CMakeFiles/smzy.dir/test.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/smzy.dir/test.cpp.i"
-	"D:\Program Files\JetBrains\CLion 2024.2.2\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\20212\Desktop\smzy_study\test.cpp > CMakeFiles\smzy.dir\test.cpp.i
+CMakeFiles/smzy.dir/cpp_study/day_12/text1.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/smzy.dir/cpp_study/day_12/text1.cpp.i"
+	"D:\Program Files\JetBrains\CLion 2024.2.2\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\20212\Desktop\smzy_study\cpp_study\day_12\text1.cpp > CMakeFiles\smzy.dir\cpp_study\day_12\text1.cpp.i
 
-CMakeFiles/smzy.dir/test.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/smzy.dir/test.cpp.s"
-	"D:\Program Files\JetBrains\CLion 2024.2.2\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\20212\Desktop\smzy_study\test.cpp -o CMakeFiles\smzy.dir\test.cpp.s
+CMakeFiles/smzy.dir/cpp_study/day_12/text1.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/smzy.dir/cpp_study/day_12/text1.cpp.s"
+	"D:\Program Files\JetBrains\CLion 2024.2.2\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\20212\Desktop\smzy_study\cpp_study\day_12\text1.cpp -o CMakeFiles\smzy.dir\cpp_study\day_12\text1.cpp.s
 
 # Object files for target smzy
 smzy_OBJECTS = \
-"CMakeFiles/smzy.dir/test.cpp.obj"
+"CMakeFiles/smzy.dir/cpp_study/day_12/text1.cpp.obj"
 
 # External object files for target smzy
 smzy_EXTERNAL_OBJECTS =
 
-smzy.exe: CMakeFiles/smzy.dir/test.cpp.obj
+smzy.exe: CMakeFiles/smzy.dir/cpp_study/day_12/text1.cpp.obj
 smzy.exe: CMakeFiles/smzy.dir/build.make
 smzy.exe: CMakeFiles/smzy.dir/linkLibs.rsp
 smzy.exe: CMakeFiles/smzy.dir/objects1.rsp
