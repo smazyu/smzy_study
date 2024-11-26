@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>布局框架模板</title>
+    <meta charset="utf-8">
+    <style type="text/css">
+        body > * {
+            width: 85%;
+            margin: 0 auto;
+            border: 1px solid #9a361f;
+        }
+
+        header {
+            height: 75px;
+            background-color: #dadd68;
+            text-align: center;
+        }
+
+        nav {
+            height: 75px;
+        }
+
+        section {
+            height: 400px;
+        }
+
+        #img-container {
+            width: 100%;
+            height: 90%;
+            /*background-color: #e1e1da;*/
+        }
+
+        footer {
+            height: 300px;
+        }
+
+        .image-item {
+            margin-left: 100px;
+            margin-right: 50px;
+            width: 13%;
+            height: 100%;
+            float: left;
+        }
+
+        /*侧边栏左右划分*/
+        section > * {
+            height: 390px;
+            border: 1px solid #4139ed;
+            float: left;
+        }
+
+        #border1, #border2 {
+            border: 1.5px solid #090909;
+            margin-left: 50px;
+            width: 80%;
+            height: 30%;
+        }
+
+        aside {
+            width: 25%;
+            margin-left: 5px;
+            margin-top: 4px;
+        }
+
+        article {
+            width: 73%;
+            padding-left: 5px;
+            margin-left: 2px;
+            margin-top: 4px;
+        }
+    </style>
+</head>
+
+<body>
+<header>前端设计</header>
+<nav>
+    <table align="center" cellpadding="30px">
+        <tr>
+            <td>天气</td>
+            <td>新闻</td>
+            <td>美食</td>
+            <td>旅游</td>
+            <td>汽车</td>
+        </tr>
+    </table>
+</nav>
+<section>
+    <aside>
+        <ul>
+            <li>杨戬</li>
+            <br>
+            <li>姜子牙</li>
+            <br>
+            <li>战狼Ⅱ</li>
+            <br>
+            <li>八佰</li>
+            <br>
+            <li>长津湖</li>
+            <br>
+            <li>万里归途</li>
+        </ul>
+    </aside>
+    <article>
+        <p>影视评价<br>《奇迹》评价</p>
+        <div id="border1">
+            <p>
+                《奇迹》通过讲述一个小人物从基层奋斗到成功的故事，探讨了个人在社会变革中的成长与奋斗。电影的主题是希望与梦想，强调了即使在艰难困苦的环境下，只要敢于拼搏、坚持不懈，就有可能创造属于自己的奇迹。影片通过细腻的情感刻画以及紧凑的剧情，展现了人性的光辉和社会的变革。《奇迹》是一部充满希望与梦想的电影，通过精彩的演员表现和紧凑的剧情结构，呈现了一段感人至深的奋斗历程。
+            </p>
+        </div>
+        <hr>
+        <p>《万里归途》评价</p>
+        <div id="border2">
+            <p>
+                《万里归途》的剧情充满紧张感与戏剧性，故事围绕中国外交人员在海外执行任务的过程展开。影片通过一场生死攸关的外交营救行动，展现了国家在海外危机中的快速反应与决策。影片的主题集中在家国情怀与个人奉献上，强调了每一位外交人员都是为国为民的英雄。电影不仅关注宏大的国家利益，还深入刻画了角色在极端情境下的心理变化，突出了每个人背后的情感和责任。
+            </p>
+        </div>
+
+    </article>
+</section>
+<footer>展示图片
+    <div id="img-container">
+        <img class="image-item" src="1.jpg" alt="Image 1">
+        <img class="image-item" src="2.jpg" alt="Image 2">
+        <img class="image-item" src="3.jpg" alt="Image 3">
+        <img class="image-item" src="4.jpg" alt="Image 4">
+    </div>
+</footer>
+</body>
+
+</html>
