@@ -9,7 +9,6 @@ namespace bit
         struct MapKeyOfT
 
         {
-
             /* data */
         };
 
