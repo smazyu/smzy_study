@@ -12,6 +12,7 @@ client = OpenAI(
     api_key="",
 )
 
+
 response = client.chat.completions.create(
     messages=[
         {
