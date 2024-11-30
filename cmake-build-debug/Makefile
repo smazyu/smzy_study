@@ -152,6 +152,30 @@ cpp_study/day_12/text1.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/cpp_study/day_12/text1.cpp.s
 .PHONY : cpp_study/day_12/text1.cpp.s
 
+cpp_study/day_46_hash/test.obj: cpp_study/day_46_hash/test.cpp.obj
+.PHONY : cpp_study/day_46_hash/test.obj
+
+# target to build an object file
+cpp_study/day_46_hash/test.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/cpp_study/day_46_hash/test.cpp.obj
+.PHONY : cpp_study/day_46_hash/test.cpp.obj
+
+cpp_study/day_46_hash/test.i: cpp_study/day_46_hash/test.cpp.i
+.PHONY : cpp_study/day_46_hash/test.i
+
+# target to preprocess a source file
+cpp_study/day_46_hash/test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/cpp_study/day_46_hash/test.cpp.i
+.PHONY : cpp_study/day_46_hash/test.cpp.i
+
+cpp_study/day_46_hash/test.s: cpp_study/day_46_hash/test.cpp.s
+.PHONY : cpp_study/day_46_hash/test.s
+
+# target to generate assembly for a file
+cpp_study/day_46_hash/test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/cpp_study/day_46_hash/test.cpp.s
+.PHONY : cpp_study/day_46_hash/test.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -164,6 +188,9 @@ help:
 	@echo ... cpp_study/day_12/text1.obj
 	@echo ... cpp_study/day_12/text1.i
 	@echo ... cpp_study/day_12/text1.s
+	@echo ... cpp_study/day_46_hash/test.obj
+	@echo ... cpp_study/day_46_hash/test.i
+	@echo ... cpp_study/day_46_hash/test.s
 .PHONY : help
 
 
