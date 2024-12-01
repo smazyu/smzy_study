@@ -4,18 +4,22 @@
 #include <iostream>
 #include <unordered_map>
 #include <unordered_set>
+#include <set>
 using namespace std;
 
 void test_unordered_map_set()
 {
+    // unordered_set<int> us;
     unordered_set<int> us;
-    us.insert(4);
-    us.insert(3);
-    us.insert(1);
-    us.insert(7);
+    set<int> s;
+    s.insert(4);
+    s.insert(3);
+    s.insert(1);
+    s.insert(7);
 
-    unordered_set<int>:: iterator it = us.begin();
-    while (it != us.end())
+    // unordered_set<int>:: iterator it = us.begin();
+    set<int>:: iterator it = s.begin();
+    while (it != s.end())
     {
         cout << *it << " ";
         ++ it;
