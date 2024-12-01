@@ -1,86 +1,64 @@
-//
-// Created by 20212 on 24-11-30.
-//
 #include <iostream>
 #include <unordered_map>
 #include <unordered_set>
 #include <set>
 #include <string>
 #include <vector>
-#include <time.h>
-using namespace std;
+#include <chrono>
+#include <cstdlib>
 
 void test_unordered_map_set()
 {
-    // unordered_set<int> us;
+    std::set<int> s = {1, 3, 4, 7};
 
-    set<int> s;
-    s.insert(4);
-    s.insert(3);
-    s.insert(1);
-    s.insert(7);
+    for (int value : s)
+    {
+        std::cout << value << " ";
+    }
+    std::cout << std::endl;
 
-    // unordered_set<int>:: iterator it = us.begin();
-    set<int>:: iterator it = s.begin();
-    while (it != s.end())
+    std::unordered_map<std::string, std::string> dict = {
+        {"sort", "排序"},
+        {"string", "字符串"},
+        {"left", "左边"}};
+
+    for (const auto &pair : dict)
     {
-        cout << *it << " ";
-        ++ it;
+        std::cout << pair.first << " " << pair.second << std::endl;
     }
-    cout << endl;
-    //unordered_set 无序 set 有序
-    unordered_map<string,string> dict;
-    dict.insert(make_pair("sort","排序"));
-    dict["string"] = "字符串";
-    dict.insert(make_pair("left","左边"));
-    unordered_map<string,string>::iterator dit  = dict.begin();
-    while (dit != dict.end())
-    {
-        cout << dit->first << " " << dit->second << endl;
-        ++dit;
-    }
-    cout << "----------------" << endl;
+    std::cout << "----------------" << std::endl;
 }
+
 void test_op()
 {
-    unordered_set<int> us;
-    set<int> s;
-
-    const int n = 1000000000;
-    vector<int> v;
+    const size_t n = 1000000;
+    std::vector<int> v;
     v.reserve(n);
-    srand(time(0));
-    for (size_t i = 0;i < n;i++)
+    srand(static_cast<unsigned>(time(nullptr)));
+
+    for (size_t i = 0; i < n; ++i)
     {
         v.push_back(rand());
     }
-    size_t begin1 = clock();
-    for (size_t i = 0;i < n;i++)
-    {
-        us.insert(v[i]);
-    }
-    size_t end1 = clock();
-    // cout << end1 - begin1;
-    cout<<"unordered_set:"<<end1 - begin1 << endl;
 
-    size_t begin2 = clock();
-    for (size_t i = 0;i < n;i++)
-    {
-        s.insert(v[i]);
-    }
-    size_t end2 = clock();
-    // cout << end2 - begin2;
-    cout<<"set:"<<end2 - begin2 << endl;
+    auto start1 = std::chrono::high_resolution_clock::now();
+    std::unordered_set<int> us(v.begin(), v.end());
+    auto end1 = std::chrono::high_resolution_clock::now();
+    std::cout << "unordered_set: "
+              << std::chrono::duration_cast<std::chrono::milliseconds>(end1 - start1).count()
+              << " ms" << std::endl;
+
+    auto start2 = std::chrono::high_resolution_clock::now();
+    std::set<int> s(v.begin(), v.end());
+    auto end2 = std::chrono::high_resolution_clock::now();
+    std::cout << "set: "
+              << std::chrono::duration_cast<std::chrono::milliseconds>(end2 - start2).count()
+              << " ms" << std::endl;
 }
+
 int main()
 {
     // test_unordered_map_set();
     test_op();
     return 0;
-
 }
-//map/set 和 unordered_map/unordered_set 有什么区别和联系
-//1.他都可以实现key和value的搜索场景，并且功能和使用基本一样
-//2.map/set的底层是使用红黑树实现的，遍历出来是有序的，增删查改的时间复杂度是O(logN)
-//3.unordered_map/unordered_set的底层是使用哈希表实现的，增删查改的时间复杂度是O(1)
-//4.map和set是双向迭代器,unordered_map和unordered_set是单向迭代器
