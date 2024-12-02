@@ -1,18 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="C:\Users\20212\Desktop\smzy_study\cpp_study\day_12\text1.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="C:\Users\20212\Desktop\smzy_study\cpp_study\day_46_hash\test.cpp">
+    <ClCompile Include="C:\Users\20212\Desktop\smzy_study\cpp_study\day_47_hash_2\test.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="C:\Users\20212\Desktop\smzy_study\cpp_study\day_44_red_black_tree\RBTree.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\20212\Desktop\smzy_study\cpp_study\day_46_hash\hash.h">
+    <ClInclude Include="C:\Users\20212\Desktop\smzy_study\cpp_study\day_47_hash_2\HashTables.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

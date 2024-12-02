@@ -22,6 +22,8 @@ template <class K, class T>
 class HashTable
 {
 public:
+    typedef std::function<K(const T &)> KeyOfT;
+
     HashTable(size_t initialSize = 8) : _tables(initialSize), _num(0) {}
 
     bool Insert(const T &d)
@@ -33,7 +35,7 @@ public:
         // 如果负载因子过大，需要扩容
         if (_num > 0.7 * _tables.size())
         {
-            Rehash(); // 扩展表
+            Rehash();                       // 扩展表
             index = kt(d) % _tables.size(); // 重新计算索引
         }
 
@@ -89,10 +91,8 @@ public:
     }
 
 private:
-    using KeyOfT = std::function<K(const T&)>; // 假设我们用 function 来定义键提取方法
-
     std::vector<HashData<T>> _tables;
-    size_t _num; // 存了几个有效数据
+    size_t _num = 0; // 存了几个有效数据
 
     void Rehash()
     {
@@ -114,5 +114,13 @@ private:
         }
     }
 };
-//一般情况下负载因子越小，冲突概率越低，效率越高
-//但是负载因子过小，会导致空间浪费，所以一般取0.7左右
+// 一般情况下负载因子越小，冲突概率越低，效率越高
+// 但是负载因子过小，会导致空间浪费，所以一般取0.7左右
+template <class K>
+struct SetKeyOfT
+{
+    const K &operator()(const K &key)
+    {
+        return key;
+    }
+};
