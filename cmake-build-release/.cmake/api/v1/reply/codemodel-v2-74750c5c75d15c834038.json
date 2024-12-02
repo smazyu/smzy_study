@@ -6,7 +6,7 @@
 			[
 				{
 					"build" : ".",
-					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"jsonFile" : "directory-.-Release-d0094a50bb2071803777.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.20"
@@ -19,7 +19,7 @@
 					]
 				}
 			],
-			"name" : "Debug",
+			"name" : "Release",
 			"projects" : 
 			[
 				{
@@ -39,7 +39,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "smzy::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-smzy-Debug-49ba283642cdeb9a9bdb.json",
+					"jsonFile" : "target-smzy-Release-0292bf166d02d55a17e8.json",
 					"name" : "smzy",
 					"projectIndex" : 0
 				}
@@ -49,7 +49,7 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "C:/Users/20212/Desktop/smzy_study/cmake-build-debug",
+		"build" : "C:/Users/20212/Desktop/smzy_study/cmake-build-release",
 		"source" : "C:/Users/20212/Desktop/smzy_study"
 	},
 	"version" : 

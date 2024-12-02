@@ -128,6 +128,30 @@ smzy/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/build
 .PHONY : smzy/fast
 
+cpp_study/day_47_hash_2/test.obj: cpp_study/day_47_hash_2/test.cpp.obj
+.PHONY : cpp_study/day_47_hash_2/test.obj
+
+# target to build an object file
+cpp_study/day_47_hash_2/test.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/cpp_study/day_47_hash_2/test.cpp.obj
+.PHONY : cpp_study/day_47_hash_2/test.cpp.obj
+
+cpp_study/day_47_hash_2/test.i: cpp_study/day_47_hash_2/test.cpp.i
+.PHONY : cpp_study/day_47_hash_2/test.i
+
+# target to preprocess a source file
+cpp_study/day_47_hash_2/test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/cpp_study/day_47_hash_2/test.cpp.i
+.PHONY : cpp_study/day_47_hash_2/test.cpp.i
+
+cpp_study/day_47_hash_2/test.s: cpp_study/day_47_hash_2/test.cpp.s
+.PHONY : cpp_study/day_47_hash_2/test.s
+
+# target to generate assembly for a file
+cpp_study/day_47_hash_2/test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/cpp_study/day_47_hash_2/test.cpp.s
+.PHONY : cpp_study/day_47_hash_2/test.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -137,6 +161,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... smzy
+	@echo ... cpp_study/day_47_hash_2/test.obj
+	@echo ... cpp_study/day_47_hash_2/test.i
+	@echo ... cpp_study/day_47_hash_2/test.s
 .PHONY : help
 
 

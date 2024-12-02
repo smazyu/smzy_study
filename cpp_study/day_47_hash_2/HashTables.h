@@ -108,8 +108,11 @@ private:
         {
             if (oldEntry._state == EXIST)
             {
+
                 Insert(oldEntry._data); // 重新插入
             }
         }
     }
 };
+//一般情况下负载因子越小，冲突概率越低，效率越高
+//但是负载因子过小，会导致空间浪费，所以一般取0.7左右
