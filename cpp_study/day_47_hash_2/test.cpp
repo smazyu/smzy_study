@@ -58,19 +58,28 @@ void test_op()
               << std::chrono::duration_cast<std::chrono::milliseconds>(end2 - start2).count()
               << " ms" << std::endl;
 }
+template <class K>
+struct SetKeyOfT
+{
+    const K &operator()(const K &key) const
+    {
+        return key;
+    }
+};
 
 void TestHashTable()
 {
-    HashTable<int,int> ht;
-    ht.Insert(1,1);
-    ht.Insert(2,2);
-    ht.Insert(3,3);
-    ht.Insert(4,4);
-
+    OPEN_HASH::HashTable<int,int,SetKeyOfT<int>> ht;
+    ht.Insert(1);
+    ht.Insert(2);
+    ht.Insert(3);
+    ht.Insert(4);
+    cout << "插入完成" << endl;
 }
 int main()
 {
     // test_unordered_map_set();
-    test_op();
+    // test_op();
+    TestHashTable();
     return 0;
 }
