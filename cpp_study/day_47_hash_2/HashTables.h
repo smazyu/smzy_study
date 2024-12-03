@@ -1,8 +1,10 @@
 #pragma once
 #include <vector>
 #include <functional>
-
-enum State
+using namespace std;
+namespace CLOSED_HASE
+{
+    enum State
 {
     EMPTY,
     EXIST,
@@ -97,7 +99,7 @@ private:
     void Rehash()
     {
         std::vector<HashData<T>> oldTables = _tables;
-        _tables.resize(oldTables.size() * 2); // 扩容
+        _tables.resize( oldTables.size() * 2); // 扩容
         for (auto &entry : _tables)
         {
             entry._state = EMPTY; // 清空新的哈希表
@@ -124,3 +126,26 @@ struct SetKeyOfT
         return key;
     }
 };
+//闭散列中线性探测存在什么问题
+//线性探测思路就是我的位置被占了，然后我就挨着往后去占别人的位置，可能会导致一片一片的冲突，洪水效应
+
+//闭散列-开放定值法不是一种好的解决方式，因为他是一种我的位置被占，就去抢别人的位置的思路
+//所以他的哈希冲突会互相影响
+}
+namespace OPEON_HASH
+{
+    template<class T>
+    struct HaseNode
+    {
+        T _data;
+        HaseNode<T>* _next;
+    };
+    template<class K,class T,class KeyOfT>
+    class HashTable
+    {
+        typedef HaseNode<T> *Node;
+    private:
+        vector<Node*> _tables;
+        size_t _num;//记录表中存储的数据个数
+    };
+}
