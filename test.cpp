@@ -1,52 +1,44 @@
+
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 
-int main() {
-    double balance, deposit, withdraw, interest_rate, interest_after_1_year;
-    int account_type;
+#define NUM_ACCOUNTS 5
 
-    // ³õÊ¼ÕË»§Óà¶î
-    double regular_balance = 2000, savings_balance = 1000;
-
-    // ÕË»§ÀàĞÍÌáÊ¾
-    printf("Ñ¡ÔñÕË»§ÀàĞÍ£¨1£º¶¨ÆÚÕË»§£¬2£º»îÆÚÕË»§£©£º");
-    scanf("%d", &account_type);
-
-    // 2.2 ÊäÈë´æ¿î½ğ¶î
-    printf("ÇëÊäÈë´æ¿î½ğ¶î£º");
-    scanf("%lf", &deposit);
-
-    // ¸ù¾İÑ¡ÔñµÄÕË»§ÀàĞÍ½øĞĞ´æ¿î´¦Àí
-    if (account_type == 1) {
-        balance = regular_balance + deposit;
-        interest_rate = 0.05;  // ¶¨ÆÚÕË»§ÀûÂÊÎª5%
-    } else if (account_type == 2) {
-        balance = savings_balance + deposit;
-        interest_rate = 0.01;  // »îÆÚÕË»§ÀûÂÊÎª1%
-    } else {
-        printf("ÎŞĞ§µÄÕË»§ÀàĞÍ\n");
-        return 0;
+void generateAccounts(double accounts[NUM_ACCOUNTS][2], double interestRate)
+{
+    for (int i = 0; i < NUM_ACCOUNTS; i++)
+    {
+        accounts[i][0] = (rand() % 10000) + 1000;       // éšæœºç”Ÿæˆå­˜æ¬¾é‡‘é¢ï¼ŒèŒƒå›´ä¸º1000åˆ°10999
+        accounts[i][1] = accounts[i][0] * interestRate; // è®¡ç®—1å¹´åçš„åˆ©æ¯
     }
+}
 
-    // 2.3 ¼ÆËãÓà¶îºÍÀûÏ¢
-    interest_after_1_year = balance * interest_rate;
-
-    printf("ÕË»§Óà¶î£º%.2lfÔª\n", balance);
-    printf("1ÄêºóµÄÀûÏ¢£º%.2lfÔª\n", interest_after_1_year);
-
-    // 2.4 È¡¿î¹¦ÄÜ
-    printf("ÇëÊäÈëÈ¡¿î½ğ¶î£º");
-    scanf("%lf", &withdraw);
-
-    // ÅĞ¶ÏÈ¡¿îÊÇ·ñºÏ·¨
-    if (withdraw > balance) {
-        printf("Óà¶î²»×ã£¬ÎŞ·¨È¡¿î\n");
-    } else {
-        balance -= withdraw;  // ¿Û³ıÈ¡¿î½ğ¶î
-        interest_after_1_year = balance * interest_rate;  // ¸üĞÂÀûÏ¢
-
-        printf("È¡¿îºóÕË»§Óà¶î£º%.2lfÔª\n", balance);
-        printf("È¡¿îºó1ÄêºóµÄÀûÏ¢£º%.2lfÔª\n", interest_after_1_year);
+void printAccounts(double accounts[NUM_ACCOUNTS][2])
+{
+    for (int i = 0; i < NUM_ACCOUNTS; i++)
+    {
+        printf("è´¦æˆ· %d: å­˜æ¬¾é‡‘é¢ = %.2f, 1å¹´åçš„åˆ©æ¯ = %.2f\n", i + 1, accounts[i][0], accounts[i][1]);
     }
+}
+
+int main()
+{
+    srand(time(NULL)); // åˆå§‹åŒ–éšæœºæ•°ç§å­
+
+    double fixedAccounts[NUM_ACCOUNTS][2];   // å®šæœŸè´¦æˆ·
+    double currentAccounts[NUM_ACCOUNTS][2]; // æ´»æœŸè´¦æˆ·
+
+    double fixedInterestRate = 0.03;   // å®šæœŸè´¦æˆ·åˆ©ç‡
+    double currentInterestRate = 0.01; // æ´»æœŸè´¦æˆ·åˆ©ç‡
+
+    printf("ç”Ÿæˆå®šæœŸè´¦æˆ·ä¿¡æ¯:\n");
+    generateAccounts(fixedAccounts, fixedInterestRate);
+    printAccounts(fixedAccounts);
+
+    printf("\nç”Ÿæˆæ´»æœŸè´¦æˆ·ä¿¡æ¯:\n");
+    generateAccounts(currentAccounts, currentInterestRate);
+    printAccounts(currentAccounts);
 
     return 0;
 }
