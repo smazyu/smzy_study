@@ -247,4 +247,8 @@ namespace OPEN_HASH
         size_t _num = 0; // 已存储的数据数量
         KeyOfT _getKey;  // 键提取器函数对象
     };
+    
 }
+
+
+//仿函数 -> 可以像函数一样调用的类
