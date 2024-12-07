@@ -16,8 +16,7 @@
 
  # 定义可执行目标
  add_executable(smzy
-         cpp_study/day_47_hash_2/HashTables.h
-         cpp_study/day_48_unodered_set_map/test.cpp
+         cpp_study/day_49_bitmap_and_bloom_filters/test.cpp
  )
  # 为目标设置包含目录
  #target_include_directories(smzy PRIVATE ${PROJECT_SOURCE_DIR}/include)
