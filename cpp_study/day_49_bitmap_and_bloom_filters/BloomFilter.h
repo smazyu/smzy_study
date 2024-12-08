@@ -4,7 +4,7 @@
 #include <string>
 #include <vector>
 #include <iostream>
-
+using namespace std;
 namespace bit
 {
     class bitset
@@ -108,26 +108,26 @@ namespace study
             size_t hash = 0;
             for (size_t i = 0; i < str.size(); ++i)
             {
-                hash = hash * 131 + str[i]; // 使用131的常数来计算哈希值
+                hash = hash * 137 + str[i]; // 使用137的常数来计算哈希值
             }
             return hash;
         }
     };
 
     // 布隆过滤器模板类
-    template <class K, class Hash1, class Hash2, class Hash3>
+    template <class K, class Hash1 = HashStr1, class Hash2 = HashStr2, class Hash3 = HashStr3>
     class bloomfilter
     {
     public:
         // 构造函数，传入位图的大小
-        bloomfilter(size_t size) : _bs(size) {}  // 初始化位图
+        bloomfilter(size_t size) : _bs(size * 5),_N(5*size) {}  // 初始化位图
 
         // 将键添加到布隆过滤器
         void set(const K& key)
         {
-            size_t index1 = Hash1()(key); // 使用 Hash1 函数计算哈希值
-            size_t index2 = Hash2()(key); // 使用 Hash2 函数计算哈希值
-            size_t index3 = Hash3()(key); // 使用 Hash3 函数计算哈希值
+            size_t index1 = Hash1()(key) % _N; // 使用 Hash1 函数计算哈希值
+            size_t index2 = Hash2()(key) % _N; // 使用 Hash2 函数计算哈希值
+            size_t index3 = Hash3()(key) % _N; // 使用 Hash3 函数计算哈希值
 
             _bs.set(index1); // 将对应位置设为1
             _bs.set(index2);
@@ -151,7 +151,23 @@ namespace study
 
     private:
         bit::bitset _bs; // 位图对象，用于存储布隆过滤器的数据
+        size_t _N;
     };
+    void test_bloomfilter()
+    {
+        bloomfilter<std::string> bf(100);
+        bf.set("hello");
+        bf.set("world");
+        bf.set("bloom");
+        bf.set("abcd");
+        bf.set("bcad");
+        cout << bf.test("hello") << endl;
+        cout << bf.test("world") << endl;
+        cout << bf.test("bloom") << endl;
+        cout << bf.test("abcd") << endl;
+        cout << bf.test("bcad") << endl;
+    }
+
 }
 
 #endif //BLOOMFILTER_H
