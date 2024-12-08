@@ -320,8 +320,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="C:\Users\20212\Desktop\smzy_study\cpp_study\day_47_hash_2\HashTables.h" />
-    <ClCompile Include="C:\Users\20212\Desktop\smzy_study\cpp_study\day_48_unodered_set_map\test.cpp" />
+    <ClCompile Include="C:\Users\20212\Desktop\smzy_study\cpp_study\day_49_bitmap_and_bloom_filters\test.cpp" />
+    <ClInclude Include="C:\Users\20212\Desktop\smzy_study\cpp_study\day_49_bitmap_and_bloom_filters\BloomFilter.h" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
