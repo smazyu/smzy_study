@@ -113,6 +113,11 @@ namespace study
             _bs.set(index3);
         }
 
+        void reset(const K& key)
+        {
+            //将映射的位置给0就可以？
+            //不能删除，因为可能会误删
+        }
         // 检查一个键是否存在于布隆过滤器中
         bool test(const K& key)
         {
