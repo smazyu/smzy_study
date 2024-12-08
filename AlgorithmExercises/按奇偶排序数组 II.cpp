@@ -45,3 +45,33 @@ vector<int> sortArrayByParityII(vector<int> &nums)
     }
     return afterSortArray;
 }
+
+// 优化解法
+class Solution
+{
+public:
+    vector<int> sortArrayByParityII(vector<int> &nums)
+    {
+        int n = nums.size();
+        vector<int> ans(n);
+        int i = 0;
+        for (auto e : nums)
+        {
+            if (e % 2 == 0)
+            {
+                ans[i] = e;
+                i += 2;
+            }
+        }
+        int j = 1;
+        for (auto e : nums)
+        {
+            if (e % 2 != 0)
+            {
+                ans[j] = e;
+                j += 2;
+            }
+        }
+        return ans;
+    }
+};
