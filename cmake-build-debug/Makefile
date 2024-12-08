@@ -152,6 +152,30 @@ cpp_study/day_49_bitmap_and_bloom_filters/test.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/cpp_study/day_49_bitmap_and_bloom_filters/test.cpp.s
 .PHONY : cpp_study/day_49_bitmap_and_bloom_filters/test.cpp.s
 
+cpp_study/day_50_海量数据处理面试题/test1.obj: cpp_study/day_50_海量数据处理面试题/test1.cpp.obj
+.PHONY : cpp_study/day_50_海量数据处理面试题/test1.obj
+
+# target to build an object file
+cpp_study/day_50_海量数据处理面试题/test1.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/cpp_study/day_50_海量数据处理面试题/test1.cpp.obj
+.PHONY : cpp_study/day_50_海量数据处理面试题/test1.cpp.obj
+
+cpp_study/day_50_海量数据处理面试题/test1.i: cpp_study/day_50_海量数据处理面试题/test1.cpp.i
+.PHONY : cpp_study/day_50_海量数据处理面试题/test1.i
+
+# target to preprocess a source file
+cpp_study/day_50_海量数据处理面试题/test1.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/cpp_study/day_50_海量数据处理面试题/test1.cpp.i
+.PHONY : cpp_study/day_50_海量数据处理面试题/test1.cpp.i
+
+cpp_study/day_50_海量数据处理面试题/test1.s: cpp_study/day_50_海量数据处理面试题/test1.cpp.s
+.PHONY : cpp_study/day_50_海量数据处理面试题/test1.s
+
+# target to generate assembly for a file
+cpp_study/day_50_海量数据处理面试题/test1.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\smzy.dir\build.make CMakeFiles/smzy.dir/cpp_study/day_50_海量数据处理面试题/test1.cpp.s
+.PHONY : cpp_study/day_50_海量数据处理面试题/test1.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -164,6 +188,9 @@ help:
 	@echo ... cpp_study/day_49_bitmap_and_bloom_filters/test.obj
 	@echo ... cpp_study/day_49_bitmap_and_bloom_filters/test.i
 	@echo ... cpp_study/day_49_bitmap_and_bloom_filters/test.s
+	@echo ... cpp_study/day_50_海量数据处理面试题/test1.obj
+	@echo ... cpp_study/day_50_海量数据处理面试题/test1.i
+	@echo ... cpp_study/day_50_海量数据处理面试题/test1.s
 .PHONY : help
 
 
